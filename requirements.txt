@@ -1,0 +1,29 @@
+# Python Requirements for EFQM Benchmarking Club
+# Version: 0.1.0
+# Python: 3.9+
+
+# Core
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# JSON & Validation
+jsonschema>=4.17.0
+pydantic>=2.0.0
+
+# CLI & UI
+click>=8.1.0
+rich>=13.0.0
+tabulate>=0.9.0
+
+# File Processing
+openpyxl>=3.1.0
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+
+# Testing
+pytest>=7.3.0
+pytest-cov>=4.1.0
