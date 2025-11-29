@@ -1,0 +1,246 @@
+input
+kpi-passport-template.jsonنمایش محتوای
+output
+json
+
+{
+  "metadata": {
+    "template_version": "1.0.0",
+    "efqm_version": "2025",
+    "last_updated": "2025-01-15",
+    "template_type": "kpi-passport"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-XXX",
+    "kpi_name_fa": "نام شاخص به فارسی",
+    "kpi_name_en": "KPI Name in English",
+    "category": "معیار 6: برداشت‌های ذی‌نفعان",
+    "sub_category": "6-1: برداشت‌های مشتریان",
+    "efqm_criterion": 6,
+    "efqm_sub_criterion": 1
+  },
+  "definition": {
+    "description_fa": "توضیح کامل شاخص به زبان فارسی - حداقل 100 کلمه",
+    "description_en": "Complete description of the KPI in English - minimum 100 words",
+    "purpose": "هدف از اندازه‌گیری این شاخص چیست؟",
+    "scope": "دامنه کاربرد و محدوده شاخص",
+    "importance": "چرا این شاخص مهم است؟"
+  },
+  "measurement": {
+    "formula": "فرمول محاسبه شاخص (به صورت واضح و دقیق)",
+    "unit": "واحد اندازه‌گیری (درصد، عدد، امتیاز، و...)",
+    "data_type": "numeric | percentage | score | index",
+    "frequency": "دوره اندازه‌گیری (ماهانه، سه‌ماهه، سالانه)",
+    "min_value": 0,
+    "max_value": 100,
+    "optimal_direction": "higher | lower | target",
+    "decimal_places": 2
+  },
+  "data_collection": {
+    "data_source": [
+      "منبع داده 1 (مثلاً: نظرسنجی مشتریان)",
+      "منبع داده 2 (مثلاً: سیستم CRM)",
+      "منبع داده 3"
+    ],
+    "collection_method": "روش جمع‌آوری داده (نظرسنجی، استخراج از سیستم، محاسبه)",
+    "responsible_unit": "واحد مسئول جمع‌آوری و گزارش",
+    "sample_size": "حجم نمونه مورد نیاز (در صورت نظرسنجی)",
+    "data_quality_requirements": "الزامات کیفیت داده (دقت، تکمیل بودن، به‌روزبودن)"
+  },
+  "calculation_example": {
+    "scenario": "مثال محاسبه شاخص با داده‌های واقعی",
+    "input_data": {
+      "variable_1": 1000,
+      "variable_2": 850,
+      "variable_3": 50
+    },
+    "calculation_steps": [
+      "مرحله 1: محاسبه ...",
+      "مرحله 2: محاسبه ...",
+      "مرحله 3: نتیجه نهایی"
+    ],
+    "result": 85.5,
+    "interpretation": "تفسیر نتیجه"
+  },
+  "benchmarking": {
+    "european_best_practice": {
+      "top_quartile": 90,
+      "median": 75,
+      "bottom_quartile": 60,
+      "source": "EFQM Database 2024",
+      "sample_size": 500
+    },
+    "industry_benchmarks": {
+      "manufacturing": 82,
+      "services": 78,
+      "technology": 85,
+      "healthcare": 80
+    },
+    "world_class": {
+      "value": 95,
+      "description": "استاندارد سازمان‌های برتر جهانی"
+    }
+  },
+  "target_setting": {
+    "baseline_year": 2024,
+    "baseline_value": 70,
+    "short_term_target": {
+      "year": 2025,
+      "value": 75,
+      "justification": "افزایش 5 واحدی بر اساس بهبودهای برنامه‌ریزی شده"
+    },
+    "medium_term_target": {
+      "year": 2027,
+      "value": 85,
+      "justification": "رسیدن به میانه صنعت"
+    },
+    "long_term_target": {
+      "year": 2030,
+      "value": 90,
+      "justification": "ورود به رده برتر (Top Quartile)"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 20,
+      "score": 20,
+      "max_score": 20,
+      "assessment": "شاخص کاملاً مشخص و قابل فهم است"
+    },
+    "measurable": {
+      "score": 20,
+      "max_score": 20,
+      "assessment": "فرمول واضح و قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 18,
+      "max_score": 20,
+      "assessment": "اهداف واقع‌بینانه و قابل دستیابی هستند"
+    },
+    "relevant": {
+      "score": 20,
+      "max_score": 20,
+      "assessment": "کاملاً مرتبط با استراتژی و اهداف سازمان"
+    },
+    "time_bound": {
+      "score": 20,
+      "max_score": 20,
+      "assessment": "بازه‌های زمانی مشخص برای اهداف تعیین شده"
+    },
+    "total_score": 98,
+    "max_total": 100,
+    "status": "approved",
+    "validation_date": "2025-01-15"
+  },
+  "radar_evaluation": {
+    "results": {
+      "relevance": {
+        "score": 20,
+        "max_score": 20,
+        "notes": "کاملاً مرتبط با استراتژی"
+      },
+      "integrity": {
+        "score": 18,
+        "max_score": 20,
+        "notes": "داده‌ها قابل اعتماد هستند"
+      },
+      "segmentation": {
+        "score": 16,
+        "max_score": 20,
+        "notes": "تفکیک‌های مناسب وجود دارد"
+      },
+      "trends": {
+        "score": 18,
+        "max_score": 20,
+        "notes": "روندها قابل بررسی هستند"
+      },
+      "comparisons": {
+        "score": 18,
+        "max_score": 20,
+        "notes": "بنچمارک‌های مناسب موجود است"
+      },
+      "subtotal": 90,
+      "max_subtotal": 100
+    },
+    "overall_score": 90,
+    "max_score": 100,
+    "rating": "excellent",
+    "evaluation_date": "2025-01-15"
+  },
+  "strategic_alignment": {
+    "organizational_strategy": "ارتباط با استراتژی کلی سازمان",
+    "stakeholder_value": "ارزش آفرینی برای ذی‌نفعان",
+    "competitive_advantage": "مزیت رقابتی حاصل از بهبود این شاخص",
+    "risk_mitigation": "کاهش ریسک‌های مرتبط"
+  },
+  "improvement_initiatives": {
+    "quick_wins": [
+      "اقدام سریع 1: با زمان اجرای 1-3 ماه",
+      "اقدام سریع 2"
+    ],
+    "medium_term_projects": [
+      "پروژه میان‌مدت 1: با زمان اجرای 6-12 ماه",
+      "پروژه میان‌مدت 2"
+    ],
+    "strategic_programs": [
+      "برنامه استراتژیک 1: با زمان اجرای 2-3 سال",
+      "برنامه استراتژیک 2"
+    ]
+  },
+  "reporting": {
+    "report_frequency": "ماهانه",
+    "report_recipients": [
+      "مدیر عامل",
+      "هیئت مدیره",
+      "مدیران ارشد",
+      "سرپرست واحد مربوطه"
+    ],
+    "dashboard_display": true,
+    "alert_thresholds": {
+      "red": "< 60",
+      "yellow": "60-75",
+      "green": "> 75"
+    }
+  },
+  "related_kpis": {
+    "direct_dependencies": [
+      "R6-1-002: شاخص NPS",
+      "R6-1-003: نرخ حفظ مشتری"
+    ],
+    "indirect_relationships": [
+      "R7-1-001: رشد درآمد",
+      "R7-2-005: کیفیت محصول"
+    ]
+  },
+  "documentation": {
+    "procedure_reference": "شماره دستورالعمل یا رویه مرتبط",
+    "training_materials": "لینک به مواد آموزشی",
+    "audit_trail": "سابقه تغییرات و ممیزی",
+    "change_log": [
+      {
+        "date": "2025-01-15",
+        "version": "1.0",
+        "changes": "ایجاد اولیه شاخص",
+        "author": "حمید اقتداریان"
+      }
+    ]
+  },
+  "governance": {
+    "owner": "مدیر ارشد مشتریان (CCO)",
+    "reviewer": "مدیر برنامه‌ریزی استراتژیک",
+    "approver": "مدیر عامل",
+    "review_frequency": "سالانه",
+    "next_review_date": "2026-01-15"
+  },
+  "tags": [
+    "customer",
+    "satisfaction",
+    "perception",
+    "efqm-2025",
+    "criterion-6"
+  ],
+  "status": "active",
+  "version": "1.0.0",
+  "created_date": "2025-01-15",
+  "last_modified": "2025-01-15"
+}
