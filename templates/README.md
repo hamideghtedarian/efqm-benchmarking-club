@@ -37,3 +37,27 @@ python kpi_generator.py \
 # روش 2: کپی دستی
 cp templates/kpi-passport-template.json my-new-kpi.json
 # سپس فیلدها را ویرایش کنید
+{
+  "company_id": "COMP-001",
+  "kpi_code": "R6-1-001",
+  "period": "2024-Q4",
+  "value": 85.5,
+  "source": "Customer Survey",
+  "verified": true,
+  "notes": "نکات تکمیلی"
+}
+{
+  "company_id": "COMP-001",
+  "name": "شرکت نمونه",
+  "industry": "Manufacturing",
+  "size": "Large (1000+ employees)",
+  "country": "Iran",
+  "efqm_recognition": "Recognised for Excellence 5*"
+}
+4. **Commit:** `docs: Add templates/README.md - راهنمای قالب‌ها`
+
+---
+
+✅ **فولدر templates/ کامل شد!**
+
+**آماده‌اید برای گام 10؟** (ساخت فولدر kpi-library با شاخص‌های نمونه) 🚀​​​​​​​​​​​​​​​​
