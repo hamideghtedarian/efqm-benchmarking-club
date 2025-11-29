@@ -1,0 +1,98 @@
+{
+  "batch_info": {
+    "batch_name": "معیار 6-1: برداشت‌های مشتریان - شاخص‌های باقیمانده",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "total_kpis": 11,
+    "created_date": "2025-01-15",
+    "status": "pending"
+  },
+  "kpis": [
+    {
+      "code": "R6-1-005",
+      "name_fa": "رضایت از کیفیت محصول/خدمات",
+      "name_en": "Product/Service Quality Satisfaction",
+      "description_fa": "میزان رضایت مشتریان از کیفیت محصولات یا خدمات ارائه شده",
+      "formula": "میانگین امتیاز رضایت از کیفیت (مقیاس 1-10)"
+    },
+    {
+      "code": "R6-1-006",
+      "name_fa": "شاخص رضایت مشتری (CSAT)",
+      "name_en": "Customer Satisfaction Score (CSAT)",
+      "description_fa": "درصد مشتریانی که از تجربه خود راضی یا بسیار راضی هستند",
+      "formula": "(تعداد پاسخ‌های راضی و بسیار راضی / کل پاسخ‌ها) × 100"
+    },
+    {
+      "code": "R6-1-007",
+      "name_fa": "شاخص تلاش مشتری (CES)",
+      "name_en": "Customer Effort Score (CES)",
+      "description_fa": "میزان تلاش مورد نیاز مشتری برای حل مشکل یا دریافت خدمت",
+      "formula": "میانگین امتیاز سهولت تعامل (مقیاس 1-7، عدد کمتر = تلاش کمتر)"
+    },
+    {
+      "code": "R6-1-008",
+      "name_fa": "ارزش درک شده",
+      "name_en": "Perceived Value",
+      "description_fa": "میزان ارزشی که مشتری نسبت به قیمت پرداختی دریافت می‌کند",
+      "formula": "(امتیاز کیفیت درک شده / قیمت نسبی) × 100"
+    },
+    {
+      "code": "R6-1-009",
+      "name_fa": "رضایت از خدمات پشتیبانی",
+      "name_en": "Support Service Satisfaction",
+      "description_fa": "میزان رضایت مشتریان از کیفیت و سرعت خدمات پشتیبانی",
+      "formula": "میانگین امتیاز رضایت از پشتیبانی (مقیاس 1-10)"
+    },
+    {
+      "code": "R6-1-010",
+      "name_fa": "تصویر و اعتبار برند",
+      "name_en": "Brand Image and Reputation",
+      "description_fa": "میزان اعتماد و برداشت مثبت مشتریان نسبت به برند",
+      "formula": "میانگین امتیاز تصویر برند در نظرسنجی (مقیاس 1-10)"
+    },
+    {
+      "code": "R6-1-011",
+      "name_fa": "سهولت فرآیند خرید",
+      "name_en": "Purchase Process Ease",
+      "description_fa": "میزان سادگی و راحتی فرآیند خرید از دیدگاه مشتری",
+      "formula": "میانگین امتیاز سهولت خرید (مقیاس 1-10)"
+    },
+    {
+      "code": "R6-1-012",
+      "name_fa": "زمان پاسخگویی به درخواست‌ها",
+      "name_en": "Response Time to Requests",
+      "description_fa": "متوسط زمان پاسخ به درخواست‌ها و سوالات مشتریان",
+      "formula": "میانگین زمان پاسخ به درخواست (ساعت یا روز)"
+    },
+    {
+      "code": "R6-1-013",
+      "name_fa": "نرخ حل در تماس اول (FCR)",
+      "name_en": "First Contact Resolution Rate",
+      "description_fa": "درصد مشکلاتی که در اولین تماس یا تعامل حل می‌شوند",
+      "formula": "(تعداد مشکلات حل شده در تماس اول / کل تماس‌ها) × 100"
+    },
+    {
+      "code": "R6-1-014",
+      "name_fa": "نرخ شکایات مشتریان",
+      "name_en": "Customer Complaint Rate",
+      "description_fa": "نسبت شکایات مشتریان به کل تراکنش‌ها یا مشتریان",
+      "formula": "(تعداد شکایات / کل تراکنش‌ها یا مشتریان) × 100"
+    },
+    {
+      "code": "R6-1-015",
+      "name_fa": "امتیاز تجربه دیجیتال مشتری",
+      "name_en": "Digital Customer Experience Score",
+      "description_fa": "میزان رضایت از کانال‌های دیجیتال (وب‌سایت، اپلیکیشن، شبکه‌های اجتماعی)",
+      "formula": "میانگین امتیاز تجربه دیجیتال (مقیاس 1-10)"
+    }
+  ],
+  "usage_instructions": {
+    "description": "این فایل شامل لیست 11 شاخص باقیمانده معیار 6-1 است",
+    "how_to_use": [
+      "از kpi_generator.py با پارامتر --batch استفاده کنید",
+      "مثال: python kpi_generator.py --batch kpis_batch_6-1.json",
+      "فایل‌های JSON شاخص‌ها در پوشه output ایجاد می‌شوند"
+    ],
+    "expected_output": "11 فایل JSON کامل با ساختار KPI Passport"
+  }
+}
