@@ -356,14 +356,14 @@ git push origin feature/new-kpi
 ### نگهدارنده پروژه
 
 **حمید اقتداریان**
-- 📧 Email: your.email@example.com
+- 📧 Email: eghtedarian@gmail.com
 - 💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
 - 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
 
 ### پشتیبانی
 
-- 💬 **GitHub Discussions:** [بحث‌ها](https://github.com/YOUR_USERNAME/efqm-benchmarking-club/discussions)
-- 🐛 **GitHub Issues:** [مشکلات](https://github.com/YOUR_USERNAME/efqm-benchmarking-club/issues)
+- 💬 **GitHub Discussions:** [بحث‌ها](https://github.com/hamideghtedarian/efqm-benchmarking-club/discussions)
+- 🐛 **GitHub Issues:** [مشکلات](https://github.com/hamideghtedarian/efqm-benchmarking-club/issues)
 - 📧 **Email:** support@efqm-club.org
 - 🌐 **Website:** [efqm-club.org](https://efqm-club.org) (به زودی)
 
@@ -411,12 +411,12 @@ MIT License with Attribution
 ## 📊 آمار پروژه
 
 ![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/efqm-benchmarking-club?style=social)
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/efqm-benchmarking-club?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/YOUR_USERNAME/efqm-benchmarking-club?style=social)
+![GitHub forks](https://img.shields.io/github/forks/hamideghtedarian/efqm-benchmarking-club?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/hamideghtedarian/efqm-benchmarking-club?style=social)
 
-![GitHub issues](https://img.shields.io/github/issues/YOUR_USERNAME/efqm-benchmarking-club)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/YOUR_USERNAME/efqm-benchmarking-club)
-![GitHub last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/efqm-benchmarking-club)
+![GitHub issues](https://img.shields.io/github/issues/hamideghtedarian/efqm-benchmarking-club)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/hamideghtedarian/efqm-benchmarking-club)
+![GitHub last commit](https://img.shields.io/github/last-commit/hamideghtedarian/efqm-benchmarking-club)
 
 ---
 
@@ -448,7 +448,7 @@ MIT License with Attribution
 
 این موارد را **تغییر** دهید:
 
-1. `YOUR_USERNAME` → نام کاربری GitHub شما (5 جا)
+1. `YOUR_USERNAME` → نام کاربری hamideghtedarian
 2. `your.email@example.com` →eghtedarian@gmail.com
 3. `linkedin.com/in/yourprofile` → LinkedIn شما (اختیاری)
 4. `@yourhandle` → Twitter شما (اختیاری)
