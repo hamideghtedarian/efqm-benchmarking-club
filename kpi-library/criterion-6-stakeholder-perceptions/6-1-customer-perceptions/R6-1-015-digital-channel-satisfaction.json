@@ -1,0 +1,666 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-015",
+    "kpi_name_fa": "رضایت از کانال‌های دیجیتال",
+    "kpi_name_en": "Digital Channel Satisfaction",
+    "acronym": "DCS",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Digital Experience"
+  },
+  "definition": {
+    "description_fa": "میزان رضایت مشتریان از تجربه استفاده از کانال‌های دیجیتال سازمان شامل وب‌سایت، اپلیکیشن موبایل، پورتال مشتری، رسانه‌های اجتماعی، و سایر پلتفرم‌های آنلاین. این شاخص کیفیت تجربه دیجیتال را از نظر سهولت استفاده، سرعت، عملکرد، طراحی، محتوا، و ارزش ارائه شده ارزیابی می‌کند. با افزایش دیجیتالی‌شدن تعاملات، رضایت از کانال‌های دیجیتال به یکی از مهم‌ترین شاخص‌های تجربه مشتری تبدیل شده است.",
+    "description_en": "Customer satisfaction with the organization's digital channels including website, mobile app, customer portal, social media, and other online platforms. This KPI evaluates digital experience quality in terms of ease of use, speed, functionality, design, content, and value delivered. With increasing digitalization of interactions, digital channel satisfaction has become one of the most important customer experience indicators.",
+    "purpose": "ارزیابی کیفیت تجربه دیجیتال و شناسایی فرصت‌های بهبود در پلتفرم‌های آنلاین",
+    "scope": "تمام کانال‌ها و پلتفرم‌های دیجیتال سازمان",
+    "key_insight": "کانال‌های دیجیتال اغلب اولین و مهم‌ترین نقطه تماس با مشتری هستند و تجربه ضعیف می‌تواند قبل از هر تعامل انسانی ضرر بزند"
+  },
+  "measurement": {
+    "formula": "((تعداد کاربران راضی از کانال‌های دیجیتال / کل کاربران) × 100)",
+    "formula_en": "((Number of satisfied digital users / Total digital users) × 100)",
+    "unit": "درصد",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "ماهانه یا فصلی",
+    "data_source": [
+      "نظرسنجی در اپلیکیشن/وب‌سایت",
+      "تحلیل رفتار کاربر (Analytics)",
+      "نظرات در App Store / Google Play",
+      "نظرسنجی ایمیلی",
+      "هیت‌مپ و Session Recordings",
+      "Social Media Listening"
+    ],
+    "rating_scale": {
+      "5": "بسیار راضی",
+      "4": "راضی",
+      "3": "نه راضی نه ناراضی",
+      "2": "ناراضی",
+      "1": "بسیار ناراضی"
+    }
+  },
+  "data_collection": {
+    "collection_method": "ترکیبی از نظرسنجی و داده‌های رفتاری",
+    "survey_triggers": [
+      "پس از تکمیل یک تراکنش",
+      "پس از X دقیقه استفاده",
+      "خروج از سایت/اپ",
+      "ایمیل دوره‌ای به کاربران فعال"
+    ],
+    "survey_questions": [
+      "تجربه کلی شما از [پلتفرم] چطور بود؟",
+      "چقدر راحت اطلاعات مورد نیازتان را پیدا کردید؟",
+      "سرعت و عملکرد چطور بود؟",
+      "طراحی و ظاهر چطور بود؟",
+      "چه چیزی می‌توانست بهتر باشد؟"
+    ],
+    "behavioral_metrics": [
+      "زمان صفحه",
+      "نرخ پرش (Bounce Rate)",
+      "نرخ تکمیل وظایف",
+      "تعداد خطاها",
+      "نرخ بازگشت"
+    ],
+    "channels": [
+      "نظرسنجی در صفحه (On-page)",
+      "پاپ‌آپ خروج",
+      "ایمیل",
+      "پوش نوتیفیکیشن",
+      "In-app messaging"
+    ],
+    "data_quality_checks": [
+      "حذف bot traffic",
+      "فیلتر spam",
+      "بررسی سازگاری با رفتار",
+      "تأیید هویت کاربر"
+    ],
+    "responsible_department": "مدیریت محصول دیجیتال، مدیریت تجربه کاربری",
+    "responsible_person": "مدیر محصول دیجیتال، مدیر UX"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 2000 کاربر اپلیکیشن موبایل در یک ماه",
+    "input_data": {
+      "total_app_users": 2000,
+      "responses_received": 600,
+      "response_rate": "30%",
+      "score_5": 270,
+      "score_4": 210,
+      "score_3": 80,
+      "score_2": 30,
+      "score_1": 10,
+      "behavioral_data": {
+        "avg_session_duration": "8.5 دقیقه",
+        "bounce_rate": "22%",
+        "task_completion_rate": "78%",
+        "app_rating_stores": "4.3/5"
+      }
+    },
+    "calculation_steps": [
+      "گام 1: شمارش کاربران راضی (امتیاز 4-5) = 270 + 210 = 480",
+      "گام 2: محاسبه درصد = (480 / 600) × 100 = 80%",
+      "گام 3: محاسبه میانگین امتیاز = [(270×5)+(210×4)+(80×3)+(30×2)+(10×1)] / 600",
+      "       = [1350+840+240+60+10] / 600 = 2500 / 600 = 4.17",
+      "گام 4: تطبیق با داده‌های رفتاری: نرخ تکمیل 78% و bounce 22% تأیید می‌کنند"
+    ],
+    "result": "80%",
+    "interpretation": "80% رضایت از اپلیکیشن موبایل خوب است اما فاصله تا سطح برتر (>85%) دارد. 6.7% ناراضی هستند که نیاز به توجه دارند. تطابق خوبی بین نظرسنجی و داده‌های رفتاری وجود دارد."
+  },
+  "benchmarking": {
+    "by_channel": {
+      "mobile_app": {
+        "world_class": "≥85%",
+        "good": "75-84%",
+        "average": "65-74%",
+        "poor": "<65%"
+      },
+      "website": {
+        "world_class": "≥82%",
+        "good": "72-81%",
+        "average": "62-71%",
+        "poor": "<62%"
+      },
+      "customer_portal": {
+        "world_class": "≥80%",
+        "good": "70-79%",
+        "average": "60-69%",
+        "poor": "<60%"
+      },
+      "social_media": {
+        "world_class": "≥78%",
+        "good": "68-77%",
+        "average": "58-67%",
+        "poor": "<58%"
+      }
+    },
+    "top_companies": [
+      {
+        "company": "Amazon",
+        "mobile_app": "88%",
+        "website": "86%",
+        "year": 2024
+      },
+      {
+        "company": "Apple",
+        "mobile_app": "90%",
+        "website": "87%",
+        "year": 2024
+      },
+      {
+        "company": "Netflix",
+        "mobile_app": "87%",
+        "website": "85%",
+        "year": 2024
+      }
+    ],
+    "industry_averages": {
+      "e_commerce": "78-85%",
+      "banking": "72-80%",
+      "travel": "75-82%",
+      "media_entertainment": "80-87%",
+      "utilities": "65-72%",
+      "healthcare": "70-78%"
+    },
+    "app_store_ratings": {
+      "excellent": "≥4.5/5",
+      "good": "4.0-4.4/5",
+      "average": "3.5-3.9/5",
+      "poor": "<3.5/5"
+    }
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "میانگین 3 ماه اول",
+      "note": "جداگانه برای هر کانال"
+    },
+    "short_term": {
+      "target": "baseline + 5-8%",
+      "timeframe": "6 ماه",
+      "action_required": "رفع مشکلات عمده UX/UI"
+    },
+    "medium_term": {
+      "target": "80-85%",
+      "timeframe": "12 ماه",
+      "action_required": "بازطراحی و بهینه‌سازی جامع"
+    },
+    "long_term": {
+      "target": "≥85%",
+      "timeframe": "24 ماه",
+      "action_required": "دستیابی به سطح world-class"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 100,
+      "explanation": "رضایت از کانال‌های دیجیتال را به‌طور دقیق اندازه‌گیری می‌کند"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "با ترکیب نظرسنجی و analytics کاملاً قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 95,
+      "explanation": "با ابزارهای دیجیتال به راحتی قابل ردیابی است"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "تجربه دیجیتال در دنیای امروز حیاتی است"
+    },
+    "time_bound": {
+      "score": 100,
+      "explanation": "ماهانه و فصلی قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 99,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 97,
+      "explanation": "رضایت دیجیتال نتیجه مستقیم کیفیت طراحی و عملکرد است"
+    },
+    "approach": {
+      "score": 95,
+      "explanation": "نیاز به رویکرد سیستماتیک UX/UI و توسعه"
+    },
+    "deployment": {
+      "score": 92,
+      "explanation": "باید در تمام پلتفرم‌ها به‌طور یکسان اعمال شود"
+    },
+    "assessment_refinement": {
+      "score": 96,
+      "explanation": "آزمایش و بهینه‌سازی مستمر با A/B testing"
+    },
+    "overall_radar_score": 95,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 5 - مدیریت عملکرد و تحول دیجیتال",
+      "معیار 4 - ایجاد ارزش پایدار"
+    ],
+    "strategic_objectives": [
+      "تحول دیجیتال",
+      "بهبود تجربه مشتری",
+      "افزایش کانال‌های سلف‌سرویس",
+      "کاهش هزینه‌های خدمات"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری و فرآیندهای داخلی و نوآوری",
+      "objective": "تعالی در تجربه دیجیتال"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "بازطراحی UX/UI بر اساس بازخورد کاربران",
+      "expected_impact": "+8-12%",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "بهینه‌سازی سرعت و عملکرد",
+      "expected_impact": "+5-8%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "شخصی‌سازی تجربه با AI",
+      "expected_impact": "+6-10%",
+      "timeframe": "9 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "بهبود محتوا و راهنماها",
+      "expected_impact": "+4-7%",
+      "timeframe": "3 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "پیاده‌سازی Progressive Web App (PWA)",
+      "expected_impact": "+5-8%",
+      "timeframe": "12 ماه",
+      "priority": "متوسط"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند + مقایسه بین کانال‌ها + Heat map نقاط مشکل + App Store ratings",
+    "report_frequency": "ماهانه برای تیم محصول، فصلی برای مدیریت",
+    "alert_thresholds": {
+      "critical": "<65%",
+      "warning": "65-75%",
+      "good": "75-85%",
+      "excellent": ">85%"
+    },
+    "stakeholders": [
+      "مدیر محصول دیجیتال",
+      "مدیر UX/UI",
+      "مدیر فناوری (CTO)",
+      "مدیر تجربه مشتری",
+      "مدیر بازاریابی دیجیتال"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R7-2-028: سرعت بارگذاری صفحات",
+      "R7-2-029: نرخ خطاهای فنی",
+      "R7-2-030: Mobile responsiveness score"
+    ],
+    "lagging_indicators": [
+      "R6-1-006: CSAT کلی",
+      "R6-1-011: سهولت خرید",
+      "R7-1-013: نرخ تبدیل دیجیتال",
+      "R7-2-031: نرخ استفاده از سلف‌سرویس"
+    ],
+    "complementary_kpis": [
+      "R6-1-007: CES",
+      "R7-2-032: App engagement metrics",
+      "R7-2-033: Digital NPS"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "ISO 9241-210:2019 - Ergonomics of Human-System Interaction",
+      "WCAG 2.1 - Web Content Accessibility Guidelines",
+      "EFQM Model 2025 - Criterion 6.1"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی ارزیابی تجربه دیجیتال",
+      "دستورالعمل UX Research",
+      "چارچوب A/B Testing"
+    ],
+    "training_materials": [
+      "آموزش UX/UI Best Practices",
+      "آموزش تحلیل رفتار کاربر",
+      "آموزش بهینه‌سازی تبدیل"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر محصول دیجیتال",
+    "co_owner": "مدیر UX",
+    "reviewer": "مدیر فناوری",
+    "approver": "مدیر تجربه مشتری",
+    "review_frequency": "ماهانه",
+    "data_retention": "36 ماه",
+    "access_level": "عمومی - قابل دسترسی برای تیم‌های دیجیتال"
+  },
+  "digital_experience_dimensions": {
+    "usability": {
+      "weight": 30,
+      "description": "سهولت استفاده و یادگیری",
+      "metrics": ["Task completion rate", "Time on task", "Error rate"]
+    },
+    "performance": {
+      "weight": 25,
+      "description": "سرعت و پایداری",
+      "metrics": ["Load time", "Response time", "Uptime"]
+    },
+    "design": {
+      "weight": 20,
+      "description": "ظاهر، زیبایی‌شناسی، برند",
+      "metrics": ["Visual appeal", "Consistency", "Brand alignment"]
+    },
+    "content": {
+      "weight": 15,
+      "description": "کیفیت، ارتباط، کامل بودن محتوا",
+      "metrics": ["Relevance", "Clarity", "Completeness"]
+    },
+    "functionality": {
+      "weight": 10,
+      "description": "ویژگی‌ها و قابلیت‌ها",
+      "metrics": ["Feature completeness", "Innovation", "Value"]
+    }
+  },
+  "channel_specific_metrics": {
+    "mobile_app": {
+      "unique_metrics": [
+        "App Store rating",
+        "Crash rate",
+        "Load time",
+        "Battery usage",
+        "Offline capability"
+      ],
+      "best_practices": [
+        "طراحی mobile-first",
+        "کاهش حجم اپ",
+        "offline functionality",
+        "push notifications معنادار"
+      ]
+    },
+    "website": {
+      "unique_metrics": [
+        "Page load speed",
+        "Bounce rate",
+        "Pages per session",
+        "Mobile responsiveness",
+        "SEO score"
+      ],
+      "best_practices": [
+        "responsive design",
+        "بهینه‌سازی تصاویر",
+        "Progressive enhancement",
+        "Accessibility (WCAG)"
+      ]
+    },
+    "customer_portal": {
+      "unique_metrics": [
+        "Login success rate",
+        "Self-service adoption",
+        "Feature usage",
+        "Support ticket reduction"
+      ],
+      "best_practices": [
+        "Single Sign-On",
+        "یکپارچگی با سیستم‌ها",
+        "داشبورد شخصی",
+        "راهنمای تعاملی"
+      ]
+    }
+  },
+  "ux_research_methods": {
+    "quantitative": [
+      "نظرسنجی رضایت",
+      "تحلیل آنالیتیکس",
+      "A/B testing",
+      "Heat maps",
+      "Funnel analysis"
+    ],
+    "qualitative": [
+      "مصاحبه کاربری",
+      "Usability testing",
+      "Session recordings",
+      "مشاهده کاربران",
+      "Diary studies"
+    ]
+  },
+  "segmentation_analysis": {
+    "by_device": [
+      "موبایل (iOS, Android)",
+      "دسکتاپ (Windows, Mac)",
+      "تبلت",
+      "Smart TV, IoT"
+    ],
+    "by_user_type": [
+      "کاربران جدید",
+      "کاربران بازگشتی",
+      "کاربران power (پیشرفته)",
+      "کاربران occasional"
+    ],
+    "by_task": [
+      "خرید",
+      "جستجو",
+      "پشتیبانی",
+      "مدیریت حساب"
+    ]
+  },
+  "data_analysis": {
+    "key_metrics": [
+      "میانگین رضایت",
+      "توزیع امتیازات",
+      "مقایسه بین کانال‌ها",
+      "روند در طول زمان",
+      "همبستگی با رفتار"
+    ],
+    "ux_metrics": [
+      "System Usability Scale (SUS)",
+      "Net Promoter Score (NPS)",
+      "Customer Effort Score (CES)",
+      "Time on Task",
+      "Task Success Rate"
+    ],
+    "statistical_methods": [
+      "تحلیل رگرسیون (درایورهای رضایت)",
+      "تحلیل Cohort",
+      "Funnel analysis",
+      "A/B test results",
+      "Correlation analysis"
+    ],
+    "visualization": [
+      "نمودار خطی روند",
+      "نمودار مقایسه کانال‌ها",
+      "Heat maps تعاملات",
+      "Funnel charts",
+      "User journey maps"
+    ]
+  },
+  "accessibility": {
+    "wcag_compliance": {
+      "level_a": "حداقل - الزامات اساسی",
+      "level_aa": "استاندارد - توصیه می‌شود",
+      "level_aaa": "پیشرفته - ایده‌آل"
+    },
+    "considerations": [
+      "Screen reader compatibility",
+      "Keyboard navigation",
+      "Color contrast",
+      "Alternative text",
+      "Captioning"
+    ],
+    "benefits": [
+      "دسترسی برای همه",
+      "بهبود SEO",
+      "تجربه بهتر برای همه",
+      "Compliance قانونی"
+    ]
+  },
+  "performance_optimization": {
+    "speed_targets": {
+      "load_time": "<3 ثانیه",
+      "time_to_interactive": "<5 ثانیه",
+      "first_contentful_paint": "<1.8 ثانیه"
+    },
+    "techniques": [
+      "کش کردن",
+      "فشرده‌سازی",
+      "Lazy loading",
+      "CDN",
+      "Minification",
+      "Image optimization"
+    ],
+    "tools": [
+      "Google PageSpeed Insights",
+      "Lighthouse",
+      "WebPageTest",
+      "GTmetrix"
+    ]
+  },
+  "personalization": {
+    "levels": [
+      {
+        "level": "Basic",
+        "description": "نام کاربر، تاریخچه سفارش",
+        "impact": "+5-10% رضایت"
+      },
+      {
+        "level": "Intermediate",
+        "description": "توصیه محصول، محتوای شخصی",
+        "impact": "+10-15% رضایت"
+      },
+      {
+        "level": "Advanced",
+        "description": "UI پویا، تجربه کاملاً شخصی",
+        "impact": "+15-25% رضایت"
+      }
+    ],
+    "ai_applications": [
+      "توصیه‌گر هوشمند",
+      "چت‌بات شخصی",
+      "جستجوی پیش‌بینانه",
+      "محتوای dynamic"
+    ]
+  },
+  "mobile_specific_considerations": {
+    "mobile_first_design": "طراحی ابتدا برای موبایل، سپس توسعه به دسکتاپ",
+    "touch_optimization": "دکمه‌های بزرگ، فاصله مناسب",
+    "offline_capability": "عملکرد بدون اینترنت",
+    "app_vs_web": {
+      "app_advantages": ["سریع‌تر", "دسترسی آفلاین", "push notifications"],
+      "web_advantages": ["بدون نصب", "به‌روزرسانی آسان", "SEO"]
+    }
+  },
+  "correlation_with_outcomes": {
+    "digital_conversion": "همبستگی مثبت 0.8-0.9",
+    "self_service_adoption": "همبستگی مثبت 0.7-0.8",
+    "support_volume": "همبستگی منفی 0.6-0.7",
+    "customer_retention": "همبستگی مثبت 0.6-0.7",
+    "nps": "همبستگی مثبت 0.7-0.8"
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "خرابی فنی یا downtime",
+        "impact": "بسیار بالا",
+        "mitigation": "مانیتورینگ 24/7، backup، disaster recovery"
+      },
+      {
+        "risk": "نقض امنیت و حریم خصوصی",
+        "impact": "بسیار بالا",
+        "mitigation": "امنیت قوی، رمزگذاری، penetration testing"
+      },
+      {
+        "risk": "تغییرات بدون تست کافی",
+        "impact": "بالا",
+        "mitigation": "A/B testing، staged rollout، monitoring"
+      },
+      {
+        "risk": "عدم سازگاری با دستگاه‌ها/مرورگرها",
+        "impact": "متوسط",
+        "mitigation": "تست cross-browser، responsive design"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "agile_ux": [
+      "Sprint-based improvements",
+      "User story driven",
+      "Continuous testing",
+      "Iterative design"
+    ],
+    "feedback_loops": [
+      "نظرسنجی مستمر",
+      "Session recordings",
+      "Support ticket analysis",
+      "Social media listening"
+    ],
+    "optimization_cycle": [
+      "جمع‌آوری داده و بازخورد",
+      "تحلیل و اولویت‌بندی",
+      "طراحی و توسعه",
+      "تست و راه‌اندازی",
+      "اندازه‌گیری تأثیر"
+    ]
+  },
+  "emerging_trends": {
+    "voice_interfaces": "Alexa، Google Assistant، Siri",
+    "ar_vr": "واقعیت افزوده و مجازی",
+    "ai_chatbots": "مکالمات طبیعی",
+    "iot_integration": "اتصال با دستگاه‌های هوشمند",
+    "blockchain": "امنیت و شفافیت",
+    "5g": "سرعت و تجربه بهتر"
+  },
+  "best_practices": {
+    "design": [
+      "سادگی و minimalism",
+      "consistency در تمام پلتفرم‌ها",
+      "واضح بودن navigation",
+      "Visual hierarchy",
+      "White space مناسب"
+    ],
+    "content": [
+      "واضح و مختصر",
+      "Scannable (قابل اسکن)",
+      "محتوای ارزشمند",
+      "به‌روز بودن",
+      "چندزبانه (در صورت نیاز)"
+    ],
+    "technical": [
+      "سرعت بالا",
+      "امنیت قوی",
+      "Scalability",
+      "Cross-platform compatibility",
+      "SEO optimization"
+    ]
+  },
+  "notes": [
+    "تجربه دیجیتال اغلب اولین برداشت مشتری از برند است",
+    "موبایل اولویت دارد - بیش از 60% ترافیک از موبایل است",
+    "سرعت بسیار مهم است - هر ثانیه تأخیر 7% کاهش تبدیل",
+    "شخصی‌سازی تفاوت بزرگی می‌سازد اما نباید creepy باشد",
+    "بهینه‌سازی مستمر ضروری است - یک بار طراحی و فراموشی کافی نیست"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص - شاخص نهایی معیار 6-1"
+    }
+  ]
+  }
