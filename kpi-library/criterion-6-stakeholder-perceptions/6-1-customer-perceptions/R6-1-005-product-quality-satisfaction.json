@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eqtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-005",
+    "kpi_name_fa": "رضایت از کیفیت محصول/خدمت",
+    "kpi_name_en": "Product/Service Quality Satisfaction",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Quality Perception"
+  },
+  "definition": {
+    "description_fa": "میزان رضایت مشتریان از کیفیت محصولات یا خدمات ارائه شده توسط سازمان. این شاخص میزان انطباق محصول/خدمت با انتظارات، استانداردها و نیازهای مشتری را اندازه‌گیری می‌کند و شامل ابعاد مختلف کیفی مانند عملکرد، دوام، قابلیت اعتماد، ویژگی‌ها و زیبایی‌شناسی است.",
+    "description_en": "The level of customer satisfaction with the quality of products or services provided by the organization. This KPI measures how well the product/service meets customer expectations, standards, and needs, encompassing various quality dimensions such as performance, durability, reliability, features, and aesthetics.",
+    "purpose": "ارزیابی ادراک مشتریان از کیفیت محصولات/خدمات و شناسایی فرصت‌های بهبود کیفی",
+    "scope": "تمام محصولات و خدمات ارائه شده به مشتریان خارجی",
+    "limitations": "ممکن است تحت تأثیر عوامل ذهنی و انتظارات متفاوت مشتریان قرار گیرد"
+  },
+  "measurement": {
+    "formula": "((تعداد مشتریان راضی از کیفیت / کل مشتریان پاسخ‌دهنده) × 100)",
+    "formula_en": "((Number of customers satisfied with quality / Total respondents) × 100)",
+    "unit": "درصد",
+    "scale": "0-100",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "ماهانه",
+    "data_source": [
+      "نظرسنجی رضایت مشتری",
+      "فرم‌های ارزیابی کیفیت",
+      "مصاحبه‌های مشتری",
+      "نظرات آنلاین",
+      "سیستم CRM"
+    ],
+    "threshold_satisfied": "امتیاز 4 یا 5 از 5 (یا 8-10 از 10)"
+  },
+  "data_collection": {
+    "collection_method": "ترکیبی (نظرسنجی آنلاین، تلفنی، حضوری)",
+    "sample_size": "حداقل 200 پاسخ‌دهنده در ماه",
+    "sampling_method": "تصادفی ساده از مشتریان فعال",
+    "data_quality_checks": [
+      "بررسی اعتبار پاسخ‌ها",
+      "حذف پاسخ‌های ناقص",
+      "تأیید هویت پاسخ‌دهنده",
+      "بررسی سازگاری داخلی"
+    ],
+    "responsible_department": "مدیریت کیفیت، مدیریت تجربه مشتری",
+    "responsible_person": "مدیر کیفیت، مدیر CX"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی ماهانه از مشتریان",
+    "input_data": {
+      "total_respondents": 500,
+      "satisfied_customers": 425,
+      "quality_rating_5": 250,
+      "quality_rating_4": 175,
+      "quality_rating_3": 50,
+      "quality_rating_2": 20,
+      "quality_rating_1": 5
+    },
+    "calculation_steps": [
+      "گام 1: شمارش مشتریان راضی (امتیاز 4-5) = 250 + 175 = 425",
+      "گام 2: محاسبه درصد = (425 / 500) × 100 = 85%"
+    ],
+    "result": "85%",
+    "interpretation": "85% از مشتریان از کیفیت محصولات/خدمات راضی هستند، که نشان‌دهنده عملکرد خوب است اما فضای بهبود وجود دارد."
+  },
+  "benchmarking": {
+    "european_leaders": {
+      "top_quartile": {
+        "value": "≥90%",
+        "description": "شرکت‌های برتر اروپایی",
+        "examples": [
+          "BMW: 92% (خودرو)",
+          "Bosch: 91% (صنعتی)",
+          "Siemens: 90% (تکنولوژی)"
+        ]
+      },
+      "median": {
+        "value": "82-85%",
+        "description": "میانه شرکت‌های اروپایی"
+      },
+      "top_companies": [
+        {
+          "company": "BMW",
+          "country": "آلمان",
+          "value": "92%",
+          "year": 2024
+        },
+        {
+          "company": "Bosch",
+          "country": "آلمان",
+          "value": "91%",
+          "year": 2024
+        },
+        {
+          "company": "Rolls-Royce",
+          "country": "بریتانیا",
+          "value": "90%",
+          "year": 2024
+        }
+      ]
+    },
+    "industry_averages": {
+      "manufacturing": "80-85%",
+      "services": "75-80%",
+      "technology": "82-87%",
+      "healthcare": "78-83%",
+      "retail": "75-80%"
+    },
+    "world_class": {
+      "value": "≥92%",
+      "description": "استاندارد جهانی برتر",
+      "note": "شرکت‌هایی که به‌طور مداوم بیش از 92% رضایت از کیفیت دارند"
+    }
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "ماه اول اندازه‌گیری",
+      "note": "بر اساس اولین نظرسنجی"
+    },
+    "short_term": {
+      "target": "baseline + 3-5%",
+      "timeframe": "6 ماه",
+      "action_required": "بهبود فرآیندهای کنترل کیفیت"
+    },
+    "medium_term": {
+      "target": "85-88%",
+      "timeframe": "12-18 ماه",
+      "action_required": "پیاده‌سازی سیستم مدیریت کیفیت جامع"
+    },
+    "long_term": {
+      "target": "≥90%",
+      "timeframe": "24-36 ماه",
+      "action_required": "دستیابی به سطح شرکت‌های برتر اروپایی"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 100,
+      "explanation": "شاخص به‌طور دقیق رضایت از کیفیت محصول/خدمت را اندازه‌گیری می‌کند"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "به‌صورت کمی (درصد) قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 95,
+      "explanation": "با نظرسنجی منظم و سیستم CRM قابل دستیابی است"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "مستقیماً با ادراک مشتریان از کیفیت مرتبط است"
+    },
+    "time_bound": {
+      "score": 100,
+      "explanation": "ماهانه اندازه‌گیری می‌شود"
+    },
+    "overall_smart_score": 99,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 95,
+      "explanation": "رضایت از کیفیت نتیجه مستقیم عملکرد سازمان است"
+    },
+    "approach": {
+      "score": 90,
+      "explanation": "نیاز به رویکرد سیستماتیک نظرسنجی و تحلیل دارد"
+    },
+    "deployment": {
+      "score": 92,
+      "explanation": "باید در تمام خطوط تولید/خدمات اعمال شود"
+    },
+    "assessment_refinement": {
+      "score": 90,
+      "explanation": "نیاز به ارزیابی مستمر و بهبود روش‌های نظرسنجی"
+    },
+    "overall_radar_score": 92,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 4 - ایجاد ارزش پایدار",
+      "معیار 5 - مدیریت عملکرد و تحول"
+    ],
+    "strategic_objectives": [
+      "بهبود کیفیت محصولات/خدمات",
+      "افزایش رضایت مشتریان",
+      "تقویت برند و اعتبار"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری",
+      "objective": "بهبود ادراک کیفیت"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "پیاده‌سازی ISO 9001:2015",
+      "expected_impact": "+5-7%",
+      "timeframe": "12 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "آموزش مستمر کیفیت به کارکنان",
+      "expected_impact": "+3-5%",
+      "timeframe": "6 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "استقرار سیستم بازخورد مستمر مشتری",
+      "expected_impact": "+2-4%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "ارتقای فناوری تولید/ارائه خدمت",
+      "expected_impact": "+4-6%",
+      "timeframe": "18 ماه",
+      "priority": "متوسط"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند ماهانه + نمودار میله‌ای مقایسه با بنچمارک",
+    "report_frequency": "ماهانه برای مدیریت ارشد، هفتگی برای مدیریت کیفیت",
+    "alert_thresholds": {
+      "critical": "<75%",
+      "warning": "75-80%",
+      "good": "80-85%",
+      "excellent": ">85%"
+    },
+    "stakeholders": [
+      "مدیرعامل",
+      "مدیر کیفیت",
+      "مدیر تولید/عملیات",
+      "مدیر فروش و بازاریابی",
+      "مدیر تجربه مشتری"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R7-2-001: نرخ عدم انطباق",
+      "R7-2-002: نرخ بازرسی کیفیت",
+      "R7-2-005: زمان چرخه تولید"
+    ],
+    "lagging_indicators": [
+      "R6-1-001: شاخص خالص توصیه (NPS)",
+      "R6-1-003: نرخ حفظ مشتری",
+      "R6-1-014: نرخ شکایات"
+    ],
+    "complementary_kpis": [
+      "R6-1-006: امتیاز رضایت مشتری (CSAT)",
+      "R6-1-008: ارزش درک شده"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "ISO 9001:2015 - Quality Management Systems",
+      "EFQM Model 2025 - Criterion 6.1",
+      "ISO 10004:2018 - Customer Satisfaction Monitoring"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی نظرسنجی رضایت مشتری",
+      "دستورالعمل تحلیل بازخورد مشتری",
+      "چارچوب ابعاد کیفیت محصول/خدمت"
+    ],
+    "training_materials": [
+      "آموزش مدیریت کیفیت",
+      "آموزش مهارت‌های نظرسنجی",
+      "آموزش تحلیل داده‌های مشتری"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر کیفیت",
+    "reviewer": "مدیر تجربه مشتری",
+    "approver": "مدیر عملیات/مدیرعامل",
+    "review_frequency": "ماهانه",
+    "data_retention": "36 ماه",
+    "access_level": "عمومی - قابل دسترسی برای مدیران و تیم کیفیت"
+  },
+  "quality_dimensions": {
+    "performance": {
+      "weight": 25,
+      "description": "عملکرد اصلی محصول/خدمت"
+    },
+    "reliability": {
+      "weight": 25,
+      "description": "قابلیت اعتماد و دوام"
+    },
+    "features": {
+      "weight": 20,
+      "description": "ویژگی‌ها و قابلیت‌های اضافی"
+    },
+    "conformance": {
+      "weight": 15,
+      "description": "انطباق با استانداردها و مشخصات"
+    },
+    "aesthetics": {
+      "weight": 10,
+      "description": "ظاهر و زیبایی‌شناسی"
+    },
+    "serviceability": {
+      "weight": 5,
+      "description": "سهولت تعمیر و خدمات پس از فروش"
+    }
+  },
+  "data_analysis": {
+    "segmentation": [
+      "بر اساس محصول/خدمت",
+      "بر اساس سگمنت مشتری",
+      "بر اساس کانال فروش",
+      "بر اساس منطقه جغرافیایی",
+      "بر اساس بازه زمانی خرید"
+    ],
+    "statistical_methods": [
+      "میانگین و انحراف معیار",
+      "تحلیل روند",
+      "تحلیل پراکندگی",
+      "تحلیل همبستگی با NPS",
+      "آزمون معناداری تفاوت‌ها"
+    ],
+    "visualization": [
+      "نمودار خطی روند زمانی",
+      "نمودار میله‌ای مقایسه‌ای",
+      "نمودار توزیع امتیازات",
+      "Heat map بر اساس سگمنت"
+    ]
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "کاهش ناگهانی رضایت از کیفیت",
+        "impact": "بالا",
+        "mitigation": "سیستم هشدار زودهنگام و واکنش سریع"
+      },
+      {
+        "risk": "عدم نمایندگی نمونه نظرسنجی",
+        "impact": "متوسط",
+        "mitigation": "طراحی دقیق روش نمونه‌گیری"
+      },
+      {
+        "risk": "تفاوت در استانداردهای کیفی مشتریان",
+        "impact": "متوسط",
+        "mitigation": "سگمنت‌بندی مشتریان و تحلیل جداگانه"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "pdca_cycle": {
+      "plan": "طراحی نظرسنجی و تعیین اهداف بهبود",
+      "do": "اجرای نظرسنجی و جمع‌آوری داده",
+      "check": "تحلیل نتایج و مقایسه با اهداف",
+      "act": "اقدامات اصلاحی و پیشگیرانه"
+    },
+    "improvement_tools": [
+      "تحلیل علت ریشه‌ای (Root Cause Analysis)",
+      "صدای مشتری (Voice of Customer)",
+      "QFD (Quality Function Deployment)",
+      "Six Sigma DMAIC"
+    ]
+  },
+  "digital_transformation": {
+    "automation_opportunities": [
+      "نظرسنجی خودکار پس از خرید",
+      "تحلیل خودکار احساسات در نظرات",
+      "داشبورد real-time",
+      "هشدار خودکار در کاهش رضایت"
+    ],
+    "ai_ml_applications": [
+      "پیش‌بینی رضایت بر اساس ویژگی‌های محصول",
+      "شناسایی الگوهای نارضایتی",
+      "تحلیل متن نظرات مشتریان"
+    ]
+  },
+  "notes": [
+    "رضایت از کیفیت باید برای هر محصول/خدمت جداگانه اندازه‌گیری شود",
+    "توجه به تفاوت بین کیفیت واقعی و کیفیت درک شده مشتری",
+    "نظرسنجی باید به‌صورت منظم و در فواصل زمانی ثابت انجام شود",
+    "همبستگی بین رضایت از کیفیت و NPS را مانیتور کنید"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
