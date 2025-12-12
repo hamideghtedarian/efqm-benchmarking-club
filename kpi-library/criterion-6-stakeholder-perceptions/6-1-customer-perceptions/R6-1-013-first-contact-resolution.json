@@ -1,0 +1,612 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eqtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-013",
+    "kpi_name_fa": "نرخ حل مشکل در اولین تماس",
+    "kpi_name_en": "First Contact Resolution",
+    "acronym": "FCR",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Service Effectiveness"
+  },
+  "definition": {
+    "description_fa": "درصد مشکلات یا درخواست‌های مشتری که در همان اولین تماس یا تعامل به‌طور کامل و رضایت‌بخش حل می‌شوند، بدون نیاز به تماس مجدد، پیگیری، یا escalation. FCR یکی از مهم‌ترین شاخص‌های کیفیت خدمات است چون هم رضایت مشتری را افزایش می‌دهد (زمان و تلاش کمتر) و هم هزینه‌های سازمان را کاهش می‌دهد (کمتر تماس = کمتر هزینه). FCR بالا نشان‌دهنده کارشناسان ماهر، فرآیندهای کارآمد، و دسترسی مناسب به اطلاعات و ابزار است.",
+    "description_en": "The percentage of customer issues or requests that are completely and satisfactorily resolved during the first contact or interaction, without requiring follow-up calls, callbacks, or escalation. FCR is one of the most important service quality indicators because it both increases customer satisfaction (less time and effort) and reduces organizational costs (fewer contacts = lower costs). High FCR indicates skilled agents, efficient processes, and proper access to information and tools.",
+    "purpose": "اندازه‌گیری توانایی سازمان در حل سریع و کامل مشکلات مشتری و کاهش نیاز به تماس‌های مکرر",
+    "scope": "تمام تعاملات پشتیبانی که هدف حل مشکل دارند",
+    "key_insight": "FCR قوی‌ترین پیش‌بینی‌کننده رضایت مشتری و کارایی عملیاتی است"
+  },
+  "measurement": {
+    "formula": "((تعداد مشکلات حل شده در اولین تماس / کل تعاملات) × 100)",
+    "formula_en": "((Number of issues resolved in first contact / Total interactions) × 100)",
+    "unit": "درصد",
+    "scale": "0-100%",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "روزانه، هفتگی، ماهانه",
+    "data_source": [
+      "سیستم ticketing",
+      "CRM",
+      "نظرسنجی پس از تماس",
+      "تحلیل تماس‌های مکرر",
+      "ارزیابی کیفیت تماس"
+    ],
+    "measurement_approaches": {
+      "customer_survey": "پرسیدن از مشتری: 'آیا مشکل شما کاملاً حل شد؟'",
+      "system_tracking": "ردیابی تماس‌های مکرر در بازه زمانی مشخص (مثلاً 7 روز)",
+      "agent_assessment": "ارزیابی اپراتور از وضعیت حل (کمتر دقیق)",
+      "hybrid": "ترکیب چند روش (توصیه می‌شود)"
+    }
+  },
+  "data_collection": {
+    "collection_method": "ترکیبی از ردیابی سیستمی و نظرسنجی مشتری",
+    "tracking_window": "معمولاً 7 روز (تماس مجدد در 7 روز = عدم FCR)",
+    "exclusions": [
+      "درخواست‌های چندمرحله‌ای ذاتی (مثل سفارش)",
+      "فالوآپ‌های برنامه‌ریزی شده",
+      "تماس‌های اطلاعاتی (بدون مشکل)",
+      "درخواست‌های جدید (نه پیگیری)"
+    ],
+    "survey_question": "آیا مشکل یا سوال شما در همین تماس کاملاً حل شد؟ (بله/خیر/نمی‌دانم)",
+    "data_quality_checks": [
+      "تطبیق نظرسنجی با ردیابی سیستمی",
+      "بررسی تماس‌های نزدیک به هم",
+      "حذف duplicates",
+      "تأیید صحت طبقه‌بندی"
+    ],
+    "responsible_department": "مدیریت پشتیبانی، مدیریت کیفیت",
+    "responsible_person": "مدیر پشتیبانی، متخصص Quality Assurance"
+  },
+  "calculation_example": {
+    "scenario": "محاسبه FCR برای 1000 تماس در یک ماه",
+    "input_data": {
+      "total_contacts": 1000,
+      "resolved_first_contact_survey": 720,
+      "repeat_contacts_within_7_days": 180,
+      "resolved_first_contact_system": 820,
+      "survey_response_rate": "80%"
+    },
+    "calculation_steps": [
+      "روش 1 (نظرسنجی): FCR = (720 / 1000) × 100 = 72%",
+      "روش 2 (سیستمی): FCR = ((1000 - 180) / 1000) × 100 = 82%",
+      "روش 3 (ترکیبی): میانگین = (72% + 82%) / 2 = 77%",
+      "توصیه: استفاده از روش نظرسنجی (دقیق‌تر از دیدگاه مشتری)"
+    ],
+    "result": "72-82% (بسته به روش)",
+    "interpretation": "FCR بین 72-82% است که نزدیک به استاندارد جهانی (75-85%) است. اختلاف بین دو روش نشان می‌دهد برخی مشتریان با وجود عدم تماس مجدد، احساس حل کامل مشکل نمی‌کنند."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "good": "75-84%",
+      "average": "65-74%",
+      "poor": "<65%"
+    },
+    "by_channel": {
+      "phone": "70-80%",
+      "live_chat": "75-85%",
+      "email": "80-90%",
+      "self_service": "85-95%"
+    },
+    "top_companies": [
+      {
+        "company": "USAA",
+        "value": "88%",
+        "industry": "خدمات مالی",
+        "year": 2024
+      },
+      {
+        "company": "Amazon",
+        "value": "86%",
+        "industry": "E-commerce",
+        "year": 2024
+      },
+      {
+        "company": "Apple",
+        "value": "85%",
+        "industry": "تکنولوژی",
+        "year": 2024
+      }
+    ],
+    "industry_averages": {
+      "technology": "75-82%",
+      "financial_services": "72-80%",
+      "retail": "68-76%",
+      "telecom": "65-73%",
+      "utilities": "70-78%",
+      "healthcare": "73-80%"
+    }
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "میانگین 3 ماه اول",
+      "note": "با روش استاندارد اندازه‌گیری"
+    },
+    "short_term": {
+      "target": "baseline + 3-5%",
+      "timeframe": "6 ماه",
+      "action_required": "آموزش تیم و بهبود دسترسی به اطلاعات"
+    },
+    "medium_term": {
+      "target": "75-80%",
+      "timeframe": "12 ماه",
+      "action_required": "بهینه‌سازی فرآیندها و empowerment تیم"
+    },
+    "long_term": {
+      "target": "≥85%",
+      "timeframe": "24 ماه",
+      "action_required": "دستیابی به سطح world-class"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 100,
+      "explanation": "به‌طور دقیق توانایی حل در اولین تماس را اندازه‌گیری می‌کند"
+    },
+    "measurable": {
+      "score": 95,
+      "explanation": "با ترکیب نظرسنجی و سیستم قابل اندازه‌گیری است، اما نیاز به تعریف دقیق دارد"
+    },
+    "achievable": {
+      "score": 90,
+      "explanation": "نیاز به سیستم ردیابی و نظرسنجی دارد"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "FCR قوی‌ترین شاخص رضایت و کارایی است"
+    },
+    "time_bound": {
+      "score": 100,
+      "explanation": "روزانه، هفتگی، ماهانه قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 97,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 98,
+      "explanation": "FCR نتیجه مستقیم توانایی تیم و کیفیت فرآیندهاست"
+    },
+    "approach": {
+      "score": 93,
+      "explanation": "نیاز به رویکرد جامع آموزش، ابزار، و empowerment"
+    },
+    "deployment": {
+      "score": 90,
+      "explanation": "باید در تمام کانال‌ها و تیم‌ها اعمال شود"
+    },
+    "assessment_refinement": {
+      "score": 95,
+      "explanation": "ارزیابی مستمر و بهبود دائمی"
+    },
+    "overall_radar_score": 94,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 5 - مدیریت عملکرد",
+      "معیار 7 - نتایج عملکرد"
+    ],
+    "strategic_objectives": [
+      "افزایش رضایت مشتری",
+      "کاهش هزینه‌های عملیاتی",
+      "بهبود کارایی تیم",
+      "کاهش حجم تماس‌ها"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری و فرآیندهای داخلی و مالی",
+      "objective": "حل سریع و کامل مشکلات"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "آموزش جامع محصول و مهارت حل مسئله",
+      "expected_impact": "+5-8%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "بهبود دسترسی به Knowledge Base",
+      "expected_impact": "+4-7%",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "Agent Empowerment (اختیارات بیشتر)",
+      "expected_impact": "+6-10%",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "یکپارچه‌سازی سیستم‌ها (دید 360)",
+      "expected_impact": "+5-8%",
+      "timeframe": "9 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "کاهش escalation غیرضروری",
+      "expected_impact": "+3-5%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند + توزیع دلایل عدم FCR + مقایسه بین تیم‌ها/اپراتورها",
+    "report_frequency": "روزانه برای سرپرستان، هفتگی برای مدیران، ماهانه برای مدیریت ارشد",
+    "alert_thresholds": {
+      "critical": "<65%",
+      "warning": "65-70%",
+      "good": "70-85%",
+      "excellent": ">85%"
+    },
+    "stakeholders": [
+      "مدیر پشتیبانی",
+      "سرپرستان تیم",
+      "مدیر آموزش",
+      "مدیر تجربه مشتری",
+      "مدیر عملیات"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R7-2-018: میانگین زمان حل مشکل",
+      "R7-2-019: نرخ escalation",
+      "R7-2-020: دسترسی به اطلاعات"
+    ],
+    "lagging_indicators": [
+      "R6-1-009: رضایت از پشتیبانی",
+      "R6-1-006: CSAT",
+      "R7-1-010: هزینه هر تماس",
+      "R7-2-021: حجم کل تماس‌ها"
+    ],
+    "complementary_kpis": [
+      "R6-1-012: زمان پاسخ",
+      "R6-1-007: CES",
+      "R7-2-022: نرخ تماس مجدد"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "SQM Group - FCR Measurement Standard",
+      "COPC Customer Experience Standard",
+      "ICMI - FCR Best Practices"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی اندازه‌گیری FCR",
+      "دستورالعمل طبقه‌بندی تماس‌ها",
+      "چارچوب بهبود FCR"
+    ],
+    "training_materials": [
+      "آموزش حل مسئله",
+      "آموزش تصمیم‌گیری مستقل",
+      "آموزش استفاده از ابزارها"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر پشتیبانی",
+    "reviewer": "مدیر کیفیت",
+    "approver": "مدیر عملیات",
+    "review_frequency": "هفتگی",
+    "data_retention": "24 ماه",
+    "access_level": "عمومی - قابل دسترسی برای تیم پشتیبانی و مدیران"
+  },
+  "drivers_of_fcr": {
+    "agent_factors": {
+      "knowledge": {
+        "weight": 30,
+        "description": "دانش محصول، فرآیندها، سیستم‌ها",
+        "improvement": "آموزش جامع و مستمر، certification"
+      },
+      "skills": {
+        "weight": 25,
+        "description": "مهارت حل مسئله، تصمیم‌گیری، ارتباط",
+        "improvement": "آموزش مهارت‌های نرم، coaching"
+      },
+      "empowerment": {
+        "weight": 20,
+        "description": "اختیار تصمیم‌گیری و حل مشکل",
+        "improvement": "افزایش سطح اختیارات، کاهش escalation"
+      },
+      "motivation": {
+        "weight": 10,
+        "description": "انگیزه برای حل کامل",
+        "improvement": "KPI مناسب، پاداش، فرهنگ‌سازی"
+      }
+    },
+    "process_factors": {
+      "simplicity": {
+        "weight": 25,
+        "description": "سادگی فرآیندها",
+        "improvement": "ساده‌سازی، حذف گلوگاه‌ها"
+      },
+      "efficiency": {
+        "weight": 20,
+        "description": "کارآمدی فرآیند حل مشکل",
+        "improvement": "بهینه‌سازی، اتوماسیون"
+      }
+    },
+    "system_factors": {
+      "information_access": {
+        "weight": 30,
+        "description": "دسترسی به اطلاعات مشتری و محصول",
+        "improvement": "یکپارچه‌سازی سیستم‌ها، دید 360"
+      },
+      "tools": {
+        "weight": 20,
+        "description": "ابزارهای مناسب برای حل مشکل",
+        "improvement": "سرمایه‌گذاری در ابزارهای پیشرفته"
+      }
+    }
+  },
+  "common_barriers_to_fcr": {
+    "agent_barriers": [
+      {
+        "barrier": "دانش ناکافی",
+        "frequency": "بالا",
+        "solution": "آموزش جامع، knowledge base بهتر"
+      },
+      {
+        "barrier": "نبود اختیار تصمیم‌گیری",
+        "frequency": "بالا",
+        "solution": "agent empowerment، کاهش escalation"
+      },
+      {
+        "barrier": "فشار زمانی",
+        "frequency": "متوسط",
+        "solution": "مدیریت بهتر حجم کار، کاهش Average Handle Time"
+      }
+    ],
+    "process_barriers": [
+      {
+        "barrier": "فرآیندهای پیچیده",
+        "frequency": "بالا",
+        "solution": "ساده‌سازی فرآیندها"
+      },
+      {
+        "barrier": "نیاز به escalation اجباری",
+        "frequency": "متوسط",
+        "solution": "بازنگری سیاست‌ها، افزایش اختیارات"
+      }
+    ],
+    "system_barriers": [
+      {
+        "barrier": "سیستم‌های جدا از هم",
+        "frequency": "بسیار بالا",
+        "solution": "یکپارچه‌سازی CRM و سیستم‌ها"
+      },
+      {
+        "barrier": "اطلاعات ناکامل یا قدیمی",
+        "frequency": "بالا",
+        "solution": "به‌روزرسانی مستمر، data quality"
+      }
+    ]
+  },
+  "segmentation_analysis": {
+    "by_issue_type": [
+      "مسائل فنی (معمولاً FCR پایین‌تر)",
+      "سوالات محصول (FCR بالاتر)",
+      "مسائل حساب (متوسط)",
+      "شکایات (پایین)"
+    ],
+    "by_agent": [
+      "Star performers (FCR > 90%)",
+      "Good performers (80-90%)",
+      "Need improvement (<80%)"
+    ],
+    "by_channel": [
+      "تلفن",
+      "چت",
+      "ایمیل",
+      "خودیاری (بالاترین FCR)"
+    ],
+    "by_customer_segment": [
+      "مشتریان جدید (نیاز به آموزش بیشتر)",
+      "مشتریان وفادار",
+      "مشتریان پیچیده (B2B)"
+    ]
+  },
+  "data_analysis": {
+    "key_metrics": [
+      "FCR کلی",
+      "FCR به تفکیک کانال",
+      "FCR به تفکیک نوع مشکل",
+      "FCR به تفکیک اپراتور/تیم",
+      "دلایل عدم FCR",
+      "روند در طول زمان"
+    ],
+    "root_cause_analysis": [
+      "تحلیل تماس‌های مکرر",
+      "بررسی escalation ها",
+      "مصاحبه با اپراتورها",
+      "تحلیل ضبط تماس‌های ناموفق",
+      "نظرسنجی از مشتریان"
+    ],
+    "statistical_methods": [
+      "تحلیل پارتو (20% علل، 80% اثر)",
+      "تحلیل واریانس بین تیم‌ها",
+      "تحلیل رگرسیون (عوامل مؤثر)",
+      "تحلیل همبستگی با رضایت"
+    ],
+    "visualization": [
+      "نمودار خطی روند",
+      "نمودار پارتو دلایل عدم FCR",
+      "نمودار مقایسه اپراتورها",
+      "نمودار Waterfall (اثر بهبودها)"
+    ]
+  },
+  "agent_empowerment": {
+    "levels_of_authority": [
+      {
+        "level": "Level 1 - Basic",
+        "authority": "پاسخ به سوالات رایج، دسترسی به اطلاعات پایه",
+        "fcr_impact": "60-70%"
+      },
+      {
+        "level": "Level 2 - Intermediate",
+        "authority": "+ تخفیف تا مبلغ X، تغییرات پایه حساب",
+        "fcr_impact": "75-80%"
+      },
+      {
+        "level": "Level 3 - Advanced",
+        "authority": "+ حل اکثر مشکلات، تصمیم‌گیری مستقل",
+        "fcr_impact": "85-90%"
+      },
+      {
+        "level": "Level 4 - Expert",
+        "authority": "+ مسائل پیچیده، اختیارات گسترده",
+        "fcr_impact": "90-95%"
+      }
+    ],
+    "empowerment_best_practices": [
+      "اعتماد به تیم",
+      "تعیین محدوده‌های واضح",
+      "آموزش تصمیم‌گیری",
+      "پاسخگویی منطقی (نه بیش از حد سخت‌گیری)",
+      "حمایت از تصمیمات اپراتور"
+    ]
+  },
+  "technology_enablers": {
+    "crm_integration": {
+      "benefit": "دید 360 درجه مشتری",
+      "fcr_impact": "+8-12%"
+    },
+    "knowledge_management": {
+      "benefit": "دسترسی سریع به اطلاعات",
+      "fcr_impact": "+10-15%"
+    },
+    "ai_recommendations": {
+      "benefit": "پیشنهاد راه‌حل به اپراتور",
+      "fcr_impact": "+5-10%"
+    },
+    "screen_pop": {
+      "benefit": "اطلاعات مشتری خودکار",
+      "fcr_impact": "+3-5%"
+    }
+  },
+  "correlation_with_outcomes": {
+    "customer_satisfaction": "همبستگی مثبت 0.8-0.9 (قوی‌ترین)",
+    "cost_per_contact": "همبستگی منفی 0.7-0.8",
+    "total_contact_volume": "همبستگی منفی 0.6-0.7",
+    "churn": "همبستگی منفی 0.5-0.6",
+    "nps": "همبستگی مثبت 0.6-0.7",
+    "agent_satisfaction": "همبستگی مثبت 0.5-0.6"
+  },
+  "business_impact": {
+    "customer_benefits": [
+      "صرفه‌جویی در زمان",
+      "کاهش تلاش",
+      "افزایش رضایت",
+      "تجربه بهتر"
+    ],
+    "business_benefits": [
+      "کاهش 30-50% حجم تماس‌ها",
+      "کاهش 20-30% هزینه‌ها",
+      "افزایش 10-15% رضایت",
+      "افزایش 15-20% کارایی تیم"
+    ],
+    "roi_example": {
+      "scenario": "بهبود FCR از 70% به 85%",
+      "calculation": "کاهش 15% تماس مکرر × هزینه هر تماس",
+      "impact": "صرفه‌جویی سالانه قابل توجه"
+    }
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "فشار بیش از حد برای FCR به قیمت کیفیت",
+        "impact": "متوسط",
+        "mitigation": "تعادل بین FCR و کیفیت، KPI های ترکیبی"
+      },
+      {
+        "risk": "اطلاعات نادرست به مشتری برای بستن سریع تیکت",
+        "impact": "بالا",
+        "mitigation": "Quality Assurance، نظرسنجی از مشتری"
+      },
+      {
+        "risk": "empowerment بیش از حد و تصمیمات نادرست",
+        "impact": "متوسط",
+        "mitigation": "آموزش، راهنمایی، نظارت منطقی"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "improvement_cycle": [
+      "اندازه‌گیری FCR فعلی",
+      "تحلیل ریشه‌ای عدم FCR",
+      "شناسایی فرصت‌های بهبود",
+      "اجرای بهبودها",
+      "اندازه‌گیری تأثیر"
+    ],
+    "coaching_approach": [
+      "بررسی تماس‌های با عدم FCR",
+      "شناسایی الگوها",
+      "آموزش نقطه‌ای",
+      "تمرین و شبیه‌سازی",
+      "پیگیری عملکرد"
+    ]
+  },
+  "measurement_challenges": {
+    "challenges": [
+      {
+        "challenge": "تعریف دقیق 'حل شده'",
+        "solution": "معیارهای واضح، نظرسنجی از مشتری"
+      },
+      {
+        "challenge": "تماس‌های مکرر vs جدید",
+        "solution": "ردیابی سیستمی با window زمانی مشخص"
+      },
+      {
+        "challenge": "مشکلات چندبعدی",
+        "solution": "تفکیک به مشکلات فرعی"
+      },
+      {
+        "challenge": "نرخ پاسخ پایین نظرسنجی",
+        "solution": "ساده‌سازی نظرسنجی، انگیزه‌دهی"
+      }
+    ]
+  },
+  "best_practices": {
+    "organizational": [
+      "فرهنگ‌سازی اهمیت FCR",
+      "KPI متعادل (نه فقط FCR)",
+      "حمایت مدیریت از empowerment",
+      "سرمایه‌گذاری در آموزش و ابزار"
+    ],
+    "operational": [
+      "دسترسی سریع به اطلاعات",
+      "فرآیندهای ساده و واضح",
+      "Knowledge Base جامع و به‌روز",
+      "همکاری بین تیم‌ها"
+    ],
+    "individual": [
+      "گوش دادن فعال به مشتری",
+      "تأیید حل کامل قبل از بستن",
+      "آموزش مشتری برای آینده",
+      "follow-up پیش‌گیرانه"
+    ]
+  },
+  "notes": [
+    "FCR قوی‌ترین شاخص رضایت مشتری و کارایی عملیاتی است",
+    "هر 1% بهبود FCR منجر به کاهش قابل توجه هزینه‌ها می‌شود",
+    "empowerment اپراتورها کلیدی‌ترین عامل بهبود FCR است",
+    "FCR بالا نباید به قیمت کیفیت پایین باشد",
+    "نظرسنجی از مشتری دقیق‌ترین روش اندازه‌گیری FCR است"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
