@@ -1,0 +1,620 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-011",
+    "kpi_name_fa": "سهولت خرید",
+    "kpi_name_en": "Ease of Purchase",
+    "acronym": "EOP",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Purchase Experience"
+  },
+  "definition": {
+    "description_fa": "میزان سهولت و راحتی فرآیند خرید از دیدگاه مشتری. این شاخص تمام مراحل سفر خرید را از کشف محصول تا تکمیل تراکنش ارزیابی می‌کند، شامل یافتن محصول، مقایسه، تصمیم‌گیری، پرداخت، و تأیید. سهولت بالای خرید به معنای حداقل اصطکاک، مراحل کم، فرآیند شهودی، و تجربه‌ای بدون دردسر است که منجر به افزایش نرخ تبدیل و رضایت مشتری می‌شود.",
+    "description_en": "The ease and convenience of the purchase process from the customer's perspective. This KPI evaluates all stages of the purchase journey from product discovery to transaction completion, including finding products, comparison, decision-making, payment, and confirmation. High purchase ease means minimal friction, fewer steps, intuitive process, and hassle-free experience that leads to increased conversion rates and customer satisfaction.",
+    "purpose": "شناسایی و حذف موانع در فرآیند خرید و ایجاد تجربه خرید روان و لذت‌بخش",
+    "scope": "تمام کانال‌های فروش و نقاط تماس خرید",
+    "key_insight": "هر مانع اضافی در فرآیند خرید منجر به افت نرخ تبدیل می‌شود"
+  },
+  "measurement": {
+    "formula": "میانگین امتیازات سهولت خرید",
+    "formula_detailed": "EOP = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "formula_en": "EOP = (Sum of ease scores / Number of responses) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "مستمر (پس از هر خرید)",
+    "data_source": [
+      "نظرسنجی پس از خرید",
+      "تحلیل رفتار کاربر (Analytics)",
+      "نرخ رهاشدگی سبد خرید",
+      "زمان تکمیل خرید",
+      "تعداد کلیک‌ها تا خرید"
+    ],
+    "standard_question": "فرآیند خرید چقدر آسان بود؟",
+    "rating_scale": {
+      "5": "بسیار آسان",
+      "4": "آسان",
+      "3": "متوسط",
+      "2": "سخت",
+      "1": "بسیار سخت"
+    }
+  },
+  "data_collection": {
+    "collection_method": "ترکیبی از نظرسنجی و داده‌های رفتاری",
+    "sample_size": "تمام خریدها (هدف: response rate > 25%)",
+    "sampling_method": "تمام‌شماری - ارسال به همه خریداران",
+    "timing": "بلافاصله پس از تکمیل خرید",
+    "survey_design": {
+      "main_question": "فرآیند خرید چقدر آسان بود؟",
+      "sub_questions": [
+        "یافتن محصول چقدر آسان بود؟",
+        "مقایسه محصولات چقدر آسان بود؟",
+        "فرآیند پرداخت چقدر آسان بود؟",
+        "دریافت تأیید چقدر واضح بود؟"
+      ],
+      "open_question": "چه چیزی می‌توانست خرید را آسان‌تر کند؟"
+    },
+    "behavioral_metrics": [
+      "زمان تکمیل خرید",
+      "تعداد کلیک‌ها",
+      "نرخ رهاشدگی در هر مرحله",
+      "استفاده از جستجو",
+      "بازگشت به صفحات قبلی"
+    ],
+    "channels": [
+      "ایمیل",
+      "پاپ‌آپ در سایت",
+      "SMS",
+      "نوتیفیکیشن اپلیکیشن"
+    ],
+    "data_quality_checks": [
+      "تأیید تکمیل خرید",
+      "حذف پاسخ‌های ناقص",
+      "ترکیب با داده‌های رفتاری",
+      "شناسایی الگوهای غیرعادی"
+    ],
+    "responsible_department": "مدیریت تجربه مشتری، مدیریت فروش آنلاین",
+    "responsible_person": "مدیر CX، مدیر E-commerce"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 500 خرید آنلاین در یک ماه",
+    "input_data": {
+      "total_purchases": 500,
+      "responses_received": 180,
+      "response_rate": "36%",
+      "score_5_very_easy": 90,
+      "score_4_easy": 60,
+      "score_3_neutral": 20,
+      "score_2_difficult": 8,
+      "score_1_very_difficult": 2,
+      "behavioral_data": {
+        "avg_time_to_purchase": "8.5 دقیقه",
+        "avg_clicks": 12,
+        "cart_abandonment": "28%"
+      }
+    },
+    "calculation_steps": [
+      "گام 1: محاسبه مجموع امتیازات = (90×5) + (60×4) + (20×3) + (8×2) + (2×1)",
+      "       = 450 + 240 + 60 + 16 + 2 = 768",
+      "گام 2: محاسبه میانگین = 768 / 180 = 4.27",
+      "گام 3: تبدیل به درصد = (4.27 / 5) × 100 = 85.3%",
+      "گام 4: درصد تجربه آسان (4-5) = (90 + 60) / 180 = 83.3%"
+    ],
+    "result": "85.3%",
+    "interpretation": "85.3% سهولت خرید نشان‌دهنده فرآیند خوبی است. 83.3% مشتریان خرید را آسان یا بسیار آسان یافته‌اند. با این حال، 28% رهاشدگی سبد نشان می‌دهد هنوز موانعی وجود دارد که باید شناسایی و حذف شوند."
+  },
+  "benchmarking": {
+    "european_leaders": {
+      "top_quartile": {
+        "value": "≥90%",
+        "description": "شرکت‌های برتر با فرآیند خرید استثنایی",
+        "examples": [
+          "Amazon: 93% (خرید یک‌کلیکی)",
+          "Apple: 92% (تجربه یکپارچه)",
+          "ASOS: 91% (فرآیند ساده)"
+        ]
+      },
+      "median": {
+        "value": "80-85%",
+        "description": "میانه شرکت‌های اروپایی"
+      },
+      "top_companies": [
+        {
+          "company": "Amazon",
+          "country": "چندملیتی",
+          "value": "93%",
+          "innovation": "خرید یک‌کلیکی، Prime",
+          "year": 2024
+        },
+        {
+          "company": "Apple",
+          "country": "چندملیتی",
+          "value": "92%",
+          "innovation": "Apple Pay، تجربه یکپارچه",
+          "year": 2024
+        },
+        {
+          "company": "Zalando",
+          "country": "آلمان",
+          "value": "90%",
+          "innovation": "پرداخت آسان، بازگشت رایگان",
+          "year": 2024
+        }
+      ]
+    },
+    "industry_averages": {
+      "e_commerce_pure": "85-90%",
+      "omnichannel_retail": "80-85%",
+      "b2b_platforms": "75-82%",
+      "financial_services": "78-83%",
+      "travel_booking": "80-86%",
+      "food_delivery": "85-90%"
+    },
+    "world_class": {
+      "value": "≥92%",
+      "description": "استاندارد جهانی برتر - خرید بدون اصطکاک",
+      "note": "شرکت‌هایی که خرید را به‌قدری ساده کرده‌اند که تقریباً بدون تفکر انجام می‌شود"
+    },
+    "cart_abandonment_benchmarks": {
+      "excellent": "<20%",
+      "good": "20-30%",
+      "average": "30-40%",
+      "poor": ">40%"
+    }
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "میانگین ماه اول",
+      "note": "بر اساس نظرسنجی و داده‌های رفتاری"
+    },
+    "short_term": {
+      "target": "baseline + 5-7%",
+      "timeframe": "3-6 ماه",
+      "action_required": "حذف موانع اصلی و ساده‌سازی checkout"
+    },
+    "medium_term": {
+      "target": "88-90%",
+      "timeframe": "12 ماه",
+      "action_required": "بهینه‌سازی کامل سفر خرید و پرداخت یک‌کلیکی"
+    },
+    "long_term": {
+      "target": "≥92%",
+      "timeframe": "24 ماه",
+      "action_required": "دستیابی به تجربه خرید frictionless"
+    },
+    "cart_abandonment_target": {
+      "current": "تعیین شود",
+      "target": "<25%",
+      "stretch_target": "<20%"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 100,
+      "explanation": "سهولت فرآیند خرید را به‌طور دقیق اندازه‌گیری می‌کند"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "با ترکیب نظرسنجی و داده‌های رفتاری کاملاً قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 95,
+      "explanation": "با نظرسنجی خودکار و analytics به راحتی قابل دستیابی است"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "سهولت خرید تأثیر مستقیم بر نرخ تبدیل و رضایت دارد"
+    },
+    "time_bound": {
+      "score": 100,
+      "explanation": "به‌صورت مستمر و real-time قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 99,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 98,
+      "explanation": "سهولت خرید نتیجه مستقیم طراحی فرآیند و UX است"
+    },
+    "approach": {
+      "score": 95,
+      "explanation": "نیاز به رویکرد سیستماتیک طراحی تجربه کاربری"
+    },
+    "deployment": {
+      "score": 93,
+      "explanation": "باید در تمام کانال‌های فروش به‌طور یکسان اعمال شود"
+    },
+    "assessment_refinement": {
+      "score": 96,
+      "explanation": "آزمایش و بهینه‌سازی مستمر با A/B testing"
+    },
+    "overall_radar_score": 96,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 5 - مدیریت عملکرد و تحول",
+      "معیار 4 - ایجاد ارزش پایدار"
+    ],
+    "strategic_objectives": [
+      "افزایش نرخ تبدیل",
+      "کاهش رهاشدگی سبد خرید",
+      "بهبود تجربه مشتری",
+      "افزایش فروش"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری و فرآیندهای داخلی",
+      "objective": "خرید بدون اصطکاک"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "پیاده‌سازی پرداخت یک‌کلیکی (1-Click)",
+      "expected_impact": "+7-10%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "ساده‌سازی فرآیند checkout (کاهش مراحل)",
+      "expected_impact": "+5-8%",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "بهبود جستجو و فیلترینگ محصولات",
+      "expected_impact": "+3-5%",
+      "timeframe": "6 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "افزودن روش‌های پرداخت محبوب",
+      "expected_impact": "+4-6%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "Guest Checkout (خرید بدون ثبت‌نام)",
+      "expected_impact": "+5-7%",
+      "timeframe": "2 ماه",
+      "priority": "بالا"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند + نمودار قیفی (Funnel) فرآیند خرید + Heat map نقاط اصطکاک",
+    "report_frequency": "هفتگی برای تیم UX/CX، ماهانه برای مدیریت",
+    "alert_thresholds": {
+      "critical": "<75%",
+      "warning": "75-82%",
+      "good": "82-90%",
+      "excellent": ">90%"
+    },
+    "funnel_monitoring": "ردیابی real-time افت در هر مرحله خرید",
+    "stakeholders": [
+      "مدیر تجربه مشتری",
+      "مدیر E-commerce",
+      "مدیر محصول دیجیتال",
+      "تیم UX/UI",
+      "مدیر فروش"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R7-2-011: تعداد مراحل checkout",
+      "R7-2-012: زمان تکمیل خرید",
+      "R7-2-013: نرخ موفقیت پرداخت"
+    ],
+    "lagging_indicators": [
+      "R7-1-008: نرخ تبدیل (Conversion Rate)",
+      "R7-1-009: نرخ رهاشدگی سبد خرید",
+      "R6-1-006: CSAT",
+      "R6-1-001: NPS"
+    ],
+    "complementary_kpis": [
+      "R6-1-007: CES",
+      "R6-1-015: رضایت از کانال‌های دیجیتال"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "Baymard Institute - Checkout Usability Research",
+      "Nielsen Norman Group - E-commerce UX",
+      "EFQM Model 2025 - Criterion 6.1"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی اندازه‌گیری سهولت خرید",
+      "دستورالعمل بهینه‌سازی checkout",
+      "چارچوب تجربه خرید"
+    ],
+    "training_materials": [
+      "آموزش UX/UI برای فروش آنلاین",
+      "آموزش تحلیل رفتار کاربر",
+      "آموزش A/B testing"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر تجربه مشتری / مدیر E-commerce",
+    "reviewer": "مدیر محصول دیجیتال",
+    "approver": "مدیر فروش / مدیرعامل",
+    "review_frequency": "هفتگی",
+    "data_retention": "24 ماه",
+    "access_level": "عمومی - قابل دسترسی برای تیم‌های مرتبط"
+  },
+  "purchase_journey_stages": {
+    "discovery": {
+      "weight": 20,
+      "description": "یافتن محصول مورد نظر",
+      "metrics": ["زمان جستجو", "نتایج مرتبط", "استفاده از فیلتر"],
+      "friction_points": ["جستجوی ضعیف", "دسته‌بندی نامناسب", "اطلاعات ناکافی"]
+    },
+    "evaluation": {
+      "weight": 20,
+      "description": "مقایسه و تصمیم‌گیری",
+      "metrics": ["تعداد محصولات مشاهده شده", "زمان صفحه محصول"],
+      "friction_points": ["اطلاعات ناکامل", "عکس‌های ضعیف", "نظرات کم"]
+    },
+    "cart": {
+      "weight": 15,
+      "description": "افزودن به سبد خرید",
+      "metrics": ["نرخ افزودن به سبد", "ویرایش سبد"],
+      "friction_points": ["فرآیند پیچیده", "هزینه‌های مخفی", "محدودیت موجودی"]
+    },
+    "checkout": {
+      "weight": 30,
+      "description": "تکمیل اطلاعات و پرداخت",
+      "metrics": ["زمان checkout", "نرخ رهاشدگی", "فیلدهای تکمیل شده"],
+      "friction_points": ["فرم‌های طولانی", "ثبت‌نام اجباری", "خطاهای اعتبارسنجی"]
+    },
+    "payment": {
+      "weight": 10,
+      "description": "پرداخت و تأیید",
+      "metrics": ["نرخ موفقیت پرداخت", "روش‌های استفاده شده"],
+      "friction_points": ["روش‌های محدود", "امنیت پایین", "فرآیند پیچیده"]
+    },
+    "confirmation": {
+      "weight": 5,
+      "description": "دریافت تأیید و اطلاعات",
+      "metrics": ["وضوح اطلاعات", "ایمیل تأیید"],
+      "friction_points": ["اطلاعات ناواضح", "تأخیر در تأیید"]
+    }
+  },
+  "common_friction_points": {
+    "checkout_barriers": [
+      {
+        "barrier": "ثبت‌نام اجباری",
+        "impact": "کاهش 23% نرخ تبدیل",
+        "solution": "Guest Checkout"
+      },
+      {
+        "barrier": "فرم‌های طولانی (>7 فیلد)",
+        "impact": "کاهش 18% نرخ تبدیل",
+        "solution": "کاهش فیلدها، تکمیل خودکار"
+      },
+      {
+        "barrier": "هزینه‌های پنهان (حمل، مالیات)",
+        "impact": "کاهش 28% نرخ تبدیل",
+        "solution": "شفافیت کامل از ابتدا"
+      },
+      {
+        "barrier": "عدم اعتماد امنیتی",
+        "impact": "کاهش 17% نرخ تبدیل",
+        "solution": "نمایش نشان‌های امنیتی، SSL"
+      },
+      {
+        "barrier": "فرآیند پیچیده (>5 مرحله)",
+        "impact": "کاهش 21% نرخ تبدیل",
+        "solution": "Checkout تک‌صفحه‌ای یا 3 مرحله"
+      }
+    ]
+  },
+  "segmentation_analysis": {
+    "by_channel": [
+      "موبایل (معمولاً سخت‌تر)",
+      "دسکتاپ",
+      "تبلت",
+      "اپلیکیشن"
+    ],
+    "by_customer_type": [
+      "مشتریان جدید (نیاز به راحتی بیشتر)",
+      "مشتریان بازگشتی (دارای پروفایل)",
+      "مشتریان VIP (خدمات ویژه)"
+    ],
+    "by_product_type": [
+      "محصولات سریع (FMCG)",
+      "محصولات با تصمیم‌گیری بالا",
+      "محصولات سفارشی"
+    ]
+  },
+  "data_analysis": {
+    "key_metrics": [
+      "امتیاز سهولت خرید",
+      "نرخ تبدیل کلی",
+      "نرخ رهاشدگی در هر مرحله",
+      "زمان تکمیل خرید",
+      "تعداد کلیک‌ها تا خرید",
+      "نرخ بازگشت به صفحات قبلی"
+    ],
+    "funnel_analysis": [
+      "شناسایی مراحل با بیشترین افت",
+      "تحلیل مسیرهای خرید",
+      "شناسایی exit points",
+      "Session recordings"
+    ],
+    "statistical_methods": [
+      "تحلیل قیفی (Funnel Analysis)",
+      "Cohort Analysis",
+      "A/B Testing نتایج",
+      "تحلیل رگرسیون (تأثیر عوامل مختلف)",
+      "Heat maps و Click maps"
+    ],
+    "visualization": [
+      "نمودار قیفی با نرخ تبدیل هر مرحله",
+      "نمودار Sankey (جریان کاربران)",
+      "Heat maps تعاملات",
+      "نمودار خطی روند زمانی"
+    ]
+  },
+  "best_practices": {
+    "checkout_optimization": [
+      "کاهش تعداد مراحل به 3-5",
+      "تک‌صفحه‌ای یا پیشرفت واضح",
+      "تکمیل خودکار فیلدها",
+      "اعتبارسنجی inline (نه در انتها)",
+      "نمایش پیشرفت واضح",
+      "ذخیره خودکار اطلاعات"
+    ],
+    "mobile_optimization": [
+      "طراحی mobile-first",
+      "دکمه‌های بزرگ و قابل لمس",
+      "کیبورد مناسب برای هر فیلد",
+      "پرداخت موبایلی (Apple Pay, Google Pay)",
+      "کاهش تایپ به حداقل"
+    ],
+    "trust_building": [
+      "نمایش نشان‌های امنیتی",
+      "شفافیت کامل هزینه‌ها",
+      "سیاست بازگشت واضح",
+      "نظرات و رتبه‌بندی‌ها",
+      "پشتیبانی real-time"
+    ],
+    "payment_optimization": [
+      "روش‌های پرداخت متنوع",
+      "پرداخت یک‌کلیکی",
+      "ذخیره امن کارت",
+      "کیف پول دیجیتال",
+      "پرداخت اقساطی"
+    ]
+  },
+  "technology_enablers": {
+    "one_click_purchase": {
+      "example": "Amazon 1-Click",
+      "benefit": "کاهش 35-40% زمان خرید",
+      "requirement": "پروفایل ذخیره شده"
+    },
+    "autofill": {
+      "types": ["مرورگر", "سیستم", "داخلی"],
+      "benefit": "کاهش 50% زمان تکمیل فرم"
+    },
+    "digital_wallets": {
+      "examples": ["Apple Pay", "Google Pay", "PayPal"],
+      "benefit": "کاهش 60-70% اصطکاک پرداخت"
+    },
+    "smart_defaults": {
+      "examples": ["آدرس پیش‌فرض", "روش حمل معمول"],
+      "benefit": "کاهش تصمیمات مورد نیاز"
+    }
+  },
+  "ab_testing_ideas": [
+    {
+      "test": "تک‌صفحه vs چندصفحه checkout",
+      "hypothesis": "تک‌صفحه نرخ تبدیل را افزایش می‌دهد",
+      "metric": "نرخ تبدیل"
+    },
+    {
+      "test": "Guest Checkout vs ثبت‌نام اجباری",
+      "hypothesis": "Guest Checkout رهاشدگی را کاهش می‌دهد",
+      "metric": "نرخ رهاشدگی"
+    },
+    {
+      "test": "موقعیت دکمه CTA",
+      "hypothesis": "CTA برجسته‌تر کلیک بیشتر دارد",
+      "metric": "نرخ کلیک"
+    },
+    {
+      "test": "تعداد روش‌های پرداخت",
+      "hypothesis": "روش‌های بیشتر، تبدیل بالاتر",
+      "metric": "نرخ تبدیل"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "conversion_rate": "همبستگی مثبت 0.8-0.9",
+    "cart_abandonment": "همبستگی منفی 0.7-0.8",
+    "customer_satisfaction": "همبستگی مثبت 0.6-0.7",
+    "repeat_purchase": "همبستگی مثبت 0.5-0.6",
+    "average_order_value": "همبستگی مثبت 0.4-0.5"
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "تغییرات بدون تست کافی",
+        "impact": "بالا",
+        "mitigation": "A/B testing قبل از راه‌اندازی کامل"
+      },
+      {
+        "risk": "بیش‌ساده‌سازی و حذف اطلاعات مهم",
+        "impact": "متوسط",
+        "mitigation": "تعادل بین سادگی و اطلاعات کافی"
+      },
+      {
+        "risk": "مشکلات فنی در پرداخت",
+        "impact": "بالا",
+        "mitigation": "نظارت مستمر، روش‌های پشتیبان"
+      },
+      {
+        "risk": "تجربه ناهمگون بین کانال‌ها",
+        "impact": "متوسط",
+        "mitigation": "استانداردسازی omnichannel"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "optimization_cycle": [
+      "تحلیل داده‌های رفتاری و نظرسنجی",
+      "شناسایی نقاط اصطکاک",
+      "طراحی بهبودها",
+      "A/B testing",
+      "راه‌اندازی تغییرات موفق",
+      "مانیتورینگ مستمر"
+    ],
+    "user_testing": [
+      "Usability Testing با کاربران واقعی",
+      "Session Recordings",
+      "Heat maps و Click maps",
+      "مصاحبه با مشتریان"
+    ]
+  },
+  "digital_transformation": {
+    "ai_personalization": [
+      "توصیه محصول هوشمند",
+      "پیش‌بینی نیاز مشتری",
+      "قیمت‌گذاری پویا",
+      "چت‌بات خرید"
+    ],
+    "voice_commerce": [
+      "خرید با دستیار صوتی",
+      "جستجوی صوتی",
+      "تأیید صوتی"
+    ],
+    "ar_vr": [
+      "امتحان مجازی محصول",
+      "نمایش 3D محصول",
+      "طراحی فضای خرید مجازی"
+    ]
+  },
+  "notes": [
+    "هر مرحله اضافی 10-15% از مشتریان را از دست می‌دهد",
+    "موبایل معمولاً سخت‌تر از دسکتاپ است - بهینه‌سازی ویژه لازم است",
+    "شفافیت کامل هزینه‌ها از ابتدا ضروری است",
+    "Guest Checkout باید همیشه یک گزینه باشد",
+    "سرعت لود صفحه تأثیر زیادی بر سهولت خرید دارد"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
