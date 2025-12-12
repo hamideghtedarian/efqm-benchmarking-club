@@ -1,0 +1,568 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eqtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-008",
+    "kpi_name_fa": "ارزش درک شده",
+    "kpi_name_en": "Perceived Value",
+    "acronym": "PV",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Value Perception"
+  },
+  "definition": {
+    "description_fa": "ارزش درک شده نسبت بین منافعی است که مشتری از محصول یا خدمت دریافت می‌کند (کیفیت، ویژگی‌ها، تجربه) و هزینه‌هایی که پرداخت می‌کند (قیمت، زمان، تلاش). این شاخص نشان می‌دهد که مشتری تا چه حد احساس می‌کند ارزش معادل یا بیشتر از آنچه پرداخت کرده، دریافت کرده است. ارزش درک شده بالا منجر به رضایت، وفاداری و تمایل به پرداخت قیمت بالاتر می‌شود.",
+    "description_en": "Perceived Value is the ratio between benefits a customer receives from a product or service (quality, features, experience) and the costs they pay (price, time, effort). This KPI indicates the extent to which customers feel they have received value equal to or greater than what they paid. High perceived value leads to satisfaction, loyalty, and willingness to pay premium prices.",
+    "formula_concept": "ارزش درک شده = منافع دریافتی / هزینه‌های پرداختی",
+    "purpose": "ارزیابی تعادل بین آنچه مشتری می‌دهد (قیمت، زمان، تلاش) و آنچه دریافت می‌کند (کیفیت، تجربه، منافع)",
+    "scope": "تمام محصولات و خدمات از دیدگاه مشتری",
+    "key_insight": "مشتریان بر اساس ارزش درک شده تصمیم می‌گیرند، نه صرفاً بر اساس قیمت پایین"
+  },
+  "measurement": {
+    "formula": "میانگین امتیازات ارزش درک شده",
+    "formula_detailed": "PV = (مجموع امتیازات ارزش / تعداد پاسخ‌ها) × 20",
+    "formula_en": "PV = (Sum of value scores / Number of responses) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "فصلی یا نیم‌سال",
+    "data_source": [
+      "نظرسنجی ارزش درک شده",
+      "مصاحبه عمیق با مشتریان",
+      "تحلیل رفتار خرید",
+      "نظرات و بازخوردها",
+      "تحلیل رقبا"
+    ],
+    "standard_questions": [
+      "این محصول/خدمت ارزش پولی که پرداخت کرده‌اید را دارد؟",
+      "نسبت به رقبا، این محصول/خدمت چه ارزشی برای شما دارد؟",
+      "چقدر احتمال دارد با همین قیمت دوباره خرید کنید؟"
+    ],
+    "rating_scale": {
+      "5": "ارزش بسیار بیشتر از قیمت",
+      "4": "ارزش بیشتر از قیمت",
+      "3": "ارزش برابر قیمت",
+      "2": "ارزش کمتر از قیمت",
+      "1": "ارزش بسیار کمتر از قیمت"
+    }
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی ساختاریافته + مصاحبه کیفی",
+    "sample_size": "حداقل 300 مشتری فعال",
+    "sampling_method": "طبقه‌ای بر اساس سگمنت مشتری و محصول",
+    "timing": "3-6 ماه پس از خرید (بعد از تجربه کافی)",
+    "survey_design": {
+      "dimensions": [
+        "کیفیت محصول/خدمت",
+        "ویژگی‌ها و قابلیت‌ها",
+        "تجربه خرید و استفاده",
+        "پشتیبانی و خدمات",
+        "قیمت و هزینه کلی",
+        "مقایسه با رقبا"
+      ],
+      "question_types": [
+        "سوالات مقیاسی (1-5)",
+        "سوالات مقایسه‌ای",
+        "سوالات باز درباره ارزش"
+      ]
+    },
+    "channels": [
+      "ایمیل نظرسنجی",
+      "مصاحبه تلفنی",
+      "گروه‌های کانونی",
+      "نظرسنجی آنلاین"
+    ],
+    "data_quality_checks": [
+      "بررسی اصالت خرید",
+      "حذف پاسخ‌های متناقض",
+      "تأیید تجربه کافی با محصول",
+      "بررسی سازگاری با رفتار خرید"
+    ],
+    "responsible_department": "مدیریت بازاریابی، تحقیقات بازار",
+    "responsible_person": "مدیر تحقیقات بازار، مدیر محصول"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی ارزش درک شده از 400 مشتری (مقیاس 1-5)",
+    "input_data": {
+      "total_respondents": 400,
+      "score_5_excellent_value": 120,
+      "score_4_good_value": 180,
+      "score_3_fair_value": 70,
+      "score_2_poor_value": 25,
+      "score_1_very_poor_value": 5,
+      "total_score": 1585
+    },
+    "calculation_steps": [
+      "گام 1: محاسبه مجموع امتیازات = (120×5) + (180×4) + (70×3) + (25×2) + (5×1)",
+      "       = 600 + 720 + 210 + 50 + 5 = 1585",
+      "گام 2: محاسبه میانگین = 1585 / 400 = 3.96",
+      "گام 3: تبدیل به مقیاس 100 = (3.96 / 5) × 100 = 79.3%",
+      "گام 4: محاسبه درصد ارزش خوب/عالی (4-5) = (120 + 180) / 400 = 75%"
+    ],
+    "result": "79.3%",
+    "interpretation": "امتیاز ارزش درک شده 79.3% است که نشان‌دهنده ارزش خوب است. 75% مشتریان احساس می‌کنند ارزش خوب یا عالی دریافت کرده‌اند. این سطح خوب است اما فضای بهبود وجود دارد، به‌ویژه برای 25% که احساس ارزش کافی نمی‌کنند."
+  },
+  "benchmarking": {
+    "european_leaders": {
+      "top_quartile": {
+        "value": "≥85%",
+        "description": "شرکت‌های برتر اروپایی با ارزش‌آفرینی برتر",
+        "examples": [
+          "Apple: 88% (برند premium با ارزش بالا)",
+          "IKEA: 86% (قیمت مناسب + کیفیت خوب)",
+          "Costco: 87% (ارزش استثنایی)"
+        ]
+      },
+      "median": {
+        "value": "75-80%",
+        "description": "میانه شرکت‌های اروپایی"
+      },
+      "top_companies": [
+        {
+          "company": "Apple",
+          "country": "چندملیتی",
+          "value": "88%",
+          "strategy": "Premium positioning با ارزش برند بالا",
+          "year": 2024
+        },
+        {
+          "company": "IKEA",
+          "country": "سوئد",
+          "value": "86%",
+          "strategy": "ارزش استثنایی با قیمت مناسب",
+          "year": 2024
+        },
+        {
+          "company": "Aldi",
+          "country": "آلمان",
+          "value": "85%",
+          "strategy": "قیمت پایین + کیفیت مناسب",
+          "year": 2024
+        }
+      ]
+    },
+    "industry_averages": {
+      "luxury_brands": "80-88%",
+      "value_retailers": "82-87%",
+      "premium_tech": "78-85%",
+      "mid_market": "70-78%",
+      "budget_segment": "72-80%",
+      "b2b_services": "75-82%"
+    },
+    "world_class": {
+      "value": "≥88%",
+      "description": "استاندارد جهانی برتر - ارزش استثنایی",
+      "note": "برندهایی که مشتریان حاضرند قیمت premium بپردازند"
+    }
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "اولین نظرسنجی",
+      "note": "با مقایسه با رقبا و استانداردهای صنعت"
+    },
+    "short_term": {
+      "target": "baseline + 3-5%",
+      "timeframe": "6 ماه",
+      "action_required": "بهبود ارتباطات ارزش و تجربه مشتری"
+    },
+    "medium_term": {
+      "target": "80-85%",
+      "timeframe": "12-18 ماه",
+      "action_required": "بهبود کیفیت محصول و خدمات پس از فروش"
+    },
+    "long_term": {
+      "target": "≥85%",
+      "timeframe": "24-36 ماه",
+      "action_required": "ایجاد برند قوی و ارزش‌آفرینی پایدار"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 98,
+      "explanation": "ارزش درک شده را از دیدگاه مشتری اندازه‌گیری می‌کند، اما ذهنی است"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "با مقیاس 1-5 و تبدیل به درصد کاملاً قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 90,
+      "explanation": "نیاز به نظرسنجی دقیق و نمونه نمایندگی دارد"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "ارزش درک شده تعیین‌کننده تصمیمات خرید و وفاداری است"
+    },
+    "time_bound": {
+      "score": 95,
+      "explanation": "فصلی یا نیم‌سال قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 97,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 95,
+      "explanation": "ارزش درک شده نتیجه مستقیم استراتژی قیمت‌گذاری و کیفیت است"
+    },
+    "approach": {
+      "score": 92,
+      "explanation": "نیاز به رویکرد سیستماتیک ارزش‌آفرینی و ارتباطات ارزش"
+    },
+    "deployment": {
+      "score": 88,
+      "explanation": "باید در تمام محصولات و نقاط تماس اعمال شود"
+    },
+    "assessment_refinement": {
+      "score": 90,
+      "explanation": "نیاز به ارزیابی مستمر و تطابق با تغییرات بازار"
+    },
+    "overall_radar_score": 91,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 4 - ایجاد ارزش پایدار",
+      "معیار 2 - فرهنگ و رهبری"
+    ],
+    "strategic_objectives": [
+      "ایجاد ارزش برتر برای مشتریان",
+      "بهبود موقعیت رقابتی",
+      "افزایش حاشیه سود",
+      "ایجاد برند قوی"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری و مالی",
+      "objective": "ارزش‌آفرینی پایدار"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "ارتباطات واضح ارزش (Value Communication)",
+      "expected_impact": "+3-5%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "افزودن ویژگی‌های با ارزش بالا",
+      "expected_impact": "+4-6%",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "بهبود خدمات پس از فروش",
+      "expected_impact": "+3-5%",
+      "timeframe": "6 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "برنامه وفاداری و پاداش",
+      "expected_impact": "+2-4%",
+      "timeframe": "9 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "بازطراحی تجربه مشتری",
+      "expected_impact": "+5-7%",
+      "timeframe": "12 ماه",
+      "priority": "بالا"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند + نمودار مقایسه با رقبا + تحلیل درایورهای ارزش",
+    "report_frequency": "فصلی برای مدیریت، نیم‌سال برای هیئت‌مدیره",
+    "alert_thresholds": {
+      "critical": "<70%",
+      "warning": "70-75%",
+      "good": "75-85%",
+      "excellent": ">85%"
+    },
+    "stakeholders": [
+      "مدیرعامل",
+      "مدیر بازاریابی",
+      "مدیر محصول",
+      "مدیر استراتژی",
+      "مدیر فروش"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R6-1-005: رضایت از کیفیت",
+      "R7-1-003: حاشیه سود",
+      "R7-2-002: کیفیت محصول"
+    ],
+    "lagging_indicators": [
+      "R6-1-001: NPS",
+      "R6-1-003: نرخ حفظ مشتری",
+      "R7-1-004: سهم بازار",
+      "R7-1-005: رشد درآمد"
+    ],
+    "complementary_kpis": [
+      "R6-1-006: CSAT",
+      "R6-1-010: اعتماد به برند",
+      "R7-1-006: Customer Lifetime Value"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "Zeithaml (1988): Consumer Perceptions of Price, Quality, and Value",
+      "EFQM Model 2025 - Criterion 6.1",
+      "Porter's Value Chain Analysis"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی اندازه‌گیری ارزش درک شده",
+      "چارچوب تحلیل ارزش برای مشتری",
+      "دستورالعمل ارتباطات ارزش"
+    ],
+    "training_materials": [
+      "آموزش مفهوم ارزش مشتری",
+      "آموزش استراتژی‌های ارزش‌آفرینی",
+      "آموزش قیمت‌گذاری بر اساس ارزش"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر بازاریابی",
+    "co_owner": "مدیر محصول",
+    "reviewer": "مدیر استراتژی",
+    "approver": "مدیرعامل",
+    "review_frequency": "فصلی",
+    "data_retention": "60 ماه (برای تحلیل روند بلندمدت)",
+    "access_level": "محدود - مدیران ارشد"
+  },
+  "value_dimensions": {
+    "functional_value": {
+      "weight": 35,
+      "description": "کیفیت، عملکرد، قابلیت اعتماد محصول/خدمت",
+      "measurement": "معیارهای عینی و نظرسنجی"
+    },
+    "monetary_value": {
+      "weight": 30,
+      "description": "قیمت منصفانه، ارزش در برابر پول",
+      "measurement": "مقایسه قیمت با رقبا و ارزش دریافتی"
+    },
+    "social_value": {
+      "weight": 15,
+      "description": "وضعیت اجتماعی، تأیید دیگران، برند",
+      "measurement": "نظرسنجی ادراک برند"
+    },
+    "emotional_value": {
+      "weight": 15,
+      "description": "احساسات مثبت، تجربه لذت‌بخش",
+      "measurement": "نظرسنجی تجربه احساسی"
+    },
+    "convenience_value": {
+      "weight": 5,
+      "description": "راحتی، سهولت دسترسی و استفاده",
+      "measurement": "CES و شاخص‌های راحتی"
+    }
+  },
+  "value_equation": {
+    "numerator_benefits": [
+      "کیفیت محصول/خدمت",
+      "ویژگی‌ها و قابلیت‌ها",
+      "تجربه مشتری",
+      "برند و اعتبار",
+      "پشتیبانی و خدمات",
+      "نوآوری و منحصربه‌فردی"
+    ],
+    "denominator_costs": [
+      "قیمت پولی",
+      "زمان صرف شده",
+      "تلاش و انرژی",
+      "ریسک درک شده",
+      "هزینه فرصت"
+    ],
+    "formula": "Value = (Quality + Features + Experience + Brand + Support) / (Price + Time + Effort + Risk)"
+  },
+  "segmentation_analysis": {
+    "by_product_line": [
+      "محصولات premium",
+      "محصولات متوسط",
+      "محصولات اقتصادی"
+    ],
+    "by_customer_segment": [
+      "مشتریان حساس به قیمت",
+      "مشتریان حساس به کیفیت",
+      "مشتریان متعادل",
+      "مشتریان وفادار به برند"
+    ],
+    "by_purchase_context": [
+      "خرید اول",
+      "خرید مجدد",
+      "خرید ارجاعی"
+    ]
+  },
+  "data_analysis": {
+    "key_metrics": [
+      "میانگین ارزش درک شده",
+      "توزیع امتیازات ارزش",
+      "درصد ارزش خوب/عالی (4-5)",
+      "مقایسه با رقبا",
+      "تحلیل Gap (انتظار vs واقعیت)"
+    ],
+    "statistical_methods": [
+      "تحلیل رگرسیون چندمتغیره (درایورهای ارزش)",
+      "تحلیل Conjoint (اهمیت ویژگی‌ها)",
+      "تحلیل خوشه‌ای (سگمنت‌های ارزشی)",
+      "همبستگی با رفتارهای خرید"
+    ],
+    "visualization": [
+      "نمودار راداری (ابعاد ارزش)",
+      "نمودار Perceptual Map (ارزش vs قیمت)",
+      "نمودار Waterfall (تحلیل ارزش)",
+      "Heat map سگمنت‌ها"
+    ]
+  },
+  "value_communication": {
+    "strategies": [
+      "تأکید بر منافع ملموس",
+      "شهادت مشتریان راضی",
+      "مقایسه‌های مستند با رقبا",
+      "نمایش Return on Investment",
+      "داستان‌سرایی برند",
+      "تضمین‌های قوی"
+    ],
+    "channels": [
+      "وب‌سایت و landing pages",
+      "محتوای آموزشی",
+      "تبلیغات و بازاریابی",
+      "نیروی فروش",
+      "بسته‌بندی و مستندات"
+    ]
+  },
+  "pricing_strategies": {
+    "value_based_pricing": {
+      "description": "قیمت‌گذاری بر اساس ارزش برای مشتری، نه هزینه تولید",
+      "when_to_use": "وقتی ارزش درک شده بالا است"
+    },
+    "premium_pricing": {
+      "description": "قیمت بالاتر از بازار با تأکید بر ارزش برتر",
+      "when_to_use": "برندهای قوی با کیفیت استثنایی"
+    },
+    "value_pricing": {
+      "description": "قیمت منصفانه با تأکید بر نسبت ارزش به قیمت",
+      "when_to_use": "بازارهای رقابتی با مشتریان حساس به قیمت"
+    },
+    "psychological_pricing": {
+      "description": "استفاده از روانشناسی قیمت برای افزایش ارزش درک شده",
+      "tactics": ["قیمت‌گذاری charm (9.99)", "anchoring", "bundling"]
+    }
+  },
+  "competitive_analysis": {
+    "value_positioning": [
+      {
+        "competitor": "Competitor A",
+        "value_score": "82%",
+        "price_index": "High",
+        "position": "Premium"
+      },
+      {
+        "competitor": "Competitor B",
+        "value_score": "75%",
+        "price_index": "Medium",
+        "position": "Mid-market"
+      },
+      {
+        "competitor": "Competitor C",
+        "value_score": "70%",
+        "price_index": "Low",
+        "position": "Value"
+      }
+    ],
+    "competitive_advantage": "شناسایی فاصله ارزشی با رقبا و فرصت‌های بهبود"
+  },
+  "correlation_with_outcomes": {
+    "willingness_to_pay": "همبستگی مثبت 0.8-0.9",
+    "repurchase_intention": "همبستگی مثبت 0.7-0.8",
+    "word_of_mouth": "همبستگی مثبت 0.6-0.7",
+    "price_sensitivity": "همبستگی منفی 0.6-0.7",
+    "customer_lifetime_value": "همبستگی مثبت 0.7-0.8"
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "افزایش هزینه‌ها بدون افزایش ارزش",
+        "impact": "بالا",
+        "mitigation": "تمرکز بر ارزش‌آفرینی واقعی، نه صرفاً افزودن ویژگی"
+      },
+      {
+        "risk": "عدم ارتباط موثر ارزش به مشتری",
+        "impact": "بالا",
+        "mitigation": "سرمایه‌گذاری در ارتباطات بازاریابی و آموزش فروش"
+      },
+      {
+        "risk": "تغییر انتظارات مشتریان در طول زمان",
+        "impact": "متوسط",
+        "mitigation": "اندازه‌گیری منظم و تطابق با بازار"
+      },
+      {
+        "risk": "رقبا ارزش بهتری ارائه دهند",
+        "impact": "بالا",
+        "mitigation": "تحلیل رقابتی مستمر و نوآوری"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "value_innovation": [
+      "شناسایی نیازهای برآورده نشده",
+      "حذف ویژگی‌های کم‌ارزش",
+      "تقویت ویژگی‌های پرارزش",
+      "ایجاد تمایز معنادار",
+      "بهبود تجربه کلی"
+    ],
+    "feedback_loop": [
+      "نظرسنجی ارزش درک شده",
+      "تحلیل Gap و فرصت‌ها",
+      "طراحی بهبودها",
+      "پیاده‌سازی و ارتباطات",
+      "اندازه‌گیری مجدد تأثیر"
+    ]
+  },
+  "digital_transformation": {
+    "value_enhancement": [
+      "شخصی‌سازی تجربه با AI",
+      "خدمات دیجیتال ارزش‌افزوده",
+      "ارتباطات real-time ارزش",
+      "پلتفرم‌های مشتری برای افزایش ارزش"
+    ],
+    "value_measurement": [
+      "تحلیل رفتار برای درک ارزش",
+      "پیش‌بینی ارزش با ML",
+      "A/B testing پیشنهادات ارزش",
+      "داشبورد real-time ارزش"
+    ]
+  },
+  "value_proposition_design": {
+    "customer_jobs": "چه کارهایی مشتری می‌خواهد انجام دهد؟",
+    "pains": "چه مشکلات و موانعی دارد؟",
+    "gains": "چه نتایج و منافعی می‌خواهد؟",
+    "products_services": "چه محصولات/خدماتی ارائه می‌دهیم؟",
+    "pain_relievers": "چگونه مشکلات را حل می‌کنیم؟",
+    "gain_creators": "چگونه منافع ایجاد می‌کنیم؟",
+    "fit": "تطابق بین آنچه مشتری می‌خواهد و آنچه ما ارائه می‌دهیم"
+  },
+  "notes": [
+    "ارزش درک شده نسبی است - به رقبا و جایگزین‌ها بستگی دارد",
+    "ارزش برای سگمنت‌های مختلف متفاوت است",
+    "قیمت پایین لزوماً ارزش بالا نیست",
+    "ارتباطات ارزش به اندازه ایجاد ارزش مهم است",
+    "ارزش درک شده در طول زمان تغییر می‌کند - نیاز به مانیتورینگ مستمر دارد"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
