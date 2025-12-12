@@ -1,0 +1,571 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-001",
+    "kpi_name_fa": "امتیاز خالص ترویج‌کنندگان",
+    "kpi_name_en": "Net Promoter Score",
+    "acronym": "NPS",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Loyalty and Advocacy"
+  },
+  "definition": {
+    "description_fa": "NPS یک شاخص استاندارد جهانی برای سنجش وفاداری مشتری و احتمال توصیه برند به دیگران است. این شاخص بر اساس یک سوال ساده محاسبه می‌شود: 'تا چه حد احتمال دارد این شرکت/محصول را به دوست یا همکار خود توصیه کنید؟' (مقیاس 0-10). مشتریان به سه گروه تقسیم می‌شوند: ترویج‌کنندگان (9-10)، منفعلین (7-8)، و منتقدان (0-6). NPS تفاوت بین درصد ترویج‌کنندگان و منتقدان است. این شاخص پیش‌بینی‌کننده قوی رشد و موفقیت بلندمدت است.",
+    "description_en": "NPS is a global standard metric for measuring customer loyalty and likelihood to recommend the brand to others. Based on one simple question: 'How likely are you to recommend this company/product to a friend or colleague?' (0-10 scale). Customers are divided into three groups: Promoters (9-10), Passives (7-8), and Detractors (0-6). NPS is the difference between percentage of Promoters and Detractors. This metric is a strong predictor of long-term growth and success.",
+    "purpose": "اندازه‌گیری وفاداری مشتری، پیش‌بینی رشد، و شناسایی سفیران برند",
+    "scope": "تمام مشتریان فعال سازمان",
+    "key_insight": "NPS بهترین پیش‌بینی‌کننده رشد آلی (Organic Growth) از طریق توصیه دهان‌به‌دهان است",
+    "fred_reichheld_quote": "The Ultimate Question: Would you recommend us to a friend?"
+  },
+  "measurement": {
+    "formula": "NPS = % ترویج‌کنندگان - % منتقدان",
+    "formula_detailed": "NPS = ((تعداد ترویج‌کنندگان / کل پاسخ‌ها) × 100) - ((تعداد منتقدان / کل پاسخ‌ها) × 100)",
+    "formula_en": "NPS = % Promoters - % Detractors",
+    "unit": "امتیاز بین -100 تا +100",
+    "scale": "-100 تا +100",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "فصلی یا نیم‌سال",
+    "standard_question": "در مقیاس 0 تا 10، تا چه حد احتمال دارد [شرکت/محصول/خدمت] ما را به دوست یا همکار خود توصیه کنید؟",
+    "follow_up_question": "دلیل اصلی امتیاز شما چیست؟",
+    "customer_segments": {
+      "promoters": {
+        "score": "9-10",
+        "description": "مشتریان وفادار و مشتاق که به‌طور فعال شما را توصیه می‌کنند",
+        "behavior": "خرید مکرر، ارجاع دیگران، دفاع از برند"
+      },
+      "passives": {
+        "score": "7-8",
+        "description": "مشتریان راضی اما بی‌تفاوت، آسیب‌پذیر در برابر رقبا",
+        "behavior": "خرید معمولی، توصیه منفعلانه، بی‌تفاوت"
+      },
+      "detractors": {
+        "score": "0-6",
+        "description": "مشتریان ناراضی که می‌توانند به برند آسیب بزنند",
+        "behavior": "ترک احتمالی، توصیه منفی، شکایت"
+      }
+    }
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی استاندارد NPS",
+    "sample_size": "حداقل 400 پاسخ برای اعتبار آماری",
+    "sampling_method": "تصادفی از مشتریان فعال",
+    "timing": "فصلی یا نیم‌سال، یا پس از نقاط کلیدی سفر مشتری",
+    "survey_design": {
+      "question_1": "سوال NPS استاندارد (0-10)",
+      "question_2": "دلیل امتیاز شما چیست؟ (باز)",
+      "question_3": "چه چیزی می‌توانیم بهتر انجام دهیم؟ (باز - اختیاری)",
+      "max_questions": "2-3 سوال (خیلی کوتاه)"
+    },
+    "channels": [
+      "ایمیل",
+      "SMS",
+      "پاپ‌آپ در وب‌سایت/اپ",
+      "پس از خرید",
+      "تماس تلفنی"
+    ],
+    "response_rate_target": ">25%",
+    "data_quality_checks": [
+      "حذف پاسخ‌های تکراری",
+      "تأیید مشتری بودن پاسخ‌دهنده",
+      "بررسی الگوهای غیرعادی",
+      "تحلیل نظرات باز"
+    ],
+    "responsible_department": "مدیریت تجربه مشتری، تحقیقات بازار",
+    "responsible_person": "مدیر CX، مدیر بازاریابی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی NPS از 500 مشتری",
+    "input_data": {
+      "total_responses": 500,
+      "score_10": 100,
+      "score_9": 125,
+      "score_8": 100,
+      "score_7": 75,
+      "score_6": 40,
+      "score_5": 25,
+      "score_4": 15,
+      "score_3": 10,
+      "score_2": 5,
+      "score_1": 3,
+      "score_0": 2
+    },
+    "calculation_steps": [
+      "گام 1: شمارش ترویج‌کنندگان (9-10) = 100 + 125 = 225",
+      "گام 2: شمارش منتقدان (0-6) = 40 + 25 + 15 + 10 + 5 + 3 + 2 = 100",
+      "گام 3: شمارش منفعلین (7-8) = 100 + 75 = 175",
+      "گام 4: درصد ترویج‌کنندگان = (225 / 500) × 100 = 45%",
+      "گام 5: درصد منتقدان = (100 / 500) × 100 = 20%",
+      "گام 6: NPS = 45% - 20% = +25"
+    ],
+    "result": "NPS = +25",
+    "interpretation": "NPS برابر +25 است که در محدوده خوب قرار دارد. 45% ترویج‌کنندگان و 20% منتقدان داریم. 35% منفعلین هستند که فرصتی برای تبدیل به ترویج‌کننده دارند. باید روی کاهش منتقدان (20%) و تبدیل منفعلین به ترویج‌کننده تمرکز کرد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": ">70",
+      "excellent": "50-70",
+      "good": "30-49",
+      "average": "0-29",
+      "poor": "<0"
+    },
+    "by_industry": {
+      "technology_saas": "30-40",
+      "e_commerce": "30-50",
+      "retail": "20-40",
+      "banking": "10-30",
+      "insurance": "5-25",
+      "telecom": "0-20",
+      "airlines": "10-35",
+      "hospitality": "30-50",
+      "healthcare": "15-35",
+      "automotive": "20-40"
+    },
+    "top_companies_globally": [
+      {
+        "company": "Apple",
+        "nps": 72,
+        "industry": "Technology",
+        "year": 2024
+      },
+      {
+        "company": "Tesla",
+        "nps": 68,
+        "industry": "Automotive",
+        "year": 2024
+      },
+      {
+        "company": "Amazon",
+        "nps": 62,
+        "industry": "E-commerce",
+        "year": 2024
+      },
+      {
+        "company": "Netflix",
+        "nps": 64,
+        "industry": "Entertainment",
+        "year": 2024
+      },
+      {
+        "company": "USAA",
+        "nps": 75,
+        "industry": "Financial Services",
+        "year": 2024
+      }
+    ],
+    "european_leaders": [
+      {
+        "company": "Vinted",
+        "nps": 58,
+        "country": "لیتوانی",
+        "industry": "E-commerce"
+      },
+      {
+        "company": "N26",
+        "nps": 52,
+        "country": "آلمان",
+        "industry": "Banking"
+      },
+      {
+        "company": "Spotify",
+        "nps": 49,
+        "country": "سوئد",
+        "industry": "Media"
+      }
+    ]
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "اولین نظرسنجی",
+      "note": "با نمونه نمایندگی حداقل 400 نفر"
+    },
+    "short_term": {
+      "target": "baseline + 5-10 واحد",
+      "timeframe": "6 ماه",
+      "action_required": "کاهش منتقدان و بهبود تجربه کلی"
+    },
+    "medium_term": {
+      "target": "30-40 (خوب)",
+      "timeframe": "12-18 ماه",
+      "action_required": "تبدیل منفعلین به ترویج‌کننده"
+    },
+    "long_term": {
+      "target": ">50 (عالی)",
+      "timeframe": "24-36 ماه",
+      "action_required": "ایجاد تجربه استثنایی و برند قوی"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 100,
+      "explanation": "NPS به‌طور دقیق وفاداری و تمایل به توصیه را اندازه‌گیری می‌کند"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "با فرمول استاندارد و ساده کاملاً قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 95,
+      "explanation": "با نظرسنجی ساده قابل دستیابی است"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "NPS قوی‌ترین پیش‌بینی‌کننده رشد و موفقیت بلندمدت است"
+    },
+    "time_bound": {
+      "score": 95,
+      "explanation": "فصلی یا نیم‌سال قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 98,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 95,
+      "explanation": "NPS نتیجه مستقیم کل تجربه مشتری و کیفیت خدمات است"
+    },
+    "approach": {
+      "score": 90,
+      "explanation": "نیاز به رویکرد جامع سازمانی برای بهبود NPS"
+    },
+    "deployment": {
+      "score": 88,
+      "explanation": "باید در تمام سازمان درک و اجرا شود"
+    },
+    "assessment_refinement": {
+      "score": 92,
+      "explanation": "اندازه‌گیری مستمر و بهبود دائمی بر اساس بازخورد"
+    },
+    "overall_radar_score": 91,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 4 - ایجاد ارزش پایدار",
+      "معیار 2 - فرهنگ و رهبری"
+    ],
+    "strategic_objectives": [
+      "افزایش وفاداری مشتری",
+      "رشد آلی از طریق توصیه",
+      "کاهش Churn",
+      "ایجاد سفیران برند"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری و یادگیری و رشد",
+      "objective": "ایجاد وفاداری پایدار"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "برنامه Closed-Loop Feedback (پیگیری منتقدان)",
+      "expected_impact": "+5 تا +10",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "بهبود تجربه در نقاط کلیدی سفر مشتری",
+      "expected_impact": "+8 تا +15",
+      "timeframe": "9 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "برنامه وفاداری و پاداش",
+      "expected_impact": "+5 تا +10",
+      "timeframe": "6 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "تبدیل منفعلین به ترویج‌کننده",
+      "expected_impact": "+10 تا +20",
+      "timeframe": "12 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "ایجاد برنامه سفیران برند",
+      "expected_impact": "+5 تا +10",
+      "timeframe": "12 ماه",
+      "priority": "متوسط"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند + توزیع امتیازات (0-10) + نسبت سه گروه + Word Cloud نظرات",
+    "report_frequency": "ماهانه برای اقدامات، فصلی برای مدیریت ارشد",
+    "alert_thresholds": {
+      "critical": "<0",
+      "warning": "0-20",
+      "good": "20-50",
+      "excellent": ">50"
+    },
+    "stakeholders": [
+      "مدیرعامل",
+      "هیئت‌مدیره",
+      "مدیر تجربه مشتری",
+      "مدیر بازاریابی",
+      "تمام مدیران بخش"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R6-1-006: CSAT",
+      "R6-1-007: CES",
+      "R6-1-009: رضایت از پشتیبانی",
+      "R6-1-010: اعتماد به برند"
+    ],
+    "lagging_indicators": [
+      "R6-1-003: نرخ حفظ مشتری",
+      "R6-1-004: CLV",
+      "R7-1-014: رشد درآمد آلی",
+      "R7-1-015: نرخ ارجاع"
+    ],
+    "complementary_kpis": [
+      "R6-1-002: رضایت کلی",
+      "R6-1-014: نرخ شکایات",
+      "R7-2-034: نرخ Churn"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "Fred Reichheld (2003) - The One Number You Need to Grow",
+      "Bain & Company - NPS Methodology",
+      "EFQM Model 2025 - Criterion 6.1"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی اندازه‌گیری NPS",
+      "دستورالعمل Closed-Loop Feedback",
+      "چارچوب تحلیل نظرات باز"
+    ],
+    "training_materials": [
+      "آموزش مفهوم NPS",
+      "آموزش استراتژی‌های بهبود NPS",
+      "آموزش مدیریت بازخورد مشتری"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر تجربه مشتری",
+    "co_owner": "مدیرعامل",
+    "reviewer": "هیئت‌مدیره",
+    "approver": "هیئت‌مدیره",
+    "review_frequency": "فصلی",
+    "data_retention": "بدون محدودیت (داده تاریخی ارزشمند)",
+    "access_level": "محدود - مدیریت ارشد",
+    "board_reporting": "فصلی"
+  },
+  "nps_segmentation": {
+    "by_customer_type": [
+      "مشتریان جدید",
+      "مشتریان بازگشتی",
+      "مشتریان VIP",
+      "B2B vs B2C"
+    ],
+    "by_product_service": [
+      "محصول A",
+      "محصول B",
+      "خدمت X",
+      "خدمت Y"
+    ],
+    "by_touchpoint": [
+      "پس از خرید",
+      "پس از پشتیبانی",
+      "پس از تحویل",
+      "کلی (relationship NPS)"
+    ],
+    "by_geography": [
+      "منطقه/شهر",
+      "کشور",
+      "بازارهای مختلف"
+    ]
+  },
+  "detractor_management": {
+    "immediate_action": {
+      "timeframe": "24-48 ساعت",
+      "actions": [
+        "تماس مستقیم مدیر ارشد",
+        "گوش دادن و ابراز همدلی",
+        "عذرخواهی صادقانه",
+        "تعهد به حل مشکل"
+      ]
+    },
+    "short_term": {
+      "timeframe": "1-2 هفته",
+      "actions": [
+        "حل کامل مشکل",
+        "جبران خسارت مناسب",
+        "پیگیری تا رضایت",
+        "درخواست فرصت دوباره"
+      ]
+    },
+    "long_term": {
+      "goal": "تبدیل منتقد به ترویج‌کننده",
+      "success_rate": "20-30% قابل تبدیل",
+      "impact": "وفاداری بالاتر از مشتریانی که هیچ مشکلی نداشته‌اند"
+    }
+  },
+  "passive_conversion": {
+    "challenge": "35-45% مشتریان معمولاً منفعل هستند",
+    "opportunity": "آسیب‌پذیر در برابر رقبا اما قابل تبدیل",
+    "strategies": [
+      "شناسایی دلایل عدم اشتیاق",
+      "ارائه ارزش بیشتر",
+      "تعامل شخصی‌تر",
+      "برنامه وفاداری",
+      "تجربیات Wow"
+    ],
+    "impact": "هر 10% افزایش در تبدیل منفعلین = +10 واحد NPS"
+  },
+  "promoter_amplification": {
+    "referral_program": {
+      "description": "برنامه رسمی ارجاع با پاداش",
+      "incentive": "برای ارجاع‌دهنده و دریافت‌کننده",
+      "tracking": "سیستم ردیابی ارجاعات",
+      "impact": "افزایش 2-5 برابری توصیه"
+    },
+    "advocacy_program": {
+      "description": "تبدیل ترویج‌کنندگان به سفیران برند",
+      "activities": [
+        "نظرات و بررسی‌ها",
+        "case studies",
+        "سخنرانی و ارائه",
+        "محتوای تولیدی کاربر"
+      ],
+      "recognition": "شناخت و تقدیر ویژه"
+    }
+  },
+  "nps_vs_other_metrics": {
+    "nps_vs_csat": {
+      "nps": "وفاداری و توصیه - نگاه بلندمدت",
+      "csat": "رضایت از یک تعامل - نگاه کوتاه‌مدت",
+      "relationship": "همبستگی متوسط (0.5-0.6)"
+    },
+    "nps_vs_ces": {
+      "nps": "تمایل به توصیه کلی",
+      "ces": "سهولت یک فرآیند خاص",
+      "relationship": "همبستگی متوسط (0.4-0.5)"
+    },
+    "optimal_use": "استفاده همزمان از هر سه برای دید جامع"
+  },
+  "qualitative_analysis": {
+    "open_ended_responses": "دلیل امتیاز شما چیست؟",
+    "text_mining": [
+      "دسته‌بندی موضوعی",
+      "تحلیل احساسات (Sentiment)",
+      "شناسایی الگوها",
+      "Word clouds"
+    ],
+    "insights": [
+      "درایورهای اصلی NPS",
+      "مشکلات و فرصت‌ها",
+      "نوآوری‌های پیشنهادی",
+      "رقبا"
+    ]
+  },
+  "correlation_with_outcomes": {
+    "revenue_growth": "همبستگی مثبت 0.6-0.8",
+    "customer_retention": "همبستگی مثبت 0.7-0.8",
+    "customer_lifetime_value": "همبستگی مثبت 0.6-0.7",
+    "word_of_mouth": "همبستگی مثبت 0.8-0.9",
+    "market_share": "همبستگی مثبت 0.5-0.6",
+    "referral_rate": "همبستگی مثبت 0.7-0.8"
+  },
+  "organizational_impact": {
+    "cultural_change": [
+      "تمرکز بر مشتری در تمام سطوح",
+      "مسئولیت‌پذیری همگانی",
+      "تصمیم‌گیری مبتنی بر داده",
+      "بهبود مستمر"
+    ],
+    "operational_improvements": [
+      "شناسایی گلوگاه‌ها",
+      "اولویت‌بندی منابع",
+      "همسویی تیم‌ها",
+      "نوآوری محصول/خدمت"
+    }
+  },
+  "common_pitfalls": {
+    "pitfalls": [
+      {
+        "pitfall": "تمرکز فقط بر عدد، نه علل",
+        "solution": "تحلیل عمیق نظرات و اقدام روی علل ریشه‌ای"
+      },
+      {
+        "pitfall": "نرخ پاسخ پایین (<15%)",
+        "solution": "ساده‌سازی نظرسنجی، زمان‌بندی مناسب، انگیزه"
+      },
+      {
+        "pitfall": "عدم اقدام روی بازخورد",
+        "solution": "Closed-loop feedback، پیگیری سیستماتیک"
+      },
+      {
+        "pitfall": "مقایسه نادرست با صنایع مختلف",
+        "solution": "مقایسه با همان صنعت و رقبای مستقیم"
+      },
+      {
+        "pitfall": "بیش از حد نظرسنجی (Survey fatigue)",
+        "solution": "حداکثر فصلی، کوتاه و هدفمند"
+      }
+    ]
+  },
+  "response_rate_optimization": {
+    "target": ">30%",
+    "strategies": [
+      "زمان‌بندی مناسب (نه خیلی زود، نه خیلی دیر)",
+      "کوتاه بودن (2-3 سوال)",
+      "موبایل-فرندلی",
+      "شخصی‌سازی",
+      "توضیح ارزش بازخورد",
+      "گاهی انگیزه (با احتیاط)"
+    ],
+    "timing": {
+      "transactional_nps": "1-3 روز پس از تعامل",
+      "relationship_nps": "فصلی، زمان ثابت"
+    }
+  },
+  "continuous_improvement": {
+    "quarterly_cycle": [
+      "نظرسنجی NPS",
+      "تحلیل نتایج و روندها",
+      "شناسایی اولویت‌های بهبود",
+      "طراحی و اجرای ابتکارات",
+      "پیگیری منتقدان (Closed-loop)",
+      "اندازه‌گیری تأثیر اقدامات"
+    ],
+    "closed_loop_feedback": {
+      "step_1": "شناسایی خودکار منتقدان",
+      "step_2": "تماس ظرف 24-48 ساعت",
+      "step_3": "گوش دادن و حل مشکل",
+      "step_4": "پیگیری تا رضایت",
+      "step_5": "ثبت درس‌آموخته",
+      "impact": "تبدیل 20-30% منتقدان به ترویج‌کننده"
+    }
+  },
+  "digital_transformation": {
+    "real_time_nps": "نظرسنجی در لحظه پس از تعامل",
+    "ai_analysis": "تحلیل خودکار نظرات با NLP",
+    "predictive_nps": "پیش‌بینی NPS بر اساس رفتار",
+    "automated_alerts": "هشدار خودکار برای منتقدان",
+    "dashboard": "داشبورد real-time برای مدیران"
+  },
+  "notes": [
+    "NPS ساده است اما قدرتمند - یک سوال، بینش عمیق",
+    "عدد مهم است اما علل و اقدامات مهم‌تر هستند",
+    "منتقدان فرصت‌اند، نه تهدید - می‌توانند به ترویج‌کننده تبدیل شوند",
+    "منفعلین بزرگترین فرصت هستند - 35-45% مشتریان",
+    "NPS باید در DNA سازمان باشد، نه فقط یک متریک"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
