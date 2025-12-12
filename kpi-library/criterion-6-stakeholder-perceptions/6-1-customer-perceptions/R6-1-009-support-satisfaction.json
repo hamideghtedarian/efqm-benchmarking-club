@@ -1,0 +1,571 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-009",
+    "kpi_name_fa": "رضایت از پشتیبانی و خدمات مشتری",
+    "kpi_name_en": "Customer Support Satisfaction",
+    "acronym": "CSS",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Support Quality"
+  },
+  "definition": {
+    "description_fa": "میزان رضایت مشتریان از خدمات پشتیبانی و خدمات پس از فروش سازمان. این شاخص کیفیت تعاملات با تیم پشتیبانی، سرعت پاسخگویی، تخصص کارشناسان، نحوه برخورد، و توانایی حل مشکل را از دیدگاه مشتری ارزیابی می‌کند. پشتیبانی خوب می‌تواند تجربه بد را به فرصتی برای تقویت وفاداری تبدیل کند.",
+    "description_en": "The level of customer satisfaction with the organization's support services and after-sales service. This KPI evaluates the quality of interactions with support teams, response speed, agent expertise, manner of treatment, and problem-solving ability from the customer's perspective. Good support can transform a bad experience into an opportunity to strengthen loyalty.",
+    "purpose": "ارزیابی کیفیت خدمات پشتیبانی و شناسایی فرصت‌های بهبود در تعاملات حل مشکل",
+    "scope": "تمام کانال‌ها و نقاط تماس پشتیبانی مشتری",
+    "key_insight": "تحقیقات نشان می‌دهد یک تجربه پشتیبانی خوب می‌تواند وفاداری را بیش از یک محصول عالی افزایش دهد"
+  },
+  "measurement": {
+    "formula": "((تعداد مشتریان راضی از پشتیبانی / کل مشتریان دریافت‌کننده پشتیبانی) × 100)",
+    "formula_en": "((Number of customers satisfied with support / Total customers receiving support) × 100)",
+    "unit": "درصد",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "مستمر (پس از هر تعامل پشتیبانی)",
+    "data_source": [
+      "نظرسنجی پس از پشتیبانی",
+      "ارزیابی تماس تلفنی",
+      "بازخورد چت و ایمیل",
+      "نظرات در پورتال پشتیبانی",
+      "سیستم ticketing"
+    ],
+    "rating_scale": {
+      "5": "بسیار راضی از پشتیبانی",
+      "4": "راضی",
+      "3": "نه راضی نه ناراضی",
+      "2": "ناراضی",
+      "1": "بسیار ناراضی"
+    },
+    "threshold_satisfied": "امتیاز 4 یا 5 از 5"
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی خودکار پس از بسته شدن تیکت یا پایان تماس",
+    "sample_size": "تمام تعاملات پشتیبانی (هدف: response rate > 30%)",
+    "sampling_method": "تمام‌شماری - ارسال به تمام مشتریان",
+    "timing": "بلافاصله پس از حل مشکل یا بسته شدن تیکت",
+    "survey_design": {
+      "main_question": "از کیفیت پشتیبانی دریافتی چقدر راضی بودید؟",
+      "sub_dimensions": [
+        "سرعت پاسخ",
+        "تخصص کارشناس",
+        "رفتار و برخورد",
+        "حل کامل مشکل",
+        "وضوح توضیحات"
+      ],
+      "open_question": "چه چیزی می‌توانست بهتر باشد؟"
+    },
+    "channels": [
+      "ایمیل خودکار",
+      "SMS",
+      "نظرسنجی در پایان چت",
+      "IVR پس از تماس تلفنی",
+      "پاپ‌آپ در پورتال"
+    ],
+    "data_quality_checks": [
+      "تأیید دریافت پشتیبانی",
+      "حذف پاسخ‌های قبل از حل مشکل",
+      "بررسی سازگاری با وضعیت تیکت",
+      "شناسایی الگوهای غیرعادی"
+    ],
+    "responsible_department": "مدیریت خدمات مشتری، مدیریت پشتیبانی",
+    "responsible_person": "مدیر پشتیبانی، مدیر تجربه مشتری"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 800 تعامل پشتیبانی در یک ماه",
+    "input_data": {
+      "total_support_interactions": 800,
+      "responses_received": 320,
+      "response_rate": "40%",
+      "rating_5": 140,
+      "rating_4": 110,
+      "rating_3": 40,
+      "rating_2": 20,
+      "rating_1": 10,
+      "satisfied_customers": 250
+    },
+    "calculation_steps": [
+      "گام 1: شمارش مشتریان راضی (امتیاز 4-5) = 140 + 110 = 250",
+      "گام 2: محاسبه درصد = (250 / 320) × 100 = 78.1%",
+      "گام 3: تحلیل ناراضی‌ها = (20 + 10) / 320 = 9.4%"
+    ],
+    "result": "78.1%",
+    "interpretation": "78.1% از مشتریانی که پشتیبانی دریافت کردند راضی هستند. این خوب است اما نسبت به استانداردهای جهانی (>85%) فاصله دارد. 9.4% ناراضی هستند که نیاز به توجه ویژه دارد."
+  },
+  "benchmarking": {
+    "european_leaders": {
+      "top_quartile": {
+        "value": "≥88%",
+        "description": "شرکت‌های برتر اروپایی با پشتیبانی استثنایی",
+        "examples": [
+          "Zappos: 92% (افسانه خدمات مشتری)",
+          "Apple Genius Bar: 90%",
+          "Ritz-Carlton: 91%"
+        ]
+      },
+      "median": {
+        "value": "80-85%",
+        "description": "میانه شرکت‌های اروپایی"
+      },
+      "top_companies": [
+        {
+          "company": "Zappos",
+          "country": "آمریکا (الگو جهانی)",
+          "value": "92%",
+          "year": 2024
+        },
+        {
+          "company": "Apple",
+          "country": "چندملیتی",
+          "value": "90%",
+          "year": 2024
+        },
+        {
+          "company": "Amazon",
+          "country": "چندملیتی",
+          "value": "88%",
+          "year": 2024
+        }
+      ]
+    },
+    "industry_averages": {
+      "technology": "82-87%",
+      "financial_services": "78-83%",
+      "telecom": "70-75%",
+      "utilities": "68-73%",
+      "retail": "75-80%",
+      "healthcare": "80-85%",
+      "hospitality": "85-90%",
+      "b2b_services": "80-85%"
+    },
+    "world_class": {
+      "value": "≥90%",
+      "description": "استاندارد جهانی برتر - پشتیبانی استثنایی",
+      "note": "شرکت‌هایی که پشتیبانی را به مزیت رقابتی تبدیل کرده‌اند"
+    }
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "میانگین ماه اول",
+      "note": "بر اساس نظرسنجی اولیه"
+    },
+    "short_term": {
+      "target": "baseline + 5-7%",
+      "timeframe": "3-6 ماه",
+      "action_required": "آموزش تیم و بهبود فرآیندهای اصلی"
+    },
+    "medium_term": {
+      "target": "85-88%",
+      "timeframe": "12 ماه",
+      "action_required": "استقرار سیستم جامع پشتیبانی و ابزارهای پیشرفته"
+    },
+    "long_term": {
+      "target": "≥90%",
+      "timeframe": "24 ماه",
+      "action_required": "ایجاد فرهنگ پشتیبانی برتر و تمایز رقابتی"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 100,
+      "explanation": "شاخص به‌طور دقیق رضایت از پشتیبانی را اندازه‌گیری می‌کند"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "با مقیاس 1-5 و تبدیل به درصد کاملاً قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 95,
+      "explanation": "با سیستم نظرسنجی خودکار پس از هر تعامل قابل دستیابی است"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "پشتیبانی خوب تأثیر مستقیم بر وفاداری و تجربه مشتری دارد"
+    },
+    "time_bound": {
+      "score": 100,
+      "explanation": "به‌صورت مستمر و real-time قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 99,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 98,
+      "explanation": "رضایت از پشتیبانی نتیجه مستقیم عملکرد تیم و سیستم‌ها است"
+    },
+    "approach": {
+      "score": 95,
+      "explanation": "نیاز به رویکرد سیستماتیک آموزش، ابزار و فرآیند دارد"
+    },
+    "deployment": {
+      "score": 93,
+      "explanation": "باید در تمام کانال‌های پشتیبانی به‌طور یکسان اعمال شود"
+    },
+    "assessment_refinement": {
+      "score": 95,
+      "explanation": "سیستم بازخورد مستمر و بهبود دائمی"
+    },
+    "overall_radar_score": 95,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 3 - مشارکت ذی‌نفعان",
+      "معیار 5 - مدیریت عملکرد"
+    ],
+    "strategic_objectives": [
+      "ارائه پشتیبانی برتر",
+      "تبدیل مشتریان ناراضی به راضی",
+      "ایجاد مزیت رقابتی از طریق خدمات",
+      "کاهش Churn"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری و فرآیندهای داخلی",
+      "objective": "تعالی در خدمات مشتری"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "آموزش جامع مهارت‌های نرم به تیم پشتیبانی",
+      "expected_impact": "+5-8%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "پیاده‌سازی CRM و Knowledge Base پیشرفته",
+      "expected_impact": "+4-6%",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "استقرار Omnichannel Support",
+      "expected_impact": "+3-5%",
+      "timeframe": "9 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "برنامه Coach و Mentor برای تیم",
+      "expected_impact": "+4-6%",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "اتوماسیون و Self-Service پیشرفته",
+      "expected_impact": "+3-5%",
+      "timeframe": "9 ماه",
+      "priority": "متوسط"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند روزانه + توزیع امتیازات + مقایسه بین کانال‌ها و اپراتورها",
+    "report_frequency": "روزانه برای سرپرستان، هفتگی برای مدیریت، ماهانه برای مدیریت ارشد",
+    "alert_thresholds": {
+      "critical": "<75%",
+      "warning": "75-80%",
+      "good": "80-88%",
+      "excellent": ">88%"
+    },
+    "individual_tracking": "ردیابی عملکرد هر اپراتور برای آموزش و توسعه",
+    "stakeholders": [
+      "مدیر پشتیبانی",
+      "سرپرستان تیم",
+      "مدیر تجربه مشتری",
+      "مدیر عملیات",
+      "مدیر منابع انسانی"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R6-1-012: زمان پاسخ به درخواست",
+      "R6-1-013: حل در اولین تماس (FCR)",
+      "R7-2-008: دسترس‌بودن پشتیبانی",
+      "R7-2-009: میانگین زمان حل مشکل"
+    ],
+    "lagging_indicators": [
+      "R6-1-001: NPS",
+      "R6-1-003: نرخ حفظ مشتری",
+      "R6-1-014: نرخ شکایات",
+      "R7-2-010: نرخ Escalation"
+    ],
+    "complementary_kpis": [
+      "R6-1-006: CSAT کلی",
+      "R6-1-007: CES",
+      "R6-2-001: رضایت کارکنان پشتیبانی"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "COPC Customer Experience Standard",
+      "ISO 18295:2017 - Customer Contact Centers",
+      "EFQM Model 2025 - Criterion 6.1"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی ارزیابی پشتیبانی",
+      "دستورالعمل مدیریت کیفیت تماس",
+      "چارچوب آموزش تیم پشتیبانی"
+    ],
+    "training_materials": [
+      "آموزش مهارت‌های ارتباطی",
+      "آموزش حل مسئله و تصمیم‌گیری",
+      "آموزش مدیریت استرس و مشتریان سخت"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر پشتیبانی",
+    "reviewer": "مدیر تجربه مشتری",
+    "approver": "مدیر عملیات",
+    "review_frequency": "هفتگی",
+    "data_retention": "36 ماه",
+    "access_level": "عمومی - قابل دسترسی برای تیم پشتیبانی و مدیران"
+  },
+  "support_quality_dimensions": {
+    "responsiveness": {
+      "weight": 25,
+      "description": "سرعت پاسخ و حل مشکل",
+      "metrics": ["زمان پاسخ اول", "زمان حل کل"]
+    },
+    "expertise": {
+      "weight": 25,
+      "description": "دانش و تخصص کارشناس",
+      "metrics": ["نرخ حل در اولین تماس", "صحت اطلاعات"]
+    },
+    "empathy": {
+      "weight": 20,
+      "description": "همدلی و درک احساسات مشتری",
+      "metrics": ["نظرسنجی رفتار", "شکایات رفتاری"]
+    },
+    "communication": {
+      "weight": 15,
+      "description": "وضوح و سادگی توضیحات",
+      "metrics": ["نظرسنجی وضوح", "نیاز به توضیح مجدد"]
+    },
+    "resolution": {
+      "weight": 15,
+      "description": "حل کامل و پایدار مشکل",
+      "metrics": ["نرخ مراجعه مجدد", "بازگشت تیکت"]
+    }
+  },
+  "channel_analysis": {
+    "phone": {
+      "typical_satisfaction": "80-85%",
+      "advantages": ["تعامل انسانی", "حل سریع مسائل پیچیده"],
+      "challenges": ["پرهزینه", "محدودیت ساعات کاری"]
+    },
+    "email": {
+      "typical_satisfaction": "75-80%",
+      "advantages": ["مستندسازی", "زمان تفکر برای پاسخ"],
+      "challenges": ["کند", "احتمال سوءتفاهم"]
+    },
+    "live_chat": {
+      "typical_satisfaction": "82-87%",
+      "advantages": ["سریع", "راحت", "امکان multitasking"],
+      "challenges": ["محدودیت در مسائل پیچیده"]
+    },
+    "self_service": {
+      "typical_satisfaction": "70-80%",
+      "advantages": ["24/7", "سریع", "مقرون‌به‌صرفه"],
+      "challenges": ["محدود به مسائل ساده", "نیاز به محتوای خوب"]
+    },
+    "social_media": {
+      "typical_satisfaction": "78-83%",
+      "advantages": ["عمومی", "سریع", "شفاف"],
+      "challenges": ["فشار عمومی", "نیاز به واکنش فوری"]
+    }
+  },
+  "segmentation_analysis": {
+    "by_issue_type": [
+      "مسائل فنی",
+      "سوالات محصول",
+      "مشکلات پرداخت",
+      "شکایات",
+      "درخواست‌های خاص"
+    ],
+    "by_customer_segment": [
+      "مشتریان VIP",
+      "مشتریان معمولی",
+      "مشتریان جدید",
+      "B2B vs B2C"
+    ],
+    "by_complexity": [
+      "مسائل ساده (حل در <5 دقیقه)",
+      "مسائل متوسط (5-30 دقیقه)",
+      "مسائل پیچیده (>30 دقیقه)"
+    ]
+  },
+  "data_analysis": {
+    "key_metrics": [
+      "میانگین رضایت پشتیبانی",
+      "توزیع امتیازات",
+      "مقایسه بین کانال‌ها",
+      "مقایسه بین اپراتورها",
+      "روند زمانی",
+      "نرخ پاسخ به نظرسنجی"
+    ],
+    "root_cause_analysis": [
+      "تحلیل نظرات باز",
+      "شناسایی الگوهای نارضایتی",
+      "تحلیل escalation",
+      "بررسی ضبط تماس‌های امتیاز پایین"
+    ],
+    "statistical_methods": [
+      "تحلیل واریانس بین اپراتورها",
+      "همبستگی با FCR و زمان پاسخ",
+      "تحلیل رگرسیون درایورهای رضایت",
+      "Text Mining نظرات"
+    ],
+    "visualization": [
+      "نمودار خطی روند",
+      "نمودار ستونی مقایسه کانال‌ها",
+      "Heat map (اپراتور × زمان)",
+      "Word cloud نظرات"
+    ]
+  },
+  "agent_performance": {
+    "individual_metrics": [
+      "میانگین رضایت",
+      "تعداد تعاملات",
+      "نرخ FCR",
+      "میانگین زمان حل",
+      "نرخ escalation"
+    ],
+    "performance_tiers": {
+      "star_performers": "≥92% رضایت",
+      "good_performers": "85-91% رضایت",
+      "needs_improvement": "75-84% رضایت",
+      "critical": "<75% رضایت"
+    },
+    "coaching_approach": [
+      "بررسی تماس‌های امتیاز پایین",
+      "آموزش مهارت‌های خاص",
+      "shadowing با star performers",
+      "بازخورد منظم و سازنده"
+    ]
+  },
+  "customer_recovery": {
+    "detractor_management": {
+      "trigger": "امتیاز 1-2",
+      "action": "تماس فوری سرپرست",
+      "goal": "تبدیل تجربه منفی به مثبت",
+      "timeframe": "ظرف 24 ساعت"
+    },
+    "service_recovery_paradox": "مشتریانی که مشکلشان به‌خوبی حل شود، وفادارتر از مشتریانی می‌شوند که اصلاً مشکل نداشته‌اند",
+    "recovery_strategies": [
+      "عذرخواهی صادقانه",
+      "حل سریع و کامل مشکل",
+      "جبران خسارت مناسب",
+      "پیگیری بعد از حل"
+    ]
+  },
+  "correlation_with_outcomes": {
+    "customer_retention": "همبستگی مثبت 0.7-0.8",
+    "nps": "همبستگی مثبت 0.6-0.7",
+    "repeat_purchase": "همبستگی مثبت 0.5-0.6",
+    "word_of_mouth": "همبستگی مثبت 0.6-0.7",
+    "churn": "همبستگی منفی 0.6-0.7"
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "Burnout تیم پشتیبانی",
+        "impact": "بالا",
+        "mitigation": "مدیریت حجم کار، حمایت روانی، تناوب وظایف"
+      },
+      {
+        "risk": "کیفیت ناهمگون بین اپراتورها",
+        "impact": "متوسط",
+        "mitigation": "آموزش مستمر، استانداردسازی، Quality Assurance"
+      },
+      {
+        "risk": "افزایش حجم تماس‌ها بدون افزایش منابع",
+        "impact": "بالا",
+        "mitigation": "اتوماسیون، self-service، پیش‌بینی تقاضا"
+      },
+      {
+        "risk": "عدم همسویی بین کانال‌ها",
+        "impact": "متوسط",
+        "mitigation": "پلتفرم یکپارچه، آموزش omnichannel"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "quality_assurance": [
+      "نمونه‌برداری تصادفی تعاملات",
+      "ارزیابی بر اساس چک‌لیست استاندارد",
+      "بازخورد منظم به اپراتورها",
+      "تشویق و پاداش عملکرد برتر"
+    ],
+    "knowledge_management": [
+      "ایجاد و به‌روزرسانی Knowledge Base",
+      "اشتراک بهترین شیوه‌ها",
+      "ثبت راه‌حل‌های موفق",
+      "آموزش مستمر بر اساس موارد جدید"
+    ],
+    "process_optimization": [
+      "شناسایی گلوگاه‌ها",
+      "ساده‌سازی فرآیندها",
+      "حذف مراحل غیرضروری",
+      "اتوماسیون کارهای تکراری"
+    ]
+  },
+  "digital_transformation": {
+    "ai_chatbots": {
+      "benefits": ["24/7", "پاسخ فوری", "مقیاس‌پذیر"],
+      "best_use": "سوالات ساده و تکراری (30-40% تعاملات)",
+      "handoff_to_human": "برای مسائل پیچیده و احساسی"
+    },
+    "predictive_analytics": [
+      "پیش‌بینی حجم تماس",
+      "شناسایی مشتریان در معرض خطر",
+      "توصیه راه‌حل به اپراتور",
+      "routing هوشمند"
+    ],
+    "omnichannel_platform": [
+      "دید یکپارچه تاریخچه مشتری",
+      "انتقال یکپارچه بین کانال‌ها",
+      "همگام‌سازی اطلاعات real-time"
+    ]
+  },
+  "training_program": {
+    "onboarding": {
+      "duration": "4-6 هفته",
+      "content": ["محصولات/خدمات", "سیستم‌ها", "مهارت‌های نرم", "سناریوهای واقعی"]
+    },
+    "ongoing_training": {
+      "frequency": "ماهانه",
+      "content": ["محصولات جدید", "بهبود مهارت‌ها", "موارد پیچیده", "بازخورد عملکرد"]
+    },
+    "soft_skills": [
+      "گوش دادن فعال",
+      "همدلی",
+      "مدیریت تعارض",
+      "ارتباط موثر",
+      "مدیریت استرس"
+    ]
+  },
+  "notes": [
+    "یک تجربه پشتیبانی خوب می‌تواند مشتری ناراضی را به سفیر برند تبدیل کند",
+    "سرعت مهم است، اما حل کامل مشکل مهم‌تر است",
+    "همدلی و گوش دادن به‌اندازه دانش فنی مهم است",
+    "کارکنان شاد و حمایت‌شده، مشتریان شادتری می‌سازند",
+    "پشتیبانی باید به‌عنوان مزیت رقابتی دیده شود، نه هزینه"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+  }
