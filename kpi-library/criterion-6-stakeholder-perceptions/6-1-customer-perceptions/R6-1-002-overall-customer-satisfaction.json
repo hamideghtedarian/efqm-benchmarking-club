@@ -1,0 +1,565 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-002",
+    "kpi_name_fa": "رضایت کلی مشتری",
+    "kpi_name_en": "Overall Customer Satisfaction",
+    "acronym": "OCS",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Overall Satisfaction"
+  },
+  "definition": {
+    "description_fa": "رضایت کلی مشتری یک شاخص جامع برای ارزیابی میزان رضایت کلی مشتریان از سازمان، محصولات و خدمات است. این شاخص نگاه کلان‌نگر به رابطه مشتری با سازمان دارد و تجربه کلی را در تمام نقاط تماس ارزیابی می‌کند - از کیفیت محصول، خدمات پس از فروش، پشتیبانی، قیمت، تا ارزش کلی دریافتی. رضایت کلی بر خلاف CSAT که به یک تعامل خاص محدود است، رابطه بلندمدت را سنجیده و پیش‌بینی‌کننده مهمی برای وفاداری، خریدهای مکرر، و توصیه است.",
+    "description_en": "Overall Customer Satisfaction is a comprehensive metric for evaluating customers' total satisfaction with the organization, products, and services. This metric takes a holistic view of the customer-organization relationship and evaluates the entire experience across all touchpoints - from product quality, after-sales service, support, pricing, to overall value received. Unlike CSAT which focuses on a specific interaction, overall satisfaction measures the long-term relationship and is an important predictor of loyalty, repeat purchases, and recommendations.",
+    "purpose": "ارزیابی سلامت کلی رابطه با مشتری و شناسایی فرصت‌های استراتژیک بهبود",
+    "scope": "تجربه کلی مشتری در تمام ابعاد و نقاط تماس",
+    "key_insight": "رضایت کلی شاخص تلفیقی است که سلامت کلی رابطه با مشتری را نشان می‌دهد"
+  },
+  "measurement": {
+    "formula": "میانگین رضایت کلی از تمام ابعاد تجربه",
+    "formula_detailed": "OCS = (مجموع امتیازات رضایت کلی / تعداد پاسخ‌ها) × 20",
+    "formula_en": "OCS = (Sum of overall satisfaction scores / Number of responses) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "فصلی یا نیم‌سال",
+    "data_source": [
+      "نظرسنجی رضایت جامع",
+      "مصاحبه‌های عمقی",
+      "گروه‌های کانونی",
+      "تحلیل ترکیبی شاخص‌های جزئی"
+    ],
+    "standard_question": "به‌طور کلی، تا چه حد از [شرکت/برند] راضی هستید؟",
+    "rating_scale": {
+      "5": "کاملاً راضی",
+      "4": "راضی",
+      "3": "نه راضی نه ناراضی",
+      "2": "ناراضی",
+      "1": "کاملاً ناراضی"
+    }
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی جامع رضایت با سوالات چندبعدی",
+    "sample_size": "حداقل 500 مشتری برای دقت آماری",
+    "sampling_method": "تصادفی طبقه‌ای از سگمنت‌های مختلف مشتری",
+    "timing": "فصلی یا نیم‌سال (relationship-based)",
+    "survey_design": {
+      "main_question": "رضایت کلی (1-5)",
+      "dimension_questions": [
+        "کیفیت محصول/خدمت",
+        "ارزش در مقابل پول",
+        "خدمات مشتری و پشتیبانی",
+        "سهولت کار با ما",
+        "نوآوری و بهبود مستمر",
+        "اعتماد و قابلیت اطمینان"
+      ],
+      "open_questions": [
+        "بهترین جنبه کار با ما چیست؟",
+        "چه چیزی باید بهبود یابد؟",
+        "چه انتظاری از ما دارید که برآورده نشده؟"
+      ],
+      "length": "10-15 سوال (نه خیلی طولانی)"
+    },
+    "channels": [
+      "ایمیل",
+      "تلفن (CATI)",
+      "آنلاین (وب/اپ)",
+      "مصاحبه حضوری (B2B)"
+    ],
+    "response_rate_target": ">25%",
+    "data_quality_checks": [
+      "حذف پاسخ‌های ناقص",
+      "بررسی الگوهای غیرعادی",
+      "تأیید هویت پاسخ‌دهندگان",
+      "تحلیل سازگاری داخلی"
+    ],
+    "responsible_department": "مدیریت تجربه مشتری، تحقیقات بازار",
+    "responsible_person": "مدیر CX، مدیر کیفیت"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی رضایت کلی از 600 مشتری",
+    "input_data": {
+      "total_responses": 600,
+      "score_5_very_satisfied": 180,
+      "score_4_satisfied": 240,
+      "score_3_neutral": 120,
+      "score_2_dissatisfied": 45,
+      "score_1_very_dissatisfied": 15,
+      "dimension_scores": {
+        "product_quality": 4.2,
+        "value_for_money": 3.8,
+        "customer_service": 4.0,
+        "ease_of_doing_business": 3.9,
+        "innovation": 4.1,
+        "trust": 4.3
+      }
+    },
+    "calculation_steps": [
+      "گام 1: محاسبه مجموع امتیازات = (180×5) + (240×4) + (120×3) + (45×2) + (15×1)",
+      "       = 900 + 960 + 360 + 90 + 15 = 2325",
+      "گام 2: محاسبه میانگین = 2325 / 600 = 3.875",
+      "گام 3: تبدیل به درصد = (3.875 / 5) × 100 = 77.5%",
+      "گام 4: درصد راضی (4-5) = (180 + 240) / 600 = 70%",
+      "گام 5: میانگین ابعاد = (4.2 + 3.8 + 4.0 + 3.9 + 4.1 + 4.3) / 6 = 4.05"
+    ],
+    "result": "77.5%",
+    "interpretation": "رضایت کلی 77.5% است که در سطح خوب قرار دارد. 70% مشتریان راضی یا کاملاً راضی هستند. ضعیف‌ترین بعد 'ارزش در مقابل پول' (3.8) و قوی‌ترین بعد 'اعتماد' (4.3) است. باید روی بهبود ارزش درک شده تمرکز کرد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    },
+    "by_industry": {
+      "luxury_retail": "80-90%",
+      "technology": "75-85%",
+      "e_commerce": "70-80%",
+      "banking": "65-75%",
+      "insurance": "60-70%",
+      "telecom": "55-65%",
+      "utilities": "60-70%",
+      "healthcare": "70-80%",
+      "hospitality": "75-85%",
+      "automotive": "70-80%"
+    },
+    "european_leaders": [
+      {
+        "company": "Ritz-Carlton",
+        "score": "92%",
+        "industry": "هتلداری",
+        "year": 2024
+      },
+      {
+        "company": "Mercedes-Benz",
+        "score": "87%",
+        "industry": "خودرو",
+        "year": 2024
+      },
+      {
+        "company": "Nordstrom",
+        "score": "86%",
+        "industry": "خرده‌فروشی",
+        "year": 2024
+      }
+    ]
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "میانگین اولین نظرسنجی جامع",
+      "note": "با نمونه نمایندگی از همه سگمنت‌ها"
+    },
+    "short_term": {
+      "target": "baseline + 3-5%",
+      "timeframe": "6 ماه",
+      "action_required": "بهبود ضعیف‌ترین ابعاد"
+    },
+    "medium_term": {
+      "target": "75-80%",
+      "timeframe": "12-18 ماه",
+      "action_required": "بهبود سیستماتیک تجربه در تمام نقاط تماس"
+    },
+    "long_term": {
+      "target": "≥85%",
+      "timeframe": "24-36 ماه",
+      "action_required": "دستیابی به تجربه استثنایی world-class"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 98,
+      "explanation": "رضایت کلی را اندازه‌گیری می‌کند، اگرچه مفهوم چندبعدی است"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "با نظرسنجی استاندارد کاملاً قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 90,
+      "explanation": "نیاز به نظرسنجی جامع دارد اما قابل دستیابی است"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "رضایت کلی شاخص کلیدی سلامت رابطه با مشتری است"
+    },
+    "time_bound": {
+      "score": 95,
+      "explanation": "فصلی یا نیم‌سال قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 97,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 95,
+      "explanation": "رضایت کلی نتیجه همه تلاش‌های سازمان است"
+    },
+    "approach": {
+      "score": 90,
+      "explanation": "نیاز به رویکرد جامع در تمام ابعاد تجربه"
+    },
+    "deployment": {
+      "score": 88,
+      "explanation": "باید در تمام بخش‌ها و نقاط تماس اجرا شود"
+    },
+    "assessment_refinement": {
+      "score": 92,
+      "explanation": "ارزیابی مستمر و بهبود بر اساس بازخورد"
+    },
+    "overall_radar_score": 91,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 4 - ایجاد ارزش پایدار",
+      "معیار 2 - فرهنگ و رهبری"
+    ],
+    "strategic_objectives": [
+      "افزایش رضایت و وفاداری",
+      "بهبود تجربه کلی مشتری",
+      "تمایز رقابتی",
+      "رشد پایدار"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری",
+      "objective": "رضایت و وفاداری بالا"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "بهبود هدفمند ضعیف‌ترین بعد شناسایی شده",
+      "expected_impact": "+3 تا +5%",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "نقشه‌برداری و بهینه‌سازی سفر مشتری",
+      "expected_impact": "+5 تا +8%",
+      "timeframe": "9 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "برنامه Voice of Customer (VoC)",
+      "expected_impact": "+4 تا +7%",
+      "timeframe": "12 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "فرهنگ‌سازی Customer-Centric",
+      "expected_impact": "+5 تا +10%",
+      "timeframe": "18 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "بهبود ارزش پیشنهادی (Value Proposition)",
+      "expected_impact": "+3 تا +6%",
+      "timeframe": "12 ماه",
+      "priority": "متوسط"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند + نمودار راداری ابعاد + توزیع امتیازات + مقایسه سگمنت‌ها",
+    "report_frequency": "ماهانه برای اقدامات، فصلی برای مدیریت ارشد، سالانه برای هیئت‌مدیره",
+    "alert_thresholds": {
+      "critical": "<60%",
+      "warning": "60-70%",
+      "good": "70-85%",
+      "excellent": ">85%"
+    },
+    "stakeholders": [
+      "مدیرعامل",
+      "هیئت‌مدیره",
+      "تمام مدیران ارشد",
+      "مدیر تجربه مشتری",
+      "مدیر کیفیت"
+    ]
+  },
+  "related_kpis": {
+    "components": [
+      "R6-1-005: رضایت از کیفیت",
+      "R6-1-006: CSAT",
+      "R6-1-008: ارزش درک شده",
+      "R6-1-009: رضایت از پشتیبانی",
+      "R6-1-010: اعتماد به برند"
+    ],
+    "outcomes": [
+      "R6-1-001: NPS",
+      "R6-1-003: نرخ حفظ مشتری",
+      "R6-1-004: CLV",
+      "R7-1-016: نرخ خرید مجدد"
+    ],
+    "leading_indicators": [
+      "R6-1-007: CES",
+      "R6-1-011: سهولت خرید",
+      "R6-1-012: زمان پاسخ",
+      "R6-1-013: FCR"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "American Customer Satisfaction Index (ACSI)",
+      "European Performance Satisfaction Index (EPSI)",
+      "EFQM Model 2025 - Criterion 6.1"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی نظرسنجی رضایت جامع",
+      "دستورالعمل تحلیل چندبعدی",
+      "چارچوب بهبود تجربه مشتری"
+    ],
+    "training_materials": [
+      "آموزش مفاهیم رضایت مشتری",
+      "آموزش تحلیل داده‌های نظرسنجی",
+      "آموزش بهبود تجربه مشتری"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر تجربه مشتری",
+    "co_owner": "مدیرعامل",
+    "reviewer": "هیئت‌مدیره",
+    "approver": "هیئت‌مدیره",
+    "review_frequency": "فصلی",
+    "data_retention": "بدون محدودیت (روند تاریخی ارزشمند)",
+    "access_level": "محدود - مدیریت ارشد",
+    "board_reporting": "فصلی یا نیم‌سال"
+  },
+  "satisfaction_dimensions": {
+    "product_quality": {
+      "weight": 25,
+      "description": "کیفیت، قابلیت اطمینان، عملکرد محصول/خدمت",
+      "sub_dimensions": ["دوام", "ویژگی‌ها", "عملکرد", "طراحی"]
+    },
+    "value_for_money": {
+      "weight": 20,
+      "description": "تناسب قیمت با ارزش دریافتی",
+      "sub_dimensions": ["قیمت رقابتی", "ارزش افزوده", "شفافیت قیمت"]
+    },
+    "customer_service": {
+      "weight": 20,
+      "description": "کیفیت پشتیبانی و خدمات",
+      "sub_dimensions": ["پاسخگویی", "تخصص", "رفتار", "حل مشکل"]
+    },
+    "ease_of_doing_business": {
+      "weight": 15,
+      "description": "سهولت تعامل و انجام کار",
+      "sub_dimensions": ["فرآیندها", "دسترسی", "سرعت", "شفافیت"]
+    },
+    "innovation": {
+      "weight": 10,
+      "description": "نوآوری و بهبود مستمر",
+      "sub_dimensions": ["محصولات جدید", "ویژگی‌ها", "فناوری"]
+    },
+    "trust_reliability": {
+      "weight": 10,
+      "description": "اعتماد، قابلیت اطمینان، صداقت",
+      "sub_dimensions": ["وفای به عهد", "شفافیت", "امنیت", "اخلاق"]
+    }
+  },
+  "segmentation_analysis": {
+    "by_customer_type": [
+      "مشتریان جدید (معمولاً رضایت کمتر)",
+      "مشتریان وفادار (رضایت بالاتر)",
+      "مشتریان VIP",
+      "B2B vs B2C"
+    ],
+    "by_product_service": [
+      "خط محصول A",
+      "خط محصول B",
+      "خدمت X",
+      "خدمت Y"
+    ],
+    "by_demographics": [
+      "سن",
+      "جنسیت",
+      "منطقه جغرافیایی",
+      "سطح درآمد"
+    ],
+    "by_value": [
+      "مشتریان پرارزش (High CLV)",
+      "مشتریان متوسط",
+      "مشتریان کم‌ارزش"
+    ]
+  },
+  "driver_analysis": {
+    "statistical_methods": [
+      "تحلیل رگرسیون",
+      "تحلیل همبستگی",
+      "Driver Analysis (Key Driver)",
+      "Relative Importance Analysis"
+    ],
+    "objectives": [
+      "شناسایی مهم‌ترین عوامل رضایت",
+      "اولویت‌بندی سرمایه‌گذاری‌ها",
+      "فهم تأثیر نسبی ابعاد",
+      "پیش‌بینی رضایت"
+    ],
+    "output": "ماتریس اهمیت-عملکرد (Importance-Performance Matrix)"
+  },
+  "gap_analysis": {
+    "expectation_vs_reality": "مقایسه انتظارات مشتری با تجربه واقعی",
+    "dimensions": [
+      "کیفیت مورد انتظار vs دریافتی",
+      "خدمات مورد انتظار vs دریافتی",
+      "ارزش مورد انتظار vs دریافتی"
+    ],
+    "servqual_model": {
+      "gaps": [
+        "Gap 1: نفهمیدن انتظارات مشتری",
+        "Gap 2: طراحی نادرست خدمات",
+        "Gap 3: عدم ارائه طبق طراحی",
+        "Gap 4: اختلاف وعده و عمل",
+        "Gap 5: اختلاف انتظار و ادراک"
+      ]
+    }
+  },
+  "data_analysis": {
+    "descriptive_statistics": [
+      "میانگین، میانه، مد",
+      "انحراف معیار",
+      "توزیع فراوانی",
+      "چارک‌ها"
+    ],
+    "trend_analysis": [
+      "روند زمانی (Time series)",
+      "مقایسه دوره‌ای",
+      "شناسایی الگوها",
+      "پیش‌بینی"
+    ],
+    "comparative_analysis": [
+      "مقایسه بین سگمنت‌ها",
+      "مقایسه با رقبا (Benchmarking)",
+      "مقایسه با صنعت",
+      "مقایسه با اهداف"
+    ],
+    "text_mining": [
+      "تحلیل نظرات باز",
+      "دسته‌بندی موضوعی",
+      "تحلیل احساسات",
+      "Word clouds"
+    ]
+  },
+  "importance_performance_matrix": {
+    "quadrants": {
+      "high_importance_low_performance": {
+        "name": "اولویت اول - نیاز به بهبود فوری",
+        "action": "سرمایه‌گذاری فوری"
+      },
+      "high_importance_high_performance": {
+        "name": "حفظ عملکرد عالی",
+        "action": "حفظ و تقویت"
+      },
+      "low_importance_low_performance": {
+        "name": "اولویت پایین",
+        "action": "نیازی به سرمایه‌گذاری زیاد نیست"
+      },
+      "low_importance_high_performance": {
+        "name": "بیش از حد سرمایه‌گذاری",
+        "action": "کاهش منابع و تخصیص به جای دیگر"
+      }
+    }
+  },
+  "correlation_with_outcomes": {
+    "customer_retention": "همبستگی مثبت 0.7-0.8",
+    "customer_lifetime_value": "همبستگی مثبت 0.6-0.7",
+    "nps": "همبستگی مثبت 0.7-0.8",
+    "repurchase_rate": "همبستگی مثبت 0.6-0.7",
+    "word_of_mouth": "همبستگی مثبت 0.6-0.7",
+    "revenue_growth": "همبستگی مثبت 0.5-0.6",
+    "profitability": "همبستگی مثبت 0.4-0.5"
+  },
+  "kano_model": {
+    "basic_factors": {
+      "description": "انتظارات اولیه - وجودشان رضایت ایجاد نمی‌کند، نبودشان نارضایتی شدید",
+      "examples": ["کیفیت اولیه", "امنیت", "کارکرد صحیح"]
+    },
+    "performance_factors": {
+      "description": "عوامل خطی - هرچه بیشتر، رضایت بیشتر",
+      "examples": ["سرعت", "قیمت", "ویژگی‌های بیشتر"]
+    },
+    "excitement_factors": {
+      "description": "عوامل هیجان‌انگیز - نبودشان مشکلی نیست، وجودشان رضایت بالا",
+      "examples": ["نوآوری‌های غافلگیرکننده", "خدمات اضافی رایگان"]
+    }
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "کاهش ناگهانی رضایت (بحران)",
+        "impact": "بسیار بالا",
+        "mitigation": "سیستم هشدار زودهنگام، اقدام سریع"
+      },
+      {
+        "risk": "شکاف بین سگمنت‌ها (برخی بسیار ناراضی)",
+        "impact": "بالا",
+        "mitigation": "تحلیل سگمنتی، اقدامات هدفمند"
+      },
+      {
+        "risk": "رضایت بالا اما NPS پایین (راضی اما بی‌تفاوت)",
+        "impact": "متوسط",
+        "mitigation": "تمرکز بر ایجاد تعهد و اشتیاق، نه فقط رضایت"
+      },
+      {
+        "risk": "نرخ پاسخ پایین (نمونه نامناسب)",
+        "impact": "متوسط",
+        "mitigation": "بهبود روش جمع‌آوری، انگیزه‌دهی"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "pdca_cycle": [
+      "Plan: تحلیل نتایج و شناسایی فرصت‌ها",
+      "Do: اجرای ابتکارات بهبود",
+      "Check: اندازه‌گیری تأثیر",
+      "Act: استانداردسازی موفقیت‌ها، اصلاح شکست‌ها"
+    ],
+    "voice_of_customer": {
+      "methods": [
+        "نظرسنجی",
+        "مصاحبه عمقی",
+        "گروه‌های کانونی",
+        "Social listening",
+        "تحلیل شکایات"
+      ],
+      "integration": "ادغام VoC در فرآیندهای تصمیم‌گیری"
+    }
+  },
+  "customer_satisfaction_index": {
+    "acsi": {
+      "name": "American Customer Satisfaction Index",
+      "model": "مدل پیچیده‌تر با انتظارات، کیفیت، ارزش، رضایت، شکایات، وفاداری",
+      "application": "برای مقایسه بین‌صنعتی"
+    },
+    "epsi": {
+      "name": "European Performance Satisfaction Index",
+      "similar_to": "ACSI اما برای اروپا",
+      "countries": "بیش از 30 کشور اروپایی"
+    }
+  },
+  "notes": [
+    "رضایت کلی شاخص تلفیقی است - باید با شاخص‌های جزئی تکمیل شود",
+    "رضایت بالا ضروری است اما کافی نیست - باید به اشتیاق تبدیل شود",
+    "تمرکز بر ابعاد با بالاترین تأثیر (Driver Analysis) بیشترین بازده را دارد",
+    "مقایسه با رقبا و صنعت به‌اندازه روند داخلی مهم است",
+    "رضایت باید در DNA سازمان باشد، نه فقط مسئولیت یک بخش"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
