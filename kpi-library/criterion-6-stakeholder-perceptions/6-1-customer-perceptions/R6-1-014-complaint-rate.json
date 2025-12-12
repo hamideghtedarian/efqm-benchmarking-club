@@ -1,0 +1,573 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-014",
+    "kpi_name_fa": "نرخ شکایات مشتریان",
+    "kpi_name_en": "Customer Complaint Rate",
+    "acronym": "CCR",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Service Problems"
+  },
+  "definition": {
+    "description_fa": "نسبت تعداد شکایات رسمی مشتریان به کل تعاملات یا مشتریان در یک دوره زمانی مشخص. شکایت یک بیان نارضایتی رسمی از محصول، خدمت، یا تجربه است که مشتری انتظار دارد مورد بررسی و رفع قرار گیرد. نرخ شکایات شاخص مهمی از مشکلات کیفیت، شکاف‌های خدمات، و نقاط ضعف عملیاتی است. همچنین فرصتی برای بهبود و جلوگیری از Churn است - تحقیقات نشان می‌دهند اکثر مشتریان ناراضی شکایت نمی‌کنند و بدون هشدار می‌روند.",
+    "description_en": "The ratio of formal customer complaints to total interactions or customers in a specific period. A complaint is a formal expression of dissatisfaction with a product, service, or experience that the customer expects to be investigated and resolved. Complaint rate is an important indicator of quality issues, service gaps, and operational weaknesses. It's also an opportunity for improvement and preventing churn - research shows most dissatisfied customers don't complain and leave without warning.",
+    "purpose": "شناسایی مشکلات کیفیت و خدمات، اندازه‌گیری سطح نارضایتی، و ایجاد فرصت برای بهبود و جلوگیری از از دست دادن مشتری",
+    "scope": "تمام شکایات رسمی از تمام کانال‌ها",
+    "key_insight": "نرخ شکایات پایین لزوماً خوب نیست - ممکن است مشتریان ناراضی بدون شکایت ترک کنند. مهم است که فرصت شکایت آسان فراهم شود."
+  },
+  "measurement": {
+    "formula": "((تعداد شکایات / کل تعاملات یا مشتریان) × 100)",
+    "formula_detailed": "CCR = (تعداد شکایات رسمی / پایه محاسبه) × 100",
+    "formula_en": "CCR = (Number of formal complaints / Calculation base) × 100",
+    "unit": "درصد یا نرخ در هزار/میلیون",
+    "calculation_bases": {
+      "per_customer": "شکایات / تعداد مشتریان فعال",
+      "per_transaction": "شکایات / تعداد تراکنش‌ها",
+      "per_contact": "شکایات / تعداد تماس‌ها",
+      "per_unit_sold": "شکایات / تعداد واحدهای فروخته شده"
+    },
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "ماهانه، فصلی",
+    "data_source": [
+      "سیستم مدیریت شکایات",
+      "CRM",
+      "فرم‌های شکایت آنلاین",
+      "تماس‌های تلفنی",
+      "ایمیل‌ها",
+      "رسانه‌های اجتماعی"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "ثبت سیستماتیک تمام شکایات از تمام کانال‌ها",
+    "complaint_definition": "بیان رسمی نارضایتی که انتظار رسیدگی دارد",
+    "channels": [
+      "تلفن",
+      "ایمیل",
+      "فرم آنلاین",
+      "نامه/فکس",
+      "حضوری",
+      "رسانه‌های اجتماعی",
+      "نهادهای نظارتی"
+    ],
+    "complaint_categories": [
+      "کیفیت محصول",
+      "کیفیت خدمات",
+      "قیمت و صورتحساب",
+      "تحویل و زمان‌بندی",
+      "رفتار کارکنان",
+      "سایر"
+    ],
+    "data_fields": [
+      "شناسه مشتری",
+      "تاریخ دریافت",
+      "کانال دریافت",
+      "موضوع شکایت",
+      "شدت شکایت",
+      "وضعیت رسیدگی",
+      "تاریخ حل",
+      "نتیجه"
+    ],
+    "data_quality_checks": [
+      "جلوگیری از ثبت تکراری",
+      "طبقه‌بندی صحیح",
+      "تکمیل اطلاعات",
+      "پیگیری تا حل"
+    ],
+    "responsible_department": "مدیریت خدمات مشتری، واحد شکایات",
+    "responsible_person": "مدیر شکایات، مدیر کیفیت"
+  },
+  "calculation_example": {
+    "scenario": "محاسبه نرخ شکایات برای یک شرکت خرده‌فروشی در یک ماه",
+    "input_data": {
+      "total_customers": 50000,
+      "total_transactions": 120000,
+      "formal_complaints": 180,
+      "breakdown": {
+        "product_quality": 75,
+        "service_quality": 50,
+        "delivery": 30,
+        "billing": 15,
+        "staff_behavior": 10
+      }
+    },
+    "calculation_steps": [
+      "روش 1 (بر مبنای مشتری): CCR = (180 / 50000) × 100 = 0.36%",
+      "روش 2 (بر مبنای تراکنش): CCR = (180 / 120000) × 100 = 0.15%",
+      "روش 3 (نرخ در هزار): (180 / 50000) × 1000 = 3.6 شکایت در هزار مشتری",
+      "تحلیل موضوعی: 42% کیفیت محصول، 28% کیفیت خدمات، 17% تحویل"
+    ],
+    "result": "0.36% (بر مبنای مشتری) یا 3.6 در هزار",
+    "interpretation": "نرخ شکایات 0.36% نسبتاً خوب است اما 42% شکایات مربوط به کیفیت محصول است که نیاز به توجه ویژه دارد. باید به یاد داشت که اکثر مشتریان ناراضی شکایت نمی‌کنند."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "<0.1% (1 در هزار)",
+      "good": "0.1-0.5%",
+      "average": "0.5-1%",
+      "poor": ">1%"
+    },
+    "by_industry": {
+      "retail": "0.3-0.8%",
+      "financial_services": "0.5-1.2%",
+      "telecom": "1-2%",
+      "utilities": "0.8-1.5%",
+      "healthcare": "0.2-0.6%",
+      "hospitality": "0.4-1%",
+      "e_commerce": "0.2-0.5%",
+      "manufacturing": "0.1-0.3%"
+    },
+    "regulatory_context": {
+      "europe": "گزارش‌دهی اجباری به نهادهای نظارتی در برخی صنایع",
+      "compensation": "جبران خسارت طبق مقررات در برخی موارد"
+    }
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "میانگین 6 ماه اول",
+      "note": "با روش محاسبه استاندارد"
+    },
+    "short_term": {
+      "target": "کاهش 15-20%",
+      "timeframe": "6 ماه",
+      "action_required": "رفع مشکلات اصلی شناسایی شده"
+    },
+    "medium_term": {
+      "target": "<0.5%",
+      "timeframe": "12 ماه",
+      "action_required": "بهبود سیستماتیک کیفیت و خدمات"
+    },
+    "long_term": {
+      "target": "<0.2%",
+      "timeframe": "24 ماه",
+      "action_required": "دستیابی به سطح world-class"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 100,
+      "explanation": "نرخ شکایات را به‌طور دقیق اندازه‌گیری می‌کند"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "با ثبت سیستماتیک کاملاً قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 95,
+      "explanation": "با سیستم مدیریت شکایات به راحتی قابل ردیابی است"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "شکایات نشان‌دهنده مشکلات واقعی و فرصت بهبود هستند"
+    },
+    "time_bound": {
+      "score": 100,
+      "explanation": "ماهانه و فصلی قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 99,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 95,
+      "explanation": "شکایات نتیجه مستقیم مشکلات کیفیت و خدمات هستند"
+    },
+    "approach": {
+      "score": 90,
+      "explanation": "نیاز به رویکرد جامع برای جلوگیری و رسیدگی به شکایات"
+    },
+    "deployment": {
+      "score": 88,
+      "explanation": "باید در تمام فرآیندها و نقاط تماس اعمال شود"
+    },
+    "assessment_refinement": {
+      "score": 93,
+      "explanation": "تحلیل مستمر شکایات برای بهبود دائمی"
+    },
+    "overall_radar_score": 92,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 5 - مدیریت عملکرد",
+      "معیار 4 - ایجاد ارزش"
+    ],
+    "strategic_objectives": [
+      "کاهش نارضایتی مشتریان",
+      "بهبود کیفیت محصولات و خدمات",
+      "جلوگیری از از دست دادن مشتری",
+      "بهبود شهرت برند"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری و فرآیندهای داخلی",
+      "objective": "کاهش مشکلات و افزایش رضایت"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "تحلیل ریشه‌ای و رفع علل اصلی شکایات",
+      "expected_impact": "-30 تا -50%",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "بهبود کنترل کیفیت محصول",
+      "expected_impact": "-20 تا -40%",
+      "timeframe": "9 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "آموزش کارکنان خط مقدم",
+      "expected_impact": "-15 تا -25%",
+      "timeframe": "3 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "بهبود ارتباطات و شفافیت",
+      "expected_impact": "-10 تا -20%",
+      "timeframe": "3 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "سیستم هشدار زودهنگام",
+      "expected_impact": "-15 تا -30%",
+      "timeframe": "6 ماه",
+      "priority": "متوسط"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند + نمودار پارتو دلایل + نقشه حرارتی نقاط مشکل‌دار",
+    "report_frequency": "ماهانه برای مدیریت، فصلی برای هیئت‌مدیره",
+    "alert_thresholds": {
+      "critical": ">1%",
+      "warning": "0.5-1%",
+      "good": "0.2-0.5%",
+      "excellent": "<0.2%"
+    },
+    "stakeholders": [
+      "مدیرعامل",
+      "مدیر کیفیت",
+      "مدیر خدمات مشتری",
+      "مدیر عملیات",
+      "مدیر محصول"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R7-2-023: نرخ نقص محصول",
+      "R7-2-024: زمان تحویل",
+      "R6-1-006: CSAT",
+      "R6-1-001: NPS"
+    ],
+    "lagging_indicators": [
+      "R6-1-003: نرخ حفظ مشتری",
+      "R7-1-011: هزینه رسیدگی به شکایات",
+      "R6-5-001: شهرت برند",
+      "R7-1-012: ارزش مشتری (CLV)"
+    ],
+    "complementary_kpis": [
+      "R6-1-025: زمان رسیدگی به شکایات",
+      "R6-1-026: نرخ حل شکایات",
+      "R6-1-027: رضایت از رسیدگی"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "ISO 10002:2018 - Quality Management - Customer Satisfaction - Complaints Handling",
+      "ISO 10003:2018 - Quality Management - Customer Satisfaction - Dispute Resolution",
+      "EFQM Model 2025 - Criterion 6.1"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی ثبت و طبقه‌بندی شکایات",
+      "دستورالعمل رسیدگی به شکایات",
+      "چارچوب تحلیل ریشه‌ای"
+    ],
+    "training_materials": [
+      "آموزش مدیریت شکایات",
+      "آموزش تکنیک‌های آرام‌سازی",
+      "آموزش تحلیل ریشه‌ای"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر شکایات / مدیر کیفیت",
+    "reviewer": "مدیر خدمات مشتری",
+    "approver": "مدیرعامل",
+    "review_frequency": "ماهانه",
+    "data_retention": "حداقل 5 سال (مقررات)",
+    "access_level": "محدود - مدیران ارشد"
+  },
+  "complaint_lifecycle": {
+    "stages": [
+      {
+        "stage": "1. دریافت",
+        "activities": ["ثبت در سیستم", "تأیید دریافت به مشتری", "تخصیص شماره"],
+        "sla": "فوری"
+      },
+      {
+        "stage": "2. طبقه‌بندی",
+        "activities": ["تعیین دسته", "تعیین شدت", "اولویت‌بندی"],
+        "sla": "24 ساعت"
+      },
+      {
+        "stage": "3. بررسی",
+        "activities": ["تحقیق", "جمع‌آوری اطلاعات", "تحلیل"],
+        "sla": "3-7 روز"
+      },
+      {
+        "stage": "4. حل",
+        "activities": ["تصمیم‌گیری", "اقدام اصلاحی", "اطلاع به مشتری"],
+        "sla": "7-15 روز"
+      },
+      {
+        "stage": "5. پیگیری",
+        "activities": ["تأیید رضایت", "بستن پرونده", "ثبت درس‌آموخته"],
+        "sla": "30 روز"
+      }
+    ]
+  },
+  "complaint_severity_levels": {
+    "critical": {
+      "description": "خطر جدی برای سلامت، ایمنی، یا خسارت مالی بالا",
+      "response_time": "فوری (1 ساعت)",
+      "escalation": "مدیریت ارشد",
+      "example": "محصول معیوب خطرناک"
+    },
+    "high": {
+      "description": "مشکل جدی با تأثیر قابل توجه",
+      "response_time": "24 ساعت",
+      "escalation": "مدیر بخش",
+      "example": "عدم تحویل کالای گران‌قیمت"
+    },
+    "medium": {
+      "description": "مشکل متوسط با ناراحتی قابل توجه",
+      "response_time": "3 روز",
+      "escalation": "سرپرست",
+      "example": "کیفیت نامناسب، تأخیر تحویل"
+    },
+    "low": {
+      "description": "مشکل جزئی",
+      "response_time": "7 روز",
+      "escalation": "خط اول",
+      "example": "سوء‌تفاهم، سوالات"
+    }
+  },
+  "complaint_analysis": {
+    "by_category": "تحلیل پارتو - 20% دلایل، 80% شکایات",
+    "by_product": "شناسایی محصولات/خدمات مشکل‌دار",
+    "by_location": "شناسایی نقاط جغرافیایی با مشکل",
+    "by_time": "شناسایی الگوهای زمانی",
+    "by_customer_segment": "شناسایی سگمنت‌های پرشکایت",
+    "root_cause_analysis": [
+      "5 Whys",
+      "Fishbone Diagram",
+      "Failure Mode Analysis",
+      "Process Mapping"
+    ]
+  },
+  "segmentation_analysis": {
+    "by_category": [
+      "کیفیت محصول (معمولاً بالاترین)",
+      "کیفیت خدمات",
+      "قیمت و صورتحساب",
+      "تحویل",
+      "رفتار کارکنان"
+    ],
+    "by_severity": [
+      "Critical (نیاز به اقدام فوری)",
+      "High",
+      "Medium",
+      "Low"
+    ],
+    "by_channel": [
+      "تلفن",
+      "ایمیل",
+      "آنلاین",
+      "حضوری",
+      "رسانه‌های اجتماعی"
+    ]
+  },
+  "prevention_strategies": {
+    "proactive_measures": [
+      "کنترل کیفیت قوی",
+      "آموزش مستمر کارکنان",
+      "ارتباطات واضح و شفاف",
+      "مدیریت انتظارات",
+      "سیستم هشدار زودهنگام"
+    ],
+    "early_warning_signs": [
+      "افزایش ناگهانی NPS منفی",
+      "کاهش CSAT در بخش خاص",
+      "افزایش زمان حل مشکل",
+      "نظرات منفی در رسانه‌های اجتماعی"
+    ]
+  },
+  "complaint_handling_best_practices": {
+    "immediate_response": [
+      "تأیید فوری دریافت",
+      "ابراز همدلی",
+      "عذرخواهی صادقانه",
+      "تعهد به رسیدگی"
+    ],
+    "investigation": [
+      "گوش دادن فعال",
+      "جمع‌آوری اطلاعات کامل",
+      "تحلیل بی‌طرفانه",
+      "شناسایی علت ریشه‌ای"
+    ],
+    "resolution": [
+      "راه‌حل منصفانه و سریع",
+      "ارتباط واضح",
+      "جبران مناسب خسارت",
+      "پیگیری تا اطمینان"
+    ],
+    "learning": [
+      "ثبت درس‌آموخته",
+      "اشتراک با تیم‌ها",
+      "اقدام اصلاحی سیستماتیک",
+      "جلوگیری از تکرار"
+    ]
+  },
+  "iceberg_theory": {
+    "concept": "فقط 4-10% مشتریان ناراضی شکایت می‌کنند",
+    "implications": [
+      "هر شکایت نماینده 10-25 مشتری ناراضی است",
+      "اکثر ناراضی‌ها بدون شکایت می‌روند",
+      "شکایات فرصت طلایی برای بهبود هستند",
+      "باید شکایت را آسان کرد نه سخت"
+    ],
+    "strategies": [
+      "تشویق به بازخورد",
+      "کانال‌های آسان شکایت",
+      "نظرسنجی پیش‌فعال",
+      "پاداش برای بازخورد"
+    ]
+  },
+  "compensation_guidelines": {
+    "principles": [
+      "سریع و منصفانه",
+      "متناسب با خسارت",
+      "فراتر از انتظار (wow factor)",
+      "همراه با عذرخواهی صادقانه"
+    ],
+    "types": [
+      "جایگزینی محصول",
+      "بازگشت وجه کامل",
+      "تخفیف خرید بعدی",
+      "خدمات رایگان",
+      "هدایا"
+    ],
+    "limits": [
+      "مشخص کردن سطوح اختیار",
+      "راهنمای جبران خسارت",
+      "ثبت تمام جبران‌ها",
+      "تحلیل هزینه vs ارزش مشتری"
+    ]
+  },
+  "correlation_with_outcomes": {
+    "customer_retention": "همبستگی منفی 0.6-0.7",
+    "nps": "همبستگی منفی 0.5-0.6",
+    "word_of_mouth": "همبستگی منفی 0.6-0.7",
+    "brand_reputation": "همبستگی منفی 0.5-0.6",
+    "revenue": "همبستگی منفی 0.4-0.5"
+  },
+  "service_recovery_paradox": {
+    "concept": "رسیدگی عالی به شکایت می‌تواند وفاداری را بیش از عدم مشکل افزایش دهد",
+    "conditions": [
+      "پاسخ سریع",
+      "حل کامل مشکل",
+      "جبران مناسب",
+      "ارتباط موثر"
+    ],
+    "outcome": "مشتری از ناراضی به سفیر برند تبدیل می‌شود"
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "شکایات حل نشده منجر به رسانه یا دادگاه",
+        "impact": "بسیار بالا",
+        "mitigation": "رسیدگی سریع و منصفانه، escalation مناسب"
+      },
+      {
+        "risk": "تکرار مشکلات بدون اقدام اصلاحی",
+        "impact": "بالا",
+        "mitigation": "تحلیل ریشه‌ای و اقدام سیستماتیک"
+      },
+      {
+        "risk": "ثبت ناقص یا از دست رفتن شکایات",
+        "impact": "متوسط",
+        "mitigation": "سیستم ثبت قوی، مسئولیت‌پذیری"
+      },
+      {
+        "risk": "جبران بیش از حد یا نامناسب",
+        "impact": "متوسط",
+        "mitigation": "راهنمای واضح، مدیریت هزینه"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "complaint_as_gift": "شکایات هدیه‌اند - فرصت رایگان بهبود و حفظ مشتری",
+    "improvement_cycle": [
+      "جمع‌آوری و ثبت شکایات",
+      "تحلیل پارتو و ریشه‌ای",
+      "اولویت‌بندی اقدامات",
+      "اجرای بهبودها",
+      "اندازه‌گیری تأثیر"
+    ],
+    "organizational_learning": [
+      "جلسات بررسی ماهانه",
+      "اشتراک درس‌آموخته",
+      "تغییر فرآیندها و سیاست‌ها",
+      "آموزش بر اساس شکایات"
+    ]
+  },
+  "technology_enablers": {
+    "complaint_management_system": {
+      "features": ["ثبت مرکزی", "workflow", "ردیابی", "گزارش"],
+      "benefit": "مدیریت یکپارچه و کارآمد"
+    },
+    "sentiment_analysis": {
+      "use": "تحلیل خودکار نظرات و شناسایی مشکلات",
+      "benefit": "شناسایی زودهنگام روندهای منفی"
+    },
+    "ai_categorization": {
+      "use": "طبقه‌بندی خودکار شکایات",
+      "benefit": "سرعت و دقت بالاتر"
+    }
+  },
+  "regulatory_compliance": {
+    "europe": [
+      "گزارش‌دهی به نهادهای نظارتی",
+      "حق شکایت مشتری",
+      "مهلت‌های قانونی رسیدگی",
+      "حفظ سوابق"
+    ],
+    "financial_services": "مقررات سخت‌گیرانه‌تر",
+    "healthcare": "گزارش‌دهی اجباری موارد خطرناک",
+    "food_safety": "گزارش فوری مشکلات بهداشتی"
+  },
+  "notes": [
+    "نرخ شکایات پایین خیلی لزوماً خوب نیست - شاید مشتریان بدون شکایت بروند",
+    "باید شکایت کردن را آسان کرد، نه سخت - شکایات فرصت بهبود هستند",
+    "رسیدگی عالی به شکایت می‌تواند مشتری را از ناراضی به سفیر تبدیل کند",
+    "تحلیل ریشه‌ای و اقدام اصلاحی مهم‌تر از صرفاً کاهش نرخ شکایات است",
+    "هر شکایت نماینده 10-25 مشتری ناراضی دیگر است (Iceberg Theory)"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
