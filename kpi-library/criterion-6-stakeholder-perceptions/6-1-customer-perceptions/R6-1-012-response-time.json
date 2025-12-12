@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-012",
+    "kpi_name_fa": "زمان پاسخ به درخواست مشتری",
+    "kpi_name_en": "Customer Response Time",
+    "acronym": "CRT",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Service Speed"
+  },
+  "definition": {
+    "description_fa": "میانگین زمانی که طول می‌کشد تا سازمان به درخواست، سوال یا مشکل مشتری پاسخ اولیه دهد. این شاخص سرعت واکنش سازمان را اندازه‌گیری می‌کند و شامل تمام کانال‌های ارتباطی (تلفن، ایمیل، چت، رسانه‌های اجتماعی) است. پاسخ سریع نشان‌دهنده احترام به وقت مشتری، اولویت‌دهی به نیازهای او، و کارآمدی سازمان است. تحقیقات نشان می‌دهند زمان پاسخ تأثیر قابل‌توجهی بر رضایت و ادراک از کیفیت خدمات دارد.",
+    "description_en": "The average time it takes for the organization to provide an initial response to a customer's request, question, or issue. This KPI measures the organization's reaction speed across all communication channels (phone, email, chat, social media). Fast response demonstrates respect for customer time, prioritization of their needs, and organizational efficiency. Research shows response time significantly impacts satisfaction and perception of service quality.",
+    "purpose": "ارزیابی سرعت پاسخگویی سازمان و شناسایی فرصت‌های بهبود در زمان واکنش",
+    "scope": "تمام کانال‌های ارتباطی و انواع درخواست‌های مشتری",
+    "key_insight": "مشتریان سرعت پاسخ را به‌عنوان نشانه‌ای از اهمیتی که سازمان برایشان قائل است می‌بینند"
+  },
+  "measurement": {
+    "formula": "میانگین زمان از دریافت درخواست تا ارسال اولین پاسخ",
+    "formula_detailed": "CRT = مجموع زمان‌های پاسخ / تعداد کل درخواست‌ها",
+    "formula_en": "CRT = Sum of response times / Total number of requests",
+    "unit": "دقیقه یا ساعت (بسته به کانال)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "مستمر (real-time)",
+    "data_source": [
+      "سیستم ticketing",
+      "CRM",
+      "سیستم تلفنی (Phone system)",
+      "پلتفرم چت",
+      "ابزار مدیریت رسانه‌های اجتماعی",
+      "سیستم ایمیل"
+    ],
+    "response_types": {
+      "first_response": "اولین پاسخ به درخواست (معیار اصلی)",
+      "full_resolution": "حل کامل مشکل (معیار تکمیلی)",
+      "acknowledgment": "تأیید دریافت (در برخی کانال‌ها)"
+    }
+  },
+  "data_collection": {
+    "collection_method": "ثبت خودکار زمان در سیستم‌های ارتباطی",
+    "timestamp_tracking": {
+      "received": "زمان دریافت درخواست",
+      "acknowledged": "زمان تأیید دریافت (اختیاری)",
+      "first_response": "زمان اولین پاسخ ماهوی",
+      "resolved": "زمان حل کامل"
+    },
+    "channels": [
+      "تلفن (آنی)",
+      "چت آنلاین (آنی)",
+      "ایمیل (ساعات)",
+      "رسانه‌های اجتماعی (دقایق-ساعات)",
+      "فرم وب (ساعات)",
+      "تیکت پشتیبانی (ساعات)"
+    ],
+    "data_quality_checks": [
+      "حذف زمان‌های خارج از ساعت کاری (اگر مرتبط است)",
+      "شناسایی outliers",
+      "تأیید صحت timestamp ها",
+      "حذف پاسخ‌های خودکار از محاسبه"
+    ],
+    "responsible_department": "مدیریت پشتیبانی، مدیریت خدمات مشتری",
+    "responsible_person": "مدیر پشتیبانی، سرپرست تیم"
+  },
+  "calculation_example": {
+    "scenario": "محاسبه زمان پاسخ برای 200 درخواست ایمیلی در یک هفته",
+    "input_data": {
+      "total_requests": 200,
+      "response_times_hours": [
+        "0-2 ساعت: 80 درخواست",
+        "2-4 ساعت: 60 درخواست",
+        "4-8 ساعت: 40 درخواست",
+        "8-24 ساعت: 15 درخواست",
+        "24+ ساعت: 5 درخواست"
+      ],
+      "total_response_time_hours": 780
+    },
+    "calculation_steps": [
+      "گام 1: محاسبه مجموع زمان‌ها = (80×1) + (60×3) + (40×6) + (15×12) + (5×30)",
+      "       = 80 + 180 + 240 + 180 + 150 = 830 ساعت",
+      "گام 2: محاسبه میانگین = 830 / 200 = 4.15 ساعت",
+      "گام 3: محاسبه median = 3 ساعت (50% در کمتر از 3 ساعت پاسخ داده‌اند)",
+      "گام 4: درصد پاسخ در SLA (<4 ساعت) = (80 + 60) / 200 = 70%"
+    ],
+    "result": "میانگین: 4.15 ساعت، Median: 3 ساعت",
+    "interpretation": "میانگین زمان پاسخ 4.15 ساعت است که بالاتر از هدف 4 ساعت است. 70% درخواست‌ها در کمتر از 4 ساعت پاسخ داده شده‌اند. 5 درخواست (2.5%) بیش از 24 ساعت طول کشیده که نیاز به بررسی دارند."
+  },
+  "benchmarking": {
+    "by_channel": {
+      "phone": {
+        "world_class": "< 30 ثانیه",
+        "good": "30-60 ثانیه",
+        "average": "1-2 دقیقه",
+        "poor": "> 5 دقیقه"
+      },
+      "live_chat": {
+        "world_class": "< 1 دقیقه",
+        "good": "1-3 دقیقه",
+        "average": "3-5 دقیقه",
+        "poor": "> 10 دقیقه"
+      },
+      "email": {
+        "world_class": "< 2 ساعت",
+        "good": "2-4 ساعت",
+        "average": "4-12 ساعت",
+        "poor": "> 24 ساعت"
+      },
+      "social_media": {
+        "world_class": "< 15 دقیقه",
+        "good": "15-60 دقیقه",
+        "average": "1-4 ساعت",
+        "poor": "> 8 ساعت"
+      },
+      "ticket_system": {
+        "world_class": "< 4 ساعت",
+        "good": "4-8 ساعت",
+        "average": "8-24 ساعت",
+        "poor": "> 48 ساعت"
+      }
+    },
+    "european_leaders": {
+      "top_companies": [
+        {
+          "company": "Zappos",
+          "phone": "< 20 ثانیه",
+          "email": "< 1 ساعت",
+          "chat": "< 30 ثانیه"
+        },
+        {
+          "company": "Amazon",
+          "phone": "< 30 ثانیه",
+          "email": "< 2 ساعت",
+          "chat": "< 1 دقیقه"
+        },
+        {
+          "company": "Apple",
+          "phone": "< 45 ثانیه",
+          "email": "< 3 ساعت",
+          "chat": "< 2 دقیقه"
+        }
+      ]
+    },
+    "industry_averages": {
+      "technology": "ایمیل: 3-6 ساعت، تلفن: 1-2 دقیقه",
+      "financial_services": "ایمیل: 4-8 ساعت، تلفن: 2-3 دقیقه",
+      "retail": "ایمیل: 6-12 ساعت، تلفن: 1-3 دقیقه",
+      "telecom": "ایمیل: 8-16 ساعت، تلفن: 3-5 دقیقه",
+      "healthcare": "ایمیل: 12-24 ساعت، تلفن: 2-4 دقیقه"
+    }
+  },
+  "target_setting": {
+    "by_channel": {
+      "phone": {
+        "target": "< 60 ثانیه",
+        "stretch": "< 30 ثانیه"
+      },
+      "live_chat": {
+        "target": "< 2 دقیقه",
+        "stretch": "< 1 دقیقه"
+      },
+      "email": {
+        "target": "< 4 ساعت",
+        "stretch": "< 2 ساعت"
+      },
+      "social_media": {
+        "target": "< 30 دقیقه",
+        "stretch": "< 15 دقیقه"
+      }
+    },
+    "sla_compliance": {
+      "target": "> 85% در SLA",
+      "stretch": "> 95% در SLA"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 100,
+      "explanation": "زمان پاسخ به‌طور دقیق سرعت واکنش را اندازه‌گیری می‌کند"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "به‌طور دقیق با timestamp قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 95,
+      "explanation": "با سیستم‌های خودکار به راحتی قابل ردیابی است"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "سرعت پاسخ تأثیر مستقیم بر رضایت و ادراک کیفیت دارد"
+    },
+    "time_bound": {
+      "score": 100,
+      "explanation": "به‌صورت real-time و مستمر قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 99,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 98,
+      "explanation": "زمان پاسخ نتیجه مستقیم فرآیندها و منابع در دسترس است"
+    },
+    "approach": {
+      "score": 95,
+      "explanation": "نیاز به رویکرد سیستماتیک مدیریت حجم کار و منابع"
+    },
+    "deployment": {
+      "score": 93,
+      "explanation": "باید در تمام کانال‌ها با استانداردهای مناسب اعمال شود"
+    },
+    "assessment_refinement": {
+      "score": 96,
+      "explanation": "مانیتورینگ مستمر و بهینه‌سازی دائمی"
+    },
+    "overall_radar_score": 96,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 5 - مدیریت عملکرد",
+      "معیار 3 - مشارکت ذی‌نفعان"
+    ],
+    "strategic_objectives": [
+      "ارائه خدمات سریع و کارآمد",
+      "افزایش رضایت مشتری",
+      "کاهش ناامیدی مشتری",
+      "بهبود کارایی عملیاتی"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مشتری و فرآیندهای داخلی",
+      "objective": "پاسخگویی سریع و موثر"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "پیاده‌سازی سیستم مدیریت صف هوشمند",
+      "expected_impact": "-20 تا -30%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "افزایش تیم در ساعات پیک",
+      "expected_impact": "-15 تا -25%",
+      "timeframe": "فوری",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "پیاده‌سازی چت‌بات برای سوالات ساده",
+      "expected_impact": "-30 تا -40% حجم",
+      "timeframe": "6 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "بهبود Knowledge Base و Self-Service",
+      "expected_impact": "-20 تا -30% حجم",
+      "timeframe": "6 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "آموزش تیم برای سرعت بخشی",
+      "expected_impact": "-10 تا -15%",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند real-time + توزیع زمان‌ها + مقایسه بین کانال‌ها + SLA compliance",
+    "report_frequency": "real-time برای سرپرستان، روزانه برای مدیران، هفتگی برای مدیریت ارشد",
+    "alert_thresholds": {
+      "critical": "بیشتر از 150% هدف",
+      "warning": "بیشتر از 120% هدف",
+      "good": "80-100% هدف",
+      "excellent": "کمتر از 80% هدف"
+    },
+    "real_time_monitoring": "داشبورد real-time برای مانیتورینگ لحظه‌ای و مدیریت منابع",
+    "stakeholders": [
+      "مدیر پشتیبانی",
+      "سرپرستان تیم",
+      "مدیر عملیات",
+      "مدیر تجربه مشتری",
+      "مدیر منابع انسانی"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R7-2-014: نسبت تیکت به اپراتور",
+      "R7-2-015: حجم ورودی درخواست",
+      "R7-2-016: دسترس‌بودن اپراتورها"
+    ],
+    "lagging_indicators": [
+      "R6-1-009: رضایت از پشتیبانی",
+      "R6-1-013: FCR",
+      "R6-1-006: CSAT",
+      "R6-1-014: نرخ شکایات"
+    ],
+    "complementary_kpis": [
+      "R6-1-007: CES",
+      "R7-2-017: Average Handle Time"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "COPC Customer Experience Standard",
+      "ISO 18295:2017 - Customer Contact Centers",
+      "EFQM Model 2025 - Criterion 6.1"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی اندازه‌گیری زمان پاسخ",
+      "دستورالعمل تعیین SLA",
+      "چارچوب مدیریت صف"
+    ],
+    "training_materials": [
+      "آموزش مدیریت زمان",
+      "آموزش پاسخ‌دهی موثر و سریع",
+      "آموزش استفاده از ابزارها"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر پشتیبانی",
+    "reviewer": "مدیر عملیات",
+    "approver": "مدیر تجربه مشتری",
+    "review_frequency": "روزانه",
+    "data_retention": "24 ماه",
+    "access_level": "عمومی - قابل دسترسی برای تیم پشتیبانی و مدیران"
+  },
+  "factors_affecting_response_time": {
+    "volume": {
+      "description": "حجم درخواست‌های ورودی",
+      "impact": "بالا",
+      "management": "پیش‌بینی و برنامه‌ریزی منابع، routing هوشمند"
+    },
+    "complexity": {
+      "description": "پیچیدگی درخواست‌ها",
+      "impact": "متوسط",
+      "management": "طبقه‌بندی و routing مناسب، تخصصی‌سازی تیم"
+    },
+    "staff_availability": {
+      "description": "تعداد اپراتور در دسترس",
+      "impact": "بسیار بالا",
+      "management": "Workforce Management، شیفت‌بندی هوشمند"
+    },
+    "tools_efficiency": {
+      "description": "کارآمدی ابزارها و سیستم‌ها",
+      "impact": "متوسط",
+      "management": "سرمایه‌گذاری در ابزارهای مناسب، یکپارچه‌سازی"
+    },
+    "agent_skill": {
+      "description": "مهارت و تجربه اپراتورها",
+      "impact": "متوسط",
+      "management": "آموزش مستمر، mentoring"
+    }
+  },
+  "channel_specific_considerations": {
+    "phone": {
+      "expectation": "پاسخ فوری",
+      "metrics": ["Average Speed of Answer (ASA)", "Abandonment Rate"],
+      "best_practices": [
+        "IVR برای routing",
+        "Callback option",
+        "تخمین زمان انتظار",
+        "موسیقی مناسب"
+      ]
+    },
+    "live_chat": {
+      "expectation": "پاسخ سریع (دقایق)",
+      "metrics": ["First Response Time", "Chat Duration"],
+      "best_practices": [
+        "پیام استقبال خودکار",
+        "نمایش typing indicator",
+        "مدیریت چند چت همزمان",
+        "پاسخ‌های از پیش آماده"
+      ]
+    },
+    "email": {
+      "expectation": "پاسخ در ساعات کاری",
+      "metrics": ["First Response Time", "Time to Resolution"],
+      "best_practices": [
+        "تأیید دریافت خودکار",
+        "قالب‌های پاسخ",
+        "اولویت‌بندی",
+        "پیگیری خودکار"
+      ]
+    },
+    "social_media": {
+      "expectation": "پاسخ سریع (عمومی است)",
+      "metrics": ["Response Time", "Public vs Private"],
+      "best_practices": [
+        "مانیتورینگ 24/7",
+        "پاسخ عمومی سریع",
+        "انتقال به خصوصی",
+        "تون مناسب"
+      ]
+    }
+  },
+  "segmentation_analysis": {
+    "by_priority": [
+      "Critical (VIP، مسائل حیاتی)",
+      "High (مسائل مهم)",
+      "Normal (درخواست‌های معمولی)",
+      "Low (سوالات عمومی)"
+    ],
+    "by_customer_segment": [
+      "مشتریان VIP (SLA سخت‌گیرانه‌تر)",
+      "مشتریان Enterprise (B2B)",
+      "مشتریان معمولی",
+      "مشتریان جدید"
+    ],
+    "by_time": [
+      "ساعات پیک",
+      "ساعات عادی",
+      "خارج از ساعت کاری",
+      "تعطیلات"
+    ]
+  },
+  "data_analysis": {
+    "key_metrics": [
+      "میانگین زمان پاسخ",
+      "Median زمان پاسخ",
+      "90th percentile",
+      "درصد در SLA",
+      "توزیع زمان‌ها",
+      "روند در طول زمان"
+    ],
+    "statistical_methods": [
+      "تحلیل روند زمانی",
+      "تحلیل الگوهای فصلی",
+      "تحلیل همبستگی با حجم",
+      "Queue Theory Analysis",
+      "تحلیل واریانس بین کانال‌ها"
+    ],
+    "visualization": [
+      "نمودار خطی روند real-time",
+      "نمودار توزیع (Histogram)",
+      "نمودار مقایسه کانال‌ها",
+      "Heat map (زمان × روز)",
+      "نمودار SLA compliance"
+    ]
+  },
+  "sla_management": {
+    "sla_definition": "Service Level Agreement - تعهد سازمان به پاسخ در زمان مشخص",
+    "sla_tiers": [
+      {
+        "tier": "Tier 1 - Critical",
+        "target": "< 30 دقیقه",
+        "coverage": "24/7"
+      },
+      {
+        "tier": "Tier 2 - High",
+        "target": "< 2 ساعت",
+        "coverage": "ساعات کاری"
+      },
+      {
+        "tier": "Tier 3 - Normal",
+        "target": "< 4 ساعت",
+        "coverage": "ساعات کاری"
+      },
+      {
+        "tier": "Tier 4 - Low",
+        "target": "< 24 ساعت",
+        "coverage": "ساعات کاری"
+      }
+    ],
+    "sla_monitoring": [
+      "ردیابی real-time",
+      "هشدار پیش از تخطی",
+      "گزارش compliance",
+      "پیگیری تخلفات"
+    ]
+  },
+  "workforce_management": {
+    "forecasting": [
+      "پیش‌بینی حجم بر اساس تاریخچه",
+      "شناسایی ساعات پیک",
+      "لحاظ کردن فصلی بودن",
+      "لحاظ کردن کمپین‌ها و رویدادها"
+    ],
+    "scheduling": [
+      "شیفت‌بندی بر اساس پیش‌بینی",
+      "انعطاف در تغییر شیفت",
+      "اضافه‌کاری در موارد ضروری",
+      "استفاده از part-time"
+    ],
+    "real_time_management": [
+      "مانیتورینگ صف",
+      "تخصیص پویای منابع",
+      "تغییر routing",
+      "فعال‌سازی منابع backup"
+    ]
+  },
+  "automation_opportunities": {
+    "chatbots": {
+      "use_case": "پاسخ فوری به سوالات ساده و تکراری",
+      "benefit": "کاهش 30-40% حجم ورودی به انسان"
+    },
+    "auto_acknowledgment": {
+      "use_case": "تأیید دریافت خودکار",
+      "benefit": "اطمینان فوری به مشتری"
+    },
+    "smart_routing": {
+      "use_case": "هدایت خودکار به اپراتور مناسب",
+      "benefit": "کاهش زمان انتقال"
+    },
+    "canned_responses": {
+      "use_case": "پاسخ‌های از پیش آماده",
+      "benefit": "سرعت بخشی 40-50%"
+    }
+  },
+  "correlation_with_outcomes": {
+    "customer_satisfaction": "همبستگی منفی 0.6-0.7 (سریع‌تر = راضی‌تر)",
+    "churn": "همبستگی مثبت 0.4-0.5 (کند = churn بیشتر)",
+    "escalation": "همبستگی مثبت 0.5-0.6",
+    "nps": "همبستگی منفی 0.4-0.5",
+    "agent_satisfaction": "همبستگی منفی 0.3-0.4 (فشار زمانی)"
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "افزایش ناگهانی حجم (spike)",
+        "impact": "بالا",
+        "mitigation": "منابع backup، overflow routing، self-service"
+      },
+      {
+        "risk": "کمبود نیرو (غیبت، جابه‌جایی)",
+        "impact": "بالا",
+        "mitigation": "برنامه‌ریزی تاب‌آور، multi-skilling"
+      },
+      {
+        "risk": "خرابی سیستم",
+        "impact": "بسیار بالا",
+        "mitigation": "سیستم‌های backup، disaster recovery"
+      },
+      {
+        "risk": "تمرکز صرف بر سرعت (به قیمت کیفیت)",
+        "impact": "متوسط",
+        "mitigation": "تعادل بین سرعت و کیفیت، KPI های ترکیبی"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "improvement_cycle": [
+      "مانیتورینگ مستمر زمان پاسخ",
+      "شناسایی الگوها و گلوگاه‌ها",
+      "تحلیل علل ریشه‌ای تأخیرها",
+      "طراحی و اجرای بهبودها",
+      "اندازه‌گیری تأثیر"
+    ],
+    "best_practices": [
+      "پاسخ فوری حتی اگر حل کامل زمان‌بر باشد",
+      "تعیین انتظارات واقع‌بینانه",
+      "به‌روزرسانی منظم مشتری",
+      "empowerment تیم برای تصمیم‌گیری سریع"
+    ]
+  },
+  "notes": [
+    "پاسخ سریع به معنای پاسخ ناقص نیست - کیفیت هم مهم است",
+    "تأیید دریافت فوری می‌تواند اضطراب مشتری را کاهش دهد",
+    "SLA باید واقع‌بینانه و قابل دستیابی باشد",
+    "برای هر کانال استانداردهای متفاوتی وجود دارد",
+    "سرعت پاسخ در رسانه‌های اجتماعی بسیار حیاتی است (عمومی است)"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+    }
