@@ -1,0 +1,546 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eqtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-007",
+    "kpi_name_fa": "امتیاز تلاش مشتری",
+    "kpi_name_en": "Customer Effort Score",
+    "acronym": "CES",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Experience Ease"
+  },
+  "definition": {
+    "description_fa": "شاخص CES میزان تلاش و سختی که مشتری برای انجام یک کار خاص (مانند خرید، حل مشکل، دریافت اطلاعات، یا استفاده از خدمت) متحمل می‌شود را اندازه‌گیری می‌کند. هدف اصلی این شاخص شناسایی نقاط اصطکاک در سفر مشتری و کاهش پیچیدگی‌های غیرضروری است. تحقیقات نشان می‌دهند که کاهش تلاش مشتری، تأثیر بیشتری بر وفاداری دارد تا افزایش رضایت.",
+    "description_en": "CES measures the amount of effort and difficulty a customer experiences to complete a specific task (such as making a purchase, resolving an issue, obtaining information, or using a service). The main goal is to identify friction points in the customer journey and reduce unnecessary complexity. Research shows that reducing customer effort has more impact on loyalty than increasing satisfaction.",
+    "purpose": "شناسایی و حذف موانع و پیچیدگی‌های غیرضروری در تعامل با مشتری و ایجاد تجربه‌ای ساده و بدون زحمت",
+    "scope": "تمام فرآیندها و نقاط تماسی که مشتری باید در آن‌ها کاری انجام دهد",
+    "key_insight": "مشتریان وفادار کسانی هستند که کمترین تلاش را برای کار با شما تجربه می‌کنند"
+  },
+  "measurement": {
+    "formula": "میانگین امتیازات تلاش",
+    "formula_detailed": "CES = مجموع امتیازات / تعداد پاسخ‌ها",
+    "formula_en": "CES = Sum of effort scores / Number of responses",
+    "unit": "امتیاز از 7 (یا 5)",
+    "scale": "1-7 (1 = بسیار آسان، 7 = بسیار سخت)",
+    "alternative_scale": "1-5 (1 = بسیار سخت، 5 = بسیار آسان)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "پس از هر تعامل که نیاز به تلاش مشتری دارد",
+    "data_source": [
+      "نظرسنجی پس از حل مشکل",
+      "نظرسنجی پس از خرید",
+      "نظرسنجی پس از استفاده از سلف‌سرویس",
+      "فرم‌های بازخورد آنلاین",
+      "نظرسنجی اپلیکیشن"
+    ],
+    "standard_question": "تا چه حد سازمان کار شما را آسان کرد؟",
+    "standard_question_en": "How easy was it to handle your request?"
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی مستقیم پس از اتمام فرآیند",
+    "sample_size": "حداقل 200 پاسخ در ماه",
+    "sampling_method": "تمام مشتریانی که فرآیند خاصی را تکمیل کرده‌اند",
+    "timing": "بلافاصله پس از اتمام تعامل",
+    "survey_design": {
+      "question_type": "مقیاس Likert",
+      "scale_options": [
+        {
+          "scale": "1-7",
+          "format": "1 = بسیار آسان، 7 = بسیار سخت",
+          "recommended": true
+        },
+        {
+          "scale": "1-5",
+          "format": "1 = بسیار سخت، 5 = بسیار آسان",
+          "recommended": false
+        }
+      ],
+      "follow_up_question": "چه چیزی می‌توانست این فرآیند را آسان‌تر کند؟",
+      "max_questions": "2-3 سوال"
+    },
+    "channels": [
+      "ایمیل",
+      "SMS",
+      "پاپ‌آپ در وب‌سایت/اپلیکیشن",
+      "در انتهای چت/تماس تلفنی"
+    ],
+    "data_quality_checks": [
+      "بررسی تکمیل فرآیند قبل از ارسال نظرسنجی",
+      "حذف پاسخ‌های ناقص",
+      "تأیید هویت پاسخ‌دهنده",
+      "بررسی زمان پاسخ"
+    ],
+    "responsible_department": "مدیریت تجربه مشتری، مدیریت فرآیندها",
+    "responsible_person": "مدیر CX، مدیر بهبود فرآیند"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی CES پس از 500 تماس پشتیبانی (مقیاس 1-7)",
+    "input_data": {
+      "total_interactions": 500,
+      "responses_received": 300,
+      "response_rate": "60%",
+      "score_1_very_easy": 120,
+      "score_2": 90,
+      "score_3": 50,
+      "score_4": 20,
+      "score_5": 10,
+      "score_6": 8,
+      "score_7_very_difficult": 2,
+      "total_score": 630
+    },
+    "calculation_steps": [
+      "گام 1: محاسبه مجموع امتیازات = (120×1) + (90×2) + (50×3) + (20×4) + (10×5) + (8×6) + (2×7)",
+      "       = 120 + 180 + 150 + 80 + 50 + 48 + 14 = 642",
+      "گام 2: محاسبه میانگین CES = 642 / 300 = 2.14",
+      "گام 3: درصد تجربیات آسان (امتیاز 1-3) = (120 + 90 + 50) / 300 = 86.7%"
+    ],
+    "result": "CES = 2.14 از 7",
+    "interpretation": "امتیاز CES برابر 2.14 است که نشان‌دهنده سهولت بالای تعامل است. 86.7% مشتریان تجربه‌ای نسبتاً آسان داشته‌اند (امتیاز 1-3). این عملکرد خوب است اما هنوز 13.3% مشتریان با دشواری روبرو هستند."
+  },
+  "benchmarking": {
+    "european_leaders": {
+      "top_quartile": {
+        "value": "≤2.0 (مقیاس 1-7) یا ≥4.5 (مقیاس 1-5)",
+        "description": "شرکت‌های برتر اروپایی با بهترین تجربه مشتری",
+        "examples": [
+          "Amazon: 1.8 (بسیار آسان)",
+          "Apple Support: 1.9",
+          "Zappos: 2.0"
+        ]
+      },
+      "median": {
+        "value": "2.5-3.0 (مقیاس 1-7)",
+        "description": "میانه شرکت‌های اروپایی"
+      },
+      "top_companies": [
+        {
+          "company": "Amazon",
+          "country": "چندملیتی",
+          "value": "1.8",
+          "scale": "1-7",
+          "year": 2024
+        },
+        {
+          "company": "IKEA",
+          "country": "سوئد",
+          "value": "2.1",
+          "scale": "1-7",
+          "year": 2024
+        },
+        {
+          "company": "Nordea Bank",
+          "country": "فنلاند",
+          "value": "2.3",
+          "scale": "1-7",
+          "year": 2024
+        }
+      ]
+    },
+    "industry_averages": {
+      "e_commerce": "2.0-2.5",
+      "banking": "2.5-3.0",
+      "telecom": "3.0-3.5",
+      "insurance": "3.0-3.5",
+      "utilities": "3.5-4.0",
+      "government": "3.5-4.5",
+      "retail": "2.5-3.0",
+      "software_saas": "2.0-2.5"
+    },
+    "world_class": {
+      "value": "≤1.8 (مقیاس 1-7)",
+      "description": "استاندارد جهانی برتر - تقریباً بدون تلاش",
+      "note": "شرکت‌هایی که تعاملات خود را به‌قدری ساده کرده‌اند که تقریباً بدون زحمت است"
+    }
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "measurement_date": "ماه اول اندازه‌گیری",
+      "note": "بر اساس میانگین اولین دوره"
+    },
+    "short_term": {
+      "target": "کاهش 0.3-0.5 واحد",
+      "timeframe": "6 ماه",
+      "action_required": "شناسایی و حذف موانع اصلی"
+    },
+    "medium_term": {
+      "target": "≤2.5 (مقیاس 1-7)",
+      "timeframe": "12 ماه",
+      "action_required": "بازطراحی فرآیندهای کلیدی"
+    },
+    "long_term": {
+      "target": "≤2.0 (مقیاس 1-7)",
+      "timeframe": "24 ماه",
+      "action_required": "دستیابی به سطح شرکت‌های برتر - تجربه بدون زحمت"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 100,
+      "explanation": "CES به‌طور دقیق میزان تلاش مشتری در یک فرآیند خاص را اندازه‌گیری می‌کند"
+    },
+    "measurable": {
+      "score": 100,
+      "explanation": "با مقیاس استاندارد 1-7 کاملاً قابل اندازه‌گیری است"
+    },
+    "achievable": {
+      "score": 95,
+      "explanation": "با نظرسنجی پس از هر تعامل به راحتی قابل دستیابی است"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "تحقیقات نشان می‌دهند CES قوی‌ترین پیش‌بینی‌کننده وفاداری مشتری است"
+    },
+    "time_bound": {
+      "score": 100,
+      "explanation": "پس از هر تعامل و به‌صورت مستمر قابل اندازه‌گیری است"
+    },
+    "overall_smart_score": 99,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 95,
+      "explanation": "CES نتیجه مستقیم طراحی فرآیندها و سهولت تعامل است"
+    },
+    "approach": {
+      "score": 92,
+      "explanation": "نیاز به رویکرد سیستماتیک بازطراحی فرآیندها بر اساس دیدگاه مشتری"
+    },
+    "deployment": {
+      "score": 90,
+      "explanation": "باید در تمام فرآیندهای مشتری‌محور اعمال شود"
+    },
+    "assessment_refinement": {
+      "score": 93,
+      "explanation": "نیاز به ارزیابی مستمر و بهبود دائمی فرآیندها بر اساس بازخورد"
+    },
+    "overall_radar_score": 93,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 5 - مدیریت عملکرد و تحول",
+      "معیار 4 - ایجاد ارزش پایدار"
+    ],
+    "strategic_objectives": [
+      "ساده‌سازی تجربه مشتری",
+      "حذف نقاط اصطکاک",
+      "افزایش کارایی عملیاتی",
+      "افزایش رضایت و وفاداری"
+    ],
+    "balanced_scorecard": {
+      "perspective": "فرآیندهای داخلی و مشتری",
+      "objective": "ایجاد تجربه بدون زحمت"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "نقشه‌برداری سفر مشتری (Customer Journey Mapping)",
+      "expected_impact": "-0.3 to -0.5",
+      "timeframe": "3 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "پیاده‌سازی سلف‌سرویس پیشرفته",
+      "expected_impact": "-0.4 to -0.6",
+      "timeframe": "6 ماه",
+      "priority": "بالا"
+    },
+    {
+      "initiative": "یکپارچه‌سازی کانال‌های ارتباطی (Omnichannel)",
+      "expected_impact": "-0.3 to -0.5",
+      "timeframe": "9 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "خودکارسازی فرآیندهای تکراری",
+      "expected_impact": "-0.2 to -0.4",
+      "timeframe": "6 ماه",
+      "priority": "متوسط"
+    },
+    {
+      "initiative": "توسعه پایگاه دانش و FAQ هوشمند",
+      "expected_impact": "-0.2 to -0.3",
+      "timeframe": "3 ماه",
+      "priority": "متوسط"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "نمودار خطی روند + نمودار توزیع امتیازات + نقشه حرارتی بر اساس فرآیند",
+    "report_frequency": "هفتگی برای تیم CX، ماهانه برای مدیریت",
+    "alert_thresholds": {
+      "excellent": "≤2.0",
+      "good": "2.0-2.5",
+      "warning": "2.5-3.5",
+      "critical": ">3.5"
+    },
+    "segmentation_reporting": [
+      "بر اساس نوع فرآیند",
+      "بر اساس کانال تعامل",
+      "بر اساس سگمنت مشتری",
+      "بر اساس زمان"
+    ],
+    "stakeholders": [
+      "مدیر تجربه مشتری",
+      "مدیر فرآیندها",
+      "مدیر عملیات",
+      "مدیر IT",
+      "رهبران تیم خط مقدم"
+    ]
+  },
+  "related_kpis": {
+    "leading_indicators": [
+      "R7-2-004: تعداد مراحل فرآیند",
+      "R7-2-006: زمان چرخه",
+      "R6-1-011: سهولت خرید",
+      "R6-1-012: زمان پاسخ"
+    ],
+    "lagging_indicators": [
+      "R6-1-001: NPS",
+      "R6-1-003: نرخ حفظ مشتری",
+      "R6-1-014: نرخ شکایات",
+      "R7-2-007: نرخ استفاده مجدد"
+    ],
+    "complementary_kpis": [
+      "R6-1-006: CSAT",
+      "R6-1-013: حل در اولین تماس (FCR)"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "Harvard Business Review: The Effortless Experience (2013)",
+      "Gartner CEB: Customer Effort Score Research",
+      "EFQM Model 2025 - Criterion 6.1"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی اندازه‌گیری CES",
+      "دستورالعمل نقشه‌برداری سفر مشتری",
+      "چارچوب شناسایی و حذف نقاط اصطکاک"
+    ],
+    "training_materials": [
+      "آموزش CES و تفسیر داده‌ها",
+      "آموزش بازطراحی فرآیندها",
+      "آموزش تفکر از دیدگاه مشتری"
+    ]
+  },
+  "governance": {
+    "owner": "مدیر تجربه مشتری",
+    "co_owner": "مدیر فرآیندها",
+    "reviewer": "مدیر عملیات",
+    "approver": "مدیرعامل",
+    "review_frequency": "ماهانه",
+    "data_retention": "36 ماه",
+    "access_level": "عمومی - قابل دسترسی برای مدیران"
+  },
+  "ces_methodology": {
+    "original_research": {
+      "source": "Corporate Executive Board (CEB), 2010",
+      "key_finding": "کاهش تلاش مشتری تأثیر بیشتری بر وفاداری دارد تا افزایش رضایت",
+      "sample_size": "75,000+ مشتری در صنایع مختلف"
+    },
+    "optimal_scale": {
+      "recommended": "مقیاس 1-7",
+      "reason": "حساسیت بیشتر و توانایی تشخیص تفاوت‌های ظریف",
+      "alternative": "مقیاس 1-5 برای سادگی"
+    },
+    "question_variations": [
+      "سازمان تا چه حد کار شما را آسان کرد؟",
+      "چقدر برای حل مشکل خود تلاش کردید؟",
+      "فرآیند خرید چقدر آسان بود؟",
+      "دریافت پاسخ چقدر ساده بود؟"
+    ]
+  },
+  "friction_point_analysis": {
+    "common_friction_points": [
+      {
+        "area": "احراز هویت",
+        "issue": "نیاز به ورود مکرر اطلاعات",
+        "solution": "Single Sign-On، ذخیره امن اطلاعات"
+      },
+      {
+        "area": "جستجو",
+        "issue": "پیدا نکردن اطلاعات مورد نیاز",
+        "solution": "جستجوی هوشمند، دسته‌بندی بهتر"
+      },
+      {
+        "area": "پرداخت",
+        "issue": "فرآیند پرداخت پیچیده",
+        "solution": "پرداخت یک‌کلیکی، ذخیره کارت"
+      },
+      {
+        "area": "پشتیبانی",
+        "issue": "نیاز به تماس با چند نفر",
+        "solution": "حل در اولین تماس، دسترسی یکپارچه به اطلاعات"
+      },
+      {
+        "area": "فرم‌ها",
+        "issue": "فرم‌های طولانی و پیچیده",
+        "solution": "تکمیل خودکار، فرم‌های پویا"
+      }
+    ],
+    "analysis_method": [
+      "تحلیل نظرات باز مشتریان",
+      "نقشه‌برداری سفر مشتری",
+      "تحلیل داده‌های رفتاری (drop-off points)",
+      "مصاحبه با مشتریان",
+      "تست قابلیت استفاده (Usability Testing)"
+    ]
+  },
+  "segmentation_analysis": {
+    "by_process": [
+      "CES خرید",
+      "CES پشتیبانی",
+      "CES ثبت‌نام/احراز هویت",
+      "CES پرداخت",
+      "CES بازگشت کالا"
+    ],
+    "by_channel": [
+      "وب‌سایت",
+      "اپلیکیشن موبایل",
+      "تلفن",
+      "فروشگاه فیزیکی",
+      "چت آنلاین"
+    ],
+    "by_customer_type": [
+      "مشتریان جدید",
+      "مشتریان وفادار",
+      "مشتریان با مشکل",
+      "کاربران پیشرفته vs مبتدی"
+    ]
+  },
+  "data_analysis": {
+    "key_metrics": [
+      "میانگین CES",
+      "توزیع امتیازات",
+      "درصد تجربیات آسان (1-3)",
+      "درصد تجربیات سخت (5-7)",
+      "روند زمانی"
+    ],
+    "statistical_methods": [
+      "تحلیل همبستگی با NPS و retention",
+      "تحلیل واریانس بین فرآیندها",
+      "تحلیل رگرسیون برای شناسایی درایورها",
+      "تحلیل Pareto برای اولویت‌بندی",
+      "Text Mining نظرات باز"
+    ],
+    "visualization": [
+      "نمودار خطی روند زمانی",
+      "نمودار ستونی مقایسه فرآیندها",
+      "Heat map (فرآیند × کانال)",
+      "Funnel chart برای drop-off points"
+    ]
+  },
+  "correlation_with_outcomes": {
+    "loyalty": "همبستگی منفی 0.7-0.8 (CES پایین‌تر = وفاداری بیشتر)",
+    "retention": "همبستگی منفی 0.6-0.7",
+    "word_of_mouth": "همبستگی منفی 0.5-0.6",
+    "repeat_purchase": "همبستگی منفی 0.6-0.7",
+    "cost_to_serve": "همبستگی مثبت 0.5-0.6 (CES بالاتر = هزینه بیشتر)"
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "عدم شناسایی نقاط اصطکاک واقعی",
+        "impact": "بالا",
+        "mitigation": "ترکیب CES با تحلیل رفتاری و نقشه سفر مشتری"
+      },
+      {
+        "risk": "تمرکز صرف بر CES به قیمت کیفیت",
+        "impact": "متوسط",
+        "mitigation": "تعادل بین سهولت و کیفیت خدمت"
+      },
+      {
+        "risk": "سوگیری به سمت مشتریانی که مشکل داشته‌اند",
+        "impact": "متوسط",
+        "mitigation": "اندازه‌گیری CES در تمام تعاملات، نه فقط مشکلات"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "improvement_cycle": [
+      "اندازه‌گیری CES در فرآیندهای مختلف",
+      "شناسایی فرآیندهای با بالاترین تلاش",
+      "تحلیل ریشه‌ای نقاط اصطکاک",
+      "طراحی و اجرای بهبودها",
+      "اندازه‌گیری مجدد تأثیر"
+    ],
+    "design_principles": [
+      "حذف مراحل غیرضروری",
+      "خودکارسازی فرآیندهای تکراری",
+      "ارائه اطلاعات در زمان مناسب",
+      "کاهش نیاز به تماس با پشتیبانی",
+      "یکپارچه‌سازی کانال‌ها"
+    ]
+  },
+  "digital_transformation": {
+    "automation_opportunities": [
+      "تکمیل خودکار فرم‌ها",
+      "پیش‌بینی نیاز مشتری",
+      "پاسخ خودکار به سوالات رایج",
+      "مسیریابی هوشمند"
+    ],
+    "ai_applications": [
+      "چت‌بات هوشمند برای کاهش تلاش",
+      "توصیه‌گر محصول برای کاهش جستجو",
+      "شناسایی خودکار نقاط اصطکاک",
+      "شخصی‌سازی تجربه بر اساس رفتار"
+    ],
+    "self_service": [
+      "پایگاه دانش جامع",
+      "ویدیوهای آموزشی",
+      "راهنماهای تعاملی",
+      "پورتال خودکار"
+    ]
+  },
+  "comparison_with_other_metrics": {
+    "ces_vs_csat": {
+      "ces": "سهولت انجام کار",
+      "csat": "رضایت از نتیجه",
+      "when_to_use_ces": "برای شناسایی نقاط اصطکاک فرآیندی"
+    },
+    "ces_vs_nps": {
+      "ces": "تلاش در یک تعامل خاص",
+      "nps": "وفاداری و تمایل به توصیه کلی",
+      "relationship": "CES پیش‌بینی‌کننده قوی‌تر وفاداری است"
+    },
+    "optimal_combination": "استفاده همزمان از هر سه شاخص برای دید جامع تجربه مشتری"
+  },
+  "low_effort_examples": {
+    "amazon": {
+      "feature": "خرید یک‌کلیکی",
+      "impact": "حذف 4-5 مرحله از فرآیند خرید"
+    },
+    "apple": {
+      "feature": "Genius Bar بدون نوبت‌دهی",
+      "impact": "حذف نیاز به تماس و برنامه‌ریزی قبلی"
+    },
+    "uber": {
+      "feature": "درخواست خودرو با یک دکمه",
+      "impact": "حذف نیاز به تماس تلفنی و توضیح آدرس"
+    }
+  },
+  "notes": [
+    "CES پیش‌بینی‌کننده قوی‌تری برای وفاداری است تا CSAT",
+    "همیشه سوال باز 'چه چیزی می‌توانست این را آسان‌تر کند؟' را بپرسید",
+    "CES را برای فرآیندهای مختلف جداگانه اندازه‌گیری کنید",
+    "بر روی حذف موانع تمرکز کنید، نه صرفاً افزودن ویژگی‌های جدید",
+    "تلاش کم ≠ کیفیت کم - هدف سهولت همراه با کیفیت است"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
