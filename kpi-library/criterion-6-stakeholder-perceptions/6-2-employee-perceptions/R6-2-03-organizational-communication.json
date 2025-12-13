@@ -1,0 +1,159 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-03",
+    "kpi_name_fa": "رضایت کارکنان از ارتباطات سازمانی",
+    "kpi_name_en": "Employee Satisfaction with Organizational Communication",
+    "acronym": "OCS",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Internal Communication"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از کیفیت، شفافیت، به‌موقع بودن، و اثربخشی ارتباطات درون‌سازمانی را اندازه‌گیری می‌کند. ارتباطات سازمانی شامل جریان اطلاعات از بالا به پایین (از مدیریت به کارکنان)، از پایین به بالا (از کارکنان به مدیریت)، و افقی (بین همکاران و بخش‌ها) است. ارتباطات مؤثر باعث همسویی، شفافیت، اعتماد، مشارکت، و کاهش شایعات و سوءتفاهم می‌شود. تحقیقات نشان می‌دهند ارتباطات ضعیف یکی از دلایل اصلی نارضایتی و ترک کارکنان است.",
+    "description_en": "This KPI measures employee satisfaction with the quality, transparency, timeliness, and effectiveness of internal organizational communication. Organizational communication includes information flow from top-down (management to employees), bottom-up (employees to management), and horizontal (between colleagues and departments). Effective communication creates alignment, transparency, trust, engagement, and reduces rumors and misunderstandings. Research shows poor communication is a major cause of employee dissatisfaction and turnover.",
+    "purpose": "ارزیابی کیفیت و اثربخشی ارتباطات داخلی از دیدگاه کارکنان",
+    "scope": "تمام کارکنان و کانال‌های ارتباطی سازمان",
+    "key_insight": "ارتباطات مؤثر پایه اعتماد و همکاری در سازمان است"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از ارتباطات سازمانی",
+    "formula_detailed": "OCS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "بررسی کانال‌های ارتباطی",
+      "تحلیل مشارکت در کانال‌ها"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه",
+    "survey_questions": [
+      "از کیفیت ارتباطات در سازمان تا چه حد راضی هستید؟",
+      "اطلاعات مورد نیاز برای انجام کارتان به‌موقع دریافت می‌کنید؟",
+      "مدیریت ارشد تا چه حد به‌طور شفاف ارتباط برقرار می‌کند؟",
+      "نظرات و پیشنهادات شما تا چه حد شنیده می‌شود؟",
+      "ارتباطات بین بخش‌ها تا چه حد مؤثر است؟",
+      "از کانال‌های ارتباطی موجود تا چه حد راضی هستید؟",
+      "اطلاعات سازمانی به‌طور منظم به اشتراک گذاشته می‌شود؟"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "ارتباطات داخلی، منابع انسانی",
+    "responsible_person": "مدیر ارتباطات داخلی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 450 کارکن",
+    "input_data": {
+      "total_responses": 450,
+      "score_5": 100,
+      "score_4": 180,
+      "score_3": 110,
+      "score_2": 45,
+      "score_1": 15
+    },
+    "calculation_steps": [
+      "مجموع = (100×5) + (180×4) + (110×3) + (45×2) + (15×1)",
+      "= 500 + 720 + 330 + 90 + 15 = 1655",
+      "میانگین = 1655 / 450 = 3.68",
+      "درصد = (3.68 / 5) × 100 = 73.6%"
+    ],
+    "result": "73.6%",
+    "interpretation": "رضایت 73.6% در سطح خوب است اما فضای بهبود وجود دارد. 13.3% ناراضی هستند."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥80%",
+      "excellent": "70-79%",
+      "good": "60-69%",
+      "average": "50-59%",
+      "poor": "<50%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 4-6%",
+    "medium_term": "70-75%",
+    "long_term": "≥80%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 95,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 89,
+    "radar_level": "عالی"
+  },
+  "communication_dimensions": {
+    "top_down": "ارتباطات مدیریت به کارکنان - اهداف، استراتژی، تغییرات",
+    "bottom_up": "ارتباطات کارکنان به مدیریت - بازخورد، پیشنهادات، نگرانی‌ها",
+    "horizontal": "ارتباطات بین همکاران و بخش‌ها - همکاری، هماهنگی",
+    "timeliness": "به‌موقع بودن اطلاعات",
+    "transparency": "شفافیت و صداقت",
+    "clarity": "وضوح و قابل فهم بودن",
+    "relevance": "مرتبط بودن با نیازها",
+    "channels": "تنوع و دسترسی کانال‌ها"
+  },
+  "communication_channels": {
+    "formal": [
+      "ایمیل سازمانی",
+      "اینترانت",
+      "جلسات همگانی",
+      "خبرنامه داخلی",
+      "پورتال کارکنان"
+    ],
+    "informal": [
+      "گفتگوهای روزانه",
+      "شبکه‌های اجتماعی داخلی",
+      "کانال‌های پیام‌رسان",
+      "جلسات قهوه"
+    ]
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "پلتفرم یکپارچه ارتباطات داخلی",
+      "expected_impact": "+5-8%",
+      "timeframe": "9 ماه"
+    },
+    {
+      "initiative": "جلسات Town Hall منظم با مدیریت ارشد",
+      "expected_impact": "+4-6%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "برنامه سفیران ارتباطات در بخش‌ها",
+      "expected_impact": "+3-5%",
+      "timeframe": "6 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "engagement": "0.6-0.7",
+    "trust_in_management": "0.7-0.8",
+    "job_satisfaction": "0.5-0.6",
+    "organizational_alignment": "0.7-0.8"
+  },
+  "notes": [
+    "ارتباطات ضعیف یکی از دلایل اصلی نارضایتی کارکنان است",
+    "کارکنان بیش از 70% وقتشان را صرف ارتباطات می‌کنند",
+    "ارتباطات مؤثر می‌تواند بهره‌وری را 20-25% افزایش دهد"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
