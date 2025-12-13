@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-004",
+    "kpi_name_fa": "ارزش طول عمر مشتری",
+    "kpi_name_en": "Customer Lifetime Value",
+    "acronym": "CLV / LTV",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Customer Value"
+  },
+  "definition": {
+    "description_fa": "ارزش طول عمر مشتری (CLV) کل سود خالصی است که یک مشتری در طول رابطه خود با سازمان ایجاد می‌کند. این شاخص یکی از مهم‌ترین معیارهای مالی مشتری‌محور است که نشان می‌دهد هر مشتری چقدر برای کسب‌وکار ارزش دارد. CLV به سازمان‌ها کمک می‌کند تا تصمیمات استراتژیک بگیرند: چقدر برای جذب مشتری هزینه کنند، کدام سگمنت‌ها ارزشمندترند، و چگونه منابع را تخصیص دهند. مشتریانی با CLV بالا باید توجه و سرمایه‌گذاری بیشتری دریافت کنند.",
+    "description_en": "Customer Lifetime Value (CLV) is the total net profit a customer generates throughout their relationship with the organization. This is one of the most important customer-centric financial metrics showing how much each customer is worth to the business. CLV helps organizations make strategic decisions: how much to spend on customer acquisition, which segments are most valuable, and how to allocate resources. Customers with high CLV should receive more attention and investment.",
+    "purpose": "ارزیابی ارزش مالی بلندمدت مشتریان و تخصیص بهینه منابع",
+    "scope": "تمام مشتریان یا سگمنت‌های مشخص",
+    "key_insight": "CLV > CAC (هزینه جذب مشتری) = کسب‌وکار پایدار. نسبت ایده‌آل: CLV/CAC ≥ 3:1"
+  },
+  "measurement": {
+    "formula_simple": "CLV = میانگین ارزش خرید × فرکانس خرید × طول عمر مشتری",
+    "formula_detailed": "CLV = (میانگین درآمد سالانه × نرخ حاشیه سود × طول عمر مشتری) - هزینه جذب",
+    "formula_advanced": "CLV = Σ (سود هر دوره / (1 + نرخ تنزیل)^دوره)",
+    "formula_components": {
+      "average_purchase_value": "میانگین مبلغ هر خرید",
+      "purchase_frequency": "تعداد خریدها در سال",
+      "customer_lifespan": "مدت زمان رابطه (سال)",
+      "profit_margin": "حاشیه سود (%)",
+      "discount_rate": "نرخ تنزیل (برای NPV)",
+      "cac": "هزینه جذب مشتری"
+    },
+    "unit": "ریال، دلار، یورو",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه، با به‌روزرسانی فصلی"
+  },
+  "calculation_example": {
+    "scenario_simple": "محاسبه ساده CLV برای یک کسب‌وکار خرده‌فروشی",
+    "input_data": {
+      "average_purchase_value": "500,000 ریال",
+      "purchase_frequency_per_year": "4 بار",
+      "customer_lifespan_years": "5 سال",
+      "profit_margin": "30%"
+    },
+    "calculation_steps": [
+      "گام 1: درآمد سالانه = 500,000 × 4 = 2,000,000 ریال",
+      "گام 2: سود سالانه = 2,000,000 × 30% = 600,000 ریال",
+      "گام 3: CLV = 600,000 × 5 = 3,000,000 ریال",
+      "گام 4: اگر CAC = 500,000 ریال باشد:",
+      "       CLV/CAC = 3,000,000 / 500,000 = 6:1 (عالی!)"
+    ],
+    "result": "3,000,000 ریال",
+    "interpretation": "هر مشتری در طول 5 سال 3 میلیون ریال سود خالص ایجاد می‌کند. با CAC نیم میلیون، نسبت 6:1 عالی است و نشان‌دهنده سرمایه‌گذاری مفید در جذب مشتری است."
+  },
+  "benchmarking": {
+    "clv_to_cac_ratio": {
+      "excellent": "≥5:1",
+      "good": "3-5:1",
+      "acceptable": "1-3:1",
+      "poor": "<1:1 (ضرر!)"
+    },
+    "by_industry": {
+      "saas_software": "CLV/CAC: 3-5:1",
+      "e_commerce": "CLV/CAC: 2-4:1",
+      "banking": "CLV/CAC: 4-6:1",
+      "insurance": "CLV/CAC: 3-5:1",
+      "telecom": "CLV/CAC: 2-4:1",
+      "retail": "CLV/CAC: 1-3:1"
+    },
+    "top_companies": [
+      {
+        "company": "Amazon Prime",
+        "avg_clv": "$1,400",
+        "note": "مشتریان Prime دو برابر مشتریان معمولی خرج می‌کنند"
+      },
+      {
+        "company": "Starbucks",
+        "avg_clv": "$14,099",
+        "note": "وفاداری بالا و فرکانس خرید روزانه"
+      },
+      {
+        "company": "Netflix",
+        "avg_clv": "$291",
+        "note": "اشتراک ماهانه با retention بالا"
+      }
+    ]
+  },
+  "target_setting": {
+    "baseline": {
+      "value": "تعیین شود",
+      "calculation": "میانگین CLV همه مشتریان فعلی",
+      "note": "محاسبه برای سگمنت‌های مختلف"
+    },
+    "improvement_targets": {
+      "increase_purchase_value": "+10-20%",
+      "increase_frequency": "+15-25%",
+      "increase_lifespan": "+20-40%",
+      "combined_impact": "CLV می‌تواند 50-100% افزایش یابد"
+    },
+    "clv_cac_target": {
+      "minimum": "3:1",
+      "ideal": "5:1",
+      "world_class": "≥7:1"
+    }
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 95,
+      "explanation": "CLV ارزش مالی مشتری را اندازه‌گیری می‌کند، اما به فرضیات بستگی دارد"
+    },
+    "measurable": {
+      "score": 90,
+      "explanation": "با داده‌های تاریخی قابل محاسبه است اما پیش‌بینی آینده دارد"
+    },
+    "achievable": {
+      "score": 85,
+      "explanation": "نیاز به داده‌های دقیق تاریخی و فرضیات معقول"
+    },
+    "relevant": {
+      "score": 100,
+      "explanation": "CLV اساس تصمیمات استراتژیک مشتری‌محور است"
+    },
+    "time_bound": {
+      "score": 95,
+      "explanation": "سالانه قابل محاسبه با به‌روزرسانی مداوم"
+    },
+    "overall_smart_score": 93,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "score": 96,
+      "explanation": "CLV نتیجه مستقیم ارزش ارائه شده و وفاداری مشتری است"
+    },
+    "approach": {
+      "score": 88,
+      "explanation": "نیاز به رویکرد جامع برای بهبود تمام مؤلفه‌های CLV"
+    },
+    "deployment": {
+      "score": 85,
+      "explanation": "نیاز به یکپارچه‌سازی داده و سیستم‌های مختلف"
+    },
+    "assessment_refinement": {
+      "score": 92,
+      "explanation": "به‌روزرسانی و بهبود مستمر مدل‌ها"
+    },
+    "overall_radar_score": 90,
+    "radar_level": "عالی"
+  },
+  "strategic_alignment": {
+    "efqm_criteria": [
+      "معیار 6.1 - ادراکات مشتریان",
+      "معیار 4 - ایجاد ارزش پایدار",
+      "معیار 7 - نتایج عملکرد مالی"
+    ],
+    "strategic_objectives": [
+      "افزایش ارزش مشتریان",
+      "بهینه‌سازی هزینه‌های بازاریابی",
+      "تخصیص هوشمند منابع",
+      "رشد سودآور"
+    ],
+    "balanced_scorecard": {
+      "perspective": "مالی و مشتری",
+      "objective": "حداکثرسازی ارزش طول عمر"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "افزایش میانگین ارزش سبد خرید (AOV)",
+      "tactics": ["Upsell", "Cross-sell", "Bundling"],
+      "expected_impact": "+15-25% CLV",
+      "timeframe": "6-12 ماه"
+    },
+    {
+      "initiative": "افزایش فرکانس خرید",
+      "tactics": ["برنامه وفاداری", "ایمیل مارکتینگ", "یادآوری‌ها"],
+      "expected_impact": "+20-30% CLV",
+      "timeframe": "6-12 ماه"
+    },
+    {
+      "initiative": "افزایش نرخ حفظ (طول عمر)",
+      "tactics": ["تجربه بهتر", "Customer Success", "تعامل منظم"],
+      "expected_impact": "+30-50% CLV",
+      "timeframe": "12-24 ماه"
+    },
+    {
+      "initiative": "کاهش Churn",
+      "tactics": ["پیش‌بینی و مداخله", "بهبود مستمر", "حل سریع مشکلات"],
+      "expected_impact": "+25-40% CLV",
+      "timeframe": "12-18 ماه"
+    }
+  ],
+  "reporting": {
+    "dashboard_display": "CLV میانگین + توزیع CLV + CLV/CAC + CLV به تفکیک سگمنت + روند زمانی",
+    "report_frequency": "ماهانه برای ردیابی، فصلی برای استراتژی، سالانه برای هیئت‌مدیره",
+    "segmentation": [
+      "CLV به تفکیک محصول",
+      "CLV به تفکیک کانال جذب",
+      "CLV به تفکیک سگمنت مشتری",
+      "CLV به تفکیک cohort"
+    ],
+    "stakeholders": [
+      "مدیرعامل",
+      "CFO",
+      "مدیر بازاریابی",
+      "مدیر فروش",
+      "مدیر تجربه مشتری"
+    ]
+  },
+  "related_kpis": {
+    "components": [
+      "R7-2-038: میانگین ارزش خرید (AOV)",
+      "R7-2-039: فرکانس خرید",
+      "R6-1-003: نرخ حفظ مشتری",
+      "R7-2-040: طول عمر مشتری"
+    ],
+    "comparison": [
+      "R7-2-041: هزینه جذب مشتری (CAC)",
+      "R7-2-042: نسبت CLV/CAC",
+      "R7-2-043: Payback Period"
+    ],
+    "outcomes": [
+      "R6-1-001: NPS",
+      "R6-1-002: رضایت کلی",
+      "R7-1-017: سودآوری کلی"
+    ]
+  },
+  "documentation": {
+    "standard_references": [
+      "Harvard Business Review - The Economics of Customer Acquisition",
+      "Philip Kotler - Marketing Management",
+      "EFQM Model 2025 - Criterion 6.1 & 7"
+    ],
+    "methodology_documents": [
+      "روش‌شناسی محاسبه CLV",
+      "دستورالعمل مدل‌سازی پیش‌بینی",
+      "چارچوب بهبود CLV"
+    ],
+    "training_materials": [
+      "آموزش مفاهیم CLV",
+      "آموزش استراتژی‌های افزایش CLV",
+      "آموزش تحلیل سگمنت"
+    ]
+  },
+  "governance": {
+    "owner": "CFO / مدیر بازاریابی",
+    "co_owner": "مدیر تجربه مشتری",
+    "reviewer": "مدیرعامل",
+    "approver": "هیئت‌مدیره",
+    "review_frequency": "فصلی",
+    "data_retention": "بدون محدودیت",
+    "access_level": "محدود - مدیریت ارشد"
+  },
+  "clv_calculation_methods": {
+    "historical": {
+      "description": "بر اساس داده‌های واقعی گذشته",
+      "pros": "ساده، واقع‌بینانه",
+      "cons": "نمی‌تواند تغییرات آینده را پیش‌بینی کند",
+      "use_case": "مشتریان با تاریخچه طولانی"
+    },
+    "predictive": {
+      "description": "مدل‌های آماری و یادگیری ماشین",
+      "pros": "دقیق‌تر، پیش‌بینی آینده",
+      "cons": "پیچیده، نیاز به داده زیاد",
+      "use_case": "کسب‌وکارهای بزرگ با داده کافی"
+    },
+    "cohort": {
+      "description": "تحلیل گروه‌های ورودی مشابه",
+      "pros": "شناسایی روندها، مقایسه دوره‌ای",
+      "cons": "نیاز به داده تاریخی کافی",
+      "use_case": "کسب‌وکارهای subscription"
+    }
+  },
+  "clv_drivers": {
+    "purchase_value": {
+      "weight": 35,
+      "tactics": [
+        "Upselling محصولات premium",
+        "Cross-selling محصولات مکمل",
+        "Bundling و پکیج‌ها",
+        "Dynamic pricing",
+        "افزایش تنوع محصول"
+      ]
+    },
+    "purchase_frequency": {
+      "weight": 30,
+      "tactics": [
+        "برنامه وفاداری",
+        "یادآوری‌های شخصی",
+        "پیشنهادات محدود زمانی",
+        "ایمیل مارکتینگ",
+        "Subscription model"
+      ]
+    },
+    "customer_lifespan": {
+      "weight": 35,
+      "tactics": [
+        "تجربه عالی مستمر",
+        "Customer Success programs",
+        "پیش‌بینی و جلوگیری از Churn",
+        "نوآوری مستمر",
+        "ایجاد switching costs"
+      ]
+    }
+  },
+  "segmentation_by_clv": {
+    "high_value": {
+      "percentage": "20%",
+      "clv_contribution": "60-80%",
+      "strategy": "VIP treatment، Account managers، توجه ویژه"
+    },
+    "medium_value": {
+      "percentage": "30%",
+      "clv_contribution": "15-30%",
+      "strategy": "Upsell/Cross-sell، تبدیل به High-value"
+    },
+    "low_value": {
+      "percentage": "50%",
+      "clv_contribution": "5-10%",
+      "strategy": "خودکارسازی، کاهش هزینه خدمات، ارزیابی سودآوری"
+    }
+  },
+  "clv_optimization_strategies": {
+    "acquisition": {
+      "focus": "جذب مشتریان با پتانسیل CLV بالا",
+      "tactics": [
+        "Lookalike audiences",
+        "تارگت کردن سگمنت‌های پرارزش",
+        "بهینه‌سازی کانال‌های جذب"
+      ]
+    },
+    "onboarding": {
+      "focus": "شروع قوی برای طول عمر بالاتر",
+      "tactics": [
+        "Welcome series",
+        "آموزش جامع",
+        "Quick wins اولیه"
+      ]
+    },
+    "engagement": {
+      "focus": "نگه‌داشتن مشتریان فعال",
+      "tactics": [
+        "محتوای ارزشمند",
+        "Community building",
+        "Gamification"
+      ]
+    },
+    "monetization": {
+      "focus": "افزایش درآمد از مشتریان فعلی",
+      "tactics": [
+        "Upsell/Cross-sell هوشمند",
+        "Pricing optimization",
+        "محصولات جدید"
+      ]
+    },
+    "retention": {
+      "focus": "حفظ مشتریان پرارزش",
+      "tactics": [
+        "پیش‌بینی Churn",
+        "برنامه وفاداری",
+        "تجربه استثنایی"
+      ]
+    }
+  },
+  "predictive_clv_models": {
+    "regression_models": "Linear/Logistic Regression",
+    "machine_learning": [
+      "Random Forest",
+      "Gradient Boosting",
+      "Neural Networks"
+    ],
+    "input_features": [
+      "تاریخچه خرید",
+      "دموگرافیک",
+      "رفتار آنلاین",
+      "تعاملات پشتیبانی",
+      "استفاده از محصول",
+      "NPS/CSAT scores"
+    ],
+    "validation": "Train/Test split، Cross-validation، Backtesting"
+  },
+  "clv_vs_cac": {
+    "cac_components": [
+      "هزینه‌های بازاریابی",
+      "هزینه‌های فروش",
+      "هزینه‌های فناوری",
+      "کمیسیون و پاداش"
+    ],
+    "optimal_ratio": "CLV/CAC ≥ 3:1",
+    "payback_period": "زمان بازگشت سرمایه CAC از CLV",
+    "target_payback": "< 12 ماه (ایده‌آل)"
+  },
+  "correlation_with_outcomes": {
+    "revenue_growth": "همبستگی مثبت 0.8-0.9",
+    "profitability": "همبستگی مثبت 0.9-0.95",
+    "company_valuation": "همبستگی مثبت 0.8-0.9",
+    "marketing_roi": "همبستگی مثبت 0.7-0.8",
+    "customer_satisfaction": "همبستگی مثبت 0.6-0.7"
+  },
+  "risk_management": {
+    "risks": [
+      {
+        "risk": "فرضیات نادرست (مثلاً Retention بیش از واقع)",
+        "impact": "بالا",
+        "mitigation": "استفاده از داده‌های محافظه‌کارانه، به‌روزرسانی مداوم"
+      },
+      {
+        "risk": "تمرکز بیش از حد بر CLV و نادیده گرفتن رضایت",
+        "impact": "متوسط",
+        "mitigation": "تعادل بین CLV و شاخص‌های کیفی"
+      },
+      {
+        "risk": "سرمایه‌گذاری بیش از حد در مشتریان کم‌ارزش",
+        "impact": "متوسط",
+        "mitigation": "سگمنت‌بندی و تخصیص متناسب منابع"
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "clv_optimization_cycle": [
+      "محاسبه CLV فعلی",
+      "شناسایی درایورهای کلیدی",
+      "طراحی ابتکارات بهبود",
+      "اجرا و آزمایش A/B",
+      "اندازه‌گیری تأثیر بر CLV",
+      "مقیاس‌پذیری موفقیت‌ها"
+    ],
+    "best_practices": [
+      "تمرکز بر ارزش بلندمدت نه فروش کوتاه‌مدت",
+      "سگمنت‌بندی و شخصی‌سازی",
+      "سرمایه‌گذاری در مشتریان پرارزش",
+      "اندازه‌گیری و بهینه‌سازی مستمر"
+    ]
+  },
+  "notes": [
+    "CLV شاخص اصلی برای تصمیمات استراتژیک مشتری‌محور است",
+    "نسبت ایده‌آل CLV/CAC حداقل 3:1 است",
+    "افزایش 1% در Retention می‌تواند CLV را 5-10% افزایش دهد",
+    "20% مشتریان معمولاً 60-80% ارزش را ایجاد می‌کنند (Pareto)",
+    "CLV باید راهنمای تخصیص منابع بازاریابی و خدمات باشد"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص - شاخص نهایی معیار 6-1"
+    }
+  ]
+}
