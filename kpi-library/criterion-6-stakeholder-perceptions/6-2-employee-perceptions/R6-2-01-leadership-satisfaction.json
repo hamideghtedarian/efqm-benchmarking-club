@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-01",
+    "kpi_name_fa": "رضایت از رفتار رهبران سازمان و سرپرستان مستقیم کارکنان",
+    "kpi_name_en": "Satisfaction with Leadership and Direct Supervisor Behavior",
+    "acronym": "LSS",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Leadership and Management"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از رفتار، سبک مدیریت، و عملکرد رهبران سازمان و سرپرستان مستقیم خود را اندازه‌گیری می‌کند. رهبری مؤثر یکی از مهم‌ترین عوامل در انگیزش، تعهد، و عملکرد کارکنان است. این شاخص شامل ارزیابی مواردی مانند ارتباطات، حمایت، انصاف، شفافیت، قدردانی، الگوبودن، و توانایی ایجاد انگیزه و جهت‌دهی به تیم است. تحقیقات نشان می‌دهند رفتار سرپرست مستقیم بیشترین تأثیر را بر رضایت شغلی و تصمیم ماندن یا ترک کارکنان دارد.",
+    "description_en": "This KPI measures employee satisfaction with the behavior, management style, and performance of organizational leaders and their direct supervisors. Effective leadership is one of the most important factors in employee motivation, commitment, and performance. This includes evaluation of communication, support, fairness, transparency, recognition, role modeling, and ability to motivate and direct the team. Research shows direct supervisor behavior has the greatest impact on job satisfaction and employee retention decisions.",
+    "purpose": "ارزیابی کیفیت رهبری و مدیریت از دیدگاه کارکنان و شناسایی فرصت‌های بهبود",
+    "scope": "تمام کارکنان سازمان (تمام وقت، پاره وقت، رسمی، قراردادی، خرید خدمت)",
+    "key_insight": "مردم سازمان‌ها را ترک نمی‌کنند، آن‌ها مدیران بد را ترک می‌کنند"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از رفتار رهبری و سرپرستی",
+    "formula_detailed": "LSS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه (نظرسنجی کارکنان)",
+    "data_source": [
+      "نظرسنجی سالانه کارکنان",
+      "نظرسنجی 360 درجه",
+      "مصاحبه‌های خروج",
+      "گروه‌های کانونی"
+    ],
+    "rating_scale": {
+      "5": "کاملاً راضی",
+      "4": "راضی",
+      "3": "نه راضی نه ناراضی",
+      "2": "ناراضی",
+      "1": "کاملاً ناراضی"
+    }
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه سالانه کارکنان",
+    "survey_questions": [
+      "از رفتار و عملکرد مدیر مستقیم خود تا چه حد راضی هستید؟",
+      "سرپرست شما تا چه حد از شما حمایت می‌کند؟",
+      "سرپرست شما تا چه حد منصفانه رفتار می‌کند؟",
+      "سرپرست شما تا چه حد به‌طور مؤثر ارتباط برقرار می‌کند؟",
+      "سرپرست شما تا چه حد شما را در کارتان قدردانی می‌کند؟",
+      "رهبران ارشد سازمان تا چه حد الگوی ارزش‌های سازمانی هستند؟",
+      "رهبری سازمان تا چه حد جهت و چشم‌انداز واضحی ارائه می‌دهد؟"
+    ],
+    "anonymity": "ضروری - برای پاسخ‌های صادقانه",
+    "response_rate_target": ">70%",
+    "sampling": "همه کارکنان",
+    "responsible_department": "منابع انسانی، توسعه سازمانی",
+    "responsible_person": "مدیر منابع انسانی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 500 کارکن",
+    "input_data": {
+      "total_responses": 500,
+      "score_5": 150,
+      "score_4": 200,
+      "score_3": 100,
+      "score_2": 40,
+      "score_1": 10
+    },
+    "calculation_steps": [
+      "مجموع امتیازات = (150×5) + (200×4) + (100×3) + (40×2) + (10×1)",
+      "= 750 + 800 + 300 + 80 + 10 = 1940",
+      "میانگین = 1940 / 500 = 3.88",
+      "درصد = (3.88 / 5) × 100 = 77.6%",
+      "درصد راضی (4-5) = (150+200)/500 = 70%"
+    ],
+    "result": "77.6%",
+    "interpretation": "رضایت 77.6% نشان‌دهنده عملکرد خوب رهبری است. 70% کارکنان راضی یا کاملاً راضی هستند. 10% ناراضی هستند که نیاز به توجه دارد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    },
+    "by_industry": {
+      "technology": "75-85%",
+      "professional_services": "70-80%",
+      "manufacturing": "65-75%",
+      "retail": "60-70%",
+      "healthcare": "65-75%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود از اولین نظرسنجی",
+    "short_term": "baseline + 3-5%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 97,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 92,
+    "radar_level": "عالی"
+  },
+  "leadership_dimensions": {
+    "communication": "ارتباط مؤثر، گوش دادن فعال، شفافیت",
+    "support": "حمایت، در دسترس بودن، کمک در رفع موانع",
+    "fairness": "انصاف، بی‌طرفی، رفتار یکسان",
+    "recognition": "قدردانی، شناخت دستاوردها، تشویق",
+    "development": "توسعه کارکنان، مربیگری، فرصت رشد",
+    "empowerment": "اختیاردهی، اعتماد، مسئولیت‌پذیری",
+    "vision": "جهت‌دهی، الهام‌بخشی، هدف مشترک",
+    "integrity": "صداقت، اخلاق، الگوبودن"
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "آموزش مهارت‌های رهبری برای مدیران",
+      "expected_impact": "+5-8%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "پیاده‌سازی ارزیابی 360 درجه",
+      "expected_impact": "+4-7%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "برنامه مربیگری و mentoring",
+      "expected_impact": "+3-6%",
+      "timeframe": "12 ماه"
+    }
+  ],
+  "notes": [
+    "رفتار سرپرست مستقیم بیشترین تأثیر را بر رضایت کارکنان دارد",
+    "مردم سازمان‌ها را ترک نمی‌کنند، مدیران بد را ترک می‌کنند",
+    "رهبری مؤثر می‌تواند انگیزه و عملکرد را 20-30% افزایش دهد"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
