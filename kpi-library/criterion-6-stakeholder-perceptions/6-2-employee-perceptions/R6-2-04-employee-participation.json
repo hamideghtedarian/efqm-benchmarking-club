@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-04",
+    "kpi_name_fa": "رضایت از مشارکت دادن کارکنان در اداره سازمان",
+    "kpi_name_en": "Employee Satisfaction with Participation in Organizational Management",
+    "acronym": "EPS",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Participation and Involvement"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از سطح مشارکت، درگیری، و تأثیرگذاری آن‌ها در تصمیم‌گیری‌ها، بهبودها، و اداره سازمان را اندازه‌گیری می‌کند. مشارکت کارکنان شامل دعوت از آن‌ها برای ارائه نظر، پیشنهاد بهبود، شرکت در تصمیمات مرتبط با کارشان، و احساس مالکیت نسبت به سازمان است. تحقیقات نشان می‌دهند کارکنانی که احساس می‌کنند صدایشان شنیده می‌شود و در تصمیمات مشارکت دارند، تعهد و انگیزه بالاتری دارند، نوآورانه‌تر عمل می‌کنند، و کمتر سازمان را ترک می‌کنند.",
+    "description_en": "This KPI measures employee satisfaction with their level of participation, involvement, and influence in decision-making, improvements, and organizational management. Employee participation includes inviting them to provide input, suggest improvements, participate in decisions related to their work, and feel ownership of the organization. Research shows employees who feel their voice is heard and participate in decisions have higher commitment and motivation, are more innovative, and are less likely to leave.",
+    "purpose": "ارزیابی میزان مشارکت و تأثیرگذاری کارکنان در اداره سازمان",
+    "scope": "تمام کارکنان و سطوح سازمان",
+    "key_insight": "کارکنانی که احساس مشارکت می‌کنند 4.6 برابر انگیزه بیشتر دارند"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از مشارکت در اداره",
+    "formula_detailed": "EPS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "تحلیل مشارکت در برنامه‌های بهبود",
+      "آمار پیشنهادات کارکنان"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه",
+    "survey_questions": [
+      "نظرات و پیشنهادات من در سازمان جدی گرفته می‌شود",
+      "در تصمیمات مرتبط با کارم مشارکت داده می‌شوم",
+      "مدیریت از نظرات کارکنان استقبال می‌کند",
+      "احساس می‌کنم می‌توانم در بهبود سازمان تأثیر بگذارم",
+      "فرصت‌های کافی برای ارائه پیشنهادات بهبود وجود دارد",
+      "به پیشنهادات و ایده‌های من بازخورد داده می‌شود",
+      "احساس مالکیت نسبت به سازمان دارم"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "منابع انسانی، بهبود مستمر",
+    "responsible_person": "مدیر منابع انسانی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 500 کارکن",
+    "input_data": {
+      "total_responses": 500,
+      "score_5": 110,
+      "score_4": 190,
+      "score_3": 130,
+      "score_2": 50,
+      "score_1": 20
+    },
+    "calculation_steps": [
+      "مجموع = (110×5) + (190×4) + (130×3) + (50×2) + (20×1)",
+      "= 550 + 760 + 390 + 100 + 20 = 1820",
+      "میانگین = 1820 / 500 = 3.64",
+      "درصد = (3.64 / 5) × 100 = 72.8%"
+    ],
+    "result": "72.8%",
+    "interpretation": "رضایت 72.8% نشان‌دهنده سطح خوب مشارکت است. 60% کارکنان احساس مشارکت می‌کنند اما 14% احساس محرومیت دارند."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥80%",
+      "excellent": "70-79%",
+      "good": "60-69%",
+      "average": "50-59%",
+      "poor": "<50%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 4-6%",
+    "medium_term": "70-75%",
+    "long_term": "≥80%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 94,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 88,
+    "radar_level": "عالی"
+  },
+  "participation_levels": {
+    "information": "اطلاع‌رسانی - کمترین سطح",
+    "consultation": "مشاوره - دریافت نظر",
+    "involvement": "درگیری - مشارکت فعال",
+    "collaboration": "همکاری - کار مشترک",
+    "empowerment": "اختیاردهی - تصمیم‌گیری مشترک"
+  },
+  "participation_mechanisms": {
+    "suggestion_systems": "سیستم پیشنهادات کارکنان",
+    "improvement_teams": "تیم‌های بهبود مستمر",
+    "town_halls": "جلسات عمومی و Q&A",
+    "surveys": "نظرسنجی‌ها و پرسش از کارکنان",
+    "committees": "کمیته‌های کارکنان",
+    "decision_involvement": "مشارکت در تصمیمات",
+    "innovation_programs": "برنامه‌های نوآوری"
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "سیستم مدیریت پیشنهادات آنلاین",
+      "expected_impact": "+5-8%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "برنامه تیم‌های بهبود مستمر (Kaizen)",
+      "expected_impact": "+6-9%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "جلسات منظم Town Hall با مدیریت",
+      "expected_impact": "+3-5%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "پاداش پیشنهادات برتر",
+      "expected_impact": "+4-6%",
+      "timeframe": "6 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "engagement": "0.7-0.8",
+    "innovation": "0.6-0.7",
+    "commitment": "0.6-0.7",
+    "retention": "0.5-0.6",
+    "performance": "0.4-0.5"
+  },
+  "notes": [
+    "کارکنانی که احساس مشارکت می‌کنند 4.6 برابر انگیزه بیشتر دارند",
+    "مشارکت کارکنان می‌تواند نوآوری را 30-40% افزایش دهد",
+    "سازمان‌های با مشارکت بالا 21% سودآورتر هستند"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
