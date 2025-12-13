@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-05",
+    "kpi_name_fa": "رضایت از فرصت‌های برابر در جذب، به‌کارگیری، آموزش و ارتقای کارکنان",
+    "kpi_name_en": "Employee Satisfaction with Equal Opportunities in Recruitment, Employment, Training and Promotion",
+    "acronym": "EOS",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Diversity, Equity and Inclusion"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از وجود و اجرای فرصت‌های برابر، عدالت، و فراگیری در فرآیندهای جذب، استخدام، آموزش، و ارتقا را اندازه‌گیری می‌کند. فرصت‌های برابر یعنی تمام کارکنان صرف‌نظر از جنسیت، سن، قومیت، مذهب، معلولیت، یا هر ویژگی دیگر، فرصت یکسانی برای رشد و پیشرفت دارند. این شاخص شامل ادراک از انصاف در فرآیندهای منابع انسانی، عدم تبعیض، و تعهد سازمان به تنوع و شمول است. محیط کاری عادلانه و فراگیر باعث جذب استعدادهای متنوع، نوآوری بیشتر، و تعهد بالاتر می‌شود.",
+    "description_en": "This KPI measures employee satisfaction with the existence and implementation of equal opportunities, equity, and inclusion in recruitment, employment, training, and promotion processes. Equal opportunities means all employees, regardless of gender, age, ethnicity, religion, disability, or any other characteristic, have equal opportunity for growth and advancement. This includes perception of fairness in HR processes, non-discrimination, and organizational commitment to diversity and inclusion. A fair and inclusive work environment attracts diverse talent, increases innovation, and enhances commitment.",
+    "purpose": "ارزیابی ادراک کارکنان از عدالت، برابری و فراگیری در سازمان",
+    "scope": "تمام فرآیندهای منابع انسانی و همه کارکنان",
+    "key_insight": "سازمان‌های متنوع و فراگیر 35% عملکرد بهتر و 70% احتمال بیشتر برای ورود به بازارهای جدید دارند"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از فرصت‌های برابر",
+    "formula_detailed": "EOS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "آمار منابع انسانی (تنوع، ارتقا)",
+      "گزارشات تبعیض و شکایات"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه + آمار عینی",
+    "survey_questions": [
+      "سازمان فرصت‌های برابر برای همه کارکنان فراهم می‌کند",
+      "تصمیمات استخدام و ارتقا بر اساس شایستگی است نه تبعیض",
+      "همه کارکنان دسترسی برابر به آموزش و توسعه دارند",
+      "سازمان از تنوع و شمول حمایت می‌کند",
+      "احساس می‌کنم بدون تبعیض رفتار می‌شود",
+      "فرآیندهای منابع انسانی منصفانه و شفاف است",
+      "سازمان فرهنگ فراگیری دارد که همه احساس تعلق می‌کنند"
+    ],
+    "quantitative_metrics": [
+      "نسبت جنسیتی در سطوح مختلف",
+      "تنوع قومیتی و سنی",
+      "نرخ ارتقای گروه‌های مختلف",
+      "دسترسی به آموزش",
+      "شکایات تبعیض"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "منابع انسانی، تنوع و شمول",
+    "responsible_person": "مدیر منابع انسانی، افسر تنوع"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 600 کارکن",
+    "input_data": {
+      "total_responses": 600,
+      "score_5": 200,
+      "score_4": 220,
+      "score_3": 120,
+      "score_2": 40,
+      "score_1": 20
+    },
+    "calculation_steps": [
+      "مجموع = (200×5) + (220×4) + (120×3) + (40×2) + (20×1)",
+      "= 1000 + 880 + 360 + 80 + 20 = 2340",
+      "میانگین = 2340 / 600 = 3.9",
+      "درصد = (3.9 / 5) × 100 = 78%"
+    ],
+    "result": "78%",
+    "interpretation": "رضایت 78% نشان‌دهنده تعهد خوب به برابری است. 70% کارکنان احساس فرصت برابر می‌کنند اما 10% احساس تبعیض دارند که نیاز به توجه دارد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 3-5%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 96,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 91,
+    "radar_level": "عالی"
+  },
+  "dei_dimensions": {
+    "diversity": "تنوع - تفاوت‌های دموگرافیک و فکری",
+    "equity": "عدالت - فرصت‌های برابر و منصفانه",
+    "inclusion": "فراگیری - احساس تعلق و ارزشمندی همه",
+    "belonging": "تعلق - احساس پذیرفته شدن",
+    "fairness": "انصاف - رفتار یکسان و بی‌طرفانه",
+    "respect": "احترام - قدردانی از تفاوت‌ها"
+  },
+  "protected_characteristics": [
+    "جنسیت",
+    "سن",
+    "قومیت و نژاد",
+    "مذهب و باور",
+    "معلولیت",
+    "گرایش جنسی",
+    "هویت جنسیتی",
+    "وضعیت تأهل",
+    "بارداری و مادری"
+  ],
+  "improvement_initiatives": [
+    {
+      "initiative": "آموزش آگاهی از تعصبات ناخودآگاه",
+      "expected_impact": "+4-6%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "فرآیندهای استخدام کور (Blind recruitment)",
+      "expected_impact": "+3-5%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "برنامه مربیگری برای گروه‌های کم‌نمایندگی",
+      "expected_impact": "+4-7%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "گروه‌های منابع کارکنان (ERGs)",
+      "expected_impact": "+3-5%",
+      "timeframe": "9 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "innovation": "0.5-0.6",
+    "employee_engagement": "0.6-0.7",
+    "talent_attraction": "0.5-0.6",
+    "reputation": "0.4-0.5",
+    "financial_performance": "0.3-0.4"
+  },
+  "notes": [
+    "سازمان‌های متنوع 35% احتمال بیشتر برای عملکرد بالاتر از میانگین دارند",
+    "فراگیری از تنوع مهم‌تر است - تنوع بدون شمول ناکارآمد است",
+    "تعهد به برابری باید از بالا شروع شود و در فرهنگ نهادینه شود"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
