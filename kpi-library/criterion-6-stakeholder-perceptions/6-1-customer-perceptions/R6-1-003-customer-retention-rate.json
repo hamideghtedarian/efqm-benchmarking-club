@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-1-003",
+    "kpi_name_fa": "نرخ حفظ مشتری",
+    "kpi_name_en": "Customer Retention Rate",
+    "acronym": "CRR",
+    "criterion": 6,
+    "sub_criterion": 1,
+    "category": "Customer Perceptions",
+    "sub_category": "Loyalty and Retention"
+  },
+  "definition": {
+    "description_fa": "نرخ حفظ مشتری درصد مشتریانی است که در یک دوره زمانی مشخص (معمولاً یک سال) به عنوان مشتری فعال باقی می‌مانند و سازمان را ترک نمی‌کنند. این شاخص یکی از مهم‌ترین معیارهای وفاداری و سلامت کسب‌وکار است. تحقیقات نشان می‌دهند جذب مشتری جدید 5 تا 25 برابر گران‌تر از حفظ مشتری فعلی است، و افزایش 5% در نرخ حفظ می‌تواند سودآوری را 25% تا 95% افزایش دهد. نرخ حفظ بالا نشان‌دهنده رضایت، وفاداری، و ارزش واقعی ارائه شده به مشتری است.",
+    "description_en": "Customer Retention Rate is the percentage of customers who remain active customers over a specific period (typically one year) and do not leave the organization. This is one of the most important indicators of loyalty and business health. Research shows acquiring new customers costs 5 to 25 times more than retaining existing ones, and a 5% increase in retention can increase profitability by 25% to 95%. High retention indicates satisfaction, loyalty, and real value delivered to customers.",
+    "purpose": "اندازه‌گیری توانایی سازمان در حفظ مشتریان فعلی و شناسایی ریسک از دست دادن مشتری",
+    "scope": "تمام مشتریان فعال در دوره مورد بررسی",
+    "key_insight": "حفظ مشتری بسیار مقرون‌به‌صرفه‌تر و سودآورتر از جذب مشتری جدید است"
+  },
+  "measurement": {
+    "formula": "((تعداد مشتریان پایان دوره - مشتریان جدید) / تعداد مشتریان ابتدای دوره) × 100",
+    "formula_detailed": "CRR = ((E - N) / S) × 100",
+    "formula_components": {
+      "E": "تعداد مشتریان در پایان دوره",
+      "N": "تعداد مشتریان جدید در طول دوره",
+      "S": "تعداد مشتریان در ابتدای دوره"
+    },
+    "unit": "درصد",
+    "scale": "0-100%",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "ماهانه، فصلی، سالانه"
+  },
+  "calculation_example": {
+    "scenario": "محاسبه نرخ حفظ مشتری برای یک سال",
+    "input_data": {
+      "customers_start_year": 10000,
+      "customers_end_year": 10500,
+      "new_customers_during_year": 2000
+    },
+    "calculation_steps": [
+      "CRR = ((10,500 - 2,000) / 10,000) × 100 = 85%"
+    ],
+    "result": "85%"
+  },
+  "benchmarking": {
+    "world_class": "≥90%",
+    "excellent": "85-89%",
+    "good": "75-84%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 99,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 94,
+    "radar_level": "عالی"
+  },
+  "notes": [
+    "حفظ 5% مشتریان بیشتر می‌تواند سود را 25-95% افزایش دهد",
+    "جذب مشتری جدید 5-25 برابر گران‌تر از حفظ است"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه"
+    }
+  ]
+}
