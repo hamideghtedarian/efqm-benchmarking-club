@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-02",
+    "kpi_name_fa": "رضایت کارکنان از معنادار بودن شغل",
+    "kpi_name_en": "Employee Satisfaction with Job Meaningfulness",
+    "acronym": "JMS",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Job Meaning and Purpose"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان احساس معناداری، هدفمندی، و ارزشمندی کار از دیدگاه کارکنان را اندازه‌گیری می‌کند. کار معنادار به کاری گفته می‌شود که کارکنان احساس کنند کارشان هدف دارد، به اهداف بزرگ‌تری کمک می‌کند، تأثیر مثبت دارد، و با ارزش‌های شخصی‌شان همسو است. تحقیقات نشان می‌دهند معناداری شغل یکی از قوی‌ترین پیش‌بینی‌کننده‌های رضایت شغلی، انگیزه، تعهد، عملکرد بالا، و ماندگاری کارکنان است. کارکنانی که کارشان را معنادار می‌بینند، انگیزه درونی قوی‌تری دارند و کمتر دچار فرسودگی شغلی می‌شوند.",
+    "description_en": "This KPI measures employees' sense of meaningfulness, purpose, and value in their work. Meaningful work is when employees feel their work has purpose, contributes to larger goals, has positive impact, and aligns with their personal values. Research shows job meaningfulness is one of the strongest predictors of job satisfaction, motivation, commitment, high performance, and employee retention. Employees who find their work meaningful have stronger intrinsic motivation and are less prone to burnout.",
+    "purpose": "ارزیابی میزان احساس هدفمندی و معناداری کار از دیدگاه کارکنان",
+    "scope": "تمام کارکنان سازمان",
+    "key_insight": "کارکنانی که کارشان را معنادار می‌بینند تا 3 برابر انگیزه بیشتر و 2 برابر تعهد بالاتر دارند"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از معناداری شغل",
+    "formula_detailed": "JMS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی سالانه کارکنان",
+      "مصاحبه‌های عمقی",
+      "گروه‌های کانونی"
+    ],
+    "rating_scale": {
+      "5": "کاملاً موافقم",
+      "4": "موافقم",
+      "3": "نه موافق نه مخالف",
+      "2": "مخالفم",
+      "1": "کاملاً مخالفم"
+    }
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه با سوالات استاندارد معناداری کار",
+    "survey_questions": [
+      "کاری که انجام می‌دهم برای من معنادار و هدفمند است",
+      "کار من به اهداف مهم سازمان کمک می‌کند",
+      "احساس می‌کنم کارم تفاوت مثبتی ایجاد می‌کند",
+      "کار من با ارزش‌ها و اعتقادات شخصی‌ام همسو است",
+      "درک می‌کنم چگونه کارم به هدف بزرگ‌تر سازمان کمک می‌کند",
+      "از اینکه این کار را انجام می‌دهم احساس غرور می‌کنم",
+      "کارم به من انگیزه و انرژی می‌دهد"
+    ],
+    "work_meaning_inventory": "استفاده از ابزار استاندارد Work and Meaning Inventory (WAMI)",
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "منابع انسانی",
+    "responsible_person": "مدیر منابع انسانی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 400 کارکن",
+    "input_data": {
+      "total_responses": 400,
+      "score_5": 120,
+      "score_4": 160,
+      "score_3": 80,
+      "score_2": 30,
+      "score_1": 10
+    },
+    "calculation_steps": [
+      "مجموع = (120×5) + (160×4) + (80×3) + (30×2) + (10×1)",
+      "= 600 + 640 + 240 + 60 + 10 = 1550",
+      "میانگین = 1550 / 400 = 3.875",
+      "درصد = (3.875 / 5) × 100 = 77.5%"
+    ],
+    "result": "77.5%",
+    "interpretation": "77.5% نشان‌دهنده سطح خوب معناداری شغل است. 70% کارکنان کارشان را معنادار می‌بینند."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 3-5%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 96,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 90,
+    "radar_level": "عالی"
+  },
+  "meaningfulness_dimensions": {
+    "purpose": "احساس هدفمندی و جهت در کار",
+    "impact": "احساس تأثیرگذاری مثبت",
+    "alignment": "همسویی با ارزش‌های شخصی",
+    "contribution": "احساس مشارکت در چیزی بزرگ‌تر",
+    "significance": "احساس اهمیت و ارزشمندی کار",
+    "autonomy": "آزادی و کنترل بر نحوه انجام کار",
+    "growth": "فرصت یادگیری و رشد"
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "ارتباط واضح‌تر مأموریت سازمان با کار روزانه",
+      "expected_impact": "+5-8%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "Job Crafting - امکان شکل‌دهی شغل توسط کارکنان",
+      "expected_impact": "+4-7%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "نمایش تأثیر کار کارکنان (Customer stories)",
+      "expected_impact": "+3-6%",
+      "timeframe": "3 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "job_satisfaction": "0.7-0.8",
+    "engagement": "0.7-0.9",
+    "performance": "0.5-0.6",
+    "retention": "0.6-0.7",
+    "burnout": "-0.5 to -0.6"
+  },
+  "notes": [
+    "معناداری شغل قوی‌ترین پیش‌بینی‌کننده تعهد و انگیزه درونی است",
+    "کارکنانی که کارشان را معنادار می‌بینند 3 برابر انگیزه بیشتر دارند",
+    "معناداری شغل از پول و پاداش مهم‌تر است"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
