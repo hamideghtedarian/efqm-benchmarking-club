@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-10",
+    "kpi_name_fa": "رضایت کارکنان از شرایط محیط کار، وضعیت ایمنی و بهداشت",
+    "kpi_name_en": "Employee Satisfaction with Work Environment, Safety and Health Conditions",
+    "acronym": "WSH",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Workplace Environment and Safety"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از کیفیت محیط کار فیزیکی و روانی، شرایط ایمنی، بهداشت، و سلامت را اندازه‌گیری می‌کند. محیط کار شامل فضای فیزیکی (نور، دما، صدا، تجهیزات)، ایمنی شغلی (پیشگیری از حوادث)، بهداشت (پاکیزگی، کیفیت هوا)، ارگونومی، و سلامت روانی (استرس، فشار کاری) است. محیط کار سالم و ایمن نه تنها یک الزام قانونی بلکه یک ضرورت انسانی و کسب‌وکاری است. تحقیقات نشان می‌دهند محیط کار مناسب می‌تواند بهره‌وری را 20-25% افزایش دهد و غیبت و حوادث را کاهش دهد.",
+    "description_en": "This KPI measures employee satisfaction with the quality of physical and psychological work environment, safety conditions, health, and wellness. The work environment includes physical space (light, temperature, noise, equipment), occupational safety (accident prevention), hygiene (cleanliness, air quality), ergonomics, and mental health (stress, workload). A healthy and safe work environment is not only a legal requirement but a human and business necessity. Research shows a proper work environment can increase productivity by 20-25% and reduce absenteeism and accidents.",
+    "purpose": "ارزیابی کیفیت، ایمنی، و سلامت محیط کار از دیدگاه کارکنان",
+    "scope": "تمام محیط‌های کاری و همه کارکنان",
+    "key_insight": "سلامت و ایمنی کارکنان اولویت اول است - هیچ کسب‌وکاری ارزش ریسک جان کارکنان را ندارد"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از محیط کار، ایمنی و بهداشت",
+    "formula_detailed": "WSH = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "بازرسی ایمنی",
+      "آمار حوادث و بیماری‌های شغلی",
+      "گزارشات HSE"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه + داده‌های عینی",
+    "survey_questions": [
+      "از شرایط محیط کار (فضا، نور، دما، تجهیزات) تا چه حد راضی هستید؟",
+      "محیط کار من ایمن است و از حوادث پیشگیری می‌شود",
+      "تجهیزات ایمنی کافی و مناسب در دسترس است",
+      "سازمان به سلامت و ایمنی کارکنان اهمیت می‌دهد",
+      "محیط کار تمیز و بهداشتی است",
+      "میزان استرس و فشار کاری قابل مدیریت است",
+      "ارگونومی محیط کار (صندلی، میز، صفحه‌نمایش) مناسب است"
+    ],
+    "objective_metrics": [
+      "نرخ حوادث کاری (TRIR)",
+      "نرخ غیبت به دلیل بیماری",
+      "تعداد نزدیک‌شدن به حادثه (Near miss)",
+      "میزان انطباق با استانداردهای ایمنی",
+      "نتایج بازرسی‌های ایمنی"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "HSE، بهداشت و ایمنی، تسهیلات",
+    "responsible_person": "مدیر HSE"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 480 کارکن",
+    "input_data": {
+      "total_responses": 480,
+      "score_5": 150,
+      "score_4": 200,
+      "score_3": 90,
+      "score_2": 30,
+      "score_1": 10
+    },
+    "calculation_steps": [
+      "مجموع = (150×5) + (200×4) + (90×3) + (30×2) + (10×1)",
+      "= 750 + 800 + 270 + 60 + 10 = 1890",
+      "میانگین = 1890 / 480 = 3.94",
+      "درصد = (3.94 / 5) × 100 = 78.8%"
+    ],
+    "result": "78.8%",
+    "interpretation": "رضایت 78.8% نشان‌دهنده محیط کار خوب است. 72.9% راضی هستند اما 8.3% ناراضی که نیاز به بررسی دارد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥90%",
+      "excellent": "80-89%",
+      "good": "70-79%",
+      "average": "60-69%",
+      "poor": "<60%"
+    },
+    "safety_metrics": {
+      "world_class_trir": "<0.5",
+      "good_trir": "0.5-2.0",
+      "average_trir": "2.0-4.0",
+      "poor_trir": ">4.0"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 3-5%",
+    "medium_term": "80-85%",
+    "long_term": "≥90%",
+    "safety_target": "صفر حادثه، صفر آسیب (Zero Harm)"
+  },
+  "smart_validation": {
+    "overall_smart_score": 96,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 93,
+    "radar_level": "عالی"
+  },
+  "work_environment_dimensions": {
+    "physical_environment": {
+      "description": "محیط فیزیکی کار",
+      "factors": [
+        "نور کافی و مناسب",
+        "دمای مناسب (18-24 درجه)",
+        "تهویه و کیفیت هوا",
+        "سطح صدا (< 85 دسی‌بل)",
+        "فضای کافی",
+        "پاکیزگی و نظافت"
+      ]
+    },
+    "ergonomics": {
+      "description": "طراحی ارگونومیک",
+      "factors": [
+        "صندلی قابل تنظیم",
+        "ارتفاع میز مناسب",
+        "صفحه‌نمایش در سطح چشم",
+        "کیبورد و موس ارگونومیک",
+        "استراحت منظم",
+        "تجهیزات کمکی (پایه لپ‌تاپ)"
+      ]
+    },
+    "safety": {
+      "description": "ایمنی شغلی",
+      "factors": [
+        "تجهیزات حفاظت فردی (PPE)",
+        "نصب علائم ایمنی",
+        "خروج اضطراری واضح",
+        "آموزش ایمنی",
+        "تجهیزات اطفاء حریق",
+        "کمک‌های اولیه"
+      ]
+    },
+    "hygiene": {
+      "description": "بهداشت محیط کار",
+      "factors": [
+        "آب آشامیدنی سالم",
+        "سرویس‌های بهداشتی تمیز",
+        "نظافت منظم",
+        "مدیریت زباله",
+        "کنترل آفات",
+        "بهداشت مواد غذایی"
+      ]
+    },
+    "psychosocial": {
+      "description": "محیط روانی-اجتماعی",
+      "factors": [
+        "بار کاری متعادل",
+        "استرس قابل مدیریت",
+        "حمایت اجتماعی",
+        "کنترل بر کار",
+        "روابط سالم",
+        "عدم قلدری/آزار"
+      ]
+    }
+  },
+  "safety_culture": {
+    "levels": {
+      "pathological": "چه کسی میتراسد؟ - ایمنی نادیده گرفته می‌شود",
+      "reactive": "ایمنی جدی است، ما کارهای زیادی پس از حوادث انجام می‌دهیم",
+      "calculative": "ما سیستم‌هایی برای مدیریت خطرات داریم",
+      "proactive": "ما در پیشگیری از مشکلات پیش‌قدم هستیم",
+      "generative": "ایمنی در DNA ماست - همه مالک آن هستند"
+    },
+    "target": "فرهنگ generative - ایمنی مسئولیت همه"
+  },
+  "hierarchy_of_controls": {
+    "elimination": "حذف خطر - مؤثرترین",
+    "substitution": "جایگزینی با کم‌خطرتر",
+    "engineering_controls": "کنترل‌های مهندسی - ایزوله کردن خطر",
+    "administrative_controls": "کنترل‌های اداری - تغییر نحوه کار",
+    "ppe": "تجهیزات حفاظت فردی - آخرین خط دفاع"
+  },
+  "occupational_health": {
+    "physical_health": {
+      "issues": [
+        "اختلالات اسکلتی-عضلانی (MSDs)",
+        "آسیب‌های تکراری",
+        "مواجهه با مواد شیمیایی",
+        "صدمات شنوایی",
+        "بیماری‌های تنفسی"
+      ],
+      "prevention": "ارگونومی، تجهیزات حفاظتی، آموزش، بررسی پزشکی منظم"
+    },
+    "mental_health": {
+      "issues": [
+        "استرس شغلی",
+        "فرسودگی (Burnout)",
+        "اضطراب",
+        "افسردگی",
+        "اختلالات خواب"
+      ],
+      "prevention": "بار کاری متعادل، حمایت، EAP، فرهنگ باز، مدیریت استرس"
+    }
+  },
+  "wellness_programs": {
+    "physical_wellness": [
+      "باشگاه ورزشی/تخفیف",
+      "کلاس‌های ورزشی",
+      "معاینات سلامت",
+      "واکسیناسیون",
+      "تشویق فعالیت"
+    ],
+    "mental_wellness": [
+      "برنامه کمک به کارکنان (EAP)",
+      "مشاوره روان‌شناسی",
+      "کارگاه‌های مدیریت استرس",
+      "مدیتیشن/یوگا",
+      "روزهای سلامت روان"
+    ],
+    "nutritional_wellness": [
+      "غذای سالم در محل کار",
+      "مشاوره تغذیه",
+      "میوه و اسنک سالم",
+      "آب کافی"
+    ],
+    "financial_wellness": [
+      "مشاوره مالی",
+      "برنامه‌های پس‌انداز",
+      "آموزش مالی"
+    ]
+  },
+  "remote_work_considerations": {
+    "home_office_setup": "راهنمای ارگونومی خانگی، کمک هزینه تجهیزات",
+    "digital_ergonomics": "استراحت منظم، قانون 20-20-20 (هر 20 دقیقه 20 ثانیه به 20 فوت دورتر نگاه کنید)",
+    "work_life_boundaries": "ساعات کاری مشخص، حق قطع ارتباط",
+    "social_isolation": "تعاملات مجازی منظم، رویدادهای اجتماعی آنلاین",
+    "mental_health": "منابع سلامت روان، چک‌این‌های منظم"
+  },
+  "legal_compliance": {
+    "iran_labor_law": "قانون کار جمهوری اسلامی ایران",
+    "hse_regulations": "مقررات بهداشت، ایمنی و محیط زیست",
+    "building_codes": "مقررات ساختمان",
+    "fire_safety": "مقررات ایمنی و اطفاء حریق",
+    "insurance": "بیمه حوادث کار"
+  },
+  "incident_management": {
+    "reporting": "گزارش فوری تمام حوادث و نزدیک‌شدن به حادثه",
+    "investigation": "تحقیق ریشه‌ای (Root Cause Analysis)",
+    "corrective_action": "اقدامات اصلاحی و پیشگیرانه",
+    "learning": "به اشتراک‌گذاری درس‌آموخته‌ها",
+    "no_blame_culture": "فرهنگ بدون سرزنش - تمرکز بر یادگیری"
+  },
+  "safety_training": {
+    "onboarding": "آموزش ایمنی برای کارکنان جدید",
+    "job_specific": "آموزش خاص شغل",
+    "refresher": "آموزش‌های یادآوری منظم",
+    "emergency": "تمرین‌های اضطراری (آتش‌سوزی، زلزله)",
+    "leadership": "آموزش رهبری ایمنی برای مدیران"
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "بهبود ارگونومی ایستگاه‌های کار",
+      "expected_impact": "+5-8%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "راه‌اندازی برنامه Wellness جامع",
+      "expected_impact": "+7-10%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "فرهنگ‌سازی ایمنی - Zero Harm",
+      "expected_impact": "+6-9%",
+      "timeframe": "18 ماه"
+    },
+    {
+      "initiative": "بهبود کیفیت هوا و نور",
+      "expected_impact": "+4-6%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "برنامه EAP و حمایت سلامت روان",
+      "expected_impact": "+5-8%",
+      "timeframe": "6 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "productivity": "0.6-0.7",
+    "absenteeism": "-0.6 to -0.7",
+    "accidents": "-0.7 to -0.8",
+    "engagement": "0.5-0.6",
+    "retention": "0.4-0.5",
+    "healthcare_costs": "-0.5 to -0.6"
+  },
+  "key_metrics": {
+    "trir": "Total Recordable Incident Rate - تعداد حوادث قابل ثبت × 200,000 / ساعات کار",
+    "ltir": "Lost Time Injury Rate - حوادث با از دست دادن زمان کار",
+    "severity_rate": "روزهای از دست رفته × 200,000 / ساعات کار",
+    "near_miss_ratio": "نسبت نزدیک‌شدن به حادثه به حوادث واقعی",
+    "safety_observation": "تعداد مشاهدات ایمنی گزارش شده"
+  },
+  "best_practices": [
+    "رهبری ایمنی از بالا",
+    "فرهنگ گزارش‌دهی باز",
+    "آموزش مستمر",
+    "مشارکت کارکنان",
+    "پیشگیری پیش‌فعال",
+    "تحقیق و یادگیری از حوادث",
+    "بازرسی‌های منظم",
+    "سرمایه‌گذاری در تجهیزات و محیط"
+  ],
+  "notes": [
+    "سلامت و ایمنی کارکنان اولویت اول است - هیچ کسب‌وکاری ارزش ریسک جان را ندارد",
+    "محیط کار مناسب می‌تواند بهره‌وری را 20-25% افزایش دهد",
+    "هر 1 دلار سرمایه‌گذاری در Wellness برنامه‌ها 3-6 دلار بازگشت دارد",
+    "فرهنگ ایمنی از بالا شروع می‌شود - رهبران باید الگو باشند"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
