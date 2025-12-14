@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-06",
+    "kpi_name_fa": "رضایت از آموزش، یادگیری و آماده‌سازی کارکنان برای رویارویی با تغییرات فناورانه مرتبط با شغل ایشان",
+    "kpi_name_en": "Employee Satisfaction with Training, Learning and Preparation for Job-Related Technological Changes",
+    "acronym": "TLS",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Learning and Development"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از فرصت‌های یادگیری، آموزش، و آمادگی برای تغییرات فناورانه و دیجیتال مرتبط با شغلشان را اندازه‌گیری می‌کند. در عصر تحول دیجیتال، هوش مصنوعی، اتوماسیون، و تغییرات سریع فناوری، سازمان‌ها باید کارکنان را به‌طور مستمر برای آینده کار آماده کنند. این شاخص شامل کیفیت و کمیت آموزش‌ها، دسترسی به یادگیری، مرتبط بودن با نیازهای شغلی، آمادگی برای AI و دیجیتال، و فرصت‌های رشد و توسعه مهارت است. سازمان‌هایی که در یادگیری مستمر سرمایه‌گذاری می‌کنند، کارکنان متعهدتر، سازگارتر، و رقابتی‌تر دارند.",
+    "description_en": "This KPI measures employee satisfaction with learning opportunities, training, and preparedness for technological and digital changes related to their jobs. In the era of digital transformation, AI, automation, and rapid technological change, organizations must continuously prepare employees for the future of work. This includes quality and quantity of training, access to learning, relevance to job needs, AI and digital readiness, and opportunities for skill development. Organizations that invest in continuous learning have more committed, adaptable, and competitive employees.",
+    "purpose": "ارزیابی میزان سرمایه‌گذاری سازمان در یادگیری و آمادگی کارکنان برای آینده",
+    "scope": "تمام کارکنان و برنامه‌های آموزشی سازمان",
+    "key_insight": "در عصر AI، یادگیری مستمر از امتیازی اختیاری به ضرورتی حیاتی تبدیل شده است"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از آموزش و یادگیری",
+    "formula_detailed": "TLS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "آمار مشارکت در آموزش‌ها",
+      "ارزیابی اثربخشی آموزش‌ها",
+      "تحلیل شکاف مهارتی"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه + داده‌های عینی LMS",
+    "survey_questions": [
+      "از فرصت‌های یادگیری و آموزش در سازمان تا چه حد راضی هستید؟",
+      "آموزش‌های ارائه شده مرتبط با نیازهای شغلی من است",
+      "سازمان مرا برای تغییرات فناورانه آینده آماده می‌کند",
+      "به آموزش‌های کافی برای کار با ابزارهای دیجیتال و AI دسترسی دارم",
+      "فرصت‌های رشد و توسعه مهارت در سازمان وجود دارد",
+      "سازمان از یادگیری مستمر حمایت می‌کند",
+      "احساس می‌کنم مهارت‌هایم با تحولات فناوری هم‌گام است"
+    ],
+    "quantitative_metrics": [
+      "ساعات آموزش سرانه",
+      "نرخ مشارکت در آموزش‌ها",
+      "تکمیل دوره‌های آنلاین",
+      "اثربخشی آموزش (Kirkpatrick Level 1-4)"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "آموزش و توسعه، منابع انسانی",
+    "responsible_person": "مدیر آموزش و توسعه"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 550 کارکن",
+    "input_data": {
+      "total_responses": 550,
+      "score_5": 140,
+      "score_4": 210,
+      "score_3": 140,
+      "score_2": 45,
+      "score_1": 15
+    },
+    "calculation_steps": [
+      "مجموع = (140×5) + (210×4) + (140×3) + (45×2) + (15×1)",
+      "= 700 + 840 + 420 + 90 + 15 = 2065",
+      "میانگین = 2065 / 550 = 3.75",
+      "درصد = (3.75 / 5) × 100 = 75%"
+    ],
+    "result": "75%",
+    "interpretation": "رضایت 75% نشان‌دهنده تعهد خوب به یادگیری است. 63.6% کارکنان راضی هستند اما فضای بهبود وجود دارد، خصوصاً برای 11% ناراضی."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    },
+    "training_hours_benchmark": {
+      "world_class": ">40 ساعت/سال/نفر",
+      "good": "25-40 ساعت/سال/نفر",
+      "average": "15-25 ساعت/سال/نفر",
+      "poor": "<15 ساعت/سال/نفر"
+    },
+    "digital_skills_readiness": {
+      "leading": ">80% کارکنان با مهارت دیجیتال متوسط به بالا",
+      "average": "50-80%",
+      "lagging": "<50%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 4-6%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 95,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 90,
+    "radar_level": "عالی"
+  },
+  "learning_dimensions": {
+    "quality": "کیفیت آموزش‌ها - محتوا، مدرسان، روش",
+    "quantity": "کمیت - ساعات، تنوع، دسترسی",
+    "relevance": "مرتبط بودن - نیازهای شغلی فعلی و آینده",
+    "accessibility": "دسترسی - زمان، مکان، فرمت",
+    "effectiveness": "اثربخشی - یادگیری واقعی و کاربرد",
+    "future_readiness": "آمادگی آینده - AI، دیجیتال، مهارت‌های نرم",
+    "career_development": "توسعه شغلی - مسیر رشد واضح"
+  },
+  "technological_changes": {
+    "artificial_intelligence": {
+      "areas": ["AI مولد", "یادگیری ماشین", "اتوماسیون هوشمند"],
+      "training_needs": "مهارت‌های AI literacy، کار با ابزارهای AI، تفکر انتقادی"
+    },
+    "automation": {
+      "areas": ["RPA", "اتوماسیون فرآیند", "ربات‌های همکار"],
+      "training_needs": "مدیریت اتوماسیون، همکاری با ربات‌ها، مهارت‌های نظارتی"
+    },
+    "digital_transformation": {
+      "areas": ["کلود", "داده و تحلیل", "IoT", "واقعیت مجازی/افزوده"],
+      "training_needs": "سواد دیجیتال، تحلیل داده، امنیت سایبری"
+    },
+    "future_of_work": {
+      "areas": ["کار از راه دور", "همکاری مجازی", "اقتصاد گیگ"],
+      "training_needs": "مهارت‌های نرم، خودمدیریتی، همکاری مجازی"
+    }
+  },
+  "learning_methodologies": {
+    "70_20_10_model": {
+      "70_experiential": "یادگیری از طریق تجربه و انجام کار",
+      "20_social": "یادگیری از دیگران - مربیگری، mentoring",
+      "10_formal": "آموزش رسمی - کلاس، دوره"
+    },
+    "modern_approaches": [
+      "Microlearning - یادگیری کوتاه و هدفمند",
+      "Mobile learning - یادگیری موبایل",
+      "Gamification - بازی‌وارسازی",
+      "Social learning - یادگیری اجتماعی",
+      "AI-powered personalized learning - یادگیری شخصی با AI",
+      "Virtual reality training - آموزش با واقعیت مجازی"
+    ]
+  },
+  "skills_framework": {
+    "technical_skills": {
+      "description": "مهارت‌های فنی خاص شغل",
+      "examples": ["نرم‌افزارهای تخصصی", "ابزارهای دیجیتال", "تحلیل داده"]
+    },
+    "digital_skills": {
+      "description": "سواد و مهارت دیجیتال",
+      "examples": ["AI literacy", "کار با ابزارهای همکاری", "امنیت سایبری"]
+    },
+    "soft_skills": {
+      "description": "مهارت‌های نرم و انسانی",
+      "examples": ["تفکر انتقادی", "خلاقیت", "همکاری", "ارتباطات"]
+    },
+    "future_skills": {
+      "description": "مهارت‌های آینده کار",
+      "examples": ["تطبیق‌پذیری", "یادگیری یادگیری", "هوش عاطفی", "مدیریت پیچیدگی"]
+    }
+  },
+  "training_effectiveness": {
+    "kirkpatrick_model": {
+      "level_1_reaction": "واکنش - رضایت از آموزش",
+      "level_2_learning": "یادگیری - تغییر دانش/مهارت",
+      "level_3_behavior": "رفتار - تغییر عملکرد شغلی",
+      "level_4_results": "نتایج - تأثیر بر اهداف کسب‌وکار"
+    },
+    "measurement_tools": [
+      "نظرسنجی قبل و بعد",
+      "آزمون‌های مهارتی",
+      "ارزیابی 360 درجه",
+      "KPI های عملکرد شغلی",
+      "ROI آموزش"
+    ]
+  },
+  "learning_culture": {
+    "characteristics": [
+      "یادگیری به عنوان ارزش سازمانی",
+      "حمایت رهبری از یادگیری",
+      "زمان اختصاص یافته به یادگیری",
+      "اشتراک دانش فعال",
+      "پذیرش اشتباه به عنوان فرصت یادگیری",
+      "پاداش یادگیری و نوآوری"
+    ],
+    "learning_organization_senge": "5 اصل پیتر سنج: تسلط شخصی، مدل‌های ذهنی، دید مشترک، یادگیری تیمی، تفکر سیستمی"
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "پلتفرم LMS یکپارچه با محتوای غنی",
+      "expected_impact": "+6-9%",
+      "timeframe": "9 ماه"
+    },
+    {
+      "initiative": "برنامه آموزش مهارت‌های دیجیتال و AI",
+      "expected_impact": "+8-12%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "فرهنگ‌سازی یادگیری مستمر",
+      "expected_impact": "+5-8%",
+      "timeframe": "18 ماه"
+    },
+    {
+      "initiative": "برنامه مربیگری و mentoring",
+      "expected_impact": "+4-6%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "آموزش شخصی‌سازی شده با AI",
+      "expected_impact": "+7-10%",
+      "timeframe": "12 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "employee_performance": "0.6-0.7",
+    "innovation": "0.5-0.6",
+    "adaptability": "0.7-0.8",
+    "retention": "0.5-0.6",
+    "engagement": "0.6-0.7",
+    "digital_maturity": "0.8-0.9"
+  },
+  "reskilling_upskilling": {
+    "reskilling": {
+      "definition": "آموزش مهارت‌های کاملاً جدید برای نقش جدید",
+      "context": "وقتی شغل فعلی منسوخ می‌شود",
+      "example": "اپراتور تولید → تحلیلگر داده"
+    },
+    "upskilling": {
+      "definition": "ارتقای مهارت‌های موجود",
+      "context": "تکامل شغل فعلی",
+      "example": "مدیر → مدیر با مهارت AI"
+    },
+    "world_economic_forum": "تا 2027، 44% مهارت‌های کارکنان تغییر می‌کند - reskilling/upskilling ضروری است"
+  },
+  "individual_development_plan": {
+    "components": [
+      "ارزیابی مهارت‌های فعلی",
+      "شناسایی شکاف‌های مهارتی",
+      "اهداف یادگیری SMART",
+      "برنامه عملیاتی آموزش",
+      "بودجه و منابع",
+      "پیگیری و ارزیابی پیشرفت"
+    ],
+    "ownership": "مسئولیت مشترک کارمند و سازمان"
+  },
+  "notes": [
+    "در عصر AI، نیمی از مهارت‌ها هر 4-5 سال منسوخ می‌شوند",
+    "سازمان‌هایی که 40+ ساعت آموزش سالانه دارند 24% سودآورتر هستند",
+    "یادگیری مستمر از امتیاز رقابتی به ضرورت بقا تبدیل شده است",
+    "87% هزاره‌ها فرصت یادگیری را مهم‌ترین عامل انتخاب شغل می‌دانند"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+    }
