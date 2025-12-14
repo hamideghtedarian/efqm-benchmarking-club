@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-08",
+    "kpi_name_fa": "رضایت از سبد جبران خدمات کارکنان",
+    "kpi_name_en": "Employee Satisfaction with Total Compensation Package",
+    "acronym": "TCS",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Compensation and Benefits"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از کل سبد جبران خدمات شامل حقوق، مزایا، پاداش‌ها، و سایر امتیازات مالی و غیرمالی را اندازه‌گیری می‌کند. جبران خدمات فراتر از حقوق پایه است و شامل بیمه، بازنشستگی، مرخصی، آموزش، مزایای رفاهی، و انعطاف‌پذیری می‌شود. این شاخص هم میزان مطلق پرداخت و هم ادراک از عدالت، رقابتی بودن، و شفافیت را در نظر می‌گیرد. جبران خدمات منصفانه و رقابتی برای جذب، حفظ، و انگیزش استعدادها ضروری است.",
+    "description_en": "This KPI measures employee satisfaction with the total compensation package including salary, benefits, bonuses, and other financial and non-financial rewards. Compensation goes beyond base salary to include insurance, retirement, leave, training, welfare benefits, and flexibility. This metric considers both absolute payment levels and perceptions of fairness, competitiveness, and transparency. Fair and competitive compensation is essential for attracting, retaining, and motivating talent.",
+    "purpose": "ارزیابی رقابتی بودن، عدالت، و جامعیت سیستم جبران خدمات",
+    "scope": "تمام اجزای جبران خدمات برای همه کارکنان",
+    "key_insight": "جبران خدمات عادلانه عامل بهداشتی است - نبودش نارضایتی ایجاد می‌کند اما وجودش لزوماً انگیزش نمی‌دهد"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از جبران خدمات",
+    "formula_detailed": "TCS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "بررسی حقوق و دستمزد بازار",
+      "آمار استفاده از مزایا",
+      "نرخ ترک کارکنان"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه + تحلیل داده‌های بازار",
+    "survey_questions": [
+      "از کل سبد جبران خدمات (حقوق + مزایا) تا چه حد راضی هستید؟",
+      "حقوق من منصفانه و متناسب با مسئولیت‌هایم است",
+      "حقوق و مزایای ما با بازار رقابتی است",
+      "سیستم پرداخت شفاف و قابل فهم است",
+      "مزایای ارائه شده با نیازهای من همخوانی دارد",
+      "انعطاف‌پذیری کافی در انتخاب مزایا وجود دارد",
+      "احساس می‌کنم برای کارم به‌طور منصفانه جبران می‌شوم"
+    ],
+    "market_analysis": [
+      "بررسی حقوق بازار (Salary Survey)",
+      "مقایسه با رقبا",
+      "تحلیل Percentile",
+      "Cost of living adjustments"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "منابع انسانی، جبران خدمات",
+    "responsible_person": "مدیر جبران خدمات و مزایا"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 600 کارکن",
+    "input_data": {
+      "total_responses": 600,
+      "score_5": 90,
+      "score_4": 200,
+      "score_3": 200,
+      "score_2": 80,
+      "score_1": 30
+    },
+    "calculation_steps": [
+      "مجموع = (90×5) + (200×4) + (200×3) + (80×2) + (30×1)",
+      "= 450 + 800 + 600 + 160 + 30 = 2040",
+      "میانگین = 2040 / 600 = 3.4",
+      "درصد = (3.4 / 5) × 100 = 68%"
+    ],
+    "result": "68%",
+    "interpretation": "رضایت 68% در سطح متوسط به خوب است. 48.3% راضی هستند اما 18.3% ناراضی. نیاز به بررسی رقابتی بودن و عدالت دارد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥80%",
+      "excellent": "70-79%",
+      "good": "60-69%",
+      "average": "50-59%",
+      "poor": "<50%"
+    },
+    "market_positioning": {
+      "lead": "75th percentile یا بالاتر",
+      "match": "50th percentile (میانه بازار)",
+      "lag": "25th percentile یا پایین‌تر"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 3-5%",
+    "medium_term": "70-75%",
+    "long_term": "≥80%",
+    "market_position_target": "50th-60th percentile (بسته به استراتژی)"
+  },
+  "smart_validation": {
+    "overall_smart_score": 93,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 88,
+    "radar_level": "عالی"
+  },
+  "total_compensation_components": {
+    "base_salary": {
+      "description": "حقوق پایه ماهانه/سالانه",
+      "weight": "60-70%",
+      "considerations": "شغل، سطح، عملکرد، بازار"
+    },
+    "variable_pay": {
+      "description": "پرداخت متغیر بر اساس عملکرد",
+      "components": [
+        "پاداش سالانه",
+        "پاداش عملکرد فصلی",
+        "کمیسیون (فروش)",
+        "سهام/حق تقدم سهام",
+        "پاداش سود"
+      ],
+      "weight": "10-20%"
+    },
+    "benefits": {
+      "description": "مزایا و خدمات جانبی",
+      "mandatory": [
+        "بیمه تأمین اجتماعی",
+        "بیمه بیکاری",
+        "حق سنوات",
+        "مرخصی‌های قانونی"
+      ],
+      "voluntary": [
+        "بیمه تکمیلی درمان",
+        "بیمه عمر و حوادث",
+        "وام قرض‌الحسنه",
+        "کمک هزینه مسکن",
+        "کمک هزینه تحصیل",
+        "وسیله نقلیه/ایاب‌ذهاب",
+        "غذا/بن خرید"
+      ],
+      "weight": "15-25%"
+    },
+    "perks": {
+      "description": "امتیازات و تسهیلات",
+      "examples": [
+        "دورکاری/کار انعطاف‌پذیر",
+        "ساعات کاری منعطف",
+        "امکانات ورزشی",
+        "مهدکودک",
+        "تخفیف محصولات",
+        "رویدادهای تفریحی"
+      ],
+      "weight": "5-10%"
+    }
+  },
+  "compensation_philosophy": {
+    "pay_for_performance": "پرداخت بر اساس عملکرد - تفاوت بین عملکرد بالا و پایین",
+    "internal_equity": "عدالت داخلی - شغل مشابه، پرداخت مشابه",
+    "external_competitiveness": "رقابتی با بازار - جذب و حفظ استعداد",
+    "transparency": "شفافیت - فهم و اعتماد",
+    "flexibility": "انعطاف‌پذیری - متناسب با نیازهای متنوع",
+    "sustainability": "پایداری - هزینه قابل تحمل برای سازمان"
+  },
+  "pay_equity": {
+    "equal_pay_for_equal_work": "حقوق برابر برای کار برابر",
+    "gender_pay_gap": "شکاف حقوق جنسیتی - باید صفر باشد",
+    "pay_transparency": "شفافیت حقوق - بازه‌های حقوقی واضح",
+    "job_evaluation": "ارزیابی شغل - سیستم امتیازدهی عینی",
+    "regular_audits": "ممیزی منظم برای شناسایی و رفع نابرابری"
+  },
+  "flexible_benefits": {
+    "cafeteria_plan": {
+      "description": "طرح کافه‌تریا - انتخاب مزایا از منو",
+      "benefits": "شخصی‌سازی، رضایت بیشتر، بهینه‌سازی هزینه",
+      "example": "بودجه X ریال - انتخاب ترکیبی از بیمه، وام، آموزش، مرخصی"
+    },
+    "core_flex": {
+      "description": "مزایای پایه + انعطاف‌پذیر",
+      "core": "همه دریافت می‌کنند (بیمه، بازنشستگی)",
+      "flex": "انتخاب بر اساس نیاز (ورزش، مهدکودک، آموزش)"
+    }
+  },
+  "total_rewards_statement": {
+    "description": "گزارش سالانه کل ارزش جبران خدمات",
+    "components": [
+      "حقوق پایه",
+      "پاداش‌ها",
+      "ارزش مزایا",
+      "سهم سازمان در بیمه",
+      "آموزش‌های دریافتی",
+      "سایر امتیازات"
+    ],
+    "purpose": "نشان دادن ارزش کامل - اغلب بیشتر از تصور کارکنان است",
+    "impact": "افزایش ادراک از ارزش، کاهش turnover"
+  },
+  "market_pricing": {
+    "salary_surveys": "نظرسنجی‌های حقوق بازار",
+    "sources": [
+      "Mercer",
+      "Willis Towers Watson",
+      "Aon Hewitt",
+      "نظرسنجی‌های صنعتی محلی"
+    ],
+    "benchmarking_jobs": "مشاغل کلیدی و نماینده",
+    "market_percentiles": {
+      "p90": "90th - پرداخت بسیار بالا",
+      "p75": "75th - پرداخت بالا",
+      "p50": "50th - میانه بازار",
+      "p25": "25th - پرداخت پایین"
+    }
+  },
+  "compensation_strategy": {
+    "pay_mix": {
+      "high_performance": "حقوق پایه کمتر + متغیر بیشتر - ریسک بالا",
+      "stable": "حقوق پایه بیشتر + متغیر کمتر - ریسک کم",
+      "balanced": "ترکیب متعادل"
+    },
+    "market_position": {
+      "lead": "بالاتر از بازار - جذب بهترین‌ها",
+      "match": "برابر بازار - متعادل",
+      "lag": "پایین‌تر + مزایا بهتر - هزینه کمتر"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "بررسی رقابتی بودن حقوق با بازار",
+      "expected_impact": "+5-8%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "اصلاح نابرابری‌های داخلی",
+      "expected_impact": "+6-9%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "معرفی طرح مزایای انعطاف‌پذیر",
+      "expected_impact": "+7-10%",
+      "timeframe": "9 ماه"
+    },
+    {
+      "initiative": "شفاف‌سازی سیستم پرداخت",
+      "expected_impact": "+4-6%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "گزارش سالانه Total Rewards",
+      "expected_impact": "+3-5%",
+      "timeframe": "3 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "retention": "0.5-0.6",
+    "attraction": "0.6-0.7",
+    "performance": "0.3-0.4",
+    "engagement": "0.4-0.5",
+    "satisfaction": "0.6-0.7"
+  },
+  "common_challenges": {
+    "budget_constraints": "محدودیت بودجه - نمی‌توان همه را راضی کرد",
+    "pay_compression": "فشردگی حقوق - تفاوت کم بین سطوح",
+    "market_volatility": "نوسان بازار - تغییرات سریع حقوق برخی مشاغل",
+    "internal_inequity": "نابرابری داخلی - کارکنان قدیمی vs جدید",
+    "lack_of_transparency": "عدم شفافیت - شایعات و نارضایتی",
+    "one_size_fits_all": "عدم شخصی‌سازی - نیازهای متفاوت"
+  },
+  "best_practices": [
+    "استراتژی جبران خدمات واضح و همسو با استراتژی کسب‌وکار",
+    "بررسی منظم بازار (سالانه)",
+    "عدالت داخلی و خارجی",
+    "شفافیت و ارتباطات مؤثر",
+    "پرداخت بر اساس عملکرد",
+    "انعطاف‌پذیری و شخصی‌سازی",
+    "ممیزی منظم برای تبعیض",
+    "Total Rewards Statement سالانه"
+  ],
+  "legal_compliance": {
+    "minimum_wage": "حداقل دستمزد قانونی",
+    "equal_pay": "حقوق برابر - عدم تبعیض",
+    "overtime": "پرداخت اضافه‌کار",
+    "tax_regulations": "قوانین مالیاتی",
+    "social_security": "بیمه‌های اجتماعی",
+    "labor_law": "قانون کار"
+  },
+  "notes": [
+    "جبران خدمات منصفانه عامل بهداشتی است - نبودش نارضایتی ایجاد می‌کند",
+    "شفافیت در جبران خدمات اعتماد ایجاد می‌کند",
+    "Total compensation معمولاً 30-40% بیشتر از حقوق پایه است",
+    "کارکنان اغلب ارزش کامل مزایا را نمی‌دانند - ارتباط ضروری است"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
