@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-12",
+    "kpi_name_fa": "رضایت کارکنان از فراهم آوری امکان توازن کار و زندگی",
+    "kpi_name_en": "Employee Satisfaction with Work-Life Balance Enablement",
+    "acronym": "WLB",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Work-Life Balance"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از توانایی سازمان در ایجاد تعادل سالم بین مسئولیت‌های کاری و زندگی شخصی را اندازه‌گیری می‌کند. توازن کار و زندگی به معنای داشتن زمان، انرژی، و توجه کافی برای هم کار و هم زندگی شخصی، خانواده، سلامتی، و علایق است. این شاخص شامل انعطاف‌پذیری ساعات کار، بار کاری معقول، مرخصی کافی، حمایت از خانواده، و فرهنگ احترام به مرزهای کار-زندگی است. تحقیقات نشان می‌دهند توازن کار-زندگی یکی از مهم‌ترین عوامل رضایت، سلامت، بهره‌وری، و ماندگاری کارکنان است.",
+    "description_en": "This KPI measures employee satisfaction with the organization's ability to create a healthy balance between work responsibilities and personal life. Work-life balance means having sufficient time, energy, and attention for both work and personal life, family, health, and interests. This includes flexible work hours, reasonable workload, adequate leave, family support, and a culture that respects work-life boundaries. Research shows work-life balance is one of the most important factors in employee satisfaction, health, productivity, and retention.",
+    "purpose": "ارزیابی میزان حمایت سازمان از تعادل سالم کار و زندگی",
+    "scope": "تمام کارکنان و سیاست‌های مرتبط",
+    "key_insight": "کارکنانی که توازن دارند، سالم‌تر، شادتر، و بهره‌ورتر هستند"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از توازن کار و زندگی",
+    "formula_detailed": "WLB = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "آمار ساعات کاری",
+      "نرخ استفاده از مرخصی",
+      "نرخ فرسودگی شغلی"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه + داده‌های عینی",
+    "survey_questions": [
+      "از توازن بین کار و زندگی شخصی‌ام تا چه حد راضی هستید؟",
+      "بار کاری من قابل مدیریت است و از فرسودگی جلوگیری می‌کند",
+      "ساعات کاری و مرخصی‌های کافی برای زندگی شخصی دارم",
+      "سازمان از انعطاف‌پذیری در کار (ساعات، مکان) حمایت می‌کند",
+      "احساس می‌کنم زمان کافی برای خانواده و علایق شخصی دارم",
+      "فرهنگ سازمان به مرزهای کار-زندگی احترام می‌گذارد",
+      "می‌توانم از مرخصی بدون احساس گناه استفاده کنم"
+    ],
+    "objective_metrics": [
+      "میانگین ساعات کار هفتگی",
+      "نرخ اضافه‌کاری",
+      "نرخ استفاده از مرخصی",
+      "ایمیل‌های خارج از ساعت کار",
+      "نرخ فرسودگی شغلی (Burnout)"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "منابع انسانی",
+    "responsible_person": "مدیر منابع انسانی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 500 کارکن",
+    "input_data": {
+      "total_responses": 500,
+      "score_5": 100,
+      "score_4": 170,
+      "score_3": 160,
+      "score_2": 50,
+      "score_1": 20
+    },
+    "calculation_steps": [
+      "مجموع = (100×5) + (170×4) + (160×3) + (50×2) + (20×1)",
+      "= 500 + 680 + 480 + 100 + 20 = 1780",
+      "میانگین = 1780 / 500 = 3.56",
+      "درصد = (3.56 / 5) × 100 = 71.2%"
+    ],
+    "result": "71.2%",
+    "interpretation": "رضایت 71.2% در سطح خوب است. 54% راضی هستند اما 14% ناراضی که نشان‌دهنده نیاز به بهبود است."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥80%",
+      "excellent": "70-79%",
+      "good": "60-69%",
+      "average": "50-59%",
+      "poor": "<50%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 5-7%",
+    "medium_term": "70-75%",
+    "long_term": "≥80%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 94,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 90,
+    "radar_level": "عالی"
+  },
+  "work_life_balance_dimensions": {
+    "time_balance": {
+      "description": "تعادل زمانی",
+      "aspects": [
+        "ساعات کار معقول (40-45 ساعت/هفته)",
+        "اضافه‌کاری محدود",
+        "مرخصی کافی",
+        "زمان کافی خارج از کار"
+      ]
+    },
+    "energy_balance": {
+      "description": "تعادل انرژی",
+      "aspects": [
+        "بار کاری قابل مدیریت",
+        "استراحت کافی",
+        "پیشگیری از فرسودگی",
+        "انرژی برای زندگی شخصی"
+      ]
+    },
+    "involvement_balance": {
+      "description": "تعادل درگیری ذهنی",
+      "aspects": [
+        "عدم نگرانی مداوم کاری",
+        "حضور ذهنی در خانه",
+        "قطع ارتباط کاری",
+        "توجه به خانواده"
+      ]
+    },
+    "satisfaction_balance": {
+      "description": "تعادل رضایت",
+      "aspects": [
+        "رضایت از کار و زندگی",
+        "احساس تحقق",
+        "شادی",
+        "معنا در هر دو"
+      ]
+    }
+  },
+  "flexibility_options": {
+    "schedule_flexibility": {
+      "flextime": "ساعات انعطاف‌پذیر - شروع/پایان متغیر",
+      "compressed_week": "هفته فشرده - 4 روز × 10 ساعت",
+      "part_time": "پاره‌وقت - ساعات کمتر",
+      "job_sharing": "اشتراک شغل - دو نفر یک شغل",
+      "shift_swapping": "تعویض شیفت"
+    },
+    "location_flexibility": {
+      "full_remote": "کاملاً از راه دور",
+      "hybrid": "ترکیبی - چند روز دفتر، چند روز خانه",
+      "occasional_remote": "گاهی از راه دور",
+      "coworking": "فضای کار اشتراکی"
+    },
+    "workload_flexibility": {
+      "reduced_hours": "کاهش ساعات موقت",
+      "sabbatical": "مرخصی استراحتی",
+      "unpaid_leave": "مرخصی بدون حقوق",
+      "gradual_return": "بازگشت تدریجی پس از مرخصی"
+    }
+  },
+  "leave_policies": {
+    "annual_leave": {
+      "minimum": "حداقل قانونی - 26 روز کاری در ایران",
+      "best_practice": "30+ روز",
+      "unlimited_pto": "مرخصی نامحدود (برخی شرکت‌ها)"
+    },
+    "sick_leave": {
+      "paid": "مرخصی استعلاجی با حقوق",
+      "mental_health_days": "روزهای سلامت روان"
+    },
+    "parental_leave": {
+      "maternity": "مرخصی زایمان - 9 ماه در ایران",
+      "paternity": "مرخصی پدران - 2 هفته",
+      "adoption": "مرخصی فرزندخواندگی",
+      "childcare": "مرخصی مراقبت از کودک"
+    },
+    "special_leave": {
+      "bereavement": "مرخصی سوگواری",
+      "marriage": "مرخصی ازدواج",
+      "study": "مرخصی تحصیلی",
+      "volunteering": "مرخصی داوطلبی"
+    }
+  },
+  "boundary_management": {
+    "right_to_disconnect": {
+      "description": "حق قطع ارتباط",
+      "practices": [
+        "عدم انتظار پاسخ خارج از ساعت کار",
+        "غیرفعال کردن اعلان‌ها شب‌ها",
+        "ایمیل‌های برنامه‌ریزی شده",
+        "احترام به تعطیلات"
+      ]
+    },
+    "meeting_culture": {
+      "no_meeting_days": "روزهای بدون جلسه",
+      "meeting_free_hours": "ساعات بدون جلسه",
+      "time_limits": "محدودیت زمانی جلسات",
+      "optional_attendance": "حضور اختیاری در برخی جلسات"
+    },
+    "email_norms": {
+      "response_expectations": "انتظارات واقع‌بینانه پاسخ",
+      "no_weekend_emails": "عدم ایمیل آخر هفته",
+      "delayed_send": "ارسال تأخیری"
+    }
+  },
+  "family_support": {
+    "childcare": {
+      "onsite_daycare": "مهدکودک محل کار",
+      "childcare_subsidy": "کمک هزینه مهدکودک",
+      "backup_care": "مراقبت اضطراری",
+      "summer_programs": "برنامه‌های تابستانی"
+    },
+    "eldercare": {
+      "resources": "منابع مراقبت از سالمند",
+      "support_groups": "گروه‌های حمایتی",
+      "respite_care": "مراقبت موقت"
+    },
+    "family_events": {
+      "time_off": "مرخصی برای رویدادهای خانوادگی",
+      "flexible_hours": "ساعات انعطاف‌پذیر",
+      "family_days": "روزهای خانوادگی"
+    }
+  },
+  "workload_management": {
+    "realistic_expectations": "انتظارات واقع‌بینانه",
+    "adequate_resources": "منابع کافی",
+    "no_glorification_of_overwork": "عدم تمجید از کار بیش از حد",
+    "regular_check_ins": "بررسی منظم بار کار",
+    "workload_redistribution": "توزیع مجدد در صورت لزوم",
+    "hiring_when_needed": "استخدام در صورت نیاز"
+  },
+  "burnout_prevention": {
+    "early_warning_signs": [
+      "خستگی مزمن",
+      "سینیسم و بدبینی",
+      "کاهش عملکرد",
+      "مشکلات جسمی",
+      "انزوای اجتماعی"
+    ],
+    "interventions": [
+      "کاهش بار کار",
+      "مرخصی اجباری",
+      "مشاوره",
+      "تغییر نقش موقت",
+      "حمایت مدیر"
+    ],
+    "prevention": [
+      "بار کاری معقول",
+      "استراحت کافی",
+      "حمایت اجتماعی",
+      "کنترل بر کار",
+      "قدردانی"
+    ]
+  },
+  "cultural_enablers": {
+    "role_modeling": "مدیران الگو باشند - خودشان توازن داشته باشند",
+    "no_stigma": "عدم ننگ از استفاده مرخصی/انعطاف",
+    "results_focus": "تمرکز بر نتیجه نه ساعت حضور",
+    "trust": "اعتماد - نه میکرومنیجمنت",
+    "support": "حمایت از تعادل - نه فقط تحمل",
+    "celebration": "جشن موفقیت‌های شخصی هم"
+  },
+  "metrics_monitoring": {
+    "working_hours": "میانگین ساعات کار هفتگی - هدف: 40-45",
+    "overtime": "اضافه‌کاری - هدف: <10%",
+    "vacation_utilization": "استفاده از مرخصی - هدف: >85%",
+    "email_after_hours": "ایمیل‌های خارج ساعت - کاهشی",
+    "burnout_rate": "نرخ فرسودگی - نظرسنجی سالانه",
+    "turnover_wlb": "ترک به دلیل توازن - ردیابی در exit interview"
+  },
+  "remote_work_wlb": {
+    "advantages": [
+      "صرفه‌جویی زمان رفت‌وآمد",
+      "انعطاف بیشتر",
+      "زمان بیشتر با خانواده",
+      "محیط شخصی‌تر"
+    ],
+    "challenges": [
+      "مرزهای نامشخص",
+      "کار بیش از حد",
+      "انزوا",
+      "دسترسی همیشگی"
+    ],
+    "best_practices": [
+      "ساعات کاری مشخص",
+      "فضای کاری جداگانه",
+      "استراحت‌های برنامه‌ریزی شده",
+      "پایان روز کاری مشخص"
+    ]
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "معرفی ساعات کاری انعطاف‌پذیر",
+      "expected_impact": "+8-12%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "سیاست حق قطع ارتباط",
+      "expected_impact": "+6-9%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "بررسی و کاهش بار کاری",
+      "expected_impact": "+7-10%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "فرهنگ‌سازی توازن از طریق رهبری",
+      "expected_impact": "+5-8%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "گسترش مرخصی‌ها و حمایت خانواده",
+      "expected_impact": "+6-9%",
+      "timeframe": "9 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "job_satisfaction": "0.7-0.8",
+    "mental_health": "0.7-0.8",
+    "physical_health": "0.5-0.6",
+    "productivity": "0.5-0.6",
+    "retention": "0.6-0.7",
+    "engagement": "0.6-0.7",
+    "burnout": "-0.7 to -0.8"
+  },
+  "generational_differences": {
+    "millennials_gen_z": "اولویت بالا - شرط انتخاب شغل",
+    "gen_x": "اولویت متوسط - ارزشمند اما واقع‌بین",
+    "boomers": "اولویت متغیر - برخی سنتی، برخی مدرن",
+    "trend": "اهمیت روزافزون در همه نسل‌ها"
+  },
+  "pandemic_impact": {
+    "awareness": "آگاهی بیشتر از اهمیت توازن",
+    "expectations": "انتظارات بالاتر برای انعطاف",
+    "remote_norm": "کار از راه دور عادی شد",
+    "boundaries_blur": "مرزها محو شدند - نیاز به مدیریت بهتر"
+  },
+  "best_practices": [
+    "رهبری از بالا - مدیران الگو باشند",
+    "سیاست‌های واضح و مکتوب",
+    "انعطاف‌پذیری واقعی نه تظاهری",
+    "فرهنگ عدم ننگ",
+    "تمرکز بر نتیجه نه ساعت",
+    "بار کاری واقع‌بینانه",
+    "پیشگیری فعال از فرسودگی",
+    "حمایت از خانواده"
+  ],
+  "notes": [
+    "توازن کار-زندگی دیگر یک امتیاز نیست - یک ضرورت است",
+    "کارکنانی که توازن دارند 21% بهره‌ورتر و 33% راضی‌تر هستند",
+    "فرسودگی شغلی سالانه هزینه میلیاردی به سازمان‌ها تحمیل می‌کند",
+    "توازن به معنای 50-50 نیست - یعنی کنترل و انتخاب داشتن"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
