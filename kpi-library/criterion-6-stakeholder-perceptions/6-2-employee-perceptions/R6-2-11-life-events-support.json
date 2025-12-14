@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-11",
+    "kpi_name_fa": "رضایت از برخورد مناسب سازمان در مورد رویدادهای مهم کاری و شخصی کارکنان",
+    "kpi_name_en": "Employee Satisfaction with Organizational Response to Important Work and Personal Life Events",
+    "acronym": "LES",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Life Events Support"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از نحوه پاسخگویی، حمایت، و همدلی سازمان در مواجهه با رویدادهای مهم زندگی کاری و شخصی آن‌ها را اندازه‌گیری می‌کند. این رویدادها شامل لحظات مثبت (ازدواج، تولد فرزند، دستاوردهای کاری، بازنشستگی) و منفی (فوت، بیماری، بحران‌های شخصی) است. سازمان‌های انسان‌محور کارکنان را در کل زندگی‌شان می‌بینند نه فقط به عنوان نیروی کار. برخورد مناسب و همدلانه در این لحظات می‌تواند تعهد عمیق ایجاد کند و بی‌توجهی می‌تواند به دلسردی و ترک منجر شود.",
+    "description_en": "This KPI measures employee satisfaction with how the organization responds to, supports, and empathizes with important work and personal life events. These events include positive moments (marriage, childbirth, work achievements, retirement) and negative ones (bereavement, illness, personal crises). Human-centered organizations see employees in their whole lives, not just as workforce. Appropriate and empathetic response in these moments can create deep commitment, while indifference can lead to disengagement and departure.",
+    "purpose": "ارزیابی میزان انسان‌محوری و همدلی سازمان با کارکنان",
+    "scope": "تمام رویدادهای مهم زندگی کاری و شخصی کارکنان",
+    "key_insight": "کارکنان فراموش نمی‌کنند که سازمان در لحظات مهم زندگی‌شان چگونه رفتار کرد"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از برخورد با رویدادهای مهم",
+    "formula_detailed": "LES = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "آمار استفاده از برنامه‌های حمایتی",
+      "بازخورد کیفی",
+      "مصاحبه‌های خروج"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه + بازخورد کیفی",
+    "survey_questions": [
+      "سازمان در رویدادهای مهم زندگی من حمایت می‌کند",
+      "سازمان انعطاف‌پذیری لازم برای مواجهه با شرایط شخصی را دارد",
+      "از نحوه برخورد سازمان با رویدادهای مهم (ازدواج، تولد فرزند، فوت) راضی هستم",
+      "سازمان به من به عنوان یک انسان کامل توجه دارد نه فقط کارمند",
+      "احساس می‌کنم در لحظات سخت حمایت می‌شوم",
+      "سازمان دستاوردهای مهم کاری مرا جشن می‌گیرد",
+      "برنامه‌های حمایتی (مرخصی، کمک مالی، مشاوره) کافی است"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "منابع انسانی، روابط کارکنان",
+    "responsible_person": "مدیر منابع انسانی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 450 کارکن",
+    "input_data": {
+      "total_responses": 450,
+      "score_5": 140,
+      "score_4": 180,
+      "score_3": 90,
+      "score_2": 30,
+      "score_1": 10
+    },
+    "calculation_steps": [
+      "مجموع = (140×5) + (180×4) + (90×3) + (30×2) + (10×1)",
+      "= 700 + 720 + 270 + 60 + 10 = 1760",
+      "میانگین = 1760 / 450 = 3.91",
+      "درصد = (3.91 / 5) × 100 = 78.2%"
+    ],
+    "result": "78.2%",
+    "interpretation": "رضایت 78.2% نشان‌دهنده حمایت خوب است. 71.1% راضی هستند اما 8.9% ناراضی که نیاز به توجه دارد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 4-6%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 92,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 87,
+    "radar_level": "عالی"
+  },
+  "life_events_categories": {
+    "positive_personal": {
+      "description": "رویدادهای مثبت شخصی",
+      "events": [
+        "ازدواج",
+        "تولد فرزند",
+        "فرزندخواندگی",
+        "خرید خانه",
+        "موفقیت فرزندان",
+        "سالگرد ازدواج"
+      ],
+      "organizational_response": [
+        "تبریک و هدیه",
+        "مرخصی ویژه",
+        "کمک هزینه",
+        "انعطاف در کار",
+        "جشن کوچک"
+      ]
+    },
+    "negative_personal": {
+      "description": "رویدادهای منفی شخصی",
+      "events": [
+        "فوت نزدیکان",
+        "بیماری جدی خود/خانواده",
+        "طلاق",
+        "بحران‌های خانوادگی",
+        "حوادث طبیعی",
+        "مشکلات مالی جدی"
+      ],
+      "organizational_response": [
+        "تسلیت و همدردی",
+        "مرخصی سوگواری",
+        "انعطاف در کار",
+        "کمک مالی اضطراری",
+        "مشاوره و حمایت روانی",
+        "بیمه و تسهیلات"
+      ]
+    },
+    "positive_professional": {
+      "description": "رویدادهای مثبت کاری",
+      "events": [
+        "ترفیع",
+        "پایان پروژه موفق",
+        "دستاورد بزرگ",
+        "جوایز و افتخارات",
+        "سالگرد کاری (5، 10، 20 سال)",
+        "بازنشستگی"
+      ],
+      "organizational_response": [
+        "قدردانی عمومی",
+        "جشن و تقدیر",
+        "پاداش",
+        "مراسم بازنشستگی",
+        "هدیه یادبود",
+        "نامه قدردانی"
+      ]
+    },
+    "negative_professional": {
+      "description": "رویدادهای منفی کاری",
+      "events": [
+        "شکست پروژه",
+        "تنزل رتبه",
+        "اخراج همکاران",
+        "تغییرات سازمانی",
+        "انتقال اجباری"
+      ],
+      "organizational_response": [
+        "حمایت و مربیگری",
+        "شفافیت و ارتباط",
+        "فرصت بازگشت",
+        "توسعه مهارت",
+        "مشاوره شغلی"
+      ]
+    }
+  },
+  "support_programs": {
+    "leave_policies": {
+      "bereavement_leave": "مرخصی سوگواری (3-7 روز)",
+      "parental_leave": "مرخصی والدین (مادران/پدران)",
+      "marriage_leave": "مرخصی ازدواج",
+      "compassionate_leave": "مرخصی به دلایل انسانی",
+      "sabbatical": "مرخصی استراحتی بلندمدت",
+      "flexibility": "انعطاف در زمان و نحوه کار"
+    },
+    "financial_support": {
+      "emergency_fund": "صندوق کمک فوری",
+      "marriage_gift": "کمک هزینه ازدواج",
+      "birth_allowance": "کمک هزینه تولد",
+      "bereavement_assistance": "کمک هزینه ترحیم",
+      "education_support": "کمک هزینه تحصیل فرزندان",
+      "healthcare_coverage": "پوشش بیمه گسترده"
+    },
+    "counseling_support": {
+      "eap": "برنامه کمک به کارکنان (EAP)",
+      "grief_counseling": "مشاوره سوگواری",
+      "family_therapy": "مشاوره خانواده",
+      "career_counseling": "مشاوره شغلی",
+      "financial_counseling": "مشاوره مالی"
+    },
+    "practical_support": {
+      "childcare": "کمک در مراقبت از کودک",
+      "eldercare": "کمک در مراقبت از سالمند",
+      "relocation_assistance": "کمک در جابجایی",
+      "legal_advice": "مشاوره حقوقی",
+      "work_modifications": "تعدیل کار موقت"
+    }
+  },
+  "organizational_gestures": {
+    "recognition": {
+      "personal_note": "یادداشت دست‌نویس مدیر",
+      "public_acknowledgment": "قدردانی عمومی",
+      "team_celebration": "جشن تیمی",
+      "gift": "هدیه شخصی",
+      "flowers": "گل و کارت"
+    },
+    "presence": {
+      "manager_visit": "ملاقات مدیر",
+      "attendance_at_ceremony": "حضور در مراسم (عروسی، ختم)",
+      "hospital_visit": "ملاقات بیمارستانی",
+      "check_in_calls": "تماس احوال‌پرسی"
+    },
+    "flexibility": {
+      "adjusted_hours": "ساعات کاری تنظیم شده",
+      "remote_work": "کار از راه دور",
+      "reduced_workload": "کاهش موقت بار کار",
+      "deadline_extension": "تمدید مهلت‌ها",
+      "task_reassignment": "انتقال وظایف موقت"
+    }
+  },
+  "cultural_sensitivity": {
+    "religious_considerations": "احترام به مناسبات مذهبی",
+    "cultural_traditions": "درک سنت‌های فرهنگی",
+    "inclusive_celebrations": "جشن‌های فراگیر",
+    "dietary_restrictions": "توجه به محدودیت‌های غذایی",
+    "prayer_space": "فضای نیایش"
+  },
+  "milestone_celebrations": {
+    "work_anniversaries": {
+      "5_years": "جشن 5 سال - هدیه، گواهی",
+      "10_years": "جشن 10 سال - پاداش، تقدیر عمومی",
+      "20_years": "جشن 20 سال - جایزه ویژه، مراسم",
+      "retirement": "جشن بازنشستگی - مراسم بزرگ، هدیه یادبود"
+    },
+    "personal_milestones": {
+      "birthday": "تولد - کارت، کیک کوچک",
+      "marriage": "ازدواج - تبریک، هدیه",
+      "birth": "تولد فرزند - تبریک، گل، کمک هزینه"
+    }
+  },
+  "communication_principles": {
+    "timeliness": "به‌موقع بودن - واکنش سریع",
+    "sincerity": "صداقت - واقعی نه تشریفاتی",
+    "privacy": "خصوصی یا عمومی بسته به موقعیت",
+    "follow_up": "پیگیری - نه فقط یکبار",
+    "personalization": "شخصی‌سازی - نه قالبی",
+    "empathy": "همدلی - گوش دادن و درک"
+  },
+  "manager_training": {
+    "empathy_skills": "آموزش همدلی",
+    "difficult_conversations": "مکالمات سخت",
+    "cultural_competence": "شایستگی فرهنگی",
+    "active_listening": "گوش دادن فعال",
+    "when_to_escalate": "چه زمانی به HR ارجاع دهند"
+  },
+  "crisis_response": {
+    "immediate": {
+      "assessment": "ارزیابی فوری وضعیت",
+      "contact": "تماس با کارمند/خانواده",
+      "support_mobilization": "بسیج حمایت",
+      "information_gathering": "جمع‌آوری اطلاعات لازم"
+    },
+    "short_term": {
+      "leave_arrangement": "ترتیب مرخصی",
+      "workload_coverage": "پوشش کاری",
+      "financial_assistance": "کمک مالی فوری",
+      "counseling_referral": "ارجاع به مشاوره"
+    },
+    "long_term": {
+      "return_to_work_plan": "برنامه بازگشت به کار",
+      "ongoing_support": "حمایت مستمر",
+      "accommodation": "تسهیلات ویژه",
+      "check_ins": "پیگیری منظم"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "توسعه سیاست‌های جامع Life Events",
+      "expected_impact": "+6-9%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "آموزش مدیران در همدلی و حمایت",
+      "expected_impact": "+5-8%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "راه‌اندازی صندوق کمک اضطراری",
+      "expected_impact": "+4-6%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "سیستم ردیابی و پیگیری رویدادهای مهم",
+      "expected_impact": "+3-5%",
+      "timeframe": "6 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "loyalty": "0.7-0.8",
+    "engagement": "0.6-0.7",
+    "retention": "0.6-0.7",
+    "advocacy": "0.7-0.8",
+    "trust": "0.7-0.8"
+  },
+  "return_on_investment": {
+    "direct_costs": "کم - اغلب ژست‌های کم‌هزینه",
+    "indirect_benefits": "زیاد - وفاداری، تبلیغ، کاهش turnover",
+    "emotional_roi": "بسیار بالا - خاطرات ماندگار مثبت",
+    "word_of_mouth": "داستان‌های مثبت کارکنان = جذب استعداد"
+  },
+  "best_practices": [
+    "سیاست‌های واضح و مکتوب",
+    "آموزش مدیران در همدلی",
+    "واکنش سریع و شخصی",
+    "حمایت واقعی نه تشریفاتی",
+    "احترام به خصوصیت",
+    "انعطاف‌پذیری",
+    "پیگیری مستمر",
+    "حساسیت فرهنگی"
+  ],
+  "notes": [
+    "کارکنان هرگز فراموش نمی‌کنند سازمان در لحظات مهم چگونه رفتار کرد",
+    "همدلی و حمایت واقعی بیشتر از پول اهمیت دارد",
+    "یک ژست کوچک به‌موقع می‌تواند وفاداری مادام‌العمر ایجاد کند",
+    "بی‌توجهی در لحظات سخت می‌تواند رابطه را برای همیشه خراب کند"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
