@@ -1,0 +1,370 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-13",
+    "kpi_name_fa": "رضایت کارکنان از اطلاع‌رسانی اهداف و چشم‌انداز سازمان",
+    "kpi_name_en": "Employee Satisfaction with Communication of Organizational Goals and Vision",
+    "acronym": "VGC",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Vision and Strategy Communication"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از کیفیت، وضوح، و اثربخشی ارتباطات سازمان درباره چشم‌انداز، مأموریت، استراتژی، و اهداف را اندازه‌گیری می‌کند. کارکنان باید بدانند سازمان به کجا می‌رود (چشم‌انداز)، چرا (مأموریت)، چگونه (استراتژی)، و نقش آن‌ها در این مسیر چیست. این شاخص شامل وضوح پیام، فرکانس ارتباط، کانال‌های متنوع، همسویی اهداف، و احساس مالکیت و مشارکت در جهت سازمان است. تحقیقات نشان می‌دهند کارکنانی که جهت و هدف سازمان را درک می‌کنند 4 برابر متعهدتر و 2.5 برابر بهره‌ورتر هستند.",
+    "description_en": "This KPI measures employee satisfaction with the quality, clarity, and effectiveness of organizational communication about vision, mission, strategy, and goals. Employees should know where the organization is going (vision), why (mission), how (strategy), and what their role is in this journey. This includes message clarity, communication frequency, diverse channels, goal alignment, and sense of ownership and participation in organizational direction. Research shows employees who understand organizational direction are 4x more committed and 2.5x more productive.",
+    "purpose": "ارزیابی اثربخشی ارتباطات استراتژیک سازمان با کارکنان",
+    "scope": "تمام کارکنان و کانال‌های ارتباطی استراتژیک",
+    "key_insight": "کارکنانی که جهت را می‌دانند، با اشتیاق بیشتری حرکت می‌کنند"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از اطلاع‌رسانی اهداف و چشم‌انداز",
+    "formula_detailed": "VGC = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "آزمون درک استراتژی",
+      "تحلیل مشارکت در ارتباطات",
+      "نظرسنجی Pulse"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه + آزمون درک",
+    "survey_questions": [
+      "چشم‌انداز و مأموریت سازمان برای من واضح است",
+      "اهداف استراتژیک سازمان را می‌دانم",
+      "درک می‌کنم چگونه کارم به اهداف سازمان کمک می‌کند",
+      "مدیریت به‌طور منظم درباره جهت و استراتژی ارتباط برقرار می‌کند",
+      "احساس می‌کنم در جهت سازمان مشارکت دارم",
+      "به آینده سازمان اطمینان دارم",
+      "اطلاعات کافی برای تصمیم‌گیری در کارم دارم"
+    ],
+    "comprehension_test": [
+      "چشم‌انداز سازمان چیست؟",
+      "3 هدف استراتژیک اصلی چیست؟",
+      "اولویت‌های امسال چیست؟",
+      "نقش شما در استراتژی چیست؟"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "ارتباطات داخلی، استراتژی",
+    "responsible_person": "مدیر ارتباطات داخلی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 550 کارکن",
+    "input_data": {
+      "total_responses": 550,
+      "score_5": 130,
+      "score_4": 210,
+      "score_3": 140,
+      "score_2": 50,
+      "score_1": 20
+    },
+    "calculation_steps": [
+      "مجموع = (130×5) + (210×4) + (140×3) + (50×2) + (20×1)",
+      "= 650 + 840 + 420 + 100 + 20 = 2030",
+      "میانگین = 2030 / 550 = 3.69",
+      "درصد = (3.69 / 5) × 100 = 73.8%"
+    ],
+    "result": "73.8%",
+    "interpretation": "رضایت 73.8% نشان‌دهنده ارتباطات خوب است. 61.8% درک خوبی دارند اما 12.7% سردرگم هستند."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    },
+    "comprehension_benchmark": {
+      "excellent": ">80% کارکنان چشم‌انداز را صحیح بیان می‌کنند",
+      "good": "60-80%",
+      "poor": "<60%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 5-7%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 96,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 92,
+    "radar_level": "عالی"
+  },
+  "strategic_communication_hierarchy": {
+    "vision": {
+      "definition": "تصویر الهام‌بخش از آینده مطلوب",
+      "timeframe": "5-10 سال",
+      "purpose": "جهت‌دهی و الهام",
+      "example": "تبدیل شدن به پیشرو صنعت فولاد خاورمیانه تا 2030"
+    },
+    "mission": {
+      "definition": "هدف وجودی سازمان - چرا وجود داریم",
+      "timeframe": "دائمی",
+      "purpose": "معنا و هویت",
+      "example": "تولید فولاد با کیفیت جهانی برای توسعه پایدار کشور"
+    },
+    "values": {
+      "definition": "اصول راهنمای رفتار",
+      "timeframe": "دائمی",
+      "purpose": "فرهنگ و تصمیم‌گیری",
+      "example": "کیفیت، نوآوری، مسئولیت، تیم‌کاری"
+    },
+    "strategy": {
+      "definition": "چگونه به چشم‌انداز می‌رسیم",
+      "timeframe": "3-5 سال",
+      "purpose": "راهبرد و اولویت‌ها",
+      "example": "دیجیتالی‌سازی، توسعه محصول، بازارهای جدید"
+    },
+    "goals": {
+      "definition": "اهداف قابل اندازه‌گیری",
+      "timeframe": "سالانه",
+      "purpose": "اجرا و اندازه‌گیری",
+      "example": "افزایش تولید 15%, کاهش ضایعات 20%, NPS 60"
+    },
+    "individual_objectives": {
+      "definition": "اهداف فردی همسو",
+      "timeframe": "سالانه/فصلی",
+      "purpose": "مشارکت و مسئولیت‌پذیری",
+      "example": "اهداف SMART یا OKR فردی"
+    }
+  },
+  "cascade_alignment": {
+    "organizational_goals": "اهداف کل سازمان",
+    "departmental_goals": "اهداف بخش‌ها - همسو با سازمان",
+    "team_goals": "اهداف تیم‌ها - همسو با بخش",
+    "individual_goals": "اهداف فردی - همسو با تیم",
+    "golden_thread": "نخ طلایی - اتصال واضح از فرد تا استراتژی"
+  },
+  "communication_channels": {
+    "leadership_communications": {
+      "town_halls": "جلسات عمومی فصلی با CEO",
+      "leadership_emails": "ایمیل‌های منظم مدیریت ارشد",
+      "video_messages": "پیام‌های ویدیویی",
+      "q_and_a_sessions": "جلسات پرسش و پاسخ",
+      "state_of_organization": "گزارش وضعیت سالانه"
+    },
+    "manager_cascades": {
+      "team_meetings": "جلسات تیم منظم",
+      "one_on_ones": "جلسات فردی",
+      "departmental_briefings": "جلسات توجیهی بخش"
+    },
+    "written_communications": {
+      "intranet": "اینترانت - پورتال استراتژی",
+      "newsletters": "خبرنامه داخلی",
+      "strategy_documents": "اسناد استراتژیک ساده",
+      "infographics": "اینفوگرافیک‌های جذاب"
+    },
+    "visual_communications": {
+      "strategy_maps": "نقشه استراتژی",
+      "dashboards": "داشبوردهای عملکرد",
+      "posters": "پوسترهای یادآور",
+      "digital_signage": "تابلوهای دیجیتال"
+    },
+    "interactive_communications": {
+      "workshops": "کارگاه‌های استراتژی",
+      "roadshows": "رودشوهای رهبری",
+      "focus_groups": "گروه‌های کانونی",
+      "feedback_sessions": "جلسات بازخورد"
+    }
+  },
+  "effective_communication_principles": {
+    "clarity": "وضوح - پیام ساده و قابل فهم",
+    "consistency": "ثبات - پیام یکسان از همه منابع",
+    "frequency": "تکرار - پیام مکرر تا جذب شود",
+    "relevance": "مرتبط - ارتباط با کار روزانه",
+    "two_way": "دوطرفه - گفتگو نه اعلام",
+    "storytelling": "داستان‌گویی - الهام‌بخش و به یادماندنی",
+    "multiple_channels": "کانال‌های متنوع - دسترسی همه"
+  },
+  "storytelling_framework": {
+    "where_we_were": "کجا بودیم - تاریخچه و چالش‌ها",
+    "where_we_are": "کجا هستیم - وضعیت فعلی",
+    "where_we_going": "کجا می‌رویم - چشم‌انداز آینده",
+    "why_it_matters": "چرا مهم است - اهمیت و فوریت",
+    "how_we_get_there": "چگونه می‌رسیم - استراتژی و نقش‌ها",
+    "what_it_means_for_you": "برای شما یعنی چه - ارتباط شخصی"
+  },
+  "understanding_levels": {
+    "awareness": "آگاهی - شنیده‌اند",
+    "knowledge": "دانش - می‌دانند چیست",
+    "understanding": "درک - می‌فهمند چرا",
+    "belief": "باور - باور دارند",
+    "commitment": "تعهد - متعهد به اجرا هستند",
+    "target": "هدف: حداقل Understanding برای همه، Commitment برای اکثریت"
+  },
+  "measurement_methods": {
+    "surveys": "نظرسنجی‌های منظم",
+    "comprehension_tests": "آزمون درک - سوالات باز",
+    "focus_groups": "گروه‌های کانونی",
+    "manager_feedback": "بازخورد مدیران از تیم",
+    "behavioral_indicators": "شاخص‌های رفتاری - آیا طبق استراتژی عمل می‌کنند؟",
+    "pulse_surveys": "نظرسنجی‌های کوتاه مکرر"
+  },
+  "common_barriers": {
+    "jargon": "اصطلاحات تخصصی و پیچیده",
+    "information_overload": "اطلاعات بیش از حد",
+    "inconsistent_messages": "پیام‌های متناقض",
+    "one_time_communication": "ارتباط یکباره نه مستمر",
+    "top_down_only": "فقط از بالا به پایین",
+    "lack_of_context": "فقدان زمینه - چرا",
+    "no_line_of_sight": "عدم دید مستقیم به نقش فردی",
+    "manager_disconnect": "مدیران میانی سردرگم"
+  },
+  "manager_enablement": {
+    "why_critical": "مدیران میانی کلید هستند - اکثر کارکنان از آن‌ها می‌شنوند",
+    "support_needed": [
+      "آموزش ارتباط استراتژی",
+      "ابزارهای کمکی (اسلایدها، FAQs)",
+      "جلسات توجیهی قبلی",
+      "Q&A با رهبری",
+      "زمان کافی برای cascade"
+    ],
+    "cascade_guidelines": [
+      "پیام اصلی + زمینه محلی",
+      "مثال‌های مرتبط با تیم",
+      "فضا برای سوال و گفتگو",
+      "پیگیری و تکرار"
+    ]
+  },
+  "strategy_deployment": {
+    "hoshin_kanri": {
+      "description": "سیستم ژاپنی استقرار استراتژی",
+      "steps": [
+        "تعیین اهداف استراتژیک",
+        "Cascade به سطوح پایین",
+        "X-Matrix برای همسویی",
+        "بررسی منظم (PDCA)",
+        "تعدیل مستمر"
+      ]
+    },
+    "balanced_scorecard": {
+      "description": "نقشه استراتژی و KPI ها",
+      "perspectives": [
+        "مالی",
+        "مشتری",
+        "فرآیند",
+        "یادگیری و رشد"
+      ]
+    },
+    "okr": {
+      "description": "Objectives and Key Results",
+      "benefits": [
+        "تمرکز",
+        "همسویی",
+        "تعهد",
+        "ردیابی",
+        "کشش (Stretch goals)"
+      ]
+    }
+  },
+  "feedback_mechanisms": {
+    "pulse_surveys": "نظرسنجی‌های کوتاه ماهانه",
+    "suggestion_systems": "سیستم پیشنهادات",
+    "town_hall_qa": "پرسش در جلسات عمومی",
+    "focus_groups": "گروه‌های کانونی",
+    "digital_forums": "انجمن‌های آنلاین",
+    "anonymous_channels": "کانال‌های ناشناس"
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "کمپین ارتباط استراتژی چندکاناله",
+      "expected_impact": "+8-12%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "آموزش مدیران در ارتباط چشم‌انداز",
+      "expected_impact": "+6-9%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "پیاده‌سازی OKR برای همسویی",
+      "expected_impact": "+7-10%",
+      "timeframe": "9 ماه"
+    },
+    {
+      "initiative": "Town Halls فصلی با CEO",
+      "expected_impact": "+5-7%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "داشبورد استراتژی بصری",
+      "expected_impact": "+4-6%",
+      "timeframe": "6 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "engagement": "0.7-0.8",
+    "alignment": "0.8-0.9",
+    "performance": "0.6-0.7",
+    "innovation": "0.5-0.6",
+    "retention": "0.5-0.6",
+    "strategic_execution": "0.8-0.9"
+  },
+  "technology_enablers": {
+    "intranet_platforms": "SharePoint, Confluence, Workplace",
+    "communication_apps": "Slack, Teams, Yammer",
+    "video_platforms": "Zoom, Teams, Webex",
+    "digital_signage": "تابلوهای دیجیتال در محل کار",
+    "mobile_apps": "اپلیکیشن موبایل کارکنان",
+    "dashboards": "Power BI, Tableau"
+  },
+  "best_practices": [
+    "پیام ساده و واضح - نه اصطلاحات پیچیده",
+    "تکرار مکرر از کانال‌های مختلف",
+    "ارتباط دوطرفه - گوش دادن و پاسخ",
+    "داستان‌گویی الهام‌بخش",
+    "اتصال به کار روزانه",
+    "توانمندسازی مدیران میانی",
+    "بازخورد و اندازه‌گیری درک",
+    "تعدیل مستمر بر اساس بازخورد"
+  ],
+  "role_of_leadership": {
+    "visibility": "حضور و دیده شدن",
+    "consistency": "ثبات در پیام و عمل",
+    "authenticity": "صداقت و اصالت",
+    "accessibility": "دسترس‌پذیری و گوش دادن",
+    "storytelling": "تعریف داستان جذاب",
+    "role_modeling": "الگوبودن - walk the talk"
+  },
+  "crisis_communication": {
+    "importance": "در بحران ارتباط مهم‌تر می‌شود",
+    "principles": [
+      "سرعت - اطلاع‌رسانی سریع",
+      "صداقت - شفافیت حتی در عدم قطعیت",
+      "empathy - همدلی و درک نگرانی‌ها",
+      "consistency - پیام یکسان",
+      "updates - به‌روزرسانی منظم"
+    ]
+  },
+  "notes": [
+    "کارکنانی که جهت را می‌دانند 4 برابر متعهدتر هستند",
+    "فقط 40% کارکنان چشم‌انداز سازمان را می‌دانند - فرصت بزرگ",
+    "تکرار کلید است - پیام باید 6-7 بار شنیده شود تا جذب شود",
+    "مدیران میانی کلیدی‌ترین کانال ارتباط استراتژی هستند"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
