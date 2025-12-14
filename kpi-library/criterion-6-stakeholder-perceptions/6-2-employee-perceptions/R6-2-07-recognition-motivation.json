@@ -1,0 +1,312 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-07",
+    "kpi_name_fa": "رضایت کارکنان از روش‌های قدردانی و ایجاد انگیزش",
+    "kpi_name_en": "Employee Satisfaction with Recognition and Motivation Methods",
+    "acronym": "RMS",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Recognition and Motivation"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از نحوه قدردانی، شناخت، تقدیر، و روش‌های ایجاد انگیزه در سازمان را اندازه‌گیری می‌کند. قدردانی و شناخت از مهم‌ترین عوامل انگیزش درونی کارکنان است. این شاخص شامل انواع قدردانی (رسمی/غیررسمی، مادی/معنوی، فردی/تیمی)، عدالت و انصاف در قدردانی، به‌موقع بودن، و اثربخشی روش‌های انگیزشی است. تحقیقات نشان می‌دهند کارکنانی که احساس قدردانی می‌کنند، 63% کمتر به دنبال شغل جدید هستند، 56% بیشتر تلاش می‌کنند، و 87% بیشتر در سازمان می‌مانند.",
+    "description_en": "This KPI measures employee satisfaction with recognition, appreciation, and motivation methods in the organization. Recognition and appreciation are among the most important factors in employee intrinsic motivation. This includes types of recognition (formal/informal, tangible/intangible, individual/team), fairness and equity in recognition, timeliness, and effectiveness of motivational methods. Research shows employees who feel appreciated are 63% less likely to look for new jobs, put in 56% more effort, and are 87% more likely to stay.",
+    "purpose": "ارزیابی اثربخشی سیستم قدردانی و انگیزش سازمان",
+    "scope": "تمام کارکنان و برنامه‌های قدردانی و انگیزش",
+    "key_insight": "قدردانی بهترین و ارزان‌ترین راه افزایش انگیزه است - اما باید صادقانه، شخصی، و به‌موقع باشد"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از قدردانی و انگیزش",
+    "formula_detailed": "RMS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "آمار برنامه‌های قدردانی",
+      "تحلیل مشارکت در برنامه‌ها"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه",
+    "survey_questions": [
+      "از روش‌های قدردانی و تقدیر در سازمان تا چه حد راضی هستید؟",
+      "کار و تلاش من به‌طور منظم شناخته و قدردانی می‌شود",
+      "قدردانی‌ها منصفانه و بر اساس عملکرد واقعی است",
+      "قدردانی‌ها به‌موقع و معنادار هستند",
+      "سازمان هم از دستاوردهای فردی و هم تیمی قدردانی می‌کند",
+      "روش‌های ایجاد انگیزه در سازمان مؤثر است",
+      "احساس می‌کنم مشارکت من ارزشمند است"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "منابع انسانی",
+    "responsible_person": "مدیر منابع انسانی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 500 کارکن",
+    "input_data": {
+      "total_responses": 500,
+      "score_5": 100,
+      "score_4": 180,
+      "score_3": 150,
+      "score_2": 50,
+      "score_1": 20
+    },
+    "calculation_steps": [
+      "مجموع = (100×5) + (180×4) + (150×3) + (50×2) + (20×1)",
+      "= 500 + 720 + 450 + 100 + 20 = 1790",
+      "میانگین = 1790 / 500 = 3.58",
+      "درصد = (3.58 / 5) × 100 = 71.6%"
+    ],
+    "result": "71.6%",
+    "interpretation": "رضایت 71.6% نشان‌دهنده سطح خوب قدردانی است. 56% کارکنان راضی هستند اما 14% ناراضی که نیاز به بهبود دارد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 5-7%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 94,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 89,
+    "radar_level": "عالی"
+  },
+  "recognition_types": {
+    "formal": {
+      "description": "قدردانی رسمی و برنامه‌ریزی شده",
+      "examples": [
+        "جوایز سالانه کارکنان برتر",
+        "مراسم تقدیر",
+        "پاداش عملکرد",
+        "ترفیعات",
+        "گواهینامه‌های رسمی"
+      ]
+    },
+    "informal": {
+      "description": "قدردانی غیررسمی و خودجوش",
+      "examples": [
+        "تشکر شفاهی مدیر",
+        "ایمیل تقدیر",
+        "کارت تشکر دست‌نویس",
+        "اعلام در جلسات تیم",
+        "پیام در کانال‌های داخلی"
+      ]
+    },
+    "tangible": {
+      "description": "قدردانی مادی و ملموس",
+      "examples": [
+        "پاداش نقدی",
+        "هدیه",
+        "افزایش حقوق",
+        "سهام/پاداش سهام",
+        "مزایای اضافی"
+      ]
+    },
+    "intangible": {
+      "description": "قدردانی معنوی و غیرمادی",
+      "examples": [
+        "تشکر صمیمانه",
+        "قدردانی عمومی",
+        "مسئولیت بیشتر",
+        "پروژه‌های چالش‌برانگیز",
+        "فرصت رشد"
+      ]
+    }
+  },
+  "recognition_principles": {
+    "timely": "به‌موقع - بلافاصله پس از دستاورد",
+    "specific": "مشخص - دقیقاً چه کاری قدردانی می‌شود",
+    "sincere": "صادقانه - از ته دل نه تشریفاتی",
+    "personal": "شخصی - متناسب با فرد",
+    "public_or_private": "عمومی یا خصوصی - بسته به شخصیت فرد",
+    "fair": "منصفانه - برای همه بر اساس عملکرد",
+    "frequent": "مکرر - نه فقط سالانه"
+  },
+  "motivation_theories": {
+    "maslow": {
+      "theory": "سلسله مراتب نیازهای مازلو",
+      "levels": [
+        "نیازهای فیزیولوژیک - حقوق و مزایا",
+        "امنیت - امنیت شغلی",
+        "تعلق - روابط، تیم",
+        "احترام - قدردانی، شناخت",
+        "خودشکوفایی - رشد، چالش"
+      ]
+    },
+    "herzberg": {
+      "theory": "نظریه دو عاملی هرزبرگ",
+      "hygiene_factors": "عوامل بهداشتی - حقوق، شرایط کار (عدم رضایتی)",
+      "motivators": "انگیزاننده‌ها - قدردانی، رشد، مسئولیت (رضایت)"
+    },
+    "deci_ryan": {
+      "theory": "نظریه خودمختاری (SDT)",
+      "autonomy": "استقلال - آزادی عمل",
+      "competence": "شایستگی - احساس توانایی",
+      "relatedness": "ارتباط - تعلق و قدردانی"
+    },
+    "pink": {
+      "theory": "Drive - دنیل پینک",
+      "autonomy": "استقلال",
+      "mastery": "تسلط",
+      "purpose": "هدف و معنا"
+    }
+  },
+  "recognition_programs": {
+    "peer_to_peer": {
+      "description": "قدردانی همکار از همکار",
+      "benefits": "فرهنگ قدردانی، تقویت روابط",
+      "examples": "کارت تشکر، نامزدی همکار ماه"
+    },
+    "manager_to_employee": {
+      "description": "قدردانی مدیر از کارمند",
+      "benefits": "تقویت رابطه، انگیزش مستقیم",
+      "examples": "جلسات 1-on-1، ایمیل تشکر"
+    },
+    "top_down": {
+      "description": "قدردانی مدیریت ارشد",
+      "benefits": "افتخار، انگیزش بالا",
+      "examples": "جوایز CEO، مراسم سالانه"
+    },
+    "milestone": {
+      "description": "قدردانی سنوات خدمت",
+      "benefits": "وفاداری، ماندگاری",
+      "examples": "جشن 5/10/20 سال"
+    },
+    "spot_awards": {
+      "description": "پاداش فوری برای عملکرد استثنایی",
+      "benefits": "تقویت رفتار مطلوب",
+      "examples": "پاداش نقدی کوچک فوری"
+    }
+  },
+  "intrinsic_vs_extrinsic": {
+    "intrinsic_motivation": {
+      "description": "انگیزش درونی - از درون فرد",
+      "drivers": [
+        "علاقه به کار",
+        "احساس معناداری",
+        "رشد شخصی",
+        "استقلال",
+        "تسلط"
+      ],
+      "sustainability": "پایدار و طولانی‌مدت"
+    },
+    "extrinsic_motivation": {
+      "description": "انگیزش بیرونی - از بیرون",
+      "drivers": [
+        "پاداش مالی",
+        "ترفیع",
+        "تنبیه",
+        "فشار خارجی"
+      ],
+      "sustainability": "کوتاه‌مدت، نیاز به تقویت مستمر"
+    },
+    "balance": "بهترین رویکرد ترکیب هوشمندانه هر دو است"
+  },
+  "gamification": {
+    "description": "بازی‌وارسازی قدردانی و انگیزش",
+    "elements": [
+      "نقاط و امتیازها",
+      "سطوح و رتبه‌ها",
+      "نشان‌ها و جوایز",
+      "تابلوی رتبه‌بندی",
+      "چالش‌ها و ماموریت‌ها"
+    ],
+    "benefits": "جذابیت، رقابت سالم، شفافیت",
+    "caution": "احتمال رقابت مخرب، تمرکز بر امتیاز نه کار"
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "پلتفرم قدردانی دیجیتال (peer-to-peer)",
+      "expected_impact": "+7-10%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "آموزش مدیران در قدردانی مؤثر",
+      "expected_impact": "+5-8%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "برنامه جوایز چندسطحی (فردی/تیمی)",
+      "expected_impact": "+6-9%",
+      "timeframe": "9 ماه"
+    },
+    {
+      "initiative": "فرهنگ‌سازی تشکر و قدردانی روزانه",
+      "expected_impact": "+8-12%",
+      "timeframe": "12 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "engagement": "0.7-0.8",
+    "retention": "0.6-0.7",
+    "performance": "0.5-0.6",
+    "job_satisfaction": "0.7-0.8",
+    "absenteeism": "-0.4 to -0.5"
+  },
+  "common_mistakes": {
+    "one_size_fits_all": "یک روش برای همه - افراد متفاوت‌اند",
+    "too_infrequent": "فقط سالانه - باید مکرر باشد",
+    "not_specific": "قدردانی کلی - باید مشخص باشد",
+    "only_top_performers": "فقط برترین‌ها - تلاش همه ارزشمند است",
+    "insincere": "تشریفاتی و بی‌روح - باید صادقانه باشد",
+    "unfair": "تبعیض - باید منصفانه باشد",
+    "only_monetary": "فقط پولی - معنوی هم مهم است"
+  },
+  "best_practices": [
+    "قدردانی منظم و مکرر (روزانه/هفتگی)",
+    "ترکیب رسمی و غیررسمی",
+    "ترکیب مادی و معنوی",
+    "شخصی‌سازی بر اساس ترجیحات فرد",
+    "قدردانی از تلاش نه فقط نتیجه",
+    "عمومی برای برخی، خصوصی برای برخی",
+    "آموزش مدیران در قدردانی مؤثر",
+    "فرهنگ‌سازی از بالا"
+  ],
+  "recognition_budget": {
+    "guideline": "1-2% از حقوق کل سازمان",
+    "allocation": {
+      "formal_awards": "40%",
+      "spot_recognition": "30%",
+      "service_awards": "20%",
+      "team_celebrations": "10%"
+    }
+  },
+  "notes": [
+    "کارکنانی که احساس قدردانی می‌کنند 63% کمتر به دنبال شغل جدید هستند",
+    "69% کارکنان می‌گویند قدردانی بیشتر آن‌ها را به کار سخت‌تر ترغیب می‌کند",
+    "قدردانی مؤثرترین و ارزان‌ترین ابزار انگیزش است",
+    "قدردانی باید: به‌موقع، مشخص، صادقانه، شخصی، منصفانه، و مکرر باشد"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
