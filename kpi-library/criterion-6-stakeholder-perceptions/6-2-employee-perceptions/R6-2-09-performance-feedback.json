@@ -1,0 +1,366 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-2-09",
+    "kpi_name_fa": "رضایت از ارزیابی عملکرد و ارائه بازخورد کاری به کارکنان",
+    "kpi_name_en": "Employee Satisfaction with Performance Evaluation and Feedback",
+    "acronym": "PFS",
+    "criterion": 6,
+    "sub_criterion": 2,
+    "category": "Employee Perceptions",
+    "sub_category": "Performance Management"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت کارکنان از فرآیند ارزیابی عملکرد، کیفیت و فرکانس بازخورد کاری، و اثربخشی سیستم مدیریت عملکرد را اندازه‌گیری می‌کند. مدیریت عملکرد مؤثر فراتر از ارزیابی سالانه است و شامل تعیین اهداف واضح، بازخورد مستمر، مربیگری، توسعه، و ارتباط عملکرد با نتایج است. این شاخص شامل عدالت، شفافیت، سازنده بودن بازخورد، و ارتباط با رشد و پاداش می‌شود. سیستم مدیریت عملکرد مؤثر باعث بهبود عملکرد، توسعه مهارت، انگیزش، و همسویی می‌شود.",
+    "description_en": "This KPI measures employee satisfaction with the performance evaluation process, quality and frequency of work feedback, and effectiveness of the performance management system. Effective performance management goes beyond annual reviews to include clear goal-setting, continuous feedback, coaching, development, and linking performance to outcomes. This includes fairness, transparency, constructive feedback, and connection to growth and rewards. An effective performance management system improves performance, develops skills, motivates, and creates alignment.",
+    "purpose": "ارزیابی اثربخشی سیستم مدیریت عملکرد از دیدگاه کارکنان",
+    "scope": "تمام کارکنان و فرآیند مدیریت عملکرد",
+    "key_insight": "بازخورد مستمر و سازنده مهم‌تر از ارزیابی سالانه است"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از ارزیابی عملکرد و بازخورد",
+    "formula_detailed": "PFS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی کارکنان",
+      "آمار تکمیل ارزیابی‌ها",
+      "نظرسنجی 360 درجه",
+      "تحلیل کیفیت بازخوردها"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی محرمانه",
+    "survey_questions": [
+      "از فرآیند ارزیابی عملکرد تا چه حد راضی هستید؟",
+      "اهداف کاری من واضح، قابل اندازه‌گیری، و قابل دستیابی است",
+      "بازخورد منظم و سازنده درباره عملکردم دریافت می‌کنم",
+      "ارزیابی عملکرد منصفانه و بی‌طرفانه است",
+      "بازخوردها به من در بهبود و رشد کمک می‌کنند",
+      "مدیرم به‌طور مؤثر بازخورد می‌دهد",
+      "عملکردم با پیامدهای واضح (پاداش، ترفیع، توسعه) ارتباط دارد"
+    ],
+    "anonymity": "ضروری",
+    "response_rate_target": ">70%",
+    "responsible_department": "منابع انسانی",
+    "responsible_person": "مدیر منابع انسانی"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 520 کارکن",
+    "input_data": {
+      "total_responses": 520,
+      "score_5": 110,
+      "score_4": 190,
+      "score_3": 150,
+      "score_2": 50,
+      "score_1": 20
+    },
+    "calculation_steps": [
+      "مجموع = (110×5) + (190×4) + (150×3) + (50×2) + (20×1)",
+      "= 550 + 760 + 450 + 100 + 20 = 1880",
+      "میانگین = 1880 / 520 = 3.62",
+      "درصد = (3.62 / 5) × 100 = 72.4%"
+    ],
+    "result": "72.4%",
+    "interpretation": "رضایت 72.4% نشان‌دهنده سیستم خوب است. 57.7% راضی هستند اما 13.5% ناراضی که نیاز به بهبود دارد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 4-6%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "overall_smart_score": 95,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "overall_radar_score": 91,
+    "radar_level": "عالی"
+  },
+  "performance_management_cycle": {
+    "planning": {
+      "description": "تعیین اهداف و برنامه‌ریزی",
+      "activities": [
+        "تعیین اهداف SMART",
+        "توافق بر روی معیارهای موفقیت",
+        "برنامه توسعه فردی (IDP)",
+        "همسویی با اهداف سازمانی"
+      ],
+      "timing": "ابتدای سال/دوره"
+    },
+    "monitoring": {
+      "description": "پیگیری و بازخورد مستمر",
+      "activities": [
+        "چک‌این‌های منظم (هفتگی/ماهانه)",
+        "بازخورد فوری",
+        "مربیگری",
+        "حل مشکلات",
+        "تنظیم اهداف در صورت نیاز"
+      ],
+      "timing": "مستمر در طول سال"
+    },
+    "reviewing": {
+      "description": "بررسی و ارزیابی",
+      "activities": [
+        "بررسی میان‌دوره",
+        "ارزیابی نهایی",
+        "خودارزیابی",
+        "ارزیابی 360 درجه (اختیاری)",
+        "مکالمه ارزیابی"
+      ],
+      "timing": "میان‌دوره و پایان دوره"
+    },
+    "rewarding": {
+      "description": "پاداش و توسعه",
+      "activities": [
+        "پاداش بر اساس عملکرد",
+        "ترفیع",
+        "برنامه توسعه",
+        "فرصت‌های جدید",
+        "قدردانی"
+      ],
+      "timing": "پایان دوره"
+    }
+  },
+  "goal_setting_smart": {
+    "specific": "مشخص - دقیقاً چه کاری؟",
+    "measurable": "قابل اندازه‌گیری - چگونه می‌دانیم موفق شدیم؟",
+    "achievable": "قابل دستیابی - آیا ممکن است؟",
+    "relevant": "مرتبط - با اهداف کلان همسو است؟",
+    "time_bound": "زمان‌دار - تا کی؟",
+    "example": "افزایش رضایت مشتری از 75% به 80% تا پایان سال مالی از طریق بهبود زمان پاسخ"
+  },
+  "okr_framework": {
+    "description": "Objectives and Key Results",
+    "objective": "هدف کیفی و الهام‌بخش",
+    "key_results": "3-5 نتیجه کلیدی قابل اندازه‌گیری",
+    "cadence": "فصلی یا سالانه",
+    "alignment": "همسویی عمودی و افقی",
+    "example": {
+      "objective": "تبدیل شدن به کارفرمای برتر صنعت",
+      "key_results": [
+        "افزایش eNPS از 30 به 50",
+        "کاهش turnover از 15% به 10%",
+        "افزایش رضایت کارکنان از 70% به 80%"
+      ]
+    }
+  },
+  "feedback_types": {
+    "formal": {
+      "description": "بازخورد رسمی و ساختاریافته",
+      "examples": [
+        "ارزیابی عملکرد سالانه",
+        "بررسی میان‌دوره",
+        "ارزیابی 360 درجه"
+      ],
+      "frequency": "سالانه، نیم‌سال"
+    },
+    "informal": {
+      "description": "بازخورد غیررسمی و مستمر",
+      "examples": [
+        "چک‌این‌های هفتگی",
+        "بازخورد فوری",
+        "مکالمات مربیگری",
+        "تشکر روزانه"
+      ],
+      "frequency": "مستمر، به‌موقع"
+    },
+    "360_degree": {
+      "description": "بازخورد چندجانبه",
+      "sources": [
+        "مدیر",
+        "همکاران",
+        "زیردستان",
+        "مشتریان داخلی/خارجی",
+        "خودارزیابی"
+      ],
+      "benefits": "دید جامع، کاهش تعصب، توسعه رهبری"
+    }
+  },
+  "effective_feedback_principles": {
+    "timely": "به‌موقع - بلافاصله نه ماه‌ها بعد",
+    "specific": "مشخص - رفتار دقیق نه کلی",
+    "balanced": "متعادل - مثبت و سازنده",
+    "actionable": "قابل اقدام - چه کاری باید انجام شود",
+    "two_way": "دوطرفه - گفتگو نه سخنرانی",
+    "future_focused": "آینده‌نگر - چگونه بهبود یابیم",
+    "private_or_public": "خصوصی برای انتقاد، عمومی برای تحسین"
+  },
+  "coaching_vs_feedback": {
+    "feedback": {
+      "description": "اطلاعات درباره عملکرد گذشته",
+      "focus": "چه اتفاقی افتاد",
+      "example": "این گزارش خوب بود اما داده‌ها قدیمی بودند"
+    },
+    "coaching": {
+      "description": "کمک به توسعه و بهبود آینده",
+      "focus": "چگونه بهبود یابیم",
+      "example": "بیا با هم ببینیم چطور می‌تونی داده‌های به‌روزتر پیدا کنی"
+    },
+    "integration": "بهترین رویکرد ترکیب بازخورد با مربیگری است"
+  },
+  "continuous_performance_management": {
+    "shift_from_annual": "تغییر از ارزیابی سالانه به مدیریت مستمر",
+    "check_ins": {
+      "frequency": "هفتگی یا ماهانه",
+      "duration": "15-30 دقیقه",
+      "agenda": [
+        "پیشرفت اهداف",
+        "چالش‌ها و موانع",
+        "نیاز به حمایت",
+        "بازخورد دوطرفه"
+      ]
+    },
+    "real_time_feedback": "بازخورد فوری با ابزارهای دیجیتال",
+    "agile_goals": "اهداف چابک و قابل تنظیم"
+  },
+  "rating_scales": {
+    "traditional_5_point": {
+      "scale": "1-5 (نیاز به بهبود تا برتر)",
+      "issue": "تمایل به میانه، عدم تمایز"
+    },
+    "forced_distribution": {
+      "description": "توزیع اجباری (مثلاً 20% برتر، 70% خوب، 10% ضعیف)",
+      "issue": "دمغیزه‌کننده، رقابت مخرب"
+    },
+    "no_ratings": {
+      "description": "بدون رتبه‌بندی - فقط گفتگو",
+      "benefits": "تمرکز بر توسعه، کاهش استرس",
+      "challenge": "چگونه پاداش تصمیم‌گیری شود"
+    },
+    "trend": "حرکت به سمت سیستم‌های بدون رتبه یا ساده‌تر"
+  },
+  "calibration_sessions": {
+    "description": "جلسات هماهنگی ارزیابی‌ها بین مدیران",
+    "purpose": [
+      "اطمینان از انصاف و یکنواختی",
+      "کاهش تعصبات",
+      "توزیع منصفانه پاداش‌ها",
+      "شناسایی استعدادها"
+    ],
+    "process": "بررسی ارزیابی‌ها به‌صورت گروهی و بحث درباره موارد مرزی"
+  },
+  "performance_improvement_plan": {
+    "description": "برنامه بهبود عملکرد (PIP)",
+    "when": "عملکرد زیر انتظار",
+    "components": [
+      "مشکلات مشخص",
+      "اهداف واضح بهبود",
+      "حمایت و منابع",
+      "جدول زمانی",
+      "پیامدها (بهبود یا اقدامات بعدی)"
+    ],
+    "mindset": "ابزار توسعه نه تنبیه"
+  },
+  "common_biases": {
+    "recency_bias": "تمایل به یادآوری رویدادهای اخیر بیشتر از کل سال",
+    "halo_effect": "اجازه دادن به یک ویژگی برای تأثیر بر کل ارزیابی",
+    "leniency_bias": "رتبه‌بندی بالاتر از واقع",
+    "severity_bias": "رتبه‌بندی پایین‌تر از واقع",
+    "central_tendency": "تمایل به رتبه‌بندی همه در میانه",
+    "similar_to_me": "رتبه بالاتر به افراد مشابه خود",
+    "mitigation": "آگاهی، آموزش، کالیبراسیون، ارزیابی 360"
+  },
+  "technology_enablers": {
+    "performance_management_systems": [
+      "Workday",
+      "SuccessFactors (SAP)",
+      "Oracle HCM",
+      "BambooHR",
+      "15Five",
+      "Lattice"
+    ],
+    "features": [
+      "تعیین اهداف و ردیابی",
+      "بازخورد مستمر",
+      "ارزیابی 360 درجه",
+      "یادآوری و نوتیفیکیشن",
+      "داشبورد و گزارش",
+      "یکپارچگی با سیستم‌های HR"
+    ]
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "معرفی چک‌این‌های مستمر (هفتگی/ماهانه)",
+      "expected_impact": "+8-12%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "آموزش مدیران در بازخورد مؤثر",
+      "expected_impact": "+6-9%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "ساده‌سازی فرآیند ارزیابی",
+      "expected_impact": "+5-8%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "ارتباط واضح‌تر عملکرد با پاداش",
+      "expected_impact": "+4-7%",
+      "timeframe": "3 ماه"
+    },
+    {
+      "initiative": "پیاده‌سازی سیستم مدیریت عملکرد دیجیتال",
+      "expected_impact": "+7-10%",
+      "timeframe": "12 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "performance": "0.6-0.7",
+    "engagement": "0.6-0.7",
+    "retention": "0.5-0.6",
+    "development": "0.7-0.8",
+    "goal_achievement": "0.7-0.8"
+  },
+  "legal_considerations": {
+    "documentation": "مستندسازی دقیق برای دفاع قانونی",
+    "consistency": "یکنواختی در اجرا",
+    "objectivity": "معیارهای عینی",
+    "privacy": "محرمانگی اطلاعات",
+    "discrimination": "عدم تبعیض"
+  },
+  "best_practices": [
+    "اهداف SMART یا OKR واضح",
+    "بازخورد مستمر نه فقط سالانه",
+    "گفتگوهای دوطرفه نه یک‌طرفه",
+    "تمرکز بر توسعه نه فقط ارزیابی",
+    "انصاف و شفافیت",
+    "آموزش مدیران",
+    "ارتباط با پاداش و توسعه",
+    "استفاده از تکنولوژی"
+  ],
+  "notes": [
+    "72% کارکنان می‌گویند عملکردشان بهبود می‌یافت اگر بازخورد بیشتری دریافت می‌کردند",
+    "ارزیابی سالانه سنتی در حال منسوخ شدن است - مستمر جایگزین می‌شود",
+    "بازخورد مؤثر باید: به‌موقع، مشخص، متعادل، قابل اقدام، و دوطرفه باشد",
+    "مدیریت عملکرد مسئولیت مشترک مدیر و کارمند است"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
