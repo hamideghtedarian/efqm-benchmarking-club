@@ -1,0 +1,363 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-3-02",
+    "kpi_name_fa": "رضایت ذینفعان کسب‌وکار از ساختار حاکمیت شرکتی، شفافیت و پاسخگویی",
+    "kpi_name_en": "Business Stakeholder Satisfaction with Corporate Governance Structure, Transparency and Accountability",
+    "acronym": "CGT",
+    "criterion": 6,
+    "sub_criterion": 3,
+    "category": "Business & Governance Stakeholder Perceptions",
+    "sub_category": "Corporate Governance"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت ذینفعان کسب‌وکار و حاکمیتی از کیفیت ساختار حاکمیت شرکتی، شفافیت فرآیندها، پاسخگویی مدیریت، استقلال هیئت مدیره، و رعایت حقوق ذینفعان را اندازه‌گیری می‌کند. حاکمیت شرکتی خوب شامل تفکیک مالکیت و مدیریت، نظارت مؤثر، افشای کامل اطلاعات، حمایت از حقوق سهامداران، و پاسخگویی به ذینفعان است. این شاخص نشان‌دهنده اعتماد ذینفعان به ساختار رهبری و تصمیم‌گیری سازمان است.",
+    "description_en": "This KPI measures business and governance stakeholders' satisfaction with the quality of corporate governance structure, process transparency, management accountability, board independence, and protection of stakeholder rights. Good corporate governance includes separation of ownership and management, effective oversight, full disclosure, protection of shareholder rights, and stakeholder accountability. This indicator reflects stakeholders' trust in the organization's leadership and decision-making structure.",
+    "purpose": "ارزیابی اعتماد ذینفعان به ساختار حاکمیتی و شفافیت سازمان",
+    "scope": "سهامداران، سرمایه‌گذاران، نهادهای نظارتی، تحلیلگران",
+    "key_insight": "حاکمیت شرکتی خوب پایه اعتماد، کاهش ریسک و ارزش‌آفرینی پایدار است"
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از حاکمیت شرکتی و شفافیت",
+    "formula_detailed": "CGT = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی سهامداران",
+      "نظرسنجی سرمایه‌گذاران نهادی",
+      "ارزیابی نهادهای نظارتی",
+      "رتبه‌بندی حاکمیت شرکتی",
+      "گزارش‌های ESG"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی + ارزیابی عینی",
+    "survey_questions": [
+      "از کیفیت ساختار حاکمیت شرکتی سازمان تا چه حد راضی هستید؟",
+      "هیئت مدیره از استقلال و صلاحیت کافی برخوردار است",
+      "سازمان در افشای اطلاعات شفاف و به‌موقع عمل می‌کند",
+      "مدیریت در برابر سهامداران و ذینفعان پاسخگو است",
+      "حقوق سهامداران به‌طور مؤثر حمایت می‌شود",
+      "فرآیندهای تصمیم‌گیری شفاف و قابل فهم است",
+      "سازمان به اصول حاکمیت شرکتی خوب پایبند است"
+    ],
+    "governance_assessment": [
+      "ترکیب و استقلال هیئت مدیره",
+      "کمیته‌های تخصصی هیئت مدیره",
+      "کیفیت افشای اطلاعات",
+      "ساختار مالکیت و کنترل",
+      "حقوق سهامداران اقلیت"
+    ],
+    "response_scale": "1-5 (کاملاً ناراضی تا کاملاً راضی)",
+    "anonymity": "محرمانه",
+    "response_rate_target": ">60%",
+    "responsible_department": "دبیرخانه هیئت مدیره، روابط سرمایه‌گذاران",
+    "responsible_person": "دبیر هیئت مدیره"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 120 ذینفع",
+    "input_data": {
+      "total_responses": 120,
+      "score_5": 40,
+      "score_4": 50,
+      "score_3": 20,
+      "score_2": 7,
+      "score_1": 3
+    },
+    "calculation_steps": [
+      "مجموع = (40×5) + (50×4) + (20×3) + (7×2) + (3×1)",
+      "= 200 + 200 + 60 + 14 + 3 = 477",
+      "میانگین = 477 / 120 = 3.98",
+      "درصد = (3.98 / 5) × 100 = 79.5%"
+    ],
+    "result": "79.5%",
+    "interpretation": "رضایت 79.5% نشان‌دهنده اعتماد خوب به حاکمیت است. 75% راضی اما 8.3% نگران که نیاز به بهبود دارد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    },
+    "governance_ratings": {
+      "excellent": "A, A+",
+      "good": "B+, B",
+      "average": "C+, C",
+      "poor": "D, F"
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 5-7%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 20,
+      "evidence": "رضایت از حاکمیت شرکتی، شفافیت و پاسخگویی - دقیق و مشخص"
+    },
+    "measurable": {
+      "score": 20,
+      "evidence": "نظرسنجی با مقیاس 1-5 + رتبه‌بندی حاکمیت - کاملاً قابل اندازه‌گیری"
+    },
+    "achievable": {
+      "score": 18,
+      "evidence": "با اصلاح ساختار حاکمیت و افزایش شفافیت قابل دستیابی"
+    },
+    "relevant": {
+      "score": 20,
+      "evidence": "مستقیماً مرتبط با معیار 6-3 و اعتماد ذینفعان"
+    },
+    "time_bound": {
+      "score": 18,
+      "evidence": "سالانه اندازه‌گیری می‌شود"
+    },
+    "overall_smart_score": 96,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "relevance": 20,
+      "integrity": 19,
+      "segmentation": 18,
+      "trends": 18,
+      "comparisons": 18
+    },
+    "approach": {
+      "sound": 19,
+      "integrated": 18,
+      "stakeholder_focused": 19
+    },
+    "deployment": {
+      "implemented": 18,
+      "systematic": 18
+    },
+    "assessment": {
+      "measured": 19,
+      "learned": 17
+    },
+    "refinement": {
+      "improved": 17,
+      "innovative": 16
+    },
+    "overall_radar_score": 93,
+    "radar_level": "عالی"
+  },
+  "corporate_governance_pillars": {
+    "board_structure": {
+      "description": "ساختار هیئت مدیره",
+      "elements": [
+        "ترکیب متنوع و متخصص",
+        "استقلال اعضای غیرموظف",
+        "تفکیک نقش مدیرعامل و رئیس هیئت مدیره",
+        "تعداد و ترکیب مناسب",
+        "دوره تصدی محدود"
+      ]
+    },
+    "board_committees": {
+      "description": "کمیته‌های تخصصی",
+      "types": [
+        "کمیته حسابرسی - نظارت مالی",
+        "کمیته حاکمیت شرکتی - رعایت اصول",
+        "کمیته جبران خدمات - پاداش مدیران",
+        "کمیته انتصابات - انتخاب مدیران",
+        "کمیته ریسک - مدیریت ریسک"
+      ]
+    },
+    "shareholder_rights": {
+      "description": "حقوق سهامداران",
+      "rights": [
+        "حق رأی در مجامع",
+        "دریافت سود تقسیمی",
+        "دسترسی به اطلاعات",
+        "حمایت از اقلیت",
+        "شرکت در تصمیمات مهم"
+      ]
+    },
+    "transparency": {
+      "description": "شفافیت و افشا",
+      "areas": [
+        "گزارش‌های مالی دقیق و به‌موقع",
+        "افشای معاملات با اشخاص وابسته",
+        "ساختار مالکیت و کنترل",
+        "پاداش مدیران ارشد",
+        "سیاست‌ها و رویه‌ها"
+      ]
+    },
+    "accountability": {
+      "description": "پاسخگویی",
+      "mechanisms": [
+        "گزارش‌دهی منظم به سهامداران",
+        "پاسخ به سوالات ذینفعان",
+        "مجامع عمومی فعال",
+        "کانال‌های ارتباطی",
+        "رسیدگی به شکایات"
+      ]
+    }
+  },
+  "governance_frameworks": {
+    "international": {
+      "oecd_principles": "اصول حاکمیت شرکتی OECD",
+      "icgn_standards": "استانداردهای ICGN",
+      "uk_code": "کد حاکمیت شرکتی بریتانیا",
+      "sox": "قانون Sarbanes-Oxley"
+    },
+    "local": {
+      "securities_law": "قانون بازار اوراق بهادار ایران",
+      "corporate_governance_code": "آیین‌نامه حاکمیت شرکتی",
+      "sec_regulations": "مقررات سازمان بورس"
+    }
+  },
+  "board_effectiveness": {
+    "composition": {
+      "size": "7-11 عضو (بهینه)",
+      "independence": "حداقل 50% غیرموظف",
+      "diversity": "تنوع مهارت، تجربه، جنسیت",
+      "expertise": "تخصص مالی، صنعت، حقوقی"
+    },
+    "operations": {
+      "meetings": "حداقل 4 جلسه سالانه",
+      "attendance": "حضور >75%",
+      "evaluation": "ارزیابی سالانه عملکرد",
+      "training": "آموزش مستمر"
+    },
+    "oversight": {
+      "strategy": "نظارت بر استراتژی",
+      "risk": "نظارت بر ریسک",
+      "performance": "نظارت بر عملکرد",
+      "compliance": "انطباق با قوانین"
+    }
+  },
+  "disclosure_transparency": {
+    "financial_disclosure": {
+      "annual_report": "گزارش سالانه جامع",
+      "quarterly_reports": "گزارش‌های فصلی",
+      "segment_reporting": "گزارش‌دهی بخشی",
+      "related_party": "افشای معاملات با اشخاص وابسته"
+    },
+    "governance_disclosure": {
+      "board_composition": "ترکیب و سوابق هیئت مدیره",
+      "compensation": "پاداش مدیران",
+      "ownership_structure": "ساختار مالکیت",
+      "governance_policies": "سیاست‌های حاکمیتی"
+    },
+    "esg_disclosure": {
+      "environmental": "عملکرد زیست‌محیطی",
+      "social": "عملکرد اجتماعی",
+      "governance": "شاخص‌های حاکمیت"
+    }
+  },
+  "stakeholder_engagement": {
+    "shareholders": {
+      "agm": "مجامع عمومی سالانه",
+      "egm": "مجامع عمومی فوق‌العاده",
+      "investor_days": "روزهای سرمایه‌گذاران",
+      "voting": "تسهیل رأی‌گیری"
+    },
+    "institutional_investors": {
+      "roadshows": "رودشوهای سرمایه‌گذاری",
+      "one_on_one": "جلسات انفرادی",
+      "earnings_calls": "کنفرانس‌های نتایج",
+      "site_visits": "بازدیدها"
+    },
+    "regulators": {
+      "compliance_reporting": "گزارش‌دهی انطباق",
+      "cooperation": "همکاری با نهادهای نظارتی",
+      "timely_response": "پاسخ به‌موقع"
+    }
+  },
+  "governance_ratings": {
+    "rating_providers": {
+      "isc": "ISS Governance",
+      "msci": "MSCI ESG Ratings",
+      "sustainalytics": "Sustainalytics",
+      "local": "رتبه‌بندی‌های محلی"
+    },
+    "rating_criteria": {
+      "board_structure": "ساختار هیئت مدیره (25%)",
+      "shareholder_rights": "حقوق سهامداران (25%)",
+      "transparency": "شفافیت (25%)",
+      "audit": "حسابرسی (25%)"
+    }
+  },
+  "conflict_of_interest": {
+    "identification": "شناسایی تضاد منافع",
+    "disclosure": "افشای تضاد منافع",
+    "management": "مدیریت تضاد منافع",
+    "policies": [
+      "سیاست معاملات با اشخاص وابسته",
+      "محدودیت معاملات اطلاعات نهانی",
+      "استقلال تصمیم‌گیری"
+    ]
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "تقویت استقلال هیئت مدیره",
+      "expected_impact": "+7-10%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "ارتقای شفافیت افشای اطلاعات",
+      "expected_impact": "+6-9%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "تشکیل کمیته‌های تخصصی",
+      "expected_impact": "+5-8%",
+      "timeframe": "9 ماه"
+    },
+    {
+      "initiative": "بهبود تعامل با سهامداران",
+      "expected_impact": "+5-7%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "پیاده‌سازی کد حاکمیت شرکتی",
+      "expected_impact": "+8-12%",
+      "timeframe": "18 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "investor_confidence": "0.8-0.9",
+    "share_price": "0.6-0.7",
+    "cost_of_capital": "-0.5 to -0.6",
+    "esg_rating": "0.7-0.8",
+    "long_term_value": "0.7-0.8"
+  },
+  "best_practices": [
+    "هیئت مدیره مستقل و متخصص",
+    "تفکیک نقش مدیرعامل و رئیس هیئت مدیره",
+    "کمیته‌های تخصصی فعال",
+    "شفافیت کامل در افشای اطلاعات",
+    "حمایت قوی از حقوق سهامداران",
+    "ارزیابی سالانه عملکرد هیئت مدیره",
+    "تعامل فعال با ذینفعان",
+    "انطباق با استانداردهای بین‌المللی"
+  ],
+  "notes": [
+    "حاکمیت شرکتی خوب می‌تواند هزینه سرمایه را تا 20% کاهش دهد",
+    "شفافیت بیشتر از عملکرد بهتر در جلب اعتماد سرمایه‌گذاران مؤثرتر است",
+    "استقلال هیئت مدیره کلید نظارت مؤثر و تصمیم‌گیری صحیح است",
+    "تعامل منظم با سهامداران اعتماد می‌سازد و ریسک را کاهش می‌دهد"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
