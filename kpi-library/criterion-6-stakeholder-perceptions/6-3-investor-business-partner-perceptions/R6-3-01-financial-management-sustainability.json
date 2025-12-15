@@ -1,0 +1,355 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "author": "Hamid Eghtedarian",
+    "language": "fa",
+    "schema_version": "2025.1"
+  },
+  "kpi_identification": {
+    "kpi_code": "R6-3-01",
+    "kpi_name_fa": "رضایت ذینفعان کسب‌وکار از مدیریت مالی و پایداری سازمان",
+    "kpi_name_en": "Business Stakeholder Satisfaction with Financial Management and Sustainability",
+    "acronym": "FMS",
+    "criterion": 6,
+    "sub_criterion": 3,
+    "category": "Business & Governance Stakeholder Perceptions",
+    "sub_category": "Financial Management"
+  },
+  "definition": {
+    "description_fa": "این شاخص میزان رضایت ذینفعان کسب‌وکار و حاکمیتی (سهامداران، سرمایه‌گذاران، بانک‌ها، نهادهای مالی، و نهادهای نظارتی) از نحوه مدیریت مالی، ثبات، امنیت و پایداری مالی سازمان را اندازه‌گیری می‌کند. مدیریت مالی مؤثر شامل شفافیت گزارش‌دهی، سودآوری پایدار، مدیریت ریسک مالی، نقدینگی سالم، و برنامه‌ریزی بلندمدت است. این شاخص نشان می‌دهد سازمان تا چه حد اعتماد مالی ذینفعان را جلب کرده و پایداری مالی خود را تضمین می‌کند.",
+    "description_en": "This KPI measures the satisfaction of business and governance stakeholders (shareholders, investors, banks, financial institutions, and regulatory bodies) with the organization's financial management, stability, security, and sustainability. Effective financial management includes reporting transparency, sustainable profitability, financial risk management, healthy liquidity, and long-term planning. This indicator shows how well the organization has gained stakeholders' financial trust and ensured its financial sustainability.",
+    "purpose": "ارزیابی اعتماد و رضایت ذینفعان از عملکرد و پایداری مالی سازمان",
+    "scope": "سهامداران، سرمایه‌گذاران، بانک‌ها، نهادهای مالی، نهادهای نظارتی",
+    "key_insight": "اعتماد مالی ذینفعان پایه و اساس پایداری بلندمدت سازمان است"
+  },
+  "stakeholder_groups": {
+    "shareholders": {
+      "description": "صاحبان سهام و مالکان",
+      "focus": "بازده سرمایه، ارزش سهام، سود تقسیمی، رشد بلندمدت"
+    },
+    "investors": {
+      "description": "سرمایه‌گذاران بالقوه و بالفعل",
+      "focus": "فرصت سرمایه‌گذاری، بازده، ریسک، چشم‌انداز رشد"
+    },
+    "financial_institutions": {
+      "description": "بانک‌ها و موسسات مالی",
+      "focus": "توان بازپرداخت، اعتبار، نقدینگی، ریسک اعتباری"
+    },
+    "regulatory_bodies": {
+      "description": "نهادهای نظارتی مالی",
+      "focus": "انطباق، شفافیت، گزارش‌دهی، سلامت مالی"
+    },
+    "credit_rating_agencies": {
+      "description": "آژانس‌های رتبه‌بندی اعتباری",
+      "focus": "ریسک اعتباری، ثبات مالی، توان پرداخت بدهی"
+    }
+  },
+  "measurement": {
+    "formula": "میانگین امتیاز رضایت از مدیریت مالی و پایداری",
+    "formula_detailed": "FMS = (مجموع امتیازات / تعداد پاسخ‌ها) × 20",
+    "unit": "درصد یا امتیاز از 100",
+    "scale": "0-100 (بر اساس مقیاس 1-5)",
+    "measurement_type": "نسبی (Ratio)",
+    "frequency": "سالانه",
+    "data_source": [
+      "نظرسنجی سهامداران",
+      "نظرسنجی سرمایه‌گذاران",
+      "بازخورد بانک‌ها و موسسات مالی",
+      "گزارشات نهادهای نظارتی",
+      "رتبه‌بندی اعتباری"
+    ]
+  },
+  "data_collection": {
+    "collection_method": "نظرسنجی + شاخص‌های عینی",
+    "survey_questions": [
+      "از عملکرد مالی کلی سازمان تا چه حد راضی هستید؟",
+      "سازمان از ثبات و امنیت مالی کافی برخوردار است",
+      "به پایداری مالی بلندمدت سازمان اطمینان دارم",
+      "گزارش‌های مالی سازمان شفاف، دقیق و قابل اعتماد است",
+      "سازمان در مدیریت ریسک‌های مالی موفق است",
+      "بازده مالی سازمان رضایت‌بخش است",
+      "سازمان برای آینده برنامه‌ریزی مالی استراتژیک مناسب دارد"
+    ],
+    "objective_metrics": [
+      "رتبه اعتباری (Credit Rating)",
+      "نسبت بدهی به حقوق صاحبان سهام",
+      "نسبت نقدینگی",
+      "بازده حقوق صاحبان سهام (ROE)",
+      "رشد سود خالص",
+      "ارزش بازار شرکت"
+    ],
+    "response_scale": "1-5 (کاملاً ناراضی تا کاملاً راضی)",
+    "anonymity": "اختیاری - بسته به گروه ذینفع",
+    "response_rate_target": ">60%",
+    "responsible_department": "روابط سرمایه‌گذاران، امور مالی",
+    "responsible_person": "مدیر روابط سرمایه‌گذاران"
+  },
+  "calculation_example": {
+    "scenario": "نظرسنجی از 150 ذینفع کسب‌وکار",
+    "input_data": {
+      "total_responses": 150,
+      "score_5": 45,
+      "score_4": 60,
+      "score_3": 30,
+      "score_2": 10,
+      "score_1": 5
+    },
+    "calculation_steps": [
+      "مجموع = (45×5) + (60×4) + (30×3) + (10×2) + (5×1)",
+      "= 225 + 240 + 90 + 20 + 5 = 580",
+      "میانگین = 580 / 150 = 3.87",
+      "درصد = (3.87 / 5) × 100 = 77.3%"
+    ],
+    "result": "77.3%",
+    "interpretation": "رضایت 77.3% نشان‌دهنده اعتماد خوب ذینفعان به مدیریت مالی است. 70% راضی اما 10% نگران که نیاز به توجه دارد."
+  },
+  "benchmarking": {
+    "global_standards": {
+      "world_class": "≥85%",
+      "excellent": "75-84%",
+      "good": "65-74%",
+      "average": "55-64%",
+      "poor": "<55%"
+    },
+    "financial_metrics": {
+      "credit_rating": {
+        "excellent": "AAA, AA",
+        "good": "A, BBB",
+        "average": "BB, B",
+        "poor": "< B"
+      },
+      "debt_to_equity": {
+        "excellent": "< 0.5",
+        "good": "0.5-1.0",
+        "average": "1.0-2.0",
+        "poor": "> 2.0"
+      },
+      "roe": {
+        "excellent": "> 20%",
+        "good": "15-20%",
+        "average": "10-15%",
+        "poor": "< 10%"
+      }
+    }
+  },
+  "target_setting": {
+    "baseline": "تعیین شود",
+    "short_term": "baseline + 5-7%",
+    "medium_term": "75-80%",
+    "long_term": "≥85%"
+  },
+  "smart_validation": {
+    "specific": {
+      "score": 20,
+      "evidence": "رضایت ذینفعان کسب‌وکار از مدیریت مالی و پایداری - دقیق و مشخص"
+    },
+    "measurable": {
+      "score": 20,
+      "evidence": "نظرسنجی با مقیاس 1-5 + شاخص‌های مالی عینی - کاملاً قابل اندازه‌گیری"
+    },
+    "achievable": {
+      "score": 18,
+      "evidence": "با بهبود مدیریت مالی و ارتباطات قابل دستیابی است"
+    },
+    "relevant": {
+      "score": 20,
+      "evidence": "مستقیماً مرتبط با معیار 6-3 و اعتماد ذینفعان کسب‌وکار"
+    },
+    "time_bound": {
+      "score": 18,
+      "evidence": "سالانه اندازه‌گیری می‌شود"
+    },
+    "overall_smart_score": 96,
+    "smart_level": "عالی"
+  },
+  "radar_evaluation": {
+    "results": {
+      "relevance": 20,
+      "integrity": 19,
+      "segmentation": 18,
+      "trends": 18,
+      "comparisons": 18
+    },
+    "approach": {
+      "sound": 18,
+      "integrated": 17,
+      "stakeholder_focused": 19
+    },
+    "deployment": {
+      "implemented": 17,
+      "systematic": 18
+    },
+    "assessment": {
+      "measured": 19,
+      "learned": 17
+    },
+    "refinement": {
+      "improved": 17,
+      "innovative": 16
+    },
+    "overall_radar_score": 92,
+    "radar_level": "عالی"
+  },
+  "financial_management_dimensions": {
+    "profitability": {
+      "description": "سودآوری",
+      "metrics": ["حاشیه سود خالص", "ROE", "ROA", "EBITDA"],
+      "stakeholder_concern": "بازدهی سرمایه‌گذاری"
+    },
+    "stability": {
+      "description": "ثبات مالی",
+      "metrics": ["نسبت بدهی", "پوشش بهره", "نسبت جاری"],
+      "stakeholder_concern": "امنیت سرمایه‌گذاری"
+    },
+    "liquidity": {
+      "description": "نقدینگی",
+      "metrics": ["نسبت جاری", "نسبت آنی", "گردش وجه نقد"],
+      "stakeholder_concern": "توان پرداخت تعهدات"
+    },
+    "growth": {
+      "description": "رشد",
+      "metrics": ["رشد درآمد", "رشد سود", "رشد دارایی"],
+      "stakeholder_concern": "پتانسیل آینده"
+    },
+    "efficiency": {
+      "description": "کارایی",
+      "metrics": ["گردش دارایی", "گردش موجودی", "چرخه تبدیل وجه"],
+      "stakeholder_concern": "مدیریت منابع"
+    },
+    "sustainability": {
+      "description": "پایداری",
+      "metrics": ["نرخ حفظ سود", "سرمایه‌گذاری مجدد", "نسبت پرداخت سود"],
+      "stakeholder_concern": "تداوم بلندمدت"
+    }
+  },
+  "transparency_reporting": {
+    "financial_statements": {
+      "annual_reports": "گزارش سالانه جامع",
+      "quarterly_reports": "گزارش‌های فصلی",
+      "audit_reports": "گزارش حسابرسی مستقل",
+      "ifrs_compliance": "انطباق با استانداردهای IFRS"
+    },
+    "investor_relations": {
+      "earnings_calls": "جلسات توضیح نتایج مالی",
+      "investor_meetings": "جلسات با سرمایه‌گذاران",
+      "roadshows": "رودشوهای سرمایه‌گذاری",
+      "ir_portal": "پورتال اطلاع‌رسانی سرمایه‌گذاران"
+    },
+    "regulatory_reporting": {
+      "sec_filings": "گزارش‌های قانونی به سازمان بورس",
+      "codal": "افشای اطلاعات در سامانه کدال",
+      "compliance_reports": "گزارش‌های انطباق"
+    }
+  },
+  "risk_management": {
+    "financial_risks": {
+      "market_risk": "ریسک بازار - نوسانات قیمت",
+      "credit_risk": "ریسک اعتباری - عدم دریافت مطالبات",
+      "liquidity_risk": "ریسک نقدینگی - ناتوانی در پرداخت",
+      "operational_risk": "ریسک عملیاتی - شکست فرآیندها",
+      "currency_risk": "ریسک ارزی - نوسانات نرخ ارز"
+    },
+    "mitigation_strategies": {
+      "diversification": "تنوع‌بخشی سبد دارایی",
+      "hedging": "پوشش ریسک",
+      "insurance": "بیمه",
+      "reserves": "ذخایر احتیاطی",
+      "stress_testing": "تست استرس و سناریوسازی"
+    }
+  },
+  "strategic_financial_planning": {
+    "long_term_planning": {
+      "5_year_plan": "برنامه مالی 5 ساله",
+      "investment_roadmap": "نقشه راه سرمایه‌گذاری",
+      "capital_allocation": "تخصیص سرمایه استراتژیک"
+    },
+    "capital_structure": {
+      "optimal_mix": "ترکیب بهینه بدهی و حقوق صاحبان سهام",
+      "cost_of_capital": "هزینه سرمایه (WACC)",
+      "leverage_strategy": "استراتژی اهرمی"
+    },
+    "value_creation": {
+      "shareholder_value": "ارزش آفرینی برای سهامداران",
+      "eva": "ارزش افزوده اقتصادی (EVA)",
+      "tsr": "بازده کل سهامداران (TSR)"
+    }
+  },
+  "credit_rating": {
+    "rating_agencies": {
+      "international": "S&P, Moody's, Fitch",
+      "local": "آژانس‌های رتبه‌بندی ایرانی"
+    },
+    "rating_factors": {
+      "financial_strength": "قدرت مالی",
+      "business_risk": "ریسک کسب‌وکار",
+      "management_quality": "کیفیت مدیریت",
+      "competitive_position": "موقعیت رقابتی",
+      "industry_outlook": "چشم‌انداز صنعت"
+    },
+    "impact": {
+      "borrowing_cost": "هزینه تأمین مالی",
+      "investor_confidence": "اعتماد سرمایه‌گذاران",
+      "market_access": "دسترسی به بازارهای مالی"
+    }
+  },
+  "improvement_initiatives": [
+    {
+      "initiative": "ارتقای شفافیت گزارش‌دهی مالی",
+      "expected_impact": "+6-9%",
+      "timeframe": "6 ماه"
+    },
+    {
+      "initiative": "بهبود نسبت‌های مالی کلیدی",
+      "expected_impact": "+8-12%",
+      "timeframe": "12 ماه"
+    },
+    {
+      "initiative": "تقویت روابط با سرمایه‌گذاران (IR)",
+      "expected_impact": "+5-8%",
+      "timeframe": "9 ماه"
+    },
+    {
+      "initiative": "ارتقای رتبه اعتباری",
+      "expected_impact": "+7-10%",
+      "timeframe": "18 ماه"
+    },
+    {
+      "initiative": "استقرار برنامه‌ریزی مالی استراتژیک",
+      "expected_impact": "+6-9%",
+      "timeframe": "12 ماه"
+    }
+  ],
+  "correlation_with_outcomes": {
+    "share_price": "0.7-0.8",
+    "cost_of_capital": "-0.6 to -0.7",
+    "investor_attraction": "0.7-0.8",
+    "credit_rating": "0.8-0.9",
+    "business_growth": "0.6-0.7"
+  },
+  "best_practices": [
+    "گزارش‌دهی مالی شفاف و به‌موقع",
+    "ارتباط منظم با سهامداران و سرمایه‌گذاران",
+    "مدیریت فعال ریسک‌های مالی",
+    "برنامه‌ریزی استراتژیک بلندمدت",
+    "حفظ ساختار سرمایه بهینه",
+    "تعهد به پایداری مالی",
+    "حسابرسی مستقل و معتبر",
+    "انطباق کامل با استانداردها"
+  ],
+  "notes": [
+    "اعتماد مالی ذینفعان اساس دسترسی به سرمایه و پایداری سازمان است",
+    "شفافیت مالی مهم‌تر از عملکرد کوتاه‌مدت است",
+    "ارتباط مؤثر با ذینفعان کسب‌وکار می‌تواند هزینه سرمایه را کاهش دهد",
+    "پایداری مالی بلندمدت از سودآوری کوتاه‌مدت مهم‌تر است"
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2025-12-14",
+      "author": "Hamid Eqtedarian",
+      "changes": "ایجاد نسخه اولیه شاخص"
+    }
+  ]
+}
